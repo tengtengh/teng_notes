@@ -305,32 +305,53 @@ over!
 
 ### 1.4.5 Vscode配置git同步gitee
 
+参考的这个csdn博客
+[VsCode使用Git连接Gitee和GitHub](https://blog.csdn.net/qq_38981614/article/details/115013188?spm=1001.2101.3001.6650.2&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-2.pc_relevant_antiscanv2&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-2.pc_relevant_antiscanv2&utm_relevant_index=5)
+
+
+
 
 新建gitee仓库，这个不过多描述了
 
 在终端运行新建仓库中复制过来的如下代码：
-![](https://gitee.com/tengtengh/images/raw/master/202203292122080.png)
-在vscode中`ctrl+shift+p`搜索`Git`选择git clone
+```shell
+git config --global user.name "xxxxxx"
+git config --global user.email "xxxxxxxxxxx@user.noreply.gitee.com"
+```
+
+<!-- ![](https://gitee.com/tengtengh/images/raw/master/202203292122080.png) --;>
+
 
 然后在终端运行：
 `ssh-keygen -t rsa -C "10678859+tengtengh@user.noreply.gitee.com"`
 (这里的冒号中的邮箱是和上一步的邮箱一样的)
 后续有确认的内容全都是直接回车（按照网上的说法就是三下回车）输出如下
-![](https://gitee.com/tengtengh/images/raw/master/202203292128937.png)
+![](image/2022-03-29-23-07-50.png)
+<!-- ![](https://gitee.com/tengtengh/images/raw/master/202203292128937.png) -->
+
 然后输入`cat /home/yefei/.ssh/id_rsa.pub`将输出的内容(公钥，ssh-rsa...gitee.com)复制到
 
 输入key标题和将复制的公钥粘贴到公钥文本框中，点击确定。
-
-![](https://gitee.com/tengtengh/images/raw/master/202203292133696.png)
+![](image/2022-03-29-23-08-35.png)
+<!-- ![](https://gitee.com/tengtengh/images/raw/master/202203292133696.png) -->
 然后输入`ssh -T git@gitee.com`查看结果
 ![](https://gitee.com/tengtengh/images/raw/master/202203292134674.png)
 
+在vscode中`ctrl+shift+p`搜索`Git`选择git clone
+![](image/2022-03-29-23-10-05.png)
+<!-- ![](https://gitee.com/tengtengh/images/raw/master/202203292117500.png) -->
+输入url（就是类似于 git clone **** 复制的那个），然后选择一个位置保存，用csdn打开
 然后更改，点提交，选总是，提交的message内容随便写，再点推送(push),或者是同步，左下角
 
 每次push都要输入密码的问题。解决方案：
-在vscode终端输入`git config --global credential.helper store`,重启之后，再push（或者同步）的时候要输入密码，但是再次push的时候则不需要密码了。
-![](https://gitee.com/tengtengh/images/raw/master/202203292117500.png)
 
+在vscode终端输入`git config --global credential.helper store`,重启之后，再push（或者同步）的时候要输入密码，但是再次push的时候则不需要密码了。
+
+
+其它的：
+ 还有一个在bilibili看的一个[VSCode提交代码到gitee码云](https://www.bilibili.com/video/BV18Z4y1P73M?spm_id_from=333.337.search-card.all.click)
+是在远程存储库里面添加
+![](image/2022-03-29-23-23-55.png)
 
 ### 1.4.6　Ubuntu + picgo 配置gitee图床
 在这里我主要参考的[这篇csdn博客](https://blog.csdn.net/xiaodingzi127/article/details/112248081?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_utm_term~default-1.topblog&spm=1001.2101.3001.4242.2&utm_relevant_index=4)
@@ -338,7 +359,7 @@ over!
 
 首先在gitee上新建一个个人仓库，名称我起的是images，然后勾上使用readme文件初始化这个仓库那个选项，选择分支模型-这里我选择的是单分支模型，点击创建
 
-然后点那个生成readme，然后在管理中将仓库设置为公开
+然后点那个初始话readme文件0，然后在管理中将仓库设置为公开
 
 
 首先下载picgo，https://github.com/Molunerfinn/PicGo/releases 
