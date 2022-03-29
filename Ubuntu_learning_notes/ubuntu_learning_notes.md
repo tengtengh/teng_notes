@@ -324,18 +324,12 @@ over!
 然后输入`ssh -T git@gitee.com`查看结果
 ![](https://gitee.com/tengtengh/images/raw/master/202203292134674.png)
 
-
-
+然后更改，点提交，选总是，
 
 每次push都要输入密码的问题。解决方案：
 在vscode终端输入`git config --global credential.helper store`,重启之后，再push（或者同步）的时候要输入密码，但是再次push的时候则不需要密码了。1
 
 ![](https://gitee.com/tengtengh/images/raw/master/202203292117500.png)
-
-
-
-
-输入从gitee中复制过来的url位置错乱
 
 
 
