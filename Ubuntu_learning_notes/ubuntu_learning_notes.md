@@ -18,6 +18,7 @@
 		- [1.4.2 Vscode自动格式化](#142-vscode自动格式化)
 		- [1.4.3 Vscode配置Markdown](#143-vscode配置markdown)
 		- [1.4.4 Vscode g++ c++-11编译cpp文件](#144-vscode-g-c-11编译cpp文件)
+		- [1.4.5 Vscode配置git同步gitee](#145-vscode配置git同步gitee)
 	- [1.5 Ubuntu下安装微信](#15-ubuntu下安装微信)
 	- [1.6 Ubuntu下安装Firefox](#16-ubuntu下安装firefox)
 	- [1.7 Ubuntu下安装Typora](#17-ubuntu下安装typora)
@@ -186,6 +187,10 @@ Editor: Format on type
 	截图到剪切板后按```Ctrl + alt + v``` 粘贴
 
 
+
+
+
+
 ### 1.4.4 Vscode g++ c++-11编译cpp文件
 
 __编译__ : 点击左侧的 `run and debug` - 选择 `create a launch.json file` -选择`GDB`编译 -随便选择一个版本的g++，即可
@@ -294,6 +299,45 @@ __编译__ : 点击左侧的 `run and debug` - 选择 `create a launch.json file
 ![](image/2022-03-13-22-04-37.png)
 
 over!
+
+
+
+### 1.4.5 Vscode配置git同步gitee
+
+
+新建gitee仓库，这个不过多描述了
+
+在终端运行新建仓库中复制过来的如下代码：
+![](https://gitee.com/tengtengh/images/raw/master/202203292122080.png)
+在vscode中`ctrl+shift+p`搜索`Git`选择git clone
+
+然后在终端运行：
+`ssh-keygen -t rsa -C "10678859+tengtengh@user.noreply.gitee.com"`
+(这里的冒号中的邮箱是和上一步的邮箱一样的)
+后续有确认的内容全都是直接回车（按照网上的说法就是三下回车）输出如下
+![](https://gitee.com/tengtengh/images/raw/master/202203292128937.png)
+然后输入`cat /home/yefei/.ssh/id_rsa.pub`将输出的内容(公钥，ssh-rsa...gitee.com)复制到
+
+输入key标题和将复制的公钥粘贴到公钥文本框中，点击确定。
+
+![](https://gitee.com/tengtengh/images/raw/master/202203292133696.png)
+然后输入`ssh -T git@gitee.com`查看结果
+![](https://gitee.com/tengtengh/images/raw/master/202203292134674.png)
+
+
+
+
+每次push都要输入密码的问题。解决方案：
+在vscode终端输入`git config --global credential.helper store`,重启之后，再push（或者同步）的时候要输入密码，但是再次push的时候则不需要密码了。1
+
+![](https://gitee.com/tengtengh/images/raw/master/202203292117500.png)
+
+
+
+
+输入从gitee中复制过来的url位置错乱
+
+
 
 
 
