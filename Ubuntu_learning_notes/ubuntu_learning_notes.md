@@ -19,6 +19,7 @@
 		- [1.4.3 Vscode配置Markdown](#143-vscode配置markdown)
 		- [1.4.4 Vscode g++ c++-11编译cpp文件](#144-vscode-g-c-11编译cpp文件)
 		- [1.4.5 Vscode配置git同步gitee](#145-vscode配置git同步gitee)
+		- [1.4.6　Ubuntu + picgo 配置gitee图床](#146ubuntu--picgo-配置gitee图床)
 	- [1.5 Ubuntu下安装微信](#15-ubuntu下安装微信)
 	- [1.6 Ubuntu下安装Firefox](#16-ubuntu下安装firefox)
 	- [1.7 Ubuntu下安装Typora](#17-ubuntu下安装typora)
@@ -324,16 +325,54 @@ over!
 然后输入`ssh -T git@gitee.com`查看结果
 ![](https://gitee.com/tengtengh/images/raw/master/202203292134674.png)
 
-然后更改，点提交，选总是，提交的message内容随便写
+然后更改，点提交，选总是，提交的message内容随便写，再点推送(push),或者是同步，左下角
 
 每次push都要输入密码的问题。解决方案：
-在vscode终端输入`git config --global credential.helper store`,重启之后，再push（或者同步）的时候要输入密码，但是再次push的时候则不需要密码了。1
-
+在vscode终端输入`git config --global credential.helper store`,重启之后，再push（或者同步）的时候要输入密码，但是再次push的时候则不需要密码了。
 ![](https://gitee.com/tengtengh/images/raw/master/202203292117500.png)
 
 
+### 1.4.6　Ubuntu + picgo 配置gitee图床
+在这里我主要参考的[这篇csdn博客](https://blog.csdn.net/xiaodingzi127/article/details/112248081?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_utm_term~default-1.topblog&spm=1001.2101.3001.4242.2&utm_relevant_index=4)
 
 
+首先在gitee上新建一个个人仓库，名称我起的是images，然后勾上使用readme文件初始化这个仓库那个选项，选择分支模型-这里我选择的是单分支模型，点击创建
+
+然后点那个生成readme，然后在管理中将仓库设置为公开
+
+
+首先下载picgo，https://github.com/Molunerfinn/PicGo/releases 
+我在这里下载的是PicGo-2.3.0.AppImage，如果你没有梯子网速不够、下载比较慢的话，这里给出我的csdn下载链接：
+
+
+
+下载后，右键属性，选择权限-勾选允许作为执行程序
+双击打开-右键打开详细窗口即可。
+
+在插件中搜索gitee，会出现几个选项，我下载的是gitee-uploader-1.1.2，建议你和我下载同一个版本，否则可能后续一些配置上不一样。
+在这里它会提示你安装nodejs
+这里我直接在终端通过sudo apt-get install notejs是不行的，可执行如下代码，然后重启picgo即可：
+```shell
+cd ~
+curl -sL https://deb.nodesource.com/setup_14.x -o nodesource_setup.sh
+sudo bash nodesource_setup.sh
+sudo apt install nodejs
+```
+我在Ubuntu16.04上是OK的，看了一个博主在Ubuntu20.04上这样也是ok的，我相信你也一定可以 d e
+
+安装好之后进行gitee设置
+![](https://gitee.com/tengtengh/images/raw/master/202203292155732.png)
+这里只需要填写前三个即可，repo就是你的"账户名/仓库名"，这里注意格式
+
+branch就填写master即可，
+
+然后在gitee的个人设置中新建私人令牌，私人名牌的描述就其名为image等，随意，将生成的私人令牌复制到token当中即可。
+
+
+然后在PicGo设置中选择快捷键设置，即可自定义设置上传的快捷键，可以将剪切板的图片直接上传到gitee中，建议勾选PicGo设置中的时间戳重命名（可以防止上传的图片由于名称冲突导致的无法上传的问题）和上传后自动复制URL（每次上传之后，你就可以在markdown中直接粘贴类似与![](url)图片了）。
+
+如果你不会怎么在Ubuntu系统下不借助任何第三方工具复制选区截图到剪切板的话，你可以看下面：
+在Ubuntu的设置-键盘-快捷键-截图中，将复制选区到剪切板的快捷键自定义，即可实现选区截图（默认的快捷键是`ctrl+shift+PriSc`）
 
 ## 1.5 Ubuntu下安装微信
 
