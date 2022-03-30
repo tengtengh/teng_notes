@@ -348,7 +348,7 @@ git config --global user.email "xxxxxxxxxxx@user.noreply.gitee.com"
 在vscode终端输入`git config --global credential.helper store`,重启之后，再push（或者同步）的时候要输入密码，但是再次push的时候则不需要密码了。
 
 
-其它的：
+其它的:
  还有一个在bilibili看的一个[VSCode提交代码到gitee码云](https://www.bilibili.com/video/BV18Z4y1P73M?spm_id_from=333.337.search-card.all.click)
 是在远程存储库里面添加
 ![](image/2022-03-29-23-23-55.png)
