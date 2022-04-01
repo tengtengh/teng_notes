@@ -47,6 +47,9 @@
 		- [2.2.12 low_bound()](#2212-low_bound)
 		- [2.2.13 204. 计数质数](#2213-204-计数质数)
 		- [2.2.14 vector size()函数要注意的问题](#2214-vector-size函数要注意的问题)
+		- [2.2.15 判断char型变量是否为字符数字等](#2215-判断char型变量是否为字符数字等)
+		- [2.2.16 sort函数将vector数组按照元素绝对值从小到大排序](#2216-sort函数将vector数组按照元素绝对值从小到大排序)
+		- [2.2.17 vector::reserve()函数](#2217-vectorreserve函数)
 	- [2.3 刷题记录](#23-刷题记录)
 		- [2.3.1 还没做的：](#231-还没做的)
 		- [2.3.2 其它](#232-其它)
@@ -891,9 +894,86 @@ output:
     }
 
 ```
+### 2.2.15 判断char型变量是否为字符数字等
+
+1. isalpha
+
+isalpha()用来判断一个字符是否为字母，如果是字符则返回非零，否则返回零。
+```c++
+    cout<<isalpha('a'); //返回非零
+    cout<<isalpha('2'); //返回0
+```
+2.isalnum
+
+isalnum()用来判断一个字符是否为数字或者字母，也就是说判断一个字符是否属a\~z\|\|A\~Z\||0\~9
+
+```c++
+    cout<<isalnum('a'); //输出非零
+    cout<<isalnum('2'); // 非零
+    cout<<isalnum('.'); // 零
+```
+
+3.islower
+
+islower()用来判断一个字符是否为小写字母，也就是是否属于a~z。
+
+```c++
+    cout<<islower('a'）; //非零
+    cout<<islower('2'); //输出0
+    cout<<islower('A'); //输出0
+```
+
+4.isupper
+
+isupper()和islower相反，用来判断一个字符是否为大写字母。
+
+```c++
+    cout<<isupper('a'); //返回0
+    cout<<isupper('2'); //返回0
+    cout<<isupper('A'); //返回非零
+```
+
+5.tolower
+
+tolower()函数是把字符串都转化为小写字母
+
+```c++
+    string str= "THIS IS A STRING";
+    for (int i=0; i <str.size(); i++)
+       str[i] = tolower(str[i]);
+```
+
+5.toupper
+
+toupper()函数是把字符串都转化为小写字母
+
+```c++
+    string str= "hahahahaha";
+    for (int i=0; i <str.size(); i++)
+       str[i] = toupper(str[i]);
+```
+```c++
+    //来判断是否为数字，如果是数字那么会返回非0
+    isdigit(c)
+```
 
 
+###2.2.16 287.寻找重复数
+[287.寻找重复数](https://leetcode-cn.com/problems/find-the-duplicate-number/)
+这道题确实没想到，答案二理解有点复杂，pass了
 
+
+### 2.2.16 sort函数将vector数组按照元素绝对值从小到大排序
+
+```c++
+sort(vals.begin(), vals.end(), [](int a, int b) { return abs(a) < abs(b); });
+```
+### 2.2.17 vector::reserve()函数
+我觉得这个讲的比较不错： [C++知识点——vector::reserve()函数](https://blog.csdn.net/qq_46515446/article/details/123107800)
+方式1：vector vec, 然后调用1000次 vec.push_back(*)；
+方式2：vector vec,然后调用vec.reserve(1000)申请1000个元素的内存，再调用1000次 vec.push_back(*)；
+
+方式1要进行若干次内存分配；而方式2只需要进行1次内存分配。其效率立见高下，所以在需要对大量数据进行处理的时候，使用reserve主动分配内存可以提升程序执行效率。
 
 
 ## 2.3 刷题记录
