@@ -992,10 +992,7 @@ sort(vals.begin(), vals.end(), [](int a, int b) { return abs(a) < abs(b); });
 
 ### 2.2.17 二叉树搜索整个数(要返回值)/二叉树搜索一条边(不要返回值)
 
-
-![](image/2022-04-03-14-09-22.png)
-
-
+<img src="image/2022-04-03-14-09-22.png" style="zoom:70%;" />
 
 
 
@@ -1029,11 +1026,12 @@ sort(vals.begin(), vals.end(), [](int a, int b) { return abs(a) < abs(b); });
 __代码随想录中没做的题目__
 
 + 数组 
-  + [√]已完成，自己想的思路，比官方答案的用时更少[76.最小覆盖子串（长度最小的子数组（相关题目推荐））](https://leetcode-cn.com/problems/minimum-window-substring/)：哈希表不会
+  + [√][76.最小覆盖子串（长度最小的子数组（相关题目推荐）：哈希表不会）](https://leetcode-cn.com/problems/minimum-window-substring/)已完成，自己想的思路，比官方答案的用时更少
 
 ### 2.3.2 其它
 
-栈与队列-7滑动窗口最大值-239滑动窗口最大值 （答案用到了利用优先队列的方法来做，优先队列是什么还没学）
+[√][栈与队列-7滑动窗口最大值-[239滑动窗口最大值](https://leetcode-cn.com/problems/sliding-window-maximum/) （答案用到了利用优先队列的方法来做，优先队列是什么还没学）
+[669. 修剪二叉搜索树](https://leetcode-cn.com/problems/trim-a-binary-search-tree/)(这个题看代码的话比较不好理解，尤其是迭代法)
 
 
 代码随想录中二叉树部分的每周小结基本上都没怎么看
@@ -1099,7 +1097,7 @@ sudo gedit /etc/ros/rosdep/sources.list.d/20-default.list
 然后就可以
 
 ```shell
-rosdep updateq
+rosdep update
 ```
 
 ------
