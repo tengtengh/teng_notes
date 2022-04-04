@@ -50,15 +50,19 @@
     - [2.2.15 判断char型变量是否为字符数字等](#2215-判断char型变量是否为字符数字等)
     - [2.2.16 sort函数将vector数组按照元素绝对值从小到大排序](#2216-sort函数将vector数组按照元素绝对值从小到大排序)
     - [2.2.17 vector::reserve()函数](#2217-vectorreserve函数)
+    - [2.2.17 二叉树搜索整个数(要返回值)/二叉树搜索一条边(不要返回值)](#2217-二叉树搜索整个数要返回值二叉树搜索一条边不要返回值)
   - [2.3 刷题记录](#23-刷题记录)
     - [2.3.1 还没做的：](#231-还没做的)
     - [2.3.2 其它](#232-其它)
 - [3. 学习问题及解决方案](#3-学习问题及解决方案)
   - [3.1 Ubuntu16.04+python27安装jupyter notebook后,](#31-ubuntu1604python27安装jupyter-notebook后)
-  - [3.2 安装ROS](#32-安装ros)
+  - [3.2 ROS](#32-ros)
+    - [3.2.1 安装ROS](#321-安装ros)
+    - [3.2.2 从rosbag中提取图片](#322-从rosbag中提取图片)
+    - [3.3.3 ORB-SLAM2 ROS编译](#333-orb-slam2-ros编译)
   - [3.3 Ubuntu安装boost](#33-ubuntu安装boost)
   - [3.4 Ubuntu16.04配置ROS工作空间](#34-ubuntu1604配置ros工作空间)
-  - [3.5 ORB-SLAM2 ROS编译](#35-orb-slam2-ros编译)
+  - [3.5](#35)
   - [3.6 OpenCV相关问题](#36-opencv相关问题)
     - [3.6.1 安装OpenCV](#361-安装opencv)
     - [3.6.2 卸载OpenCV](#362-卸载opencv)
@@ -980,6 +984,24 @@ sort(vals.begin(), vals.end(), [](int a, int b) { return abs(a) < abs(b); });
 方式1要进行若干次内存分配；而方式2只需要进行1次内存分配。其效率立见高下，所以在需要对大量数据进行处理的时候，使用reserve主动分配内存可以提升程序执行效率。
 
 
+
+
+
+
+
+
+### 2.2.17 二叉树搜索整个数(要返回值)/二叉树搜索一条边(不要返回值)
+
+
+![](image/2022-04-03-14-09-22.png)
+
+
+
+
+
+
+
+
 ## 2.3 刷题记录
 ### 2.3.1 还没做的：
 [10.正则表达式](https://leetcode-cn.com/problems/regular-expression-matching/)
@@ -1036,7 +1058,10 @@ LANGUAGE=en_US
 
 ------
 
-## 3.2 安装ROS
+## 3.2 ROS
+
+
+### 3.2.1 安装ROS
 
 安装ros ，init和update那一步容易报错，终结解决方法如下：
 https://blog.csdn.net/qq_17685565/article/details/105741864
@@ -1077,6 +1102,102 @@ rosdep updateq
 ```
 
 ------
+
+
+
+### 3.2.2 从rosbag中提取图片
+参考的是[这篇csdn博客](https://blog.csdn.net/weixin_43977894/article/details/108412661?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522164898632316781683972416%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=164898632316781683972416&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-2-108412661.142^v5^pc_search_result_control_group,157^v4^control&utm_term=rosbag+%E6%8F%90%E5%8F%96%E5%9B%BE%E7%89%87&spm=1018.2226.3001.4187)
+
+
+第一步，先cd到rosbag所在文件夹,查看topic名称
+
+```shell
+rosbag info xxxx.bag
+```
+
+![](image/2022-04-04-17-12-39.png)
+
+第二步：
+新建xxxx.launch文件，文件内容如下
+
+```
+<launch>
+      <node pkg="rosbag" type="play" name="rosbag" args="-d 2  /media/yefei/WDC-2T/Learning/data/test_bag_to_img/rgbd_dataset_freiburg1_xyz.bag"/>
+      <node name="extract" pkg="image_view" type="extract_images" respawn="false" output="screen" cwd="ROS_HOME">
+        <remap from="image" to="/camera/rgb/image_color"/>
+      </node>
+ </launch>
+```
+
+将上面第二行的的`/media/yefei/WDC-2T/Learning/data/test_bag_to_img/rgbd_dataset_freiburg1_xyz.bag`修改为你的bag文件的路径
+
+将倒数第三行的`/camera/rgb/image_color`改为第一步查看的topics中的路径。
+
+第三步，
+运行`roscore`
+在新的终端运行 `roslaunch xxx.launch`
+
+第四步，去到主目录下的.ros文件夹，注意.ros文件夹是隐藏文件夹，若要用文件管理器查看，需要在主目录文件夹下按`ctrl + h(切换是否显示隐藏文件及文件夹)`。
+提取的图片会保存到这里，然后在复制出来就行了。
+
+### 3.3.3 ORB-SLAM2 ROS编译
+这里讲的是《ROS机器人开发实践中的步骤》
+首先正常编译通过build.sh（这一步应该可以不用，但是我一般都是这样的）
+
+在终端中设置环境变量
+```shell
+export ROS_PACKAGE_PATH=${ROS_PACKAGE_PATH}:/home/xxx/xxx/ORB_SLAM2/Examples/ROS
+```
+这一步可以直接`gedit ~/.bashrc`将这句话添加进去，然后`source ~/.bashrc`
+
+然后打开build_ros.sh, 将其中的make -j 改成 make -j4 (这里可以随意改成-j2 -j8或者直接make，但是不可以make -j, 因为这样会自动占用最大数量的线程，容易卡死)
+
+
+终端输入`./build_ros.sh`
+
+ 
+此时如果代码报错：
+
+```shell
+CMakeFiles/Stereo.dir/build.make:227:recipe for target '../Stereo' failed，
+CMakeFiles/RGBD.dir/build.make:197: recipe for target ‘…/RGBD’ failed，
+CMakeFiles/Makefile2:67: recipe for target 'CMakeFiles/RGBD.dir/all' failed,
+CMakeFiles/Makefile2:104:recipe for target 'CMakeFiles/Stereo.dir/all' failed,
+```
+
+解决方案：
+
+～/catkin_ws/src/ORB_SLAM2/Examples/ROS/ORB_SLAM2/文件夹下的CMakeLists.txt文件，在set（LIBS的最后加上-lboost_system
+
+编译成功后，在 ORB_SLAM2/Examples/ROS/ORB_SLAM2/ 文件夹下会出现build文件夹，此时需要单独设置环境变量
+```shell
+source /home/xxx/xxx/ORB_SLAM2/Examples/ROS/ORB_SLAM2/build/devel/setup.bash
+```
+同样的，这一步可以直接`gedit ~/.bashrc`将这句话添加进去，然后`source ~/.bashrc`
+
+over
+
+
+测试：使用数据包测试，(数据包.bag可以在TUM数据集官网下载)
+
+下载地址：http://vision.in.tum.de/data/datasets/rgbd-dataset/download
+往下翻，找到ROS bag
+![](image/2022-04-04-17-43-16.png)
+
+右键复制链接，到终端通过wget命令可以下载，不过在这里我更建议使用迅雷云盘下载，速度比较快
+
+我在这里使用的是rgbd_dataset_freiburg1_xyz.bag 
+
+```shell
+###终端1
+roscore
+###终端2
+cd /home/xxx/xxx/ORB_SLAM2
+rosrun ORB_SLAM2 Mono Vocabulary/ORBvoc.txt Examples/ROS/ORB_SLAM2/Asus.yaml
+###终端3
+rosbag play /home/xxx/xxx/rgbd_dataset_freiburg1_xyz.bag /camera/rgb/image_color:=/camera/image_raw
+```
+
 
 
 
@@ -1130,20 +1251,7 @@ echo $ROS_PACKAGE_PATH #可以用来查看工作变量
 
 即完成工作空间的创建
 
-## 3.5 ORB-SLAM2 ROS编译
-
-代码报错：
-
-```shell
-CMakeFiles/Stereo.dir/build.make:227:recipe for target '../Stereo' failed，
-CMakeFiles/RGBD.dir/build.make:197: recipe for target ‘…/RGBD’ failed，
-CMakeFiles/Makefile2:67: recipe for target 'CMakeFiles/RGBD.dir/all' failed,
-CMakeFiles/Makefile2:104:recipe for target 'CMakeFiles/Stereo.dir/all' failed,
-```
-
-解决方案：
-
-～/catkin_ws/src/ORB_SLAM2/Examples/ROS/ORB_SLAM2/文件夹下的CMakeLists.txt文件，在set（LIBS的最后加上-lboost_system
+## 3.5 
 
 ## 3.6 OpenCV相关问题
 
@@ -1317,6 +1425,14 @@ sudo rm -r /usr/local/bin/g2o*
 
 ### 3.10.2 vim复制文字到外面
 vim中按住shift可以用鼠标，但是会选中行号，所以可以ctrl+shift+鼠标来选择
+
+
+
+
+
+
+
+
 
 
 
