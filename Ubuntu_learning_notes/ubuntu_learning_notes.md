@@ -992,7 +992,7 @@ sort(vals.begin(), vals.end(), [](int a, int b) { return abs(a) < abs(b); });
 
 ### 2.2.17 二叉树搜索整个数(要返回值)/二叉树搜索一条边(不要返回值)
 
-<img src="image/2022-04-03-14-09-22.png" style="zoom:70%;" />
+<img src="image/2022-04-03-14-09-22.png" style="zoom:85%;" />
 
 
 
@@ -1032,6 +1032,7 @@ __代码随想录中没做的题目__
 
 [√][栈与队列-7滑动窗口最大值-[239滑动窗口最大值](https://leetcode-cn.com/problems/sliding-window-maximum/) （答案用到了利用优先队列的方法来做，优先队列是什么还没学）
 [669. 修剪二叉搜索树](https://leetcode-cn.com/problems/trim-a-binary-search-tree/)(这个题看代码的话比较不好理解，尤其是迭代法)
+[109. 有序链表转换二叉搜索树](https://leetcode-cn.com/problems/convert-sorted-list-to-binary-search-tree/submissions/)(这个题用的是list转vector来做的，还有更好的方法，后面还要再看看)
 
 
 代码随想录中二叉树部分的每周小结基本上都没怎么看
