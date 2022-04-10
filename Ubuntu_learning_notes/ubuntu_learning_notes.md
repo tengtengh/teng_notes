@@ -28,7 +28,8 @@
   - [1.10 Ubuntu18.04更新内核(手动安装)/卸载清除旧版本内核](#110-ubuntu1804更新内核手动安装卸载清除旧版本内核)
     - [1.10.1 更新内核(手动安装)](#1101-更新内核手动安装)
     - [1.10.2 清除卸载旧版本内核](#1102-清除卸载旧版本内核)
-  - [1.11 Ubuntu分区方案](#111-ubuntu分区方案)
+  - [1.11 ubuntu18.04安装](#111-ubuntu1804安装)
+  - [1.11.1 Ubuntu分区方案](#1111-ubuntu分区方案)
 - [2. 学习整理](#2-学习整理)
   - [2.1 SLAM](#21-slam)
     - [2.1.1 半稠密SLAM:EAO-SLAM](#211-半稠密slameao-slam)
@@ -52,6 +53,9 @@
     - [2.2.17 vector::reserve()函数](#2217-vectorreserve函数)
     - [2.2.17 二叉树搜索整个数(要返回值)/二叉树搜索一条边(不要返回值)](#2217-二叉树搜索整个数要返回值二叉树搜索一条边不要返回值)
     - [2.2.18 有关自定义题目输入的内容必须要好好看看，这是LeetCode所没有的](#2218-有关自定义题目输入的内容必须要好好看看这是leetcode所没有的)
+    - [2.2.19 二叉树深度优先搜索(DFS)、广度优先搜索(BFS)](#2219-二叉树深度优先搜索dfs广度优先搜索bfs)
+    - [2.2.20  二叉树的序列化与反序列化](#2220--二叉树的序列化与反序列化)
+    - [2.2.21 substr函数](#2221-substr函数)
   - [2.3 刷题记录](#23-刷题记录)
     - [2.3.1 还没做的：](#231-还没做的)
     - [2.3.2 其它](#232-其它)
@@ -681,7 +685,11 @@ linux-modules-5.13.0-051300-generic		install
 卸载后再次查看`dpkg --get-selections | grep linux`,
 并输入`sudo update-grub`更新启动项(根据情况选择grub/grub2)
 
-## 1.11 Ubuntu分区方案
+## 1.11 ubuntu18.04安装
+
+## 1.11.1 Ubuntu分区方案
+
+
 
 *也未必一定要这样，不过我这样是没错
 
@@ -694,6 +702,12 @@ linux-modules-5.13.0-051300-generic		install
 
 \*swap分区 ( 好像可以不要？网上有的说是运行内存的两倍 )
 \*/boot分区 ( 不要放在根目录下面，安装时，安装界面的最下面的下拉菜单选这个分区，根目录下面 )
+
+2022-04-09 给刘亚飞师兄的电脑安装ubuntu18.04的时候
+
+分配好/boot,swap,/,/home这几个区的大小，点击安装时这个错误：No EFI system partition was found, the system will likely not be able to boot successfully and the installation may fail
+
+制作启动盘的时候，选择MBR，bios中不选择UEFI启动项选另一个
 
 # 2. 学习整理
 
@@ -999,6 +1013,51 @@ sort(vals.begin(), vals.end(), [](int a, int b) { return abs(a) < abs(b); });
 cin
 getline
 split
+
+### 2.2.19 二叉树深度优先搜索(DFS)、广度优先搜索(BFS)
+[563. 二叉树的坡度](https://leetcode-cn.com/problems/binary-tree-tilt/)
+官方答案的方法 应该要掌握
+深度优先搜索的方法，一定要掌握
+
+广度优先搜索的经典例子就是二叉树的层序遍历
+可以参考这篇博客[DFS和BFS算法](https://blog.csdn.net/qq_41816189/article/details/122787939)
+
+
+
+
+
+
+### 2.2.20  二叉树的序列化与反序列化
+[297. 二叉树的序列化与反序列化](https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree/)
+[449. 序列化和反序列化二叉搜索树](https://leetcode-cn.com/problems/serialize-and-deserialize-bst/)
+
+这俩题应该是一样的，我的做法，执行的效果不错，但是代码比较冗长
+
+可以参考[这个兄弟的做法](https://leetcode-cn.com/problems/serialize-and-deserialize-bst/solution/cqian-xu-bian-li-ji-zhi-you-ya-di-di-gui-shi-xian-/)
+他用一个stringstream，这个很巧妙，值得看看
+
+
+### 2.2.21 substr函数
+
+substr 成员函数可以用于求子串 (n, m)，原型如下：
+string substr(int n = 0, int m = string::npos) const;
+调用时，如果省略 m 或 m 超过了字符串的长度，则求出来的子串就是从下标 n 开始一直到字符串结束的部分。例如：
+
+```c++
+string s1 = "this is ok";
+string s2 = s1.substr(2, 4);  // s2 = "is i"
+s2 = s1.substr(2);  // s2 = "is is ok"
+```
+即截取从n开始的m个字符
+
+
+具体可以参考下面的网站讲解
+![](image/2022-04-10-18-28-57.png)
+http://c.biancheng.net/view/400.html
+
+
+
+
 
 
 
