@@ -57,6 +57,8 @@
     - [2.2.20  二叉树的序列化与反序列化](#2220--二叉树的序列化与反序列化)
     - [2.2.21 substr函数](#2221-substr函数)
     - [2.2.22 回溯去重](#2222-回溯去重)
+    - [2.2.23 有关map的键值](#2223-有关map的键值)
+    - [2.2.24 有关于linux和window下get c++代码运行时间](#2224-有关于linux和window下get-c代码运行时间)
   - [2.3 刷题记录](#23-刷题记录)
     - [2.3.1 还没做的：](#231-还没做的)
     - [2.3.2 其它](#232-其它)
@@ -1068,25 +1070,134 @@ http://c.biancheng.net/view/400.html
 
 方法1：只适用于sort过的数组，方法2则是都可以
 
+### 2.2.23 有关map的键值
+`std::map<Key, T>`之类的容器的`value_type`其实是`std::pair<const Key, T>`
+
+例如如下代码：
+```c++
+    map<string, int> mp;
+    mp["ac"]++;
+    mp["ac"]++;
+    mp["ed"]++;
+
+    for(pair<const string, int> & m : mp){
+        cout << m.first << " " << m.second << endl;
+    }
+```
+在for遍历的过程中，如果想传引用的话，string要用const string
+
+我遇到这个问题是在 [leetcode: 332. 重新安排行程](https://leetcode-cn.com/problems/reconstruct-itinerary/submissions/) ，这道题代码随想录中给出的代码 [(代码随想录-回溯-19.重新安排行程)](https://programmercarl.com/0332.%E9%87%8D%E6%96%B0%E5%AE%89%E6%8E%92%E8%A1%8C%E7%A8%8B.html#%E5%9B%9E%E6%BA%AF%E6%B3%95) 里便是用到了这个`pair<const string, int> &`来遍历。
+如果用`auto`的话，这里就相当于拷贝赋值给了`pair<string, int>`类型的pair对象，如果要传引用的话，应当注意
+
+
+### 2.2.24 有关于linux和window下get c++代码运行时间
+
+windows：
+
+```c++
+// windows下
+#include<chrono>
+int main(void)
+{
+    typedef std::chrono::high_resolution_clock Clock;
+    auto t1 = Clock::now();//计时开始   
+    cout << "=====test end=====" << endl;  
+
+    test_demo();
+    sleep(2);
+
+    cout << "=====start test=====" << endl;   
+    auto t2 = Clock::now();//计时结束
+    //ns
+    std::cout <<chrono::duration_cast<std::chrono::nanoseconds>(t2 - t1).count() << "ns" << '\n';
+    //us
+    std::cout <<chrono::duration_cast<std::chrono::microseconds>(t2 - t1).count() << "us" << '\n';
+    //ms
+    std::cout <<chrono::duration_cast<std::chrono::milliseconds>(t2 - t1).count() << "ms" << '\n';
+    //s
+    std::cout <<chrono::duration_cast<std::chrono::seconds>(t2 - t1).count() << "s" << '\n';
+	return 0;
+}
+```
+
+>output示例：
+  201297450ns
+  2012973us
+  2012ms
+  2s
+
+
+
+```c++
+linux下（ubuntu）
+
+#include<time.h>
+
+int main (void){
+
+    timespec t1, t2;
+
+    clock_gettime(CLOCK_MONOTONIC, &t1);
+
+    cout << "=========start test=========" << endl;
+ 
+    test_demo();  
+    sleep(2);
+ 
+    cout << "=========test end=========" << endl;
+    clock_gettime(CLOCK_MONOTONIC, &t2);
+    
+    cout << t2.tv_nsec - t1.tv_nsec << "ns" << endl;
+    cout << t2.tv_sec - t1.tv_sec << "s" << endl << endl;
+    
+    //下面是我自己写的
+    //那么所花时间为
+    long deltaT_ms_integer = (t2.tv_sec - t1.tv_sec) * 1000 + (t2.tv_nsec - t1.tv_nsec) / (1000000); //ms
+    long deltaT_ms_decimal = (t2.tv_nsec - t1.tv_nsec) % (1000000);
+    string str_deltaT_ms_decimal = to_string(deltaT_ms_decimal);
+    while(str_deltaT_ms_decimal.size() < 6){
+        str_deltaT_ms_decimal = "0" + str_deltaT_ms_decimal;
+    }
+    cout << "time : " << deltaT_ms_integer << "." << str_deltaT_ms_decimal << " ms" << endl;
+
+    long deltaT_ns = (t2.tv_sec - t1.tv_sec) * 1000000000 + t2.tv_nsec - t1.tv_nsec; //ms
+    cout << "time : " << deltaT_ns << " ns" << endl;
+    return 0;
+}
+
+```
+
+>output示例
+>  138985
+>  2
+>  
+>  time : 2000.138985 ms
+>  time : 2000138985 ns
+
+
+在linux的方法中t1.tv_nsec是只包含s精度以下的时间
+对于代码中的t1，它包含tv_nsec和tv_sec
+
+而windows的这种得到时间的方法ns级的精度中就已经包含了全部的完整时间
 
 
 ## 2.3 刷题记录
 ### 2.3.1 还没做的：
 [10.正则表达式](https://leetcode-cn.com/problems/regular-expression-matching/)
-[22.括号的生成（回溯）](https://leetcode-cn.com/problems/generate-parentheses/)
+[22.括号的生成（动态规划，回溯）](https://leetcode-cn.com/problems/generate-parentheses/)
 [29.两数相除（试试递归,早子哥提到的）](https://leetcode-cn.com/problems/divide-two-integers/)
-[37.解数独 （回溯，还没学）](https://leetcode-cn.com/problems/sudoku-solver/)
-[39.组合总和 (回溯)](https://leetcode-cn.com/problems/combination-sum/)
+[√][37.解数独 （回溯，还没学）](https://leetcode-cn.com/problems/sudoku-solver/)
+[√][39.组合总和 (回溯)](https://leetcode-cn.com/problems/combination-sum/)
 [32.最长有效括号(动态规划，还没学)](https://leetcode-cn.com/problems/longest-valid-parentheses/)
 [11.盛最多水的容器(贪心算法，还没学)](https://leetcode-cn.com/problems/container-with-most-water/	)
 [44.通配符匹配(贪心，递归，动态规划)](https://leetcode-cn.com/problems/wildcard-matching/)
 [45.跳跃游戏II(贪心，动态规划)](https://leetcode-cn.com/problems/jump-game-ii/)
-[46.全排列(回溯)](https://leetcode-cn.com/problems/permutations/)
+[√][46.全排列(回溯)](https://leetcode-cn.com/problems/permutations/)
 [329.矩阵中的最长递增路径（pass，搜“矩阵”关键字搜到的题目）](https://leetcode-cn.com/problems/longest-increasing-path-in-a-matrix/)
 [剑指 Offer 12. 矩阵中的路径（回溯）](https://leetcode-cn.com/problems/ju-zhen-zhong-de-lu-jing-lcof/)
 [221. 最大正方形(动态规划)](https://leetcode-cn.com/problems/maximal-square/)
 [85. 最大矩形](https://leetcode-cn.com/problems/maximal-rectangle/)
-[51. N 皇后(回溯)](https://leetcode-cn.com/problems/n-queens/)
+[√][51. N 皇后(回溯)](https://leetcode-cn.com/problems/n-queens/)
 [53. 最大子数组和(动态规划)](https://leetcode-cn.com/problems/maximum-subarray/)
 [130.被围绕的区域（深度/广度优先搜索）](https://leetcode-cn.com/problems/surrounded-regions/)
 [174. 地下城游戏（动态规划）](https://leetcode-cn.com/problems/dungeon-game/)
@@ -1107,7 +1218,7 @@ __代码随想录中没做的题目__
 [109. 有序链表转换二叉搜索树](https://leetcode-cn.com/problems/convert-sorted-list-to-binary-search-tree/submissions/)(这个题用的是list转vector来做的，还有更好的方法，后面还要再看看)
 [124. 二叉树中的最大路径和](https://leetcode-cn.com/problems/binary-tree-maximum-path-sum/)(困难提，虽然没遇到太大问题，自己完成的，但是用时较长，运行时间稳定击败5%，应该还有更好的方法或者可以简化，后面再看看）
 代码随想录中二叉树部分的每周小结基本上都没怎么看
-
+[37.解数独](https://leetcode-cn.com/problems/sudoku-solver/)（这个题官方答案还有后续的两个优化的答案，可以学习一下）
 # 3. 学习问题及解决方案
 
 ## 3.1 Ubuntu16.04+python27安装jupyter notebook后,
