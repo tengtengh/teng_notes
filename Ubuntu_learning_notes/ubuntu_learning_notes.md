@@ -29,7 +29,11 @@
     - [1.10.1 更新内核(手动安装)](#1101-更新内核手动安装)
     - [1.10.2 清除卸载旧版本内核](#1102-清除卸载旧版本内核)
   - [1.11 ubuntu18.04安装](#111-ubuntu1804安装)
-  - [1.11.1 Ubuntu分区方案](#1111-ubuntu分区方案)
+    - [1.11.1 Ubuntu分区方案](#1111-ubuntu分区方案)
+  - [1.12 ubuntu密码问题](#112-ubuntu密码问题)
+    - [1.12.1 更改密码](#1121-更改密码)
+    - [1.12.2 切换用户](#1122-切换用户)
+    - [1.12.3 删除用户密码，以及删除之后怎么恢复](#1123-删除用户密码以及删除之后怎么恢复)
 - [2. 学习整理](#2-学习整理)
   - [2.1 SLAM](#21-slam)
     - [2.1.1 半稠密SLAM:EAO-SLAM](#211-半稠密slameao-slam)
@@ -690,7 +694,7 @@ linux-modules-5.13.0-051300-generic		install
 
 ## 1.11 ubuntu18.04安装
 
-## 1.11.1 Ubuntu分区方案
+### 1.11.1 Ubuntu分区方案
 
 
 
@@ -711,6 +715,86 @@ linux-modules-5.13.0-051300-generic		install
 分配好/boot,swap,/,/home这几个区的大小，点击安装时这个错误：No EFI system partition was found, the system will likely not be able to boot successfully and the installation may fail
 
 制作启动盘的时候，选择MBR，bios中不选择UEFI启动项选另一个
+
+
+
+
+
+
+
+
+## 1.12 ubuntu密码问题
+
+### 1.12.1 更改密码
+
+更改账户密码，这样更改可以更改为任意密码
+```shell
+sudo passwd 用户名
+```
+
+
+```shell
+# 设置root用户密码
+sudo passwd root
+```
+
+
+### 1.12.2 切换用户
+
+切换root用户
+``` shell
+sudo su root
+# 或者
+sudo su
+```
+
+切换回来
+```shell
+sudo su 用户名
+# 例如
+sudo su teng
+```
+
+
+### 1.12.3 删除用户密码，以及删除之后怎么恢复
+
+终端输入  `sudo passwd -d 用户名  ` , 即可删除用户密码，
+
+但是！！！删除之后，仅仅是开机登录页不用输入密码
+在终端执行命令的时候依然要输入密码，例如
+```shell
+sudo apt-get update
+[sudo] yefei 的密码：
+```
+这时，无论输入什么密码都不对，非常令人头大。
+
+解决方案：
+按`ctrl + shift + F1`进入命令行界面(我的是F1，你的可能恰好F1对应的是图形化界面，这时候试一下其它的F键).
+
+输入用户名，回车登录，这时是不需要用密码就可以登录的
+
+然后输入`sudo passwd 用户名`, 输入两遍新密码即可，例如
+
+```shell
+yefei@yefei:~$ sudo passwd yefei
+◆ ◆ ◆ UNIX :
+◆ ◆ ◆ ◆ ◆ UNIX ◆ ◆ ◆ :
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # 2. 学习整理
 
@@ -1211,7 +1295,7 @@ __代码随想录中没做的题目__
 + 数组 
   + [√][76.最小覆盖子串（长度最小的子数组（相关题目推荐）：哈希表不会）](https://leetcode-cn.com/problems/minimum-window-substring/)已完成，自己想的思路，比官方答案的用时更少
 
-### 2.3.2 其它
+### 2.3.2 其它        
 
 [√][栈与队列-7滑动窗口最大值-[239滑动窗口最大值](https://leetcode-cn.com/problems/sliding-window-maximum/) （答案用到了利用优先队列的方法来做，优先队列是什么还没学）
 [669. 修剪二叉搜索树](https://leetcode-cn.com/problems/trim-a-binary-search-tree/)(这个题看代码的话比较不好理解，尤其是迭代法)
@@ -1219,6 +1303,9 @@ __代码随想录中没做的题目__
 [124. 二叉树中的最大路径和](https://leetcode-cn.com/problems/binary-tree-maximum-path-sum/)(困难提，虽然没遇到太大问题，自己完成的，但是用时较长，运行时间稳定击败5%，应该还有更好的方法或者可以简化，后面再看看）
 代码随想录中二叉树部分的每周小结基本上都没怎么看
 [37.解数独](https://leetcode-cn.com/problems/sudoku-solver/)（这个题官方答案还有后续的两个优化的答案，可以学习一下）
+[52. N皇后 II](https://leetcode-cn.com/problems/n-queens-ii/)(官方答案给出的不同于代码随想录的方法，位运算的方法，好多题都有用到这个叫做位运算的方法，要看看！)
+[89.格雷编码](https://leetcode-cn.com/problems/gray-code/)(这个题不能说难，但是官方答案的两种方法我是都没想到，与其说是都没想到，更应该说是之前没有了解过格雷编码的概念)
+
 # 3. 学习问题及解决方案
 
 ## 3.1 Ubuntu16.04+python27安装jupyter notebook后,
