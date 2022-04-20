@@ -1549,7 +1549,9 @@ __代码随想录中没做的题目__
 [89.格雷编码](https://leetcode-cn.com/problems/gray-code/)(这个题不能说难，但是官方答案的两种方法我是都没想到，与其说是都没想到，更应该说是之前没有了解过格雷编码的概念)
 [376.摆动序列](https://leetcode-cn.com/problems/wiggle-subsequence/)（第一次接触动态规划解法，觉得比较难以理解）
 
-[435. 无重叠区间](https://leetcode-cn.com/problems/non-overlapping-intervals/submissions/)(这一题源自代码随想录[贪心算法-无重叠区间](https://www.programmercarl.com/0435.%E6%97%A0%E9%87%8D%E5%8F%A0%E5%8C%BA%E9%97%B4.html#%E6%80%9D%E8%B7%AF)，这道题的题解，我可以说是没想到，并且不太能理解为什么要这么做，作者也说确实这道题难度登记应该为困难)
+[435. 无重叠区间](https://leetcode-cn.com/problems/non-overlapping-intervals/submissions/)(这一题源自代码随想录([贪心算法-无重叠区间](https://www.programmercarl.com/0435.%E6%97%A0%E9%87%8D%E5%8F%A0%E5%8C%BA%E9%97%B4.html#%E6%80%9D%E8%B7%AF))，这道题的题解，我可以说是没想到，并且不太能理解为什么要这么做，作者也说确实这道题难度登记应该为困难)
+
+[738.单调递增的数字](https://leetcode-cn.com/problems/monotone-increasing-digits/)(代码随想录([贪心算法-22.单调递增的数字](https://www.programmercarl.com/0738.%E5%8D%95%E8%B0%83%E9%80%92%E5%A2%9E%E7%9A%84%E6%95%B0%E5%AD%97.html#%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95))中的方法，我没能想到这么巧妙的方法)
 
 
 # 3. 学习问题及解决方案
