@@ -1549,6 +1549,7 @@ __代码随想录中没做的题目__
 [89.格雷编码](https://leetcode-cn.com/problems/gray-code/)(这个题不能说难，但是官方答案的两种方法我是都没想到，与其说是都没想到，更应该说是之前没有了解过格雷编码的概念)
 [376.摆动序列](https://leetcode-cn.com/problems/wiggle-subsequence/)（第一次接触动态规划解法，觉得比较难以理解）
 
+[435. 无重叠区间](https://leetcode-cn.com/problems/non-overlapping-intervals/submissions/)(这一题源自代码随想录[贪心算法-无重叠区间](https://www.programmercarl.com/0435.%E6%97%A0%E9%87%8D%E5%8F%A0%E5%8C%BA%E9%97%B4.html#%E6%80%9D%E8%B7%AF)，这道题的题解，我可以说是没想到，并且不太能理解为什么要这么做，作者也说确实这道题难度登记应该为困难)
 
 
 # 3. 学习问题及解决方案
