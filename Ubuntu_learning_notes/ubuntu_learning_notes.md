@@ -864,6 +864,10 @@ cout << a <<　endl;
 
 ### 2.2.5 C++ 优先级队列 priority_queue(STL priority_queue)
 http://c.biancheng.net/view/480.html
+
+**有关优先级队列自定义排序方式，也要重点看看。**
+
+
 emplace和push的区别
 ```c++
 //以下两种都可以
@@ -874,6 +878,151 @@ pri_que.push(data(1, 2));
 pri_que.emplace(1, 2);
 ```
 `pri_que.emplace("nine");`优于`pri_que.push("nine");`
+
+
+
+优先级队列自定义排序方式，map、set也适用
+
+
+参考知乎文章 [优先队列自定义排序的三种方式](https://zhuanlan.zhihu.com/p/344121142)
+
+通常都是用第一种足以
+
+方法1 重载()
+
+
+
+```c++
+    struct cmp{
+        bool operator()(ListNode* a, ListNode* b){
+            return a->val > b->val;
+        }
+    };
+// priority_queue自定义函数的比较与sort正好是相反的
+// 也就是说，如果你是把大于号作为第一关键字的比较方式，那么堆顶的元素就是第一关键字最小的
+    priority_queue<ListNode*, vector<ListNode*>, cmp> pq; 
+// 此时pq就按照节点的值将最小的放在堆顶
+
+```
+
+
+
+
+方法2 重载<
+
+
+
+
+```c++
+    struct Status{
+        int val;
+        ListNode* node;
+        bool operator < (const Status &tmp) const{ 
+        // 函数必须是静态的 使得该函数可以被 const 对象也就是常量所调用
+        // 形参可以加上const关键字和&，保证安全性，提高效率
+            return val > tmp.val;
+        }
+    };
+    priority_queue<Status> pq;  
+```
+
+
+
+
+方法3 利用友元函数重载<
+
+
+```c++
+    struct Status{
+        int val;
+        ListNode* node; 
+        friend bool operator<(Status a, Status b)  // 形参可以加上const关键字和&，保证安全性，提高效率
+        {
+            return a.val > b.val;
+        }
+    };
+    priority_queue<Status> pq;  
+
+```
+
+实现例子如下
+
+```c++
+
+bool cmp(int a, int b){
+    return abs(a) > abs(b);
+}
+struct cmp1
+{
+    bool operator()(int a, int b){
+        return abs(a) > abs(b);
+    }
+};
+
+void test_demo(){
+    Solution so1;
+   
+    vector<int> v = {1, 2, 3, -4, 5};
+    sort(v.begin(), v.end(), cmp);
+    for(int& i : v){
+        cout << i << " ";
+    }
+    cout << endl;
+
+
+
+    cout << "-=-=-=-=-=-" << endl;
+
+    priority_queue<int, vector<int>, cmp1> pri_que;
+    pri_que.push(1);
+    pri_que.push(2);
+    pri_que.push(3);
+    pri_que.push(4);
+    pri_que.push(3);
+    pri_que.push(-3);
+
+    while(!pri_que.empty()){
+        cout << pri_que.top() << " ";
+        pri_que.pop();
+    }
+    cout << endl;
+
+
+
+
+    cout << "-=-=-=-=-=-" << endl;
+
+
+    set<int, cmp1> s;
+    s.insert(1);
+    s.insert(2);
+    s.insert(3);
+    s.insert(-5);
+    s.insert(3);
+
+    for(const int & i : s){
+        cout << i << " ";
+    }
+    cout << endl;
+}
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### 2.2.6 对于map[]的使用问题
 ```c++
@@ -890,6 +1039,12 @@ key = bb value = 0
 
 
 总结：调用umap["bb"]，会自己创建一个，value为0；
+
+
+
+
+
+
 
 ### 2.2.7 有关Vector<int>初始化的问题
 
@@ -909,10 +1064,19 @@ output:
 >[ 0 0 ]
  [ 0 0 ] 
  [ 0 0 ]
+
+
+
 ### 2.2.8 前缀和
 具体可以参考这个题 [304. 二维区域和检索 - 矩阵不可变](https://leetcode-cn.com/problems/range-sum-query-2d-immutable/)
 
 之前没学过这个，很easy，但是没往这方面想，导致代码超时
+
+
+
+
+
+
 
 ### 2.2.9 起泡法排序
 ```c++
@@ -1075,9 +1239,29 @@ toupper()函数是把字符串都转化为小写字母
 
 ### 2.2.16 sort函数将vector数组按照元素绝对值从小到大排序
 
+一行写法
 ```c++
 sort(vals.begin(), vals.end(), [](int a, int b) { return abs(a) < abs(b); });
 ```
+
+分开写
+```c++
+class Solution {
+static bool cmp(int a, int b) {
+    return abs(a) < abs(b);
+}
+
+
+
+```
+
+
+
+
+
+
+
+
 ### 2.2.17 vector::reserve()函数
 我觉得这个讲的比较不错： [C++知识点——vector::reserve()函数](https://blog.csdn.net/qq_46515446/article/details/123107800)
 方式1：vector vec, 然后调用1000次 vec.push_back(*)；
@@ -1265,6 +1449,60 @@ int main (void){
 而windows的这种得到时间的方法ns级的精度中就已经包含了全部的完整时间
 
 
+### 2.2.25 C++中static的用法
+
+
+[C++中static的用法](https://blog.csdn.net/qq_43169752/article/details/108300918);
+
+
+
+### 2.2.26 关于list类
+
+如果想要在list的第n个位置插入数据，用到
+
+* `insert(pos,elem);`//在pos位置插elem元素的拷贝，返回新数据的位置。
+* `insert(pos,n,elem);`//在pos位置插入n个elem数据，无返回值。
+
+pos的值只能由it迭代器一个一个累加得到，而不能直接用`l1.begin() + n`(这样是错误的)，写法如下
+
+
+```c++
+
+void test_demo(){
+    Solution so1;
+    
+    
+    list<int> l1 = {1, 2, 3};
+    
+    //想在2的位置插入数据3
+    int n = 2;
+    list<int>::iterator it = l1.begin();
+    while(n--){
+        it++;
+    }
+    l1.insert(n, 3); 
+
+    
+    for(auto it = l1.begin(); it != l1.end(); it++){
+        cout << *it << "->" ;
+    }
+
+
+    cout << endl;
+
+
+}
+
+
+
+```
+
+
+
+
+
+
+
 ## 2.3 刷题记录
 ### 2.3.1 还没做的：
 [10.正则表达式](https://leetcode-cn.com/problems/regular-expression-matching/)
@@ -1305,6 +1543,9 @@ __代码随想录中没做的题目__
 [37.解数独](https://leetcode-cn.com/problems/sudoku-solver/)（这个题官方答案还有后续的两个优化的答案，可以学习一下）
 [52. N皇后 II](https://leetcode-cn.com/problems/n-queens-ii/)(官方答案给出的不同于代码随想录的方法，位运算的方法，好多题都有用到这个叫做位运算的方法，要看看！)
 [89.格雷编码](https://leetcode-cn.com/problems/gray-code/)(这个题不能说难，但是官方答案的两种方法我是都没想到，与其说是都没想到，更应该说是之前没有了解过格雷编码的概念)
+[376.摆动序列](https://leetcode-cn.com/problems/wiggle-subsequence/)（第一次接触动态规划解法，觉得比较难以理解）
+
+
 
 # 3. 学习问题及解决方案
 
