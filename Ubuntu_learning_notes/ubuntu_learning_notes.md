@@ -1553,6 +1553,7 @@ __代码随想录中没做的题目__
 
 [738.单调递增的数字](https://leetcode-cn.com/problems/monotone-increasing-digits/)(代码随想录([贪心算法-22.单调递增的数字](https://www.programmercarl.com/0738.%E5%8D%95%E8%B0%83%E9%80%92%E5%A2%9E%E7%9A%84%E6%95%B0%E5%AD%97.html#%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95))中的方法，我没能想到这么巧妙的方法)
 
+[买卖股票的最佳时机含手续费](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/)(代码录的方法，比较巧妙，我没想到，我自己做的时候考虑的情况太多，一度导致非常混乱)
 
 # 3. 学习问题及解决方案
 
