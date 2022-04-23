@@ -1261,6 +1261,9 @@ static bool cmp(int a, int b) {
 ```
 
 
+2022/4/23 - 20:37 teng edit
+这个判断的条件这里要注意，当`abs(a) == abs(b)`时，应该是不对数组这两个值进行排序处理的，此时`return`的值是false，也就可以理解为`return true`的时候，进行swap之类的排序处理，而`return false`时， 不进行处理
+
 
 
 
