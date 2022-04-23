@@ -76,6 +76,7 @@
 - [下载rosdistro包](#下载rosdistro包)
         - [3.2.2 从rosbag中提取图片](#322-从rosbag中提取图片)
         - [3.3.3 ORB-SLAM2 ROS编译](#333-orb-slam2-ros编译)
+        - [3.3.4 zed + ORB_SLAM2 录制rosbag](#334-zed--orb_slam2-录制rosbag)
     - [3.3 Ubuntu安装boost](#33-ubuntu安装boost)
     - [3.4 Ubuntu16.04配置ROS工作空间](#34-ubuntu1604配置ros工作空间)
     - [3.5](#35)
@@ -363,7 +364,7 @@ git config --global user.email "xxxxxxxxxxx@user.noreply.gitee.com"
 在vscode中`ctrl+shift+p`搜索`Git`选择git clone
 ![](image/2022-03-29-23-10-05.png)
 <!-- ![](https://gitee.com/tengtengh/images/raw/master/202203292117500.png) -->
-输入url（就是类似于 git clone **** 复制的那个），然后选择一个位置保存，用csdn打开
+输入url（就是类似于 git clone \*\*\*\* 复制的那个），然后选择一个位置保存，用csdn打开
 然后更改，点提交，选总是，提交的message内容随便写，再点推送(push),或者是同步，左下角
 
 每次push都要输入密码的问题。解决方案：
@@ -1555,6 +1556,11 @@ __代码随想录中没做的题目__
 
 [买卖股票的最佳时机含手续费](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/)(代码录的方法，比较巧妙，我没想到，我自己做的时候考虑的情况太多，一度导致非常混乱)
 
+
+[968.监控二叉树](https://leetcode-cn.com/problems/binary-tree-cameras/submissions/)(代码随想录的方法)
+
+
+
 # 3. 学习问题及解决方案
 
 ## 3.1 Ubuntu16.04+python27安装jupyter notebook后,
@@ -1715,7 +1721,10 @@ rosrun ORB_SLAM2 Mono Vocabulary/ORBvoc.txt Examples/ROS/ORB_SLAM2/Asus.yaml
 ###终端3
 rosbag play /home/xxx/xxx/rgbd_dataset_freiburg1_xyz.bag /camera/rgb/image_color:=/camera/image_raw
 ```
+### 3.3.4 zed + ORB_SLAM2 录制rosbag
 
+参考这篇博客
+[ZED2 ROS下bag包的录制与回放数据](https://blog.csdn.net/qq_38766208/article/details/121318560)
 
 
 
