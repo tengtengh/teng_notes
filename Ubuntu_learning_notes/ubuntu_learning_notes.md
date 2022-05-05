@@ -1,156 +1,156 @@
 <div align='center'>
   <br /><br />
-  <strong><font size = 10>Ubuntuå­¦ä¹ ç¬”è®°</font></strong>
+  <strong><font size = 10>UbuntuÑ§Ï°±Ê¼Ç</font></strong>
   <br /><br /><br /><br />
 </div>
 
 <!-- TOC -->
 
-- [1. Ubuntuç›¸å…³é—®é¢˜åŠè§£å†³æ–¹æ¡ˆ](#1-ubuntuç›¸å…³é—®é¢˜åŠè§£å†³æ–¹æ¡ˆ)
-    - [1.1 Ubuntuè”ç½‘é—®é¢˜](#11-ubuntuè”ç½‘é—®é¢˜)
-        - [1.1.1 Ubuntu(16.04)æ˜¾ç¤ºå·²ç»è¿æ¥æœ‰çº¿ç½‘ç»œä½†æ˜¯ä¸èƒ½ä¸Šç½‘](#111-ubuntu1604æ˜¾ç¤ºå·²ç»è¿æ¥æœ‰çº¿ç½‘ç»œä½†æ˜¯ä¸èƒ½ä¸Šç½‘)
-        - [1.1.2 Ubuntuè¿æ¥å®¶é‡Œçš„ç½‘](#112-ubuntuè¿æ¥å®¶é‡Œçš„ç½‘)
-    - [1.2 æœç‹—è¾“å…¥æ³•ç¹ä½“å­—](#12-æœç‹—è¾“å…¥æ³•ç¹ä½“å­—)
-    - [1.3 Ubuntuå’Œwin10æ—¶é—´ä¸åŒæ­¥](#13-ubuntuå’Œwin10æ—¶é—´ä¸åŒæ­¥)
-    - [1.4 Vscodeç›¸å…³è®¾ç½®é—®é¢˜](#14-vscodeç›¸å…³è®¾ç½®é—®é¢˜)
-        - [1.4.1 Vscodeè‡ªå·±å®šä¹‰å¸¦æ—¶é—´çš„è‡ªå®šä¹‰å¿«æ·æ³¨é‡Š](#141-vscodeè‡ªå·±å®šä¹‰å¸¦æ—¶é—´çš„è‡ªå®šä¹‰å¿«æ·æ³¨é‡Š)
-        - [1.4.2 Vscodeå…³é—­æºä»£ç ç®¡ç†](#142-vscodeå…³é—­æºä»£ç ç®¡ç†)
-        - [1.4.2 Vscodeè‡ªåŠ¨æ ¼å¼åŒ–](#142-vscodeè‡ªåŠ¨æ ¼å¼åŒ–)
-        - [1.4.3 Vscodeé…ç½®Markdown](#143-vscodeé…ç½®markdown)
-        - [1.4.4 Vscode g++ c++-11ç¼–è¯‘cppæ–‡ä»¶](#144-vscode-g-c-11ç¼–è¯‘cppæ–‡ä»¶)
-        - [1.4.5 Vscodeé…ç½®gitåŒæ­¥gitee](#145-vscodeé…ç½®gitåŒæ­¥gitee)
-        - [1.4.6ã€€Ubuntu + picgo é…ç½®giteeå›¾åºŠ](#146ã€€ubuntu--picgo-é…ç½®giteeå›¾åºŠ)
-    - [1.5 Ubuntuä¸‹å®‰è£…å¾®ä¿¡](#15-ubuntuä¸‹å®‰è£…å¾®ä¿¡)
-    - [1.6 Ubuntuä¸‹å®‰è£…Firefox](#16-ubuntuä¸‹å®‰è£…firefox)
-    - [1.7 Ubuntuä¸‹å®‰è£…Typora](#17-ubuntuä¸‹å®‰è£…typora)
-    - [1.8 Ubuntu18.04å®‰è£…ç‹¬æ˜¾é©±åŠ¨](#18-ubuntu1804å®‰è£…ç‹¬æ˜¾é©±åŠ¨)
-    - [1.9 è®°å½•ROG å¹»14 è£…Ubuntu18.04](#19-è®°å½•rog-å¹»14-è£…ubuntu1804)
-    - [1.10 Ubuntu18.04æ›´æ–°å†…æ ¸(æ‰‹åŠ¨å®‰è£…)/å¸è½½æ¸…é™¤æ—§ç‰ˆæœ¬å†…æ ¸](#110-ubuntu1804æ›´æ–°å†…æ ¸æ‰‹åŠ¨å®‰è£…å¸è½½æ¸…é™¤æ—§ç‰ˆæœ¬å†…æ ¸)
-        - [1.10.1 æ›´æ–°å†…æ ¸(æ‰‹åŠ¨å®‰è£…)](#1101-æ›´æ–°å†…æ ¸æ‰‹åŠ¨å®‰è£…)
-        - [1.10.2 æ¸…é™¤å¸è½½æ—§ç‰ˆæœ¬å†…æ ¸](#1102-æ¸…é™¤å¸è½½æ—§ç‰ˆæœ¬å†…æ ¸)
-    - [1.11 ubuntu18.04å®‰è£…](#111-ubuntu1804å®‰è£…)
-        - [1.11.1 Ubuntuåˆ†åŒºæ–¹æ¡ˆ](#1111-ubuntuåˆ†åŒºæ–¹æ¡ˆ)
-    - [1.12 ubuntuå¯†ç é—®é¢˜](#112-ubuntuå¯†ç é—®é¢˜)
-        - [1.12.1 æ›´æ”¹å¯†ç ](#1121-æ›´æ”¹å¯†ç )
-        - [1.12.2 åˆ‡æ¢ç”¨æˆ·](#1122-åˆ‡æ¢ç”¨æˆ·)
-        - [1.12.3 åˆ é™¤ç”¨æˆ·å¯†ç ï¼Œä»¥åŠåˆ é™¤ä¹‹åæ€ä¹ˆæ¢å¤](#1123-åˆ é™¤ç”¨æˆ·å¯†ç ä»¥åŠåˆ é™¤ä¹‹åæ€ä¹ˆæ¢å¤)
-- [2. å­¦ä¹ æ•´ç†](#2-å­¦ä¹ æ•´ç†)
+- [1. UbuntuÏà¹ØÎÊÌâ¼°½â¾ö·½°¸](#1-ubuntuÏà¹ØÎÊÌâ¼°½â¾ö·½°¸)
+    - [1.1 UbuntuÁªÍøÎÊÌâ](#11-ubuntuÁªÍøÎÊÌâ)
+        - [1.1.1 Ubuntu(16.04)ÏÔÊ¾ÒÑ¾­Á¬½ÓÓĞÏßÍøÂçµ«ÊÇ²»ÄÜÉÏÍø](#111-ubuntu1604ÏÔÊ¾ÒÑ¾­Á¬½ÓÓĞÏßÍøÂçµ«ÊÇ²»ÄÜÉÏÍø)
+        - [1.1.2 UbuntuÁ¬½Ó¼ÒÀïµÄÍø](#112-ubuntuÁ¬½Ó¼ÒÀïµÄÍø)
+    - [1.2 ËÑ¹·ÊäÈë·¨·±Ìå×Ö](#12-ËÑ¹·ÊäÈë·¨·±Ìå×Ö)
+    - [1.3 UbuntuºÍwin10Ê±¼ä²»Í¬²½](#13-ubuntuºÍwin10Ê±¼ä²»Í¬²½)
+    - [1.4 VscodeÏà¹ØÉèÖÃÎÊÌâ](#14-vscodeÏà¹ØÉèÖÃÎÊÌâ)
+        - [1.4.1 Vscode×Ô¼º¶¨Òå´øÊ±¼äµÄ×Ô¶¨Òå¿ì½İ×¢ÊÍ](#141-vscode×Ô¼º¶¨Òå´øÊ±¼äµÄ×Ô¶¨Òå¿ì½İ×¢ÊÍ)
+        - [1.4.2 Vscode¹Ø±ÕÔ´´úÂë¹ÜÀí](#142-vscode¹Ø±ÕÔ´´úÂë¹ÜÀí)
+        - [1.4.2 Vscode×Ô¶¯¸ñÊ½»¯](#142-vscode×Ô¶¯¸ñÊ½»¯)
+        - [1.4.3 VscodeÅäÖÃMarkdown](#143-vscodeÅäÖÃmarkdown)
+        - [1.4.4 Vscode g++ c++-11±àÒëcppÎÄ¼ş](#144-vscode-g-c-11±àÒëcppÎÄ¼ş)
+        - [1.4.5 VscodeÅäÖÃgitÍ¬²½gitee](#145-vscodeÅäÖÃgitÍ¬²½gitee)
+        - [1.4.6¡¡Ubuntu + picgo ÅäÖÃgiteeÍ¼´²](#146¡¡ubuntu--picgo-ÅäÖÃgiteeÍ¼´²)
+    - [1.5 UbuntuÏÂ°²×°Î¢ĞÅ](#15-ubuntuÏÂ°²×°Î¢ĞÅ)
+    - [1.6 UbuntuÏÂ°²×°Firefox](#16-ubuntuÏÂ°²×°firefox)
+    - [1.7 UbuntuÏÂ°²×°Typora](#17-ubuntuÏÂ°²×°typora)
+    - [1.8 Ubuntu18.04°²×°¶ÀÏÔÇı¶¯](#18-ubuntu1804°²×°¶ÀÏÔÇı¶¯)
+    - [1.9 ¼ÇÂ¼ROG »Ã14 ×°Ubuntu18.04](#19-¼ÇÂ¼rog-»Ã14-×°ubuntu1804)
+    - [1.10 Ubuntu18.04¸üĞÂÄÚºË(ÊÖ¶¯°²×°)/Ğ¶ÔØÇå³ı¾É°æ±¾ÄÚºË](#110-ubuntu1804¸üĞÂÄÚºËÊÖ¶¯°²×°Ğ¶ÔØÇå³ı¾É°æ±¾ÄÚºË)
+        - [1.10.1 ¸üĞÂÄÚºË(ÊÖ¶¯°²×°)](#1101-¸üĞÂÄÚºËÊÖ¶¯°²×°)
+        - [1.10.2 Çå³ıĞ¶ÔØ¾É°æ±¾ÄÚºË](#1102-Çå³ıĞ¶ÔØ¾É°æ±¾ÄÚºË)
+    - [1.11 ubuntu18.04°²×°](#111-ubuntu1804°²×°)
+        - [1.11.1 Ubuntu·ÖÇø·½°¸](#1111-ubuntu·ÖÇø·½°¸)
+    - [1.12 ubuntuÃÜÂëÎÊÌâ](#112-ubuntuÃÜÂëÎÊÌâ)
+        - [1.12.1 ¸ü¸ÄÃÜÂë](#1121-¸ü¸ÄÃÜÂë)
+        - [1.12.2 ÇĞ»»ÓÃ»§](#1122-ÇĞ»»ÓÃ»§)
+        - [1.12.3 É¾³ıÓÃ»§ÃÜÂë£¬ÒÔ¼°É¾³ıÖ®ºóÔõÃ´»Ö¸´](#1123-É¾³ıÓÃ»§ÃÜÂëÒÔ¼°É¾³ıÖ®ºóÔõÃ´»Ö¸´)
+- [2. Ñ§Ï°ÕûÀí](#2-Ñ§Ï°ÕûÀí)
     - [2.1 SLAM](#21-slam)
-        - [2.1.1 åŠç¨ å¯†SLAM:EAO-SLAM](#211-åŠç¨ å¯†slameao-slam)
-    - [2.2 ä»£ç å­¦ä¹ ](#22-ä»£ç å­¦ä¹ )
+        - [2.1.1 °ë³íÃÜSLAM:EAO-SLAM](#211-°ë³íÃÜslameao-slam)
+    - [2.2 ´úÂëÑ§Ï°](#22-´úÂëÑ§Ï°)
         - [2.2.1 string::find()](#221-stringfind)
-        - [2.2.2 è¶…å‡º INT_MAX å’Œ INT_MIN](#222-è¶…å‡º-int_max-å’Œ-int_min)
-        - [2.2.3 å‡½æ•°æ•°ç»„ä»¥ã€Œå¼•ç”¨ã€æ–¹å¼ä¼ é€’ (int &x)](#223-å‡½æ•°æ•°ç»„ä»¥å¼•ç”¨æ–¹å¼ä¼ é€’-int-x)
-        - [2.2.4 stoi()å‡½æ•°ï¼šstring->åè¿›åˆ¶int](#224-stoiå‡½æ•°string-åè¿›åˆ¶int)
-        - [2.2.5 C++ ä¼˜å…ˆçº§é˜Ÿåˆ— priority_queue(STL priority_queue)](#225-c-ä¼˜å…ˆçº§é˜Ÿåˆ—-priority_queuestl-priority_queue)
-        - [2.2.6 å¯¹äºmap[]çš„ä½¿ç”¨é—®é¢˜](#226-å¯¹äºmapçš„ä½¿ç”¨é—®é¢˜)
-        - [2.2.7 æœ‰å…³Vector<int>åˆå§‹åŒ–çš„é—®é¢˜](#227-æœ‰å…³vectorintåˆå§‹åŒ–çš„é—®é¢˜)
-        - [2.2.8 å‰ç¼€å’Œ](#228-å‰ç¼€å’Œ)
-        - [2.2.9 èµ·æ³¡æ³•æ’åº](#229-èµ·æ³¡æ³•æ’åº)
-        - [2.2.10 å•è°ƒæ ˆï¼Œè¿™ä¸ªé¢˜å±å®æ˜¯æ²¡å­¦çš„è¯æƒ³ä¸åˆ°è¿™ä¹ˆåš](#2210-å•è°ƒæ ˆè¿™ä¸ªé¢˜å±å®æ˜¯æ²¡å­¦çš„è¯æƒ³ä¸åˆ°è¿™ä¹ˆåš)
-        - [2.2.11 é“¾è¡¨æ’åº](#2211-é“¾è¡¨æ’åº)
+        - [2.2.2 ³¬³ö INT_MAX ºÍ INT_MIN](#222-³¬³ö-int_max-ºÍ-int_min)
+        - [2.2.3 º¯ÊıÊı×éÒÔ¡¸ÒıÓÃ¡¹·½Ê½´«µİ (int &x)](#223-º¯ÊıÊı×éÒÔÒıÓÃ·½Ê½´«µİ-int-x)
+        - [2.2.4 stoi()º¯Êı£ºstring->Ê®½øÖÆint](#224-stoiº¯Êıstring-Ê®½øÖÆint)
+        - [2.2.5 C++ ÓÅÏÈ¼¶¶ÓÁĞ priority_queue(STL priority_queue)](#225-c-ÓÅÏÈ¼¶¶ÓÁĞ-priority_queuestl-priority_queue)
+        - [2.2.6 ¶ÔÓÚmap[]µÄÊ¹ÓÃÎÊÌâ](#226-¶ÔÓÚmapµÄÊ¹ÓÃÎÊÌâ)
+        - [2.2.7 ÓĞ¹ØVector<int>³õÊ¼»¯µÄÎÊÌâ](#227-ÓĞ¹Øvectorint³õÊ¼»¯µÄÎÊÌâ)
+        - [2.2.8 Ç°×ººÍ](#228-Ç°×ººÍ)
+        - [2.2.9 ÆğÅİ·¨ÅÅĞò](#229-ÆğÅİ·¨ÅÅĞò)
+        - [2.2.10 µ¥µ÷Õ»£¬Õâ¸öÌâÊôÊµÊÇÃ»Ñ§µÄ»°Ïë²»µ½ÕâÃ´×ö](#2210-µ¥µ÷Õ»Õâ¸öÌâÊôÊµÊÇÃ»Ñ§µÄ»°Ïë²»µ½ÕâÃ´×ö)
+        - [2.2.11 Á´±íÅÅĞò](#2211-Á´±íÅÅĞò)
         - [2.2.12 low_bound()](#2212-low_bound)
-        - [2.2.13 204. è®¡æ•°è´¨æ•°](#2213-204-è®¡æ•°è´¨æ•°)
-        - [2.2.14 vector size()å‡½æ•°è¦æ³¨æ„çš„é—®é¢˜](#2214-vector-sizeå‡½æ•°è¦æ³¨æ„çš„é—®é¢˜)
-        - [2.2.15 åˆ¤æ–­charå‹å˜é‡æ˜¯å¦ä¸ºå­—ç¬¦æ•°å­—ç­‰](#2215-åˆ¤æ–­charå‹å˜é‡æ˜¯å¦ä¸ºå­—ç¬¦æ•°å­—ç­‰)
-        - [2.2.16 287.å¯»æ‰¾é‡å¤æ•°](#2216-287å¯»æ‰¾é‡å¤æ•°)
-        - [2.2.16 sortå‡½æ•°å°†vectoræ•°ç»„æŒ‰ç…§å…ƒç´ ç»å¯¹å€¼ä»å°åˆ°å¤§æ’åº](#2216-sortå‡½æ•°å°†vectoræ•°ç»„æŒ‰ç…§å…ƒç´ ç»å¯¹å€¼ä»å°åˆ°å¤§æ’åº)
-        - [2.2.17 vector::reserve()å‡½æ•°](#2217-vectorreserveå‡½æ•°)
-        - [2.2.17 äºŒå‰æ ‘æœç´¢æ•´ä¸ªæ•°(è¦è¿”å›å€¼)/äºŒå‰æ ‘æœç´¢ä¸€æ¡è¾¹(ä¸è¦è¿”å›å€¼)](#2217-äºŒå‰æ ‘æœç´¢æ•´ä¸ªæ•°è¦è¿”å›å€¼äºŒå‰æ ‘æœç´¢ä¸€æ¡è¾¹ä¸è¦è¿”å›å€¼)
-        - [2.2.18 æœ‰å…³è‡ªå®šä¹‰é¢˜ç›®è¾“å…¥çš„å†…å®¹å¿…é¡»è¦å¥½å¥½çœ‹çœ‹ï¼Œè¿™æ˜¯LeetCodeæ‰€æ²¡æœ‰çš„](#2218-æœ‰å…³è‡ªå®šä¹‰é¢˜ç›®è¾“å…¥çš„å†…å®¹å¿…é¡»è¦å¥½å¥½çœ‹çœ‹è¿™æ˜¯leetcodeæ‰€æ²¡æœ‰çš„)
-        - [2.2.19 äºŒå‰æ ‘æ·±åº¦ä¼˜å…ˆæœç´¢(DFS)ã€å¹¿åº¦ä¼˜å…ˆæœç´¢(BFS)](#2219-äºŒå‰æ ‘æ·±åº¦ä¼˜å…ˆæœç´¢dfså¹¿åº¦ä¼˜å…ˆæœç´¢bfs)
-        - [2.2.20  äºŒå‰æ ‘çš„åºåˆ—åŒ–ä¸ååºåˆ—åŒ–](#2220--äºŒå‰æ ‘çš„åºåˆ—åŒ–ä¸ååºåˆ—åŒ–)
-        - [2.2.21 substrå‡½æ•°](#2221-substrå‡½æ•°)
-        - [2.2.22 å›æº¯å»é‡](#2222-å›æº¯å»é‡)
-        - [2.2.23 æœ‰å…³mapçš„é”®å€¼](#2223-æœ‰å…³mapçš„é”®å€¼)
-        - [2.2.24 æœ‰å…³äºlinuxå’Œwindowä¸‹get c++ä»£ç è¿è¡Œæ—¶é—´](#2224-æœ‰å…³äºlinuxå’Œwindowä¸‹get-cä»£ç è¿è¡Œæ—¶é—´)
-        - [2.2.25 C++ä¸­staticçš„ç”¨æ³•](#2225-cä¸­staticçš„ç”¨æ³•)
-        - [2.2.26 å…³äºlistç±»](#2226-å…³äºlistç±»)
-    - [2.3 åˆ·é¢˜è®°å½•](#23-åˆ·é¢˜è®°å½•)
-        - [2.3.1 è¿˜æ²¡åšçš„ï¼š](#231-è¿˜æ²¡åšçš„)
-        - [2.3.2 å…¶å®ƒ](#232-å…¶å®ƒ)
-- [3. å­¦ä¹ é—®é¢˜åŠè§£å†³æ–¹æ¡ˆ](#3-å­¦ä¹ é—®é¢˜åŠè§£å†³æ–¹æ¡ˆ)
-    - [3.1 Ubuntu16.04+python27å®‰è£…jupyter notebookå,](#31-ubuntu1604python27å®‰è£…jupyter-notebookå)
+        - [2.2.13 204. ¼ÆÊıÖÊÊı](#2213-204-¼ÆÊıÖÊÊı)
+        - [2.2.14 vector size()º¯ÊıÒª×¢ÒâµÄÎÊÌâ](#2214-vector-sizeº¯ÊıÒª×¢ÒâµÄÎÊÌâ)
+        - [2.2.15 ÅĞ¶ÏcharĞÍ±äÁ¿ÊÇ·ñÎª×Ö·ûÊı×ÖµÈ](#2215-ÅĞ¶ÏcharĞÍ±äÁ¿ÊÇ·ñÎª×Ö·ûÊı×ÖµÈ)
+        - [2.2.16 287.Ñ°ÕÒÖØ¸´Êı](#2216-287Ñ°ÕÒÖØ¸´Êı)
+        - [2.2.16 sortº¯Êı½«vectorÊı×é°´ÕÕÔªËØ¾ø¶ÔÖµ´ÓĞ¡µ½´óÅÅĞò](#2216-sortº¯Êı½«vectorÊı×é°´ÕÕÔªËØ¾ø¶ÔÖµ´ÓĞ¡µ½´óÅÅĞò)
+        - [2.2.17 vector::reserve()º¯Êı](#2217-vectorreserveº¯Êı)
+        - [2.2.17 ¶ş²æÊ÷ËÑË÷Õû¸öÊı(Òª·µ»ØÖµ)/¶ş²æÊ÷ËÑË÷Ò»Ìõ±ß(²»Òª·µ»ØÖµ)](#2217-¶ş²æÊ÷ËÑË÷Õû¸öÊıÒª·µ»ØÖµ¶ş²æÊ÷ËÑË÷Ò»Ìõ±ß²»Òª·µ»ØÖµ)
+        - [2.2.18 ÓĞ¹Ø×Ô¶¨ÒåÌâÄ¿ÊäÈëµÄÄÚÈİ±ØĞëÒªºÃºÃ¿´¿´£¬ÕâÊÇLeetCodeËùÃ»ÓĞµÄ](#2218-ÓĞ¹Ø×Ô¶¨ÒåÌâÄ¿ÊäÈëµÄÄÚÈİ±ØĞëÒªºÃºÃ¿´¿´ÕâÊÇleetcodeËùÃ»ÓĞµÄ)
+        - [2.2.19 ¶ş²æÊ÷Éî¶ÈÓÅÏÈËÑË÷(DFS)¡¢¹ã¶ÈÓÅÏÈËÑË÷(BFS)](#2219-¶ş²æÊ÷Éî¶ÈÓÅÏÈËÑË÷dfs¹ã¶ÈÓÅÏÈËÑË÷bfs)
+        - [2.2.20  ¶ş²æÊ÷µÄĞòÁĞ»¯Óë·´ĞòÁĞ»¯](#2220--¶ş²æÊ÷µÄĞòÁĞ»¯Óë·´ĞòÁĞ»¯)
+        - [2.2.21 substrº¯Êı](#2221-substrº¯Êı)
+        - [2.2.22 »ØËİÈ¥ÖØ](#2222-»ØËİÈ¥ÖØ)
+        - [2.2.23 ÓĞ¹ØmapµÄ¼üÖµ](#2223-ÓĞ¹ØmapµÄ¼üÖµ)
+        - [2.2.24 ÓĞ¹ØÓÚlinuxºÍwindowÏÂget c++´úÂëÔËĞĞÊ±¼ä](#2224-ÓĞ¹ØÓÚlinuxºÍwindowÏÂget-c´úÂëÔËĞĞÊ±¼ä)
+        - [2.2.25 C++ÖĞstaticµÄÓÃ·¨](#2225-cÖĞstaticµÄÓÃ·¨)
+        - [2.2.26 ¹ØÓÚlistÀà](#2226-¹ØÓÚlistÀà)
+    - [2.3 Ë¢Ìâ¼ÇÂ¼](#23-Ë¢Ìâ¼ÇÂ¼)
+        - [2.3.1 »¹Ã»×öµÄ£º](#231-»¹Ã»×öµÄ)
+        - [2.3.2 ÆäËü](#232-ÆäËü)
+- [3. Ñ§Ï°ÎÊÌâ¼°½â¾ö·½°¸](#3-Ñ§Ï°ÎÊÌâ¼°½â¾ö·½°¸)
+    - [3.1 Ubuntu16.04+python27°²×°jupyter notebookºó,](#31-ubuntu1604python27°²×°jupyter-notebookºó)
     - [3.2 ROS](#32-ros)
-        - [3.2.1 å®‰è£…ROS](#321-å®‰è£…ros)
-- [ä¸‹è½½rosdistroåŒ…](#ä¸‹è½½rosdistroåŒ…)
-        - [3.2.2 ä»rosbagä¸­æå–å›¾ç‰‡](#322-ä»rosbagä¸­æå–å›¾ç‰‡)
-        - [3.3.3 ORB-SLAM2 ROSç¼–è¯‘](#333-orb-slam2-rosç¼–è¯‘)
-        - [3.3.4 zed + ORB_SLAM2 å½•åˆ¶rosbag](#334-zed--orb_slam2-å½•åˆ¶rosbag)
-    - [3.3 Ubuntuå®‰è£…boost](#33-ubuntuå®‰è£…boost)
-    - [3.4 Ubuntu16.04é…ç½®ROSå·¥ä½œç©ºé—´](#34-ubuntu1604é…ç½®roså·¥ä½œç©ºé—´)
+        - [3.2.1 °²×°ROS](#321-°²×°ros)
+- [ÏÂÔØrosdistro°ü](#ÏÂÔØrosdistro°ü)
+        - [3.2.2 ´ÓrosbagÖĞÌáÈ¡Í¼Æ¬](#322-´ÓrosbagÖĞÌáÈ¡Í¼Æ¬)
+        - [3.3.3 ORB-SLAM2 ROS±àÒë](#333-orb-slam2-ros±àÒë)
+        - [3.3.4 zed + ORB_SLAM2 Â¼ÖÆrosbag](#334-zed--orb_slam2-Â¼ÖÆrosbag)
+    - [3.3 Ubuntu°²×°boost](#33-ubuntu°²×°boost)
+    - [3.4 Ubuntu16.04ÅäÖÃROS¹¤×÷¿Õ¼ä](#34-ubuntu1604ÅäÖÃros¹¤×÷¿Õ¼ä)
     - [3.5](#35)
-    - [3.6 OpenCVç›¸å…³é—®é¢˜](#36-opencvç›¸å…³é—®é¢˜)
-        - [3.6.1 å®‰è£…OpenCV](#361-å®‰è£…opencv)
-        - [3.6.2 å¸è½½OpenCV](#362-å¸è½½opencv)
+    - [3.6 OpenCVÏà¹ØÎÊÌâ](#36-opencvÏà¹ØÎÊÌâ)
+        - [3.6.1 °²×°OpenCV](#361-°²×°opencv)
+        - [3.6.2 Ğ¶ÔØOpenCV](#362-Ğ¶ÔØopencv)
         - [3.6.3 libopencv_core.so.2.4: cannot open shared object file: No such file or directory](#363-libopencv_coreso24-cannot-open-shared-object-file-no-such-file-or-directory)
     - [3.7 GCC/G++](#37-gccg)
-        - [3.7.1 å¤šç‰ˆæœ¬gcc/g++ä¼˜å…ˆçº§](#371-å¤šç‰ˆæœ¬gccgä¼˜å…ˆçº§)
-        - [3.7.2 Ubuntu16.04å®‰è£…gcc7/g++7](#372-ubuntu1604å®‰è£…gcc7g7)
+        - [3.7.1 ¶à°æ±¾gcc/g++ÓÅÏÈ¼¶](#371-¶à°æ±¾gccgÓÅÏÈ¼¶)
+        - [3.7.2 Ubuntu16.04°²×°gcc7/g++7](#372-ubuntu1604°²×°gcc7g7)
     - [3.8 Eigen](#38-eigen)
-        - [3.8.1 æŸ¥çœ‹Eigen3ç‰ˆæœ¬](#381-æŸ¥çœ‹eigen3ç‰ˆæœ¬)
+        - [3.8.1 ²é¿´Eigen3°æ±¾](#381-²é¿´eigen3°æ±¾)
     - [3.9 g2o](#39-g2o)
-        - [3.9.1 å¸è½½g2o](#391-å¸è½½g2o)
-    - [3.10 vimç›¸å…³](#310-vimç›¸å…³)
-        - [3.10.1 vimï¼Œviç»å¸¸å¡æ­»ï¼ˆå…¶å®å¹¶ä¸æ˜¯å®ƒå¡äº†ï¼‰](#3101-vimviç»å¸¸å¡æ­»å…¶å®å¹¶ä¸æ˜¯å®ƒå¡äº†)
-        - [3.10.2 vimå¤åˆ¶æ–‡å­—åˆ°å¤–é¢](#3102-vimå¤åˆ¶æ–‡å­—åˆ°å¤–é¢)
-- [4. æ•°æ®ç»“æ„](#4-æ•°æ®ç»“æ„)
-    - [æ•°ç»„](#æ•°ç»„)
-    - [é“¾è¡¨](#é“¾è¡¨)
-        - [é“¾è¡¨åŸºæœ¬æ¦‚å¿µ](#é“¾è¡¨åŸºæœ¬æ¦‚å¿µ)
+        - [3.9.1 Ğ¶ÔØg2o](#391-Ğ¶ÔØg2o)
+    - [3.10 vimÏà¹Ø](#310-vimÏà¹Ø)
+        - [3.10.1 vim£¬vi¾­³£¿¨ËÀ£¨ÆäÊµ²¢²»ÊÇËü¿¨ÁË£©](#3101-vimvi¾­³£¿¨ËÀÆäÊµ²¢²»ÊÇËü¿¨ÁË)
+        - [3.10.2 vim¸´ÖÆÎÄ×Öµ½ÍâÃæ](#3102-vim¸´ÖÆÎÄ×Öµ½ÍâÃæ)
+- [4. Êı¾İ½á¹¹](#4-Êı¾İ½á¹¹)
+    - [Êı×é](#Êı×é)
+    - [Á´±í](#Á´±í)
+        - [Á´±í»ù±¾¸ÅÄî](#Á´±í»ù±¾¸ÅÄî)
 
 <!-- /TOC -->
 
 
-# 1. Ubuntuç›¸å…³é—®é¢˜åŠè§£å†³æ–¹æ¡ˆ
+# 1. UbuntuÏà¹ØÎÊÌâ¼°½â¾ö·½°¸
 
-## 1.1 Ubuntuè”ç½‘é—®é¢˜
+## 1.1 UbuntuÁªÍøÎÊÌâ
 
-### 1.1.1 Ubuntu(16.04)æ˜¾ç¤ºå·²ç»è¿æ¥æœ‰çº¿ç½‘ç»œä½†æ˜¯ä¸èƒ½ä¸Šç½‘
+### 1.1.1 Ubuntu(16.04)ÏÔÊ¾ÒÑ¾­Á¬½ÓÓĞÏßÍøÂçµ«ÊÇ²»ÄÜÉÏÍø
 
-ï¼ˆUbuntu16.04ï¼‰æ˜¾ç¤ºå·²ç»è¿æ¥äº†æœ‰çº¿ç½‘ç»œä½†æ˜¯ä¸èƒ½ä¸Šç½‘ï¼Œè®¾ç½®é‡Œçœ‹åˆ°çš„è¿æ¥çŠ¶æ€æ²¡æœ‰é—®é¢˜ã€‚
+£¨Ubuntu16.04£©ÏÔÊ¾ÒÑ¾­Á¬½ÓÁËÓĞÏßÍøÂçµ«ÊÇ²»ÄÜÉÏÍø£¬ÉèÖÃÀï¿´µ½µÄÁ¬½Ó×´Ì¬Ã»ÓĞÎÊÌâ¡£
 
-è§£å†³æ–¹æ¡ˆï¼š
+½â¾ö·½°¸£º
 
 sudo gedit /etc/resolv.conf 
-å°†`nameserver 127.0.1.1`
-æ”¹ä¸º
+½«`nameserver 127.0.1.1`
+¸ÄÎª
 
 `nameserver 8.8.8.8`
 `nameserver 8.8.4.4`
 
 
 
-### 1.1.2 Ubuntuè¿æ¥å®¶é‡Œçš„ç½‘
+### 1.1.2 UbuntuÁ¬½Ó¼ÒÀïµÄÍø
 
-å…³äºUbuntuè¿æ¥å®¶é‡Œçš„ç½‘: 
+¹ØÓÚUbuntuÁ¬½Ó¼ÒÀïµÄÍø: 
 
-ç”¨è£è€€çš„è·¯ç”±å™¨ï¼Œæœ‰çº¿æ— çº¿æ‰“å¼€ç½‘é¡µéƒ½å¾ˆæ…¢ï¼Œä½†æ˜¯æ‰‹æœºä½¿ç”¨æ­£å¸¸ï¼ŒWindowsåº”è¯¥ä¹Ÿæ­£å¸¸ï¼›<br>
-ç”¨TP-Linkè·¯ç”±å™¨ï¼Œè¿æ¥æ— çº¿æ‰“å¼€ç½‘é¡µæŒºå¿«ï¼Œè¿æ¥æœ‰çº¿ç½‘ç»œæ—¶è¦æŠŠæ— çº¿ç½‘ç»œæ–­å¼€ï¼ˆï¼ï¼‰ï¼Œå¦åˆ™å¾ˆæ…¢ï¼Œä¸çŸ¥é“ä¸ºå•¥ã€‚
-
-
-
-## 1.2 æœç‹—è¾“å…¥æ³•ç¹ä½“å­—
-
-æŒ‰ä½shift ä¸æ”¾ï¼ŒåŒæ—¶ï¼ŒæŒ‰ä¸‹ctrl å’ŒFé”®ï¼Œå³å¯ã€‚
+ÓÃÈÙÒ«µÄÂ·ÓÉÆ÷£¬ÓĞÏßÎŞÏß´ò¿ªÍøÒ³¶¼ºÜÂı£¬µ«ÊÇÊÖ»úÊ¹ÓÃÕı³££¬WindowsÓ¦¸ÃÒ²Õı³££»<br>
+ÓÃTP-LinkÂ·ÓÉÆ÷£¬Á¬½ÓÎŞÏß´ò¿ªÍøÒ³Í¦¿ì£¬Á¬½ÓÓĞÏßÍøÂçÊ±Òª°ÑÎŞÏßÍøÂç¶Ï¿ª£¨£¡£©£¬·ñÔòºÜÂı£¬²»ÖªµÀÎªÉ¶¡£
 
 
-## 1.3 Ubuntuå’Œwin10æ—¶é—´ä¸åŒæ­¥
 
-Ubuntu16.04å’Œwindowsæ—¶é—´ä¸åŒæ­¥
+## 1.2 ËÑ¹·ÊäÈë·¨·±Ìå×Ö
 
-å‚è€ƒhttps://blog.csdn.net/DragonGirI/article/details/90167053
+°´×¡shift ²»·Å£¬Í¬Ê±£¬°´ÏÂctrl ºÍF¼ü£¬¼´¿É¡£
 
-## 1.4 Vscodeç›¸å…³è®¾ç½®é—®é¢˜
 
-### 1.4.1 Vscodeè‡ªå·±å®šä¹‰å¸¦æ—¶é—´çš„è‡ªå®šä¹‰å¿«æ·æ³¨é‡Š
+## 1.3 UbuntuºÍwin10Ê±¼ä²»Í¬²½
 
-Vscodeè‡ªå·±å®šä¹‰å¸¦æ—¶é—´çš„è‡ªå®šä¹‰å¿«æ·æ³¨é‡Šï¼š
-1.ctrl+shift+pæ‰“å¼€è®¾ç½®
-2.è¾“å…¥>snippets,è¿›å…¥
-é¦–é€‰é¡¹ï¼šPreferences: Configures User Snippets
-3.æ ¹æ®éœ€è¦ç‚¹å‡»cpp.json(c++)
-4.è‡ªå®šä¹‰è¾“å…¥å†…å®¹ï¼Œå¦‚ï¼š
+Ubuntu16.04ºÍwindowsÊ±¼ä²»Í¬²½
+
+²Î¿¼https://blog.csdn.net/DragonGirI/article/details/90167053
+
+## 1.4 VscodeÏà¹ØÉèÖÃÎÊÌâ
+
+### 1.4.1 Vscode×Ô¼º¶¨Òå´øÊ±¼äµÄ×Ô¶¨Òå¿ì½İ×¢ÊÍ
+
+Vscode×Ô¼º¶¨Òå´øÊ±¼äµÄ×Ô¶¨Òå¿ì½İ×¢ÊÍ£º
+1.ctrl+shift+p´ò¿ªÉèÖÃ
+2.ÊäÈë>snippets,½øÈë
+Ê×Ñ¡Ïî£ºPreferences: Configures User Snippets
+3.¸ù¾İĞèÒªµã»÷cpp.json(c++)
+4.×Ô¶¨ÒåÊäÈëÄÚÈİ£¬Èç£º
 
 ```json
 	"Print to console": {
@@ -166,69 +166,69 @@ Vscodeè‡ªå·±å®šä¹‰å¸¦æ—¶é—´çš„è‡ªå®šä¹‰å¿«æ·æ³¨é‡Šï¼š
 		}
 ```
 
-### 1.4.2 Vscodeå…³é—­æºä»£ç ç®¡ç†
+### 1.4.2 Vscode¹Ø±ÕÔ´´úÂë¹ÜÀí
 
-Vscodeå…³é—­æºä»£ç ç®¡ç†:
+Vscode¹Ø±ÕÔ´´úÂë¹ÜÀí:
 
-(å¼€å¯çš„è¯ï¼Œèµ„æºç®¡ç†å™¨ä¸­çš„æ–‡ä»¶åˆ—è¡¨ä¸­çš„æ–‡ä»¶ååé¢ä¼šæ˜¾ç¤ºå­—æ¯å’Œæ•°å­—)
-æ–‡ä»¶-é¦–é€‰é¡¹-è®¾ç½®
-æœç´¢Git:enable
-å–æ¶ˆå‹¾é€‰ 
+(¿ªÆôµÄ»°£¬×ÊÔ´¹ÜÀíÆ÷ÖĞµÄÎÄ¼şÁĞ±íÖĞµÄÎÄ¼şÃûºóÃæ»áÏÔÊ¾×ÖÄ¸ºÍÊı×Ö)
+ÎÄ¼ş-Ê×Ñ¡Ïî-ÉèÖÃ
+ËÑË÷Git:enable
+È¡Ïû¹´Ñ¡ 
 >Git:enable
->â–¡æ˜¯å¦å¯ç”¨Git
+>¡õÊÇ·ñÆôÓÃGit
 
-### 1.4.2 Vscodeè‡ªåŠ¨æ ¼å¼åŒ–
+### 1.4.2 Vscode×Ô¶¯¸ñÊ½»¯
 
 Editor: Format on type
-â–¡æ§åˆ¶ç¼–è¾‘å™¨åœ¨é”®å…¥ä¸€è¡Œä¹‹åæ˜¯å¦è‡ªåŠ¨æ ¼å¼åŒ–è¯¥è¡Œã€‚
+¡õ¿ØÖÆ±à¼­Æ÷ÔÚ¼üÈëÒ»ĞĞÖ®ºóÊÇ·ñ×Ô¶¯¸ñÊ½»¯¸ÃĞĞ¡£
 
-### 1.4.3 Vscodeé…ç½®Markdown
+### 1.4.3 VscodeÅäÖÃMarkdown
 
-+ Vscode å®‰è£…æ’ä»¶Mardown TOC (è®¾ç½®Markdownè‡ªåŠ¨ç›®å½•)
++ Vscode °²×°²å¼şMardown TOC (ÉèÖÃMarkdown×Ô¶¯Ä¿Â¼)
 	<img src="image/2022-03-06-21-10-36.png" style="zoom:40%;" />
-	åœ¨è®¾ç½®ä¸­æœç´¢Eolï¼Œå°†"File: Eol é»˜è®¤è¡Œå°¾å­—ç¬¦" çš„ "auto" æ”¹ä¸º "\n"
-	å³é”®-Markdown TOC: Insert/update å³å¯æ’å…¥ç›®å½• (Markdown Sections: Insert/update æ˜¯è‡ªåŠ¨ç¼–å·)
+	ÔÚÉèÖÃÖĞËÑË÷Eol£¬½«"File: Eol Ä¬ÈÏĞĞÎ²×Ö·û" µÄ "auto" ¸ÄÎª "\n"
+	ÓÒ¼ü-Markdown TOC: Insert/update ¼´¿É²åÈëÄ¿Â¼ (Markdown Sections: Insert/update ÊÇ×Ô¶¯±àºÅ)
 
-+ Vscode å®‰è£…æ’ä»¶ Markown All in One (necessary)
-+ Vscode å®‰è£…æ’ä»¶ Markown Preview Enhanced 
-	å®‰è£…ä¹‹åé¢„è§ˆçª—å£å˜æˆç™½åº•
-	Ctrl + k æ¾å¼€åå†æŒ‰vï¼Œå³å¯åœ¨ä¾§è¾¹æ‰“å¼€é¢„è§ˆçª—åã€‚æˆ–è€…ç›´æ¥Ctrl + shift + v åœ¨å½“å‰ä½ç½®æ‰“å¼€é¢„è§ˆçª—å£ã€‚ æˆ–è€…é¼ æ ‡ç‚¹å‡»å³ä¸Šè§’çš„æ‰“å¼€ä¾§è¾¹æ å°æŒ‰é’®ã€‚
-  + Vscodeæ›´æ”¹ Markown Preview Enhancedä¸­çš„å­—ä½“å¤§å°ç­‰ï¼š
-	`Ctrl + shift + p` - è¾“å…¥ `Customize Css`
++ Vscode °²×°²å¼ş Markown All in One (necessary)
++ Vscode °²×°²å¼ş Markown Preview Enhanced 
+	°²×°Ö®ºóÔ¤ÀÀ´°¿Ú±ä³É°×µ×
+	Ctrl + k ËÉ¿ªºóÔÙ°´v£¬¼´¿ÉÔÚ²à±ß´ò¿ªÔ¤ÀÀ´°ºó¡£»òÕßÖ±½ÓCtrl + shift + v ÔÚµ±Ç°Î»ÖÃ´ò¿ªÔ¤ÀÀ´°¿Ú¡£ »òÕßÊó±êµã»÷ÓÒÉÏ½ÇµÄ´ò¿ª²à±ßÀ¸Ğ¡°´Å¥¡£
+  + Vscode¸ü¸Ä Markown Preview EnhancedÖĞµÄ×ÖÌå´óĞ¡µÈ£º
+	`Ctrl + shift + p` - ÊäÈë `Customize Css`
 	<img src = "image/2022-03-26-20-14-47.png" style = "zoom: 60%">
-	æ‰“å¼€ï¼Œåœ¨style.lessä¸­ä¿®æ”¹`font-size: 14px`çš„æ•°å€¼å³å¯è°ƒèŠ‚ï¼ˆæ²¡æœ‰è¿™å¥è¯ï¼Œå°±æ·»åŠ ä¸Šï¼‰
+	´ò¿ª£¬ÔÚstyle.lessÖĞĞŞ¸Ä`font-size: 14px`µÄÊıÖµ¼´¿Éµ÷½Ú£¨Ã»ÓĞÕâ¾ä»°£¬¾ÍÌí¼ÓÉÏ£©
 	<img src = "image/2022-03-26-20-15-36.png" style = "zoom: 60%">
-+ Vscode å®‰è£…æ’ä»¶ Markdown Preview Github Styling
-+ Vscodeå®‰è£…æ’ä»¶Paste Image ï¼ˆç”¨äºç²˜è´´å‰ªè´´æ¿ä¸­çš„å›¾ç‰‡ï¼‰
-	å®‰è£…å®Œæˆåå³é”®æ‰©å±•-æ‰©å±•è®¾ç½®
-	æ›´æ”¹ä»¥ä¸‹ä¸¤ä¸ªè®¾ç½®
++ Vscode °²×°²å¼ş Markdown Preview Github Styling
++ Vscode°²×°²å¼şPaste Image £¨ÓÃÓÚÕ³Ìù¼ôÌù°åÖĞµÄÍ¼Æ¬£©
+	°²×°Íê³ÉºóÓÒ¼üÀ©Õ¹-À©Õ¹ÉèÖÃ
+	¸ü¸ÄÒÔÏÂÁ½¸öÉèÖÃ
 	<img src = "image/2022-03-06-21-13-47.png" style = "zoom: 70%">
 	<img src = "image/2022-03-06-21-14-46.png" style = "zoom: 70%">
 		
 	```shell
-	#å®‰è£…xclip, ä»¥ä¾¿èƒ½ç²˜è´´Ubuntuè‡ªå¸¦å‰ªåˆ‡è½¯ä»¶screenæˆªå›¾çš„å‰ªåˆ‡æ¿å†…å®¹	
+	#°²×°xclip, ÒÔ±ãÄÜÕ³ÌùUbuntu×Ô´ø¼ôÇĞÈí¼şscreen½ØÍ¼µÄ¼ôÇĞ°åÄÚÈİ	
 	sudo apt-get install xclip 
 	```
-	æˆªå›¾åˆ°å‰ªåˆ‡æ¿åæŒ‰```Ctrl + alt + v``` ç²˜è´´
+	½ØÍ¼µ½¼ôÇĞ°åºó°´```Ctrl + alt + v``` Õ³Ìù
 
 
 
 
 
 
-### 1.4.4 Vscode g++ c++-11ç¼–è¯‘cppæ–‡ä»¶
+### 1.4.4 Vscode g++ c++-11±àÒëcppÎÄ¼ş
 
-__ç¼–è¯‘__ : ç‚¹å‡»å·¦ä¾§çš„ `run and debug` - é€‰æ‹© `create a launch.json file` -é€‰æ‹©`GDB`ç¼–è¯‘ -éšä¾¿é€‰æ‹©ä¸€ä¸ªç‰ˆæœ¬çš„g++ï¼Œå³å¯
+__±àÒë__ : µã»÷×ó²àµÄ `run and debug` - Ñ¡Ôñ `create a launch.json file` -Ñ¡Ôñ`GDB`±àÒë -Ëæ±ãÑ¡ÔñÒ»¸ö°æ±¾µÄg++£¬¼´¿É
 
-ç”Ÿæˆ **launch.json** å’Œ **tasks.json** æ–‡ä»¶, å†…å®¹å¦‚ä¸‹ã€‚
+Éú³É **launch.json** ºÍ **tasks.json** ÎÄ¼ş, ÄÚÈİÈçÏÂ¡£
 
 ```json
 {
-    // launch.jsonæ–‡ä»¶
+    // launch.jsonÎÄ¼ş
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "g++ - ç”Ÿæˆå’Œè°ƒè¯•æ´»åŠ¨æ–‡ä»¶",
+            "name": "g++ - Éú³ÉºÍµ÷ÊÔ»î¶¯ÎÄ¼ş",
             "type": "cppdbg",
             "request": "launch",
             "program": "${fileDirname}/${fileBasenameNoExtension}",
@@ -240,17 +240,17 @@ __ç¼–è¯‘__ : ç‚¹å‡»å·¦ä¾§çš„ `run and debug` - é€‰æ‹© `create a launch.json file
             "MIMode": "gdb",
             "setupCommands": [
                 {
-                    "description": "ä¸º gdb å¯ç”¨æ•´é½æ‰“å°",
+                    "description": "Îª gdb ÆôÓÃÕûÆë´òÓ¡",
                     "text": "-enable-pretty-printing",
                     "ignoreFailures": true
                 },
                 {
-                    "description": "å°†åæ±‡ç¼–é£æ ¼è®¾ç½®ä¸º Intel",
+                    "description": "½«·´»ã±à·ç¸ñÉèÖÃÎª Intel",
                     "text": "-gdb-set disassembly-flavor intel",
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "C/C++: g++ ç”Ÿæˆæ´»åŠ¨æ–‡ä»¶",
+            "preLaunchTask": "C/C++: g++ Éú³É»î¶¯ÎÄ¼ş",
             "miDebuggerPath": "/usr/bin/gdb"
         }
     ]
@@ -265,7 +265,7 @@ __ç¼–è¯‘__ : ç‚¹å‡»å·¦ä¾§çš„ `run and debug` - é€‰æ‹© `create a launch.json file
     "tasks": [
         {
             "type": "cppbuild",
-            "label": "C/C++: g++ ç”Ÿæˆæ´»åŠ¨æ–‡ä»¶",
+            "label": "C/C++: g++ Éú³É»î¶¯ÎÄ¼ş",
             "command": "/usr/bin/g++",
             "args": [
                 "-fdiagnostics-color=always",
@@ -285,7 +285,7 @@ __ç¼–è¯‘__ : ç‚¹å‡»å·¦ä¾§çš„ `run and debug` - é€‰æ‹© `create a launch.json file
                 "kind": "build",
                 "isDefault": true
             },
-            "detail": "è°ƒè¯•å™¨ç”Ÿæˆçš„ä»»åŠ¡ã€‚"
+            "detail": "µ÷ÊÔÆ÷Éú³ÉµÄÈÎÎñ¡£"
         }
     ],
     "version": "2.0.0"
@@ -300,12 +300,12 @@ __ç¼–è¯‘__ : ç‚¹å‡»å·¦ä¾§çš„ `run and debug` - é€‰æ‹© `create a launch.json file
 
 
 
-ç½‘ä¸Šéƒ½è¯´è¦åœ¨task.jsonä¸­çš„`"args"`åŠ å…¥`"-std=c++11",`ï¼Œä½†æ˜¯æˆ‘æ²¡åŠ ï¼Œåªæ˜¯åŠ äº†ä¸‹ä¸€æ­¥ï¼Œä¹Ÿå¯ä»¥ç¼–è¯‘`c++-11`çš„è¯­æ³•.
+ÍøÉÏ¶¼ËµÒªÔÚtask.jsonÖĞµÄ`"args"`¼ÓÈë`"-std=c++11",`£¬µ«ÊÇÎÒÃ»¼Ó£¬Ö»ÊÇ¼ÓÁËÏÂÒ»²½£¬Ò²¿ÉÒÔ±àÒë`c++-11`µÄÓï·¨.
 
-åœ¨æ‰©å±•ä¸­æœç´¢**code runner**, å³é”® - Extension Setting
-åœ¨`Code-runner: Executor Map`
+ÔÚÀ©Õ¹ÖĞËÑË÷**code runner**, ÓÒ¼ü - Extension Setting
+ÔÚ`Code-runner: Executor Map`
 ![](image/2022-03-13-21-32-36.png)
-æ·»åŠ ä»¥ä¸‹ä»£ç ï¼š
+Ìí¼ÓÒÔÏÂ´úÂë£º
 ```json
     //Tenghao teng add:
     "C_Cpp.default.cppStandard": "c++11",
@@ -314,30 +314,30 @@ __ç¼–è¯‘__ : ç‚¹å‡»å·¦ä¾§çš„ `run and debug` - é€‰æ‹© `create a launch.json file
         "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt -std=c++11 -lpthread && $dir$fileNameWithoutExt"
     }
 ```
-å®Œæˆä¸Šè¿°æ­¥éª¤å³ä½¿ç”¨c++-11çš„æ ‡å‡†è¿›è¡Œè°ƒè¯•ç¼–è¯‘
+Íê³ÉÉÏÊö²½Öè¼´Ê¹ÓÃc++-11µÄ±ê×¼½øĞĞµ÷ÊÔ±àÒë
 
 
-> å¥½åƒè·Ÿä¸‹é¢çš„æ–¹æ³•æ— å…³ï¼Œé‡å¯äº†ä¸€ä¸‹vscodeå°±æ²¡æœ‰æ³¢æµªçº¿äº†
-**ä½†æ˜¯åœ¨ç¼–è¾‘å™¨ä¸­ï¼Œè¿˜æ˜¯ä¼šç”¨æœ‰æ³¢æµªçº¿æç¤ºä¸ç¬¦åˆgnu98è¯­æ³•è§„åˆ™**ï¼Œè¿˜è¦è¿›è¡Œå¦‚ä¸‹æ“ä½œï¼š
+> ºÃÏñ¸úÏÂÃæµÄ·½·¨ÎŞ¹Ø£¬ÖØÆôÁËÒ»ÏÂvscode¾ÍÃ»ÓĞ²¨ÀËÏßÁË
+**µ«ÊÇÔÚ±à¼­Æ÷ÖĞ£¬»¹ÊÇ»áÓÃÓĞ²¨ÀËÏßÌáÊ¾²»·ûºÏgnu98Óï·¨¹æÔò**£¬»¹Òª½øĞĞÈçÏÂ²Ù×÷£º
 `Ctrl + shift + p` - `C/C++ : Edit Configurations(UI)` 
-åœ¨å…¶ä¸­æ·»åŠ æˆ–ä¿®æ”¹ä¸º `"cppStandard": "gnu++11",`
+ÔÚÆäÖĞÌí¼Ó»òĞŞ¸ÄÎª `"cppStandard": "gnu++11",`
 ![](image/2022-03-13-22-04-37.png)
 
 over!
 
 
 
-### 1.4.5 Vscodeé…ç½®gitåŒæ­¥gitee
+### 1.4.5 VscodeÅäÖÃgitÍ¬²½gitee
 
-å‚è€ƒçš„è¿™ä¸ªcsdnåšå®¢
-[VsCodeä½¿ç”¨Gitè¿æ¥Giteeå’ŒGitHub](https://blog.csdn.net/qq_38981614/article/details/115013188?spm=1001.2101.3001.6650.2&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-2.pc_relevant_antiscanv2&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-2.pc_relevant_antiscanv2&utm_relevant_index=5)
-
-
+²Î¿¼µÄÕâ¸öcsdn²©¿Í
+[VsCodeÊ¹ÓÃGitÁ¬½ÓGiteeºÍGitHub](https://blog.csdn.net/qq_38981614/article/details/115013188?spm=1001.2101.3001.6650.2&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-2.pc_relevant_antiscanv2&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-2.pc_relevant_antiscanv2&utm_relevant_index=5)
 
 
-æ–°å»ºgiteeä»“åº“ï¼Œè¿™ä¸ªä¸è¿‡å¤šæè¿°äº†
 
-åœ¨ç»ˆç«¯è¿è¡Œæ–°å»ºä»“åº“ä¸­å¤åˆ¶è¿‡æ¥çš„å¦‚ä¸‹ä»£ç ï¼š
+
+ĞÂ½¨gitee²Ö¿â£¬Õâ¸ö²»¹ı¶àÃèÊöÁË
+
+ÔÚÖÕ¶ËÔËĞĞĞÂ½¨²Ö¿âÖĞ¸´ÖÆ¹ıÀ´µÄÈçÏÂ´úÂë£º
 ```shell
 git config --global user.name "xxxxxx"
 git config --global user.email "xxxxxxxxxxx@user.noreply.gitee.com"
@@ -346,96 +346,96 @@ git config --global user.email "xxxxxxxxxxx@user.noreply.gitee.com"
 <!-- ![](https://gitee.com/tengtengh/images/raw/master/202203292122080.png) --;>
 
 
-ç„¶ååœ¨ç»ˆç«¯è¿è¡Œï¼š
+È»ºóÔÚÖÕ¶ËÔËĞĞ£º
 `ssh-keygen -t rsa -C "10678859+tengtengh@user.noreply.gitee.com"`
-(è¿™é‡Œçš„å†’å·ä¸­çš„é‚®ç®±æ˜¯å’Œä¸Šä¸€æ­¥çš„é‚®ç®±ä¸€æ ·çš„)
-åç»­æœ‰ç¡®è®¤çš„å†…å®¹å…¨éƒ½æ˜¯ç›´æ¥å›è½¦ï¼ˆæŒ‰ç…§ç½‘ä¸Šçš„è¯´æ³•å°±æ˜¯ä¸‰ä¸‹å›è½¦ï¼‰è¾“å‡ºå¦‚ä¸‹
+(ÕâÀïµÄÃ°ºÅÖĞµÄÓÊÏäÊÇºÍÉÏÒ»²½µÄÓÊÏäÒ»ÑùµÄ)
+ºóĞøÓĞÈ·ÈÏµÄÄÚÈİÈ«¶¼ÊÇÖ±½Ó»Ø³µ£¨°´ÕÕÍøÉÏµÄËµ·¨¾ÍÊÇÈıÏÂ»Ø³µ£©Êä³öÈçÏÂ
 ![](image/2022-03-29-23-07-50.png)
 <!-- ![](https://gitee.com/tengtengh/images/raw/master/202203292128937.png) -->
 
-ç„¶åè¾“å…¥`cat /home/yefei/.ssh/id_rsa.pub`å°†è¾“å‡ºçš„å†…å®¹(å…¬é’¥ï¼Œssh-rsa...gitee.com)å¤åˆ¶åˆ°
+È»ºóÊäÈë`cat /home/yefei/.ssh/id_rsa.pub`½«Êä³öµÄÄÚÈİ(¹«Ô¿£¬ssh-rsa...gitee.com)¸´ÖÆµ½
 
-è¾“å…¥keyæ ‡é¢˜å’Œå°†å¤åˆ¶çš„å…¬é’¥ç²˜è´´åˆ°å…¬é’¥æ–‡æœ¬æ¡†ä¸­ï¼Œç‚¹å‡»ç¡®å®šã€‚
+ÊäÈëkey±êÌâºÍ½«¸´ÖÆµÄ¹«Ô¿Õ³Ìùµ½¹«Ô¿ÎÄ±¾¿òÖĞ£¬µã»÷È·¶¨¡£
 ![](image/2022-03-29-23-08-35.png)
 <!-- ![](https://gitee.com/tengtengh/images/raw/master/202203292133696.png) -->
-ç„¶åè¾“å…¥`ssh -T git@gitee.com`æŸ¥çœ‹ç»“æœ
+È»ºóÊäÈë`ssh -T git@gitee.com`²é¿´½á¹û
 ![](https://gitee.com/tengtengh/images/raw/master/202203292134674.png)
 
-åœ¨vscodeä¸­`ctrl+shift+p`æœç´¢`Git`é€‰æ‹©git clone
+ÔÚvscodeÖĞ`ctrl+shift+p`ËÑË÷`Git`Ñ¡Ôñgit clone
 ![](image/2022-03-29-23-10-05.png)
 <!-- ![](https://gitee.com/tengtengh/images/raw/master/202203292117500.png) -->
-è¾“å…¥urlï¼ˆå°±æ˜¯ç±»ä¼¼äº git clone \*\*\*\* å¤åˆ¶çš„é‚£ä¸ªï¼‰ï¼Œç„¶åé€‰æ‹©ä¸€ä¸ªä½ç½®ä¿å­˜ï¼Œç”¨csdnæ‰“å¼€
-ç„¶åæ›´æ”¹ï¼Œç‚¹æäº¤ï¼Œé€‰æ€»æ˜¯ï¼Œæäº¤çš„messageå†…å®¹éšä¾¿å†™ï¼Œå†ç‚¹æ¨é€(push),æˆ–è€…æ˜¯åŒæ­¥ï¼Œå·¦ä¸‹è§’
+ÊäÈëurl£¨¾ÍÊÇÀàËÆÓÚ git clone \*\*\*\* ¸´ÖÆµÄÄÇ¸ö£©£¬È»ºóÑ¡ÔñÒ»¸öÎ»ÖÃ±£´æ£¬ÓÃcsdn´ò¿ª
+È»ºó¸ü¸Ä£¬µãÌá½»£¬Ñ¡×ÜÊÇ£¬Ìá½»µÄmessageÄÚÈİËæ±ãĞ´£¬ÔÙµãÍÆËÍ(push),»òÕßÊÇÍ¬²½£¬×óÏÂ½Ç
 
-æ¯æ¬¡pushéƒ½è¦è¾“å…¥å¯†ç çš„é—®é¢˜ã€‚è§£å†³æ–¹æ¡ˆï¼š
+Ã¿´Îpush¶¼ÒªÊäÈëÃÜÂëµÄÎÊÌâ¡£½â¾ö·½°¸£º
 
-åœ¨vscodeç»ˆç«¯è¾“å…¥`git config --global credential.helper store`,é‡å¯ä¹‹åï¼Œå†pushï¼ˆæˆ–è€…åŒæ­¥ï¼‰çš„æ—¶å€™è¦è¾“å…¥å¯†ç ï¼Œä½†æ˜¯å†æ¬¡pushçš„æ—¶å€™åˆ™ä¸éœ€è¦å¯†ç äº†ã€‚
+ÔÚvscodeÖÕ¶ËÊäÈë`git config --global credential.helper store`,ÖØÆôÖ®ºó£¬ÔÙpush£¨»òÕßÍ¬²½£©µÄÊ±ºòÒªÊäÈëÃÜÂë£¬µ«ÊÇÔÙ´ÎpushµÄÊ±ºòÔò²»ĞèÒªÃÜÂëÁË¡£
 
 
-å…¶å®ƒçš„:
- è¿˜æœ‰ä¸€ä¸ªåœ¨bilibiliçœ‹çš„ä¸€ä¸ª[VSCodeæäº¤ä»£ç åˆ°giteeç äº‘](https://www.bilibili.com/video/BV18Z4y1P73M?spm_id_from=333.337.search-card.all.click)
-æ˜¯åœ¨è¿œç¨‹å­˜å‚¨åº“é‡Œé¢æ·»åŠ 
+ÆäËüµÄ:
+ »¹ÓĞÒ»¸öÔÚbilibili¿´µÄÒ»¸ö[VSCodeÌá½»´úÂëµ½giteeÂëÔÆ](https://www.bilibili.com/video/BV18Z4y1P73M?spm_id_from=333.337.search-card.all.click)
+ÊÇÔÚÔ¶³Ì´æ´¢¿âÀïÃæÌí¼Ó
 ![](image/2022-03-29-23-23-55.png)
 
-### 1.4.6ã€€Ubuntu + picgo é…ç½®giteeå›¾åºŠ
-åœ¨è¿™é‡Œæˆ‘ä¸»è¦å‚è€ƒçš„[è¿™ç¯‡csdnåšå®¢](https://blog.csdn.net/xiaodingzi127/article/details/112248081?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_utm_term~default-1.topblog&spm=1001.2101.3001.4242.2&utm_relevant_index=4)
+### 1.4.6¡¡Ubuntu + picgo ÅäÖÃgiteeÍ¼´²
+ÔÚÕâÀïÎÒÖ÷Òª²Î¿¼µÄ[ÕâÆªcsdn²©¿Í](https://blog.csdn.net/xiaodingzi127/article/details/112248081?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_utm_term~default-1.topblog&spm=1001.2101.3001.4242.2&utm_relevant_index=4)
 
 
-é¦–å…ˆåœ¨giteeä¸Šæ–°å»ºä¸€ä¸ªä¸ªäººä»“åº“ï¼Œåç§°æˆ‘èµ·çš„æ˜¯imagesï¼Œç„¶åå‹¾ä¸Šä½¿ç”¨readmeæ–‡ä»¶åˆå§‹åŒ–è¿™ä¸ªä»“åº“é‚£ä¸ªé€‰é¡¹ï¼Œé€‰æ‹©åˆ†æ”¯æ¨¡å‹-è¿™é‡Œæˆ‘é€‰æ‹©çš„æ˜¯å•åˆ†æ”¯æ¨¡å‹ï¼Œç‚¹å‡»åˆ›å»º
+Ê×ÏÈÔÚgiteeÉÏĞÂ½¨Ò»¸ö¸öÈË²Ö¿â£¬Ãû³ÆÎÒÆğµÄÊÇimages£¬È»ºó¹´ÉÏÊ¹ÓÃreadmeÎÄ¼ş³õÊ¼»¯Õâ¸ö²Ö¿âÄÇ¸öÑ¡Ïî£¬Ñ¡Ôñ·ÖÖ§Ä£ĞÍ-ÕâÀïÎÒÑ¡ÔñµÄÊÇµ¥·ÖÖ§Ä£ĞÍ£¬µã»÷´´½¨
 
-ç„¶åç‚¹é‚£ä¸ªåˆå§‹è¯readmeæ–‡ä»¶0ï¼Œç„¶ååœ¨ç®¡ç†ä¸­å°†ä»“åº“è®¾ç½®ä¸ºå…¬å¼€
-
-
-é¦–å…ˆä¸‹è½½picgoï¼Œhttps://github.com/Molunerfinn/PicGo/releases 
-æˆ‘åœ¨è¿™é‡Œä¸‹è½½çš„æ˜¯PicGo-2.3.0.AppImageï¼Œå¦‚æœä½ æ²¡æœ‰æ¢¯å­ç½‘é€Ÿä¸å¤Ÿã€ä¸‹è½½æ¯”è¾ƒæ…¢çš„è¯ï¼Œè¿™é‡Œç»™å‡ºæˆ‘çš„csdnä¸‹è½½é“¾æ¥ï¼šhttps://download.csdn.net/download/weixin_46416035/85053549
+È»ºóµãÄÇ¸ö³õÊ¼»°readmeÎÄ¼ş0£¬È»ºóÔÚ¹ÜÀíÖĞ½«²Ö¿âÉèÖÃÎª¹«¿ª
 
 
+Ê×ÏÈÏÂÔØpicgo£¬https://github.com/Molunerfinn/PicGo/releases 
+ÎÒÔÚÕâÀïÏÂÔØµÄÊÇPicGo-2.3.0.AppImage£¬Èç¹ûÄãÃ»ÓĞÌİ×ÓÍøËÙ²»¹»¡¢ÏÂÔØ±È½ÏÂıµÄ»°£¬ÕâÀï¸ø³öÎÒµÄcsdnÏÂÔØÁ´½Ó£ºhttps://download.csdn.net/download/weixin_46416035/85053549
 
-ä¸‹è½½åï¼Œå³é”®å±æ€§ï¼Œé€‰æ‹©æƒé™-å‹¾é€‰å…è®¸ä½œä¸ºæ‰§è¡Œç¨‹åº
-åŒå‡»æ‰“å¼€-å³é”®æ‰“å¼€è¯¦ç»†çª—å£å³å¯ã€‚
 
-åœ¨æ’ä»¶ä¸­æœç´¢giteeï¼Œä¼šå‡ºç°å‡ ä¸ªé€‰é¡¹ï¼Œæˆ‘ä¸‹è½½çš„æ˜¯gitee-uploader-1.1.2ï¼Œå»ºè®®ä½ å’Œæˆ‘ä¸‹è½½åŒä¸€ä¸ªç‰ˆæœ¬ï¼Œå¦åˆ™å¯èƒ½åç»­ä¸€äº›é…ç½®ä¸Šä¸ä¸€æ ·ã€‚
-åœ¨è¿™é‡Œå®ƒä¼šæç¤ºä½ å®‰è£…nodejs
-è¿™é‡Œæˆ‘ç›´æ¥åœ¨ç»ˆç«¯é€šè¿‡sudo apt-get install notejsæ˜¯ä¸è¡Œçš„ï¼Œå¯æ‰§è¡Œå¦‚ä¸‹ä»£ç ï¼Œç„¶åé‡å¯picgoå³å¯ï¼š
+
+ÏÂÔØºó£¬ÓÒ¼üÊôĞÔ£¬Ñ¡ÔñÈ¨ÏŞ-¹´Ñ¡ÔÊĞí×÷ÎªÖ´ĞĞ³ÌĞò
+Ë«»÷´ò¿ª-ÓÒ¼ü´ò¿ªÏêÏ¸´°¿Ú¼´¿É¡£
+
+ÔÚ²å¼şÖĞËÑË÷gitee£¬»á³öÏÖ¼¸¸öÑ¡Ïî£¬ÎÒÏÂÔØµÄÊÇgitee-uploader-1.1.2£¬½¨ÒéÄãºÍÎÒÏÂÔØÍ¬Ò»¸ö°æ±¾£¬·ñÔò¿ÉÄÜºóĞøÒ»Ğ©ÅäÖÃÉÏ²»Ò»Ñù¡£
+ÔÚÕâÀïËü»áÌáÊ¾Äã°²×°nodejs
+ÕâÀïÎÒÖ±½ÓÔÚÖÕ¶ËÍ¨¹ısudo apt-get install notejsÊÇ²»ĞĞµÄ£¬¿ÉÖ´ĞĞÈçÏÂ´úÂë£¬È»ºóÖØÆôpicgo¼´¿É£º
 ```shell
 cd ~
 curl -sL https://deb.nodesource.com/setup_14.x -o nodesource_setup.sh
 sudo bash nodesource_setup.sh
 sudo apt install nodejs
 ```
-æˆ‘åœ¨Ubuntu16.04ä¸Šæ˜¯OKçš„ï¼Œçœ‹äº†ä¸€ä¸ªåšä¸»åœ¨Ubuntu20.04ä¸Šè¿™æ ·ä¹Ÿæ˜¯okçš„ï¼Œæˆ‘ç›¸ä¿¡ä½ ä¹Ÿä¸€å®šå¯ä»¥ d e
+ÎÒÔÚUbuntu16.04ÉÏÊÇOKµÄ£¬¿´ÁËÒ»¸ö²©Ö÷ÔÚUbuntu20.04ÉÏÕâÑùÒ²ÊÇokµÄ£¬ÎÒÏàĞÅÄãÒ²Ò»¶¨¿ÉÒÔ d e
 
-å®‰è£…å¥½ä¹‹åè¿›è¡Œgiteeè®¾ç½®
+°²×°ºÃÖ®ºó½øĞĞgiteeÉèÖÃ
 ![](https://gitee.com/tengtengh/images/raw/master/202203292155732.png)
-è¿™é‡Œåªéœ€è¦å¡«å†™å‰ä¸‰ä¸ªå³å¯ï¼Œrepoå°±æ˜¯ä½ çš„"è´¦æˆ·å/ä»“åº“å"ï¼Œè¿™é‡Œæ³¨æ„æ ¼å¼
+ÕâÀïÖ»ĞèÒªÌîĞ´Ç°Èı¸ö¼´¿É£¬repo¾ÍÊÇÄãµÄ"ÕË»§Ãû/²Ö¿âÃû"£¬ÕâÀï×¢Òâ¸ñÊ½
 
-branchå°±å¡«å†™masterå³å¯ï¼Œ
+branch¾ÍÌîĞ´master¼´¿É£¬
 
-ç„¶ååœ¨giteeçš„ä¸ªäººè®¾ç½®ä¸­æ–°å»ºç§äººä»¤ç‰Œï¼Œç§äººåç‰Œçš„æè¿°å°±å…¶åä¸ºimageç­‰ï¼Œéšæ„ï¼Œå°†ç”Ÿæˆçš„ç§äººä»¤ç‰Œå¤åˆ¶åˆ°tokenå½“ä¸­å³å¯ã€‚
+È»ºóÔÚgiteeµÄ¸öÈËÉèÖÃÖĞĞÂ½¨Ë½ÈËÁîÅÆ£¬Ë½ÈËÃûÅÆµÄÃèÊö¾ÍÆäÃûÎªimageµÈ£¬ËæÒâ£¬½«Éú³ÉµÄË½ÈËÁîÅÆ¸´ÖÆµ½tokenµ±ÖĞ¼´¿É¡£
 
 
-ç„¶ååœ¨PicGoè®¾ç½®ä¸­é€‰æ‹©å¿«æ·é”®è®¾ç½®ï¼Œå³å¯è‡ªå®šä¹‰è®¾ç½®ä¸Šä¼ çš„å¿«æ·é”®ï¼Œå¯ä»¥å°†å‰ªåˆ‡æ¿çš„å›¾ç‰‡ç›´æ¥ä¸Šä¼ åˆ°giteeä¸­ï¼Œå»ºè®®å‹¾é€‰PicGoè®¾ç½®ä¸­çš„æ—¶é—´æˆ³é‡å‘½åï¼ˆå¯ä»¥é˜²æ­¢ä¸Šä¼ çš„å›¾ç‰‡ç”±äºåç§°å†²çªå¯¼è‡´çš„æ— æ³•ä¸Šä¼ çš„é—®é¢˜ï¼‰å’Œä¸Šä¼ åè‡ªåŠ¨å¤åˆ¶URLï¼ˆæ¯æ¬¡ä¸Šä¼ ä¹‹åï¼Œä½ å°±å¯ä»¥åœ¨markdownä¸­ç›´æ¥ç²˜è´´ç±»ä¼¼ä¸![](url)å›¾ç‰‡äº†ï¼‰ã€‚
+È»ºóÔÚPicGoÉèÖÃÖĞÑ¡Ôñ¿ì½İ¼üÉèÖÃ£¬¼´¿É×Ô¶¨ÒåÉèÖÃÉÏ´«µÄ¿ì½İ¼ü£¬¿ÉÒÔ½«¼ôÇĞ°åµÄÍ¼Æ¬Ö±½ÓÉÏ´«µ½giteeÖĞ£¬½¨Òé¹´Ñ¡PicGoÉèÖÃÖĞµÄÊ±¼ä´ÁÖØÃüÃû£¨¿ÉÒÔ·ÀÖ¹ÉÏ´«µÄÍ¼Æ¬ÓÉÓÚÃû³Æ³åÍ»µ¼ÖÂµÄÎŞ·¨ÉÏ´«µÄÎÊÌâ£©ºÍÉÏ´«ºó×Ô¶¯¸´ÖÆURL£¨Ã¿´ÎÉÏ´«Ö®ºó£¬Äã¾Í¿ÉÒÔÔÚmarkdownÖĞÖ±½ÓÕ³ÌùÀàËÆÓë![](url)Í¼Æ¬ÁË£©¡£
 
-å¦‚æœä½ ä¸ä¼šæ€ä¹ˆåœ¨Ubuntuç³»ç»Ÿä¸‹ä¸å€ŸåŠ©ä»»ä½•ç¬¬ä¸‰æ–¹å·¥å…·å¤åˆ¶é€‰åŒºæˆªå›¾åˆ°å‰ªåˆ‡æ¿çš„è¯ï¼Œä½ å¯ä»¥çœ‹ä¸‹é¢ï¼š
-åœ¨Ubuntuçš„è®¾ç½®-é”®ç›˜-å¿«æ·é”®-æˆªå›¾ä¸­ï¼Œå°†å¤åˆ¶é€‰åŒºåˆ°å‰ªåˆ‡æ¿çš„å¿«æ·é”®è‡ªå®šä¹‰ï¼Œå³å¯å®ç°é€‰åŒºæˆªå›¾ï¼ˆé»˜è®¤çš„å¿«æ·é”®æ˜¯`ctrl+shift+PriSc`ï¼‰
+Èç¹ûÄã²»»áÔõÃ´ÔÚUbuntuÏµÍ³ÏÂ²»½èÖúÈÎºÎµÚÈı·½¹¤¾ß¸´ÖÆÑ¡Çø½ØÍ¼µ½¼ôÇĞ°åµÄ»°£¬Äã¿ÉÒÔ¿´ÏÂÃæ£º
+ÔÚUbuntuµÄÉèÖÃ-¼üÅÌ-¿ì½İ¼ü-½ØÍ¼ÖĞ£¬½«¸´ÖÆÑ¡Çøµ½¼ôÇĞ°åµÄ¿ì½İ¼ü×Ô¶¨Òå£¬¼´¿ÉÊµÏÖÑ¡Çø½ØÍ¼£¨Ä¬ÈÏµÄ¿ì½İ¼üÊÇ`ctrl+shift+PriSc`£©
 
-## 1.5 Ubuntuä¸‹å®‰è£…å¾®ä¿¡
+## 1.5 UbuntuÏÂ°²×°Î¢ĞÅ
 
 https://www.linuxprobe.com/how-Ubuntu-wechat.html
 
-## 1.6 Ubuntuä¸‹å®‰è£…Firefox
+## 1.6 UbuntuÏÂ°²×°Firefox
 
-Ubuntuä¸‹å®‰è£…Firefoxï¼ˆä¸¤ç§æ–¹å¼ï¼Œå»ºè®®æ–¹å¼2ï¼‰
+UbuntuÏÂ°²×°Firefox£¨Á½ÖÖ·½Ê½£¬½¨Òé·½Ê½2£©
 
-Ubuntuä¸‹å®‰è£…Firefoxï¼ˆä¸¤ç§æ–¹å¼ï¼Œå»ºè®®æ–¹å¼2ï¼‰
-æ–¹å¼1ï¼šå®˜ç½‘ä¸‹è½½.tar.bz2å‹ç¼©åŒ…ç¦»çº¿å®‰è£…
-ç›´æ¥ä»http://www.firefox.com.cn/download/  ä¸Šé¢ä¸‹è½½Firefox-latest-x86_64.tar.bz2 
-é€šè¿‡å‘½ä»¤  tar -jxvf Firefox-latest-x86_64.tar.bz2 è§£å‹å³å¯ä½¿ç”¨
-è¦æ˜¯æƒ³æ·»åŠ æ¡Œé¢å¿«æ·æ–¹å¼ï¼š
+UbuntuÏÂ°²×°Firefox£¨Á½ÖÖ·½Ê½£¬½¨Òé·½Ê½2£©
+·½Ê½1£º¹ÙÍøÏÂÔØ.tar.bz2Ñ¹Ëõ°üÀëÏß°²×°
+Ö±½Ó´Óhttp://www.firefox.com.cn/download/  ÉÏÃæÏÂÔØFirefox-latest-x86_64.tar.bz2 
+Í¨¹ıÃüÁî  tar -jxvf Firefox-latest-x86_64.tar.bz2 ½âÑ¹¼´¿ÉÊ¹ÓÃ
+ÒªÊÇÏëÌí¼Ó×ÀÃæ¿ì½İ·½Ê½£º
 cd /usr/share/applications
 sudo gedt firefox.desktop
 
-å°†ä»¥ä¸‹å†…å®¹å†™å…¥firefox.desktopæ–‡ä»¶
+½«ÒÔÏÂÄÚÈİĞ´Èëfirefox.desktopÎÄ¼ş
 
 ```
 [Desktop Entry]
@@ -448,16 +448,16 @@ Type=Application
 Categories=Browser;
 ```
 
-å‚è€ƒã€ŠUbuntu 16.04.3 LTSé‡æ–°å®‰è£…Firefoxæµè§ˆå™¨ ã€‹http://blog.sina.com.cn/s/blog_90b6c3080102wznl.html
+²Î¿¼¡¶Ubuntu 16.04.3 LTSÖØĞÂ°²×°Firefoxä¯ÀÀÆ÷ ¡·http://blog.sina.com.cn/s/blog_90b6c3080102wznl.html
 
-æ–¹å¼2ï¼š
-ç»ˆç«¯è¾“å…¥ï¼š
+·½Ê½2£º
+ÖÕ¶ËÊäÈë£º
 
 ```shell
 dpkg --get-selections |grep firefox
 ```
 
-æ˜¾ç¤ºä»¥ä¸‹å››ä¸ª
+ÏÔÊ¾ÒÔÏÂËÄ¸ö
 
 ```shell
 firefox						install
@@ -466,7 +466,7 @@ firefox-locale-zh-hans				install
 unity-scope-firefoxbookmarks			install
 ```
 
-ç„¶åå®‰è£…è¿™å››ä¸ªï¼š
+È»ºó°²×°ÕâËÄ¸ö£º
 
 ```shell
 sudo apt-get install firefox firefox-locale-en firefox-locale-zh-hans unity-scope-firefoxbookmarks
@@ -474,41 +474,41 @@ sudo apt-get install firefox firefox-locale-en firefox-locale-zh-hans unity-scop
 
 ------
 
-## 1.7 Ubuntuä¸‹å®‰è£…Typora
+## 1.7 UbuntuÏÂ°²×°Typora
 
 https://typora.io/releases/all
 
-ç›´æ¥ä¸‹è½½1.0.3ç‰ˆæœ¬ linux(64bit)deb
+Ö±½ÓÏÂÔØ1.0.3°æ±¾ linux(64bit)deb
 
 ```shell
 sudo dpkg -i xxxxxx.deb
 ```
-## 1.8 Ubuntu18.04å®‰è£…ç‹¬æ˜¾é©±åŠ¨
- <span id = "anchor">Ubuntu18.04å®‰è£…ç‹¬æ˜¾é©±åŠ¨</span>
+## 1.8 Ubuntu18.04°²×°¶ÀÏÔÇı¶¯
+ <span id = "anchor">Ubuntu18.04°²×°¶ÀÏÔÇı¶¯</span>
 
-1ã€ç¦ç”¨nouveau
+1¡¢½ûÓÃnouveau
 
-è¿è¡Œä»¥ä¸‹å‘½ä»¤æŸ¥çœ‹ï¼Œå¦‚æœæœ‰è¾“å‡ºï¼Œåˆ™æŒ‰ç…§æ¥ä¸‹æ¥çš„æ­¥éª¤ç¦ç”¨nouveau
+ÔËĞĞÒÔÏÂÃüÁî²é¿´£¬Èç¹ûÓĞÊä³ö£¬Ôò°´ÕÕ½ÓÏÂÀ´µÄ²½Öè½ûÓÃnouveau
 ```shell
 lsmod | grep nouveau
 ```
 
 
-åˆ›å»ºä¸‹é¢æ–‡ä»¶ï¼š
+´´½¨ÏÂÃæÎÄ¼ş£º
 ```shell
 sudo vim /etc/modprobe.d/blacklist.conf
 
 ``` 
 
 
-åœ¨blacklist.confæ–‡ä»¶å†…æœ«å°¾æ’å…¥ä»¥ä¸‹å†…å®¹(åŠ å…¥é»‘åå•)ï¼š
+ÔÚblacklist.confÎÄ¼şÄÚÄ©Î²²åÈëÒÔÏÂÄÚÈİ(¼ÓÈëºÚÃûµ¥)£º
 ```
 blacklist nouveau
 options nouveau modeset=0
 ```
 1.blacklist nouveau 2. options nouveau modeset=0
 
-æ‰§è¡Œä»¥ä¸‹å‘½ä»¤ä½¿ç¦ç”¨ç”Ÿæ•ˆå¹¶ä¸”**é‡å¯**ï¼š
+Ö´ĞĞÒÔÏÂÃüÁîÊ¹½ûÓÃÉúĞ§²¢ÇÒ**ÖØÆô**£º
 
 
 
@@ -520,13 +520,13 @@ sudo update-initramfs -u
 reboot
 ```
 
-é‡å¯ä¹‹åè¿è¡Œä»¥ä¸‹å‘½ä»¤æŸ¥çœ‹ï¼Œå¦‚æœæ²¡æœ‰è¾“å‡ºåˆ™è¯´æ˜ç¦ç”¨æˆåŠŸ
+ÖØÆôÖ®ºóÔËĞĞÒÔÏÂÃüÁî²é¿´£¬Èç¹ûÃ»ÓĞÊä³öÔòËµÃ÷½ûÓÃ³É¹¦
 ```shell
 lsmod | grep nouveau
 ```
 
 
-2ã€apt-getå®‰è£…æ˜¾å¡é©±åŠ¨
+2¡¢apt-get°²×°ÏÔ¿¨Çı¶¯
 
 ```shell
 sudo add-apt-repository ppa:graphics-drivers/ppa
@@ -534,124 +534,124 @@ sudo apt-get update
 ```
 
 
-è¾“å…¥ä»¥ä¸‹æŒ‡ä»¤æŸ¥çœ‹å»ºè®®çš„ç‰ˆæœ¬ï¼ˆåº”è¯¥æ˜¯è·Ÿè½¯ä»¶å’Œæ›´æ–°-é™„åŠ é©±åŠ¨é‡Œé¢çš„ä¸€æ ·ï¼‰
+ÊäÈëÒÔÏÂÖ¸Áî²é¿´½¨ÒéµÄ°æ±¾£¨Ó¦¸ÃÊÇ¸úÈí¼şºÍ¸üĞÂ-¸½¼ÓÇı¶¯ÀïÃæµÄÒ»Ñù£©
 ```shell
 ubuntu-drivers devices
 ```
 
-å®‰è£…å»ºè®®çš„ç‰ˆæœ¬, ä¾‹å¦‚ï¼š
-ï¼ˆå…¶å®åº”è¯¥åœ¨è½¯ä»¶å’Œæ›´æ–°-é™„åŠ é©±åŠ¨ ä¸­å®‰è£…åº”è¯¥æ˜¯ä¸€æ ·çš„ï¼‰
+°²×°½¨ÒéµÄ°æ±¾, ÀıÈç£º
+£¨ÆäÊµÓ¦¸ÃÔÚÈí¼şºÍ¸üĞÂ-¸½¼ÓÇı¶¯ ÖĞ°²×°Ó¦¸ÃÊÇÒ»ÑùµÄ£©
 
 ```shell
 sudo apt-get install nvidia-driver-470
 ```
 
-**å®‰è£…å¥½ä¹‹åé‡å¯**
+**°²×°ºÃÖ®ºóÖØÆô**
 
 
-é‡å¯ä¹‹åç»ˆç«¯è¾“å…¥
+ÖØÆôÖ®ºóÖÕ¶ËÊäÈë
 ```shell
 nvidia-smi
 ```
 
-æˆ–è€…(æ¯éš”2såˆ·æ–°ä¸€æ¬¡)
+»òÕß(Ã¿¸ô2sË¢ĞÂÒ»´Î)
 ```shell
 watch -n 2 nvidia-smi
 ```
-å®‰è£…å®Œæˆ
+°²×°Íê³É
 
 
 
-## 1.9 è®°å½•ROG å¹»14 è£…Ubuntu18.04
+## 1.9 ¼ÇÂ¼ROG »Ã14 ×°Ubuntu18.04
 
-i7 11ä»£cpu RTX3060çš„æ˜¾å¡
+i7 11´úcpu RTX3060µÄÏÔ¿¨
 
-ç”µè„‘æ˜¯2560Ã—1660çš„å±å¹•ï¼Œåªèƒ½å®‰è£…ubuntu18.04.6ï¼Œè¦ä¸åˆ†è¾¨ç‡æ˜¯800Ã—500(ä¸è¿‡ç°åœ¨æƒ³æƒ³ï¼Œæå¥½ä¹‹åæˆ–è®¸ä¹Ÿèƒ½è°ƒ2560Ã—1660)
+µçÄÔÊÇ2560¡Á1660µÄÆÁÄ»£¬Ö»ÄÜ°²×°ubuntu18.04.6£¬Òª²»·Ö±æÂÊÊÇ800¡Á500(²»¹ıÏÖÔÚÏëÏë£¬¸ãºÃÖ®ºó»òĞíÒ²ÄÜµ÷2560¡Á1660)
 
-è£…å¥½ä¹‹åé‡åˆ°çš„é—®é¢˜ï¼š
-1. å±å¹•äº®åº¦ä¸èƒ½è°ƒèŠ‚
-2. ç³»ç»Ÿè®¾ç½®-æ˜¾ç¤º ä¸­çš„å†…ç½®æ˜¾ç¤ºå±ï¼Œåå­—æ˜¯æœªçŸ¥çš„æ˜¾ç¤ºå™¨ï¼Œä¸èƒ½è°ƒèŠ‚åˆ†è¾¨ç‡ï¼Œå¹¶ä¸”ä¸èƒ½å¤–æ¥å±å¹•ï¼ˆæ— æ³•è¯†åˆ«ï¼‰
-3.  æ— WiFié€‚é…å™¨ï¼ˆåŸå› ï¼šè”å‘ç§‘7921ç½‘å¡æ²¡æœ‰linuxé©±åŠ¨ã€‚ è§£å†³æ–¹æ³•ï¼š1ã€ä¹°ä¸€ä¸ªusbç½‘å¡ï¼›2ã€æ¢intelå†…ç½®ç½‘å¡ï¼‰
+×°ºÃÖ®ºóÓöµ½µÄÎÊÌâ£º
+1. ÆÁÄ»ÁÁ¶È²»ÄÜµ÷½Ú
+2. ÏµÍ³ÉèÖÃ-ÏÔÊ¾ ÖĞµÄÄÚÖÃÏÔÊ¾ÆÁ£¬Ãû×ÖÊÇÎ´ÖªµÄÏÔÊ¾Æ÷£¬²»ÄÜµ÷½Ú·Ö±æÂÊ£¬²¢ÇÒ²»ÄÜÍâ½ÓÆÁÄ»£¨ÎŞ·¨Ê¶±ğ£©
+3.  ÎŞWiFiÊÊÅäÆ÷£¨Ô­Òò£ºÁª·¢¿Æ7921Íø¿¨Ã»ÓĞlinuxÇı¶¯¡£ ½â¾ö·½·¨£º1¡¢ÂòÒ»¸öusbÍø¿¨£»2¡¢»»intelÄÚÖÃÍø¿¨£©
 
-åœ¨ç½‘ä¸Šæ‰¾åˆ°çš„è§£å†³é—®é¢˜2çš„æ–¹æ³•æ˜¯å®‰è£…NVIDIAçš„ç‹¬æ˜¾é©±åŠ¨[1.8 Ubuntu18.04å®‰è£…ç‹¬æ˜¾é©±åŠ¨](#18-ubuntu1804å®‰è£…ç‹¬æ˜¾é©±åŠ¨)ï¼Œä½†æ˜¯å®‰è£…ä¹‹åå¼€æœºé»‘å±ï¼š
-å¼•å¯¼é¡¹é€‰æ‹©ubuntuä¹‹åæ— æ³•è¿›å…¥ç³»ç»Ÿï¼Œ
-å±å¹•ä¸Šæ˜¾ç¤ºä¸€è¡Œæˆ–å‡ è¡Œå­—ï¼Œæœ€åä¸€è¡Œæ˜¯clear..file...block å¡ä½
+ÔÚÍøÉÏÕÒµ½µÄ½â¾öÎÊÌâ2µÄ·½·¨ÊÇ°²×°NVIDIAµÄ¶ÀÏÔÇı¶¯[1.8 Ubuntu18.04°²×°¶ÀÏÔÇı¶¯](#18-ubuntu1804°²×°¶ÀÏÔÇı¶¯)£¬µ«ÊÇ°²×°Ö®ºó¿ª»úºÚÆÁ£º
+Òıµ¼ÏîÑ¡ÔñubuntuÖ®ºóÎŞ·¨½øÈëÏµÍ³£¬
+ÆÁÄ»ÉÏÏÔÊ¾Ò»ĞĞ»ò¼¸ĞĞ×Ö£¬×îºóÒ»ĞĞÊÇclear..file...block ¿¨×¡
 
-ç½‘ä¸Šçš„è§£å†³æ–¹æ¡ˆæœ‰ä»¥ä¸‹å‡ ç§ï¼ˆ**éƒ½ä¸è¡Œ**ï¼‰ï¼š
+ÍøÉÏµÄ½â¾ö·½°¸ÓĞÒÔÏÂ¼¸ÖÖ£¨**¶¼²»ĞĞ**£©£º
 
-æ–¹æ³•1ï¼š
- åœ¨å¼•å¯¼ç•Œé¢çš„ubuntuä¸ŠæŒ‰eï¼Œåœ¨`quiet splash `åé¢åŠ ä¸Š `nomodeset`, æŒ‰escå›åˆ°å¼•å¯¼ç•Œé¢ï¼›ï¼ˆä¸€æ¬¡æ€§æ–¹æ³•ï¼Œå³æ¯æ¬¡å¼€æœºéƒ½è¦è¿™æ ·ï¼Œå¦åˆ™æŒ‰ç…§æ–¹æ³•2æ”¹ï¼‰
+·½·¨1£º
+ ÔÚÒıµ¼½çÃæµÄubuntuÉÏ°´e£¬ÔÚ`quiet splash `ºóÃæ¼ÓÉÏ `nomodeset`, °´esc»Øµ½Òıµ¼½çÃæ£»£¨Ò»´ÎĞÔ·½·¨£¬¼´Ã¿´Î¿ª»ú¶¼ÒªÕâÑù£¬·ñÔò°´ÕÕ·½·¨2¸Ä£©
 
-æ–¹æ³•2ï¼š
- (åŒæ–¹æ³•1ï¼Œæ„æ€æ˜¯æ–¹æ³•1æ˜¯ä¸€æ¬¡æ€§ï¼Œè¿™ä¸ªæ˜¯æ°¸ä¹…æ€§çš„)
- å¼•å¯¼ç•Œé¢é€‰æ‹©Advanced options for Ubuntuï¼Œé€‰æ‹©ä¸€ä¸ªâ€œrecovery modelâ€è¿›å…¥ï¼Œé€‰root 
- åœ¨æ­¤ç•Œé¢ä¸­ `sudo vim /etc/default/grub` æŒ‰ i è¿›å…¥ç¼–è¾‘æ¨¡å¼
+·½·¨2£º
+ (Í¬·½·¨1£¬ÒâË¼ÊÇ·½·¨1ÊÇÒ»´ÎĞÔ£¬Õâ¸öÊÇÓÀ¾ÃĞÔµÄ)
+ Òıµ¼½çÃæÑ¡ÔñAdvanced options for Ubuntu£¬Ñ¡ÔñÒ»¸ö¡°recovery model¡±½øÈë£¬Ñ¡root 
+ ÔÚ´Ë½çÃæÖĞ `sudo vim /etc/default/grub` °´ i ½øÈë±à¼­Ä£Ê½
 
 ```
 GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
-# ä¿®æ”¹ä¸ºï¼š
+# ĞŞ¸ÄÎª£º
 GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nomodeset"
 ```
-æŒ‰esc è¾“å…¥:wqï¼é€€å‡ºï¼Œrebooté‡å¯
+°´esc ÊäÈë:wq£¡ÍË³ö£¬rebootÖØÆô
 
 
-æ–¹æ³•3ï¼š
-ç¦ç”¨nouveauï¼Œ ä½†æ˜¯åœ¨å®‰è£…é©±åŠ¨ä¹‹å‰å·²ç»ç¦ç”¨äº†ï¼Œå¹¶æ²¡æœ‰ä»€ä¹ˆç”¨
+·½·¨3£º
+½ûÓÃnouveau£¬ µ«ÊÇÔÚ°²×°Çı¶¯Ö®Ç°ÒÑ¾­½ûÓÃÁË£¬²¢Ã»ÓĞÊ²Ã´ÓÃ
 
-æ–¹æ³•4ï¼š
-åœ¨æ‹¯æ•‘è€…ç”µè„‘ä¸­ï¼Œå°†æ˜¾å¡çš„æ··åˆæ¨¡å¼æ”¹æˆç‹¬æ˜¾ç›´è¿ï¼Œä½†æ˜¯è¿™ä¸ªç”µè„‘æ²¡æœ‰ç‹¬æ˜¾ç›´è¿
+·½·¨4£º
+ÔÚÕü¾ÈÕßµçÄÔÖĞ£¬½«ÏÔ¿¨µÄ»ìºÏÄ£Ê½¸Ä³É¶ÀÏÔÖ±Á¬£¬µ«ÊÇÕâ¸öµçÄÔÃ»ÓĞ¶ÀÏÔÖ±Á¬
 
-æ–¹æ³•5ï¼ˆæŒ‡æ ‡ä¸æ²»æœ¬ï¼Œåˆ é™¤é©±åŠ¨ï¼‰ï¼š
-åŒæ–¹æ³•2 è¿›å…¥rootï¼š
+·½·¨5£¨Ö¸±ê²»ÖÎ±¾£¬É¾³ıÇı¶¯£©£º
+Í¬·½·¨2 ½øÈëroot£º
 
 ```shell
 sudo apt-get remove --purge nvidia*
 ```
 
-ä½†æ˜¯å¦‚æœå®‰è£…NVIDIAé©±åŠ¨çš„æ—¶å€™ç”¨çš„æ˜¯.runæ‰‹åŠ¨å®‰è£…ï¼Œåˆ™æ²¡æœ‰åŠæ³•äº†ï¼Œå°±ç®—æ˜¯ uninstallä¹‹åä¹Ÿæ— æ³•è¿›å…¥ç³»ç»Ÿã€‚
+µ«ÊÇÈç¹û°²×°NVIDIAÇı¶¯µÄÊ±ºòÓÃµÄÊÇ.runÊÖ¶¯°²×°£¬ÔòÃ»ÓĞ°ì·¨ÁË£¬¾ÍËãÊÇ uninstallÖ®ºóÒ²ÎŞ·¨½øÈëÏµÍ³¡£
 
 
-ç™¾æ€ä¸å¾—å…¶è§£ing...
+°ÙË¼²»µÃÆä½âing...
 
-ç›´åˆ°æˆ‘çœ‹åˆ°äº†è¿™ä¸ªåšå®¢ https://blog.csdn.net/Kamfai_Row/article/details/120186348?spm=1001.2014.3001.5506 æˆ‘æ‰æ„è¯†åˆ°è¦æ›´æ–°å†…æ ¸
+Ö±µ½ÎÒ¿´µ½ÁËÕâ¸ö²©¿Í https://blog.csdn.net/Kamfai_Row/article/details/120186348?spm=1001.2014.3001.5506 ÎÒ²ÅÒâÊ¶µ½Òª¸üĞÂÄÚºË
 
 
-æŸ¥çœ‹æœ¬æœºå†…æ ¸
+²é¿´±¾»úÄÚºË
 ```shell 
 uname -r
 ```
-æ˜¯5.4.0
+ÊÇ5.4.0
 
-äºæ˜¯æŒ‰ç…§é“¾æ¥ä¸­çš„å»ºè®®æ›´æ–°5.6.0, ä¸èƒ½å¼€æœº
-åˆè¯•äº†5.7.0å’Œ5.8.0 éƒ½ä¸è¡Œï¼Œ
-5.9.0å¯ä»¥ï¼Œä¸è¿‡å¼€æœºæœ‰ç‚¹æ…¢ï¼Œåœ¨å¼•å¯¼é¡¹ä¹‹åçš„é»‘å±æ–‡å­—ç•Œé¢ä¼šåœç•™ä¸€ä¼šå„¿ï¼Œäºæ˜¯åˆè£…äº†5.11.0ï¼Œå¼€æœºæ˜æ˜¾å¿«äº†
+ÓÚÊÇ°´ÕÕÁ´½ÓÖĞµÄ½¨Òé¸üĞÂ5.6.0, ²»ÄÜ¿ª»ú
+ÓÖÊÔÁË5.7.0ºÍ5.8.0 ¶¼²»ĞĞ£¬
+5.9.0¿ÉÒÔ£¬²»¹ı¿ª»úÓĞµãÂı£¬ÔÚÒıµ¼ÏîÖ®ºóµÄºÚÆÁÎÄ×Ö½çÃæ»áÍ£ÁôÒ»»á¶ù£¬ÓÚÊÇÓÖ×°ÁË5.11.0£¬¿ª»úÃ÷ÏÔ¿ìÁË
 
-è£…å¥½ä¹‹åå±å¹•äº®åº¦å¯ä»¥è°ƒèŠ‚äº†ï¼Œå±å¹•åˆ†è¾¨ç‡ä¹Ÿå¯ä»¥è°ƒèŠ‚äº†ï¼Œè®¾ç½®-æ˜¾ç¤ºä¸­ä¹Ÿä»â€œæœªçŸ¥æ˜¾ç¤ºå±â€å˜æˆäº†â€œå†…ç½®æ˜¾ç¤ºå±â€ï¼Œå¤–æ¥æ˜¾ç¤ºå±ä¹Ÿå¯ä»¥æ˜¾ç¤ºäº†ï¼Œæ˜¾å¡é©±åŠ¨è£…äº†ä¹‹åä¹Ÿä¸ä¼šå¼€æœºå¡ä½äº†
-
-
-
-## 1.10 Ubuntu18.04æ›´æ–°å†…æ ¸(æ‰‹åŠ¨å®‰è£…)/å¸è½½æ¸…é™¤æ—§ç‰ˆæœ¬å†…æ ¸
+×°ºÃÖ®ºóÆÁÄ»ÁÁ¶È¿ÉÒÔµ÷½ÚÁË£¬ÆÁÄ»·Ö±æÂÊÒ²¿ÉÒÔµ÷½ÚÁË£¬ÉèÖÃ-ÏÔÊ¾ÖĞÒ²´Ó¡°Î´ÖªÏÔÊ¾ÆÁ¡±±ä³ÉÁË¡°ÄÚÖÃÏÔÊ¾ÆÁ¡±£¬Íâ½ÓÏÔÊ¾ÆÁÒ²¿ÉÒÔÏÔÊ¾ÁË£¬ÏÔ¿¨Çı¶¯×°ÁËÖ®ºóÒ²²»»á¿ª»ú¿¨×¡ÁË
 
 
-### 1.10.1 æ›´æ–°å†…æ ¸(æ‰‹åŠ¨å®‰è£…)
+
+## 1.10 Ubuntu18.04¸üĞÂÄÚºË(ÊÖ¶¯°²×°)/Ğ¶ÔØÇå³ı¾É°æ±¾ÄÚºË
 
 
-ä»¥ä»5.4.0 - 5.11.0ä¸ºä¾‹
-æŸ¥çœ‹æœ¬æœºå†…æ ¸
+### 1.10.1 ¸üĞÂÄÚºË(ÊÖ¶¯°²×°)
+
+
+ÒÔ´Ó5.4.0 - 5.11.0ÎªÀı
+²é¿´±¾»úÄÚºË
 ```shell 
 uname -r
 ```
-æ˜¯5.4.0
+ÊÇ5.4.0
 
-ä¸‹è½½æ‰€è¦ç”¨åˆ°çš„åŒ… https://kernel.ubuntu.com/~kernel-ppa/mainline/ 
+ÏÂÔØËùÒªÓÃµ½µÄ°ü https://kernel.ubuntu.com/~kernel-ppa/mainline/ 
 
 <img src="image/2022-03-17-19-57-05.png" style="zoom:60%;" />
 
 
-ä¸‹è½½ç¬¬1ã€3ã€4ã€6ä¸ª(å³é”®å¤åˆ¶é“¾æ¥ wgetä¸‹è½½)
+ÏÂÔØµÚ1¡¢3¡¢4¡¢6¸ö(ÓÒ¼ü¸´ÖÆÁ´½Ó wgetÏÂÔØ)
 
 ```shell
-##1ä¸ªallå’Œ3ä¸ªgeneric
+##1¸öallºÍ3¸ögeneric
 wget https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.11/amd64/linux-headers-5.11.0-051100_5.11.0-051100.202102142330_all.deb
 wget https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.11/amd64/linux-headers-5.11.0-051100-generic_5.11.0-051100.202102142330_amd64.deb
 wget https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.11/amd64/linux-image-unsigned-5.11.0-051100-generic_5.11.0-051100.202102142330_amd64.deb
@@ -660,27 +660,27 @@ wget https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.11/amd64/linux-modules-5.
 ```json
 sudo dpkg -i *.deb
 ```
-å¦‚æœä¸€ä¸ªä¸€ä¸ªç¼–è¯‘çš„è¯ï¼Œå®ƒä»¬äº’ç›¸ä¾èµ–ï¼Œå®¹æ˜“å®‰è£…ä¸ä¸Š
+Èç¹ûÒ»¸öÒ»¸ö±àÒëµÄ»°£¬ËüÃÇ»¥ÏàÒÀÀµ£¬ÈİÒ×°²×°²»ÉÏ
 
-å¦‚æœä¸å°å¿ƒæé”™äº†ï¼ŒæŠ¥é”™ä¾èµ–é—®é¢˜ï¼Œå°±`sudo apt-get install -f`æ¥ä¿®å¤é—®é¢˜
+Èç¹û²»Ğ¡ĞÄ¸ã´íÁË£¬±¨´íÒÀÀµÎÊÌâ£¬¾Í`sudo apt-get install -f`À´ĞŞ¸´ÎÊÌâ
 
-é‡å¯ï¼Œå³å¯
+ÖØÆô£¬¼´¿É
 
-å†æ¬¡å¯åŠ¨çš„æ—¶å€™åœ¨å¼•å¯¼ç•Œé¢é€‰æ‹©Advanced options for Ubuntuï¼Œå¯ä»¥çœ‹åˆ°æ–°å®‰è£…çš„å†…æ ¸åœ¨ç¬¬ä¸€ä¸ª
+ÔÙ´ÎÆô¶¯µÄÊ±ºòÔÚÒıµ¼½çÃæÑ¡ÔñAdvanced options for Ubuntu£¬¿ÉÒÔ¿´µ½ĞÂ°²×°µÄÄÚºËÔÚµÚÒ»¸ö
 
-### 1.10.2 æ¸…é™¤å¸è½½æ—§ç‰ˆæœ¬å†…æ ¸
+### 1.10.2 Çå³ıĞ¶ÔØ¾É°æ±¾ÄÚºË
 
-**é’ˆå¯¹çš„æ˜¯ä¸Šä¸€æ­¥é€šè¿‡`dpkg`å‘½ä»¤å®‰è£…çš„å†…æ ¸**
-ä»¥åˆ é™¤5.13.0ä¸ºä¾‹
+**Õë¶ÔµÄÊÇÉÏÒ»²½Í¨¹ı`dpkg`ÃüÁî°²×°µÄÄÚºË**
+ÒÔÉ¾³ı5.13.0ÎªÀı
 
 ```shell
-#æŸ¥çœ‹å·²ç»å®‰è£…çš„å†…æ ¸
+#²é¿´ÒÑ¾­°²×°µÄÄÚºË
 dpkg --get-selections | grep linux
 ```
 
 <img src="image/2022-03-18-20-27-51.png" style="zoom:60%;" />
 
-è¦åˆ é™¤ä»¥ä¸‹å‡ ä¸ª
+ÒªÉ¾³ıÒÔÏÂ¼¸¸ö
 ```shell
 linux-headers-5.13.0-051300			install
 linux-headers-5.13.0-051300-generic		install
@@ -688,102 +688,102 @@ linux-image-unsigned-5.13.0-051300-generic	install
 linux-modules-5.13.0-051300-generic		install
 ```
 
-æ ¹æ®ä¸Šçš„æ–¹æ³•æ˜¯ `sudo apt-get remove ***` è¿™å‡ ä¸ªï¼Œä¸è¿‡è¿™æ ·åˆ é™¤ä¹‹åå†æ¬¡è¿è¡Œ`dpkg --get-selections | grep linux`ç»“æœå¦‚ä¸‹
+¸ù¾İÉÏµÄ·½·¨ÊÇ `sudo apt-get remove ***` Õâ¼¸¸ö£¬²»¹ıÕâÑùÉ¾³ıÖ®ºóÔÙ´ÎÔËĞĞ`dpkg --get-selections | grep linux`½á¹ûÈçÏÂ
 
 <img src="image/2022-03-18-20-35-23.png" style="zoom:60%;" />
 
-äºæ˜¯æˆ‘å»ºè®®ï¼Œå¦‚æœæ˜¯è‡ªå·±æ‰‹åŠ¨å®‰è£…çš„å†…æ ¸ï¼Œå¯ä»¥ç›´æ¥ç”¨å‘½ä»¤`sudo dpkg --purge **`æ¥å¸è½½
+ÓÚÊÇÎÒ½¨Òé£¬Èç¹ûÊÇ×Ô¼ºÊÖ¶¯°²×°µÄÄÚºË£¬¿ÉÒÔÖ±½ÓÓÃÃüÁî`sudo dpkg --purge **`À´Ğ¶ÔØ
 
-å¸è½½åå†æ¬¡æŸ¥çœ‹`dpkg --get-selections | grep linux`,
-å¹¶è¾“å…¥`sudo update-grub`æ›´æ–°å¯åŠ¨é¡¹(æ ¹æ®æƒ…å†µé€‰æ‹©grub/grub2)
+Ğ¶ÔØºóÔÙ´Î²é¿´`dpkg --get-selections | grep linux`,
+²¢ÊäÈë`sudo update-grub`¸üĞÂÆô¶¯Ïî(¸ù¾İÇé¿öÑ¡Ôñgrub/grub2)
 
-## 1.11 ubuntu18.04å®‰è£…
+## 1.11 ubuntu18.04°²×°
 
-### 1.11.1 Ubuntuåˆ†åŒºæ–¹æ¡ˆ
+### 1.11.1 Ubuntu·ÖÇø·½°¸
 
 
 
-*ä¹Ÿæœªå¿…ä¸€å®šè¦è¿™æ ·ï¼Œä¸è¿‡æˆ‘è¿™æ ·æ˜¯æ²¡é”™
+*Ò²Î´±ØÒ»¶¨ÒªÕâÑù£¬²»¹ıÎÒÕâÑùÊÇÃ»´í
 
 |||||
 |-|-|-|-|
-|æ ¹ç›®å½• / | ä¸»åˆ†åŒº | ext4 | 100G| 
-|swap | é€»è¾‘åˆ†åŒº | swap area |16G |
-| /boot|  é€»è¾‘åˆ†åŒº | ext4 | 2G|çš„é‚£ä¸ªç›®å½•æ˜¯ä¸èƒ½é€‰çš„)|
-| /home | é€»è¾‘åˆ†åŒº | ext4 |100G|
+|¸ùÄ¿Â¼ / | Ö÷·ÖÇø | ext4 | 100G| 
+|swap | Âß¼­·ÖÇø | swap area |16G |
+| /boot|  Âß¼­·ÖÇø | ext4 | 2G|µÄÄÇ¸öÄ¿Â¼ÊÇ²»ÄÜÑ¡µÄ)|
+| /home | Âß¼­·ÖÇø | ext4 |100G|
 
-\*swapåˆ†åŒº ( å¥½åƒå¯ä»¥ä¸è¦ï¼Ÿç½‘ä¸Šæœ‰çš„è¯´æ˜¯è¿è¡Œå†…å­˜çš„ä¸¤å€ )
-\*/bootåˆ†åŒº ( ä¸è¦æ”¾åœ¨æ ¹ç›®å½•ä¸‹é¢ï¼Œå®‰è£…æ—¶ï¼Œå®‰è£…ç•Œé¢çš„æœ€ä¸‹é¢çš„ä¸‹æ‹‰èœå•é€‰è¿™ä¸ªåˆ†åŒºï¼Œæ ¹ç›®å½•ä¸‹é¢ )
+\*swap·ÖÇø ( ºÃÏñ¿ÉÒÔ²»Òª£¿ÍøÉÏÓĞµÄËµÊÇÔËĞĞÄÚ´æµÄÁ½±¶ )
+\*/boot·ÖÇø ( ²»Òª·ÅÔÚ¸ùÄ¿Â¼ÏÂÃæ£¬°²×°Ê±£¬°²×°½çÃæµÄ×îÏÂÃæµÄÏÂÀ­²Ëµ¥Ñ¡Õâ¸ö·ÖÇø£¬¸ùÄ¿Â¼ÏÂÃæ )
 
-2022-04-09 ç»™åˆ˜äºšé£å¸ˆå…„çš„ç”µè„‘å®‰è£…ubuntu18.04çš„æ—¶å€™
+2022-04-09 ¸øÁõÑÇ·ÉÊ¦ĞÖµÄµçÄÔ°²×°ubuntu18.04µÄÊ±ºò
 
-åˆ†é…å¥½/boot,swap,/,/homeè¿™å‡ ä¸ªåŒºçš„å¤§å°ï¼Œç‚¹å‡»å®‰è£…æ—¶è¿™ä¸ªé”™è¯¯ï¼šNo EFI system partition was found, the system will likely not be able to boot successfully and the installation may fail
+·ÖÅäºÃ/boot,swap,/,/homeÕâ¼¸¸öÇøµÄ´óĞ¡£¬µã»÷°²×°Ê±Õâ¸ö´íÎó£ºNo EFI system partition was found, the system will likely not be able to boot successfully and the installation may fail
 
-åˆ¶ä½œå¯åŠ¨ç›˜çš„æ—¶å€™ï¼Œé€‰æ‹©MBRï¼Œbiosä¸­ä¸é€‰æ‹©UEFIå¯åŠ¨é¡¹é€‰å¦ä¸€ä¸ª
-
-
+ÖÆ×÷Æô¶¯ÅÌµÄÊ±ºò£¬Ñ¡ÔñMBR£¬biosÖĞ²»Ñ¡ÔñUEFIÆô¶¯ÏîÑ¡ÁíÒ»¸ö
 
 
 
 
 
 
-## 1.12 ubuntuå¯†ç é—®é¢˜
 
-### 1.12.1 æ›´æ”¹å¯†ç 
 
-æ›´æ”¹è´¦æˆ·å¯†ç ï¼Œè¿™æ ·æ›´æ”¹å¯ä»¥æ›´æ”¹ä¸ºä»»æ„å¯†ç 
+## 1.12 ubuntuÃÜÂëÎÊÌâ
+
+### 1.12.1 ¸ü¸ÄÃÜÂë
+
+¸ü¸ÄÕË»§ÃÜÂë£¬ÕâÑù¸ü¸Ä¿ÉÒÔ¸ü¸ÄÎªÈÎÒâÃÜÂë
 ```shell
-sudo passwd ç”¨æˆ·å
+sudo passwd ÓÃ»§Ãû
 ```
 
 
 ```shell
-# è®¾ç½®rootç”¨æˆ·å¯†ç 
+# ÉèÖÃrootÓÃ»§ÃÜÂë
 sudo passwd root
 ```
 
 
-### 1.12.2 åˆ‡æ¢ç”¨æˆ·
+### 1.12.2 ÇĞ»»ÓÃ»§
 
-åˆ‡æ¢rootç”¨æˆ·
+ÇĞ»»rootÓÃ»§
 ``` shell
 sudo su root
-# æˆ–è€…
+# »òÕß
 sudo su
 ```
 
-åˆ‡æ¢å›æ¥
+ÇĞ»»»ØÀ´
 ```shell
-sudo su ç”¨æˆ·å
-# ä¾‹å¦‚
+sudo su ÓÃ»§Ãû
+# ÀıÈç
 sudo su teng
 ```
 
 
-### 1.12.3 åˆ é™¤ç”¨æˆ·å¯†ç ï¼Œä»¥åŠåˆ é™¤ä¹‹åæ€ä¹ˆæ¢å¤
+### 1.12.3 É¾³ıÓÃ»§ÃÜÂë£¬ÒÔ¼°É¾³ıÖ®ºóÔõÃ´»Ö¸´
 
-ç»ˆç«¯è¾“å…¥  `sudo passwd -d ç”¨æˆ·å  ` , å³å¯åˆ é™¤ç”¨æˆ·å¯†ç ï¼Œ
+ÖÕ¶ËÊäÈë  `sudo passwd -d ÓÃ»§Ãû  ` , ¼´¿ÉÉ¾³ıÓÃ»§ÃÜÂë£¬
 
-ä½†æ˜¯ï¼ï¼ï¼åˆ é™¤ä¹‹åï¼Œä»…ä»…æ˜¯å¼€æœºç™»å½•é¡µä¸ç”¨è¾“å…¥å¯†ç 
-åœ¨ç»ˆç«¯æ‰§è¡Œå‘½ä»¤çš„æ—¶å€™ä¾ç„¶è¦è¾“å…¥å¯†ç ï¼Œä¾‹å¦‚
+µ«ÊÇ£¡£¡£¡É¾³ıÖ®ºó£¬½ö½öÊÇ¿ª»úµÇÂ¼Ò³²»ÓÃÊäÈëÃÜÂë
+ÔÚÖÕ¶ËÖ´ĞĞÃüÁîµÄÊ±ºòÒÀÈ»ÒªÊäÈëÃÜÂë£¬ÀıÈç
 ```shell
 sudo apt-get update
-[sudo] yefei çš„å¯†ç ï¼š
+[sudo] yefei µÄÃÜÂë£º
 ```
-è¿™æ—¶ï¼Œæ— è®ºè¾“å…¥ä»€ä¹ˆå¯†ç éƒ½ä¸å¯¹ï¼Œéå¸¸ä»¤äººå¤´å¤§ã€‚
+ÕâÊ±£¬ÎŞÂÛÊäÈëÊ²Ã´ÃÜÂë¶¼²»¶Ô£¬·Ç³£ÁîÈËÍ·´ó¡£
 
-è§£å†³æ–¹æ¡ˆï¼š
-æŒ‰`ctrl + shift + F1`è¿›å…¥å‘½ä»¤è¡Œç•Œé¢(æˆ‘çš„æ˜¯F1ï¼Œä½ çš„å¯èƒ½æ°å¥½F1å¯¹åº”çš„æ˜¯å›¾å½¢åŒ–ç•Œé¢ï¼Œè¿™æ—¶å€™è¯•ä¸€ä¸‹å…¶å®ƒçš„Fé”®).
+½â¾ö·½°¸£º
+°´`ctrl + shift + F1`½øÈëÃüÁîĞĞ½çÃæ(ÎÒµÄÊÇF1£¬ÄãµÄ¿ÉÄÜÇ¡ºÃF1¶ÔÓ¦µÄÊÇÍ¼ĞÎ»¯½çÃæ£¬ÕâÊ±ºòÊÔÒ»ÏÂÆäËüµÄF¼ü).
 
-è¾“å…¥ç”¨æˆ·åï¼Œå›è½¦ç™»å½•ï¼Œè¿™æ—¶æ˜¯ä¸éœ€è¦ç”¨å¯†ç å°±å¯ä»¥ç™»å½•çš„
+ÊäÈëÓÃ»§Ãû£¬»Ø³µµÇÂ¼£¬ÕâÊ±ÊÇ²»ĞèÒªÓÃÃÜÂë¾Í¿ÉÒÔµÇÂ¼µÄ
 
-ç„¶åè¾“å…¥`sudo passwd ç”¨æˆ·å`, è¾“å…¥ä¸¤éæ–°å¯†ç å³å¯ï¼Œä¾‹å¦‚
+È»ºóÊäÈë`sudo passwd ÓÃ»§Ãû`, ÊäÈëÁ½±éĞÂÃÜÂë¼´¿É£¬ÀıÈç
 
 ```shell
 yefei@yefei:~$ sudo passwd yefei
-â—† â—† â—† UNIX :
-â—† â—† â—† â—† â—† UNIX â—† â—† â—† :
+¡ô ¡ô ¡ô UNIX :
+¡ô ¡ô ¡ô ¡ô ¡ô UNIX ¡ô ¡ô ¡ô :
 ```
 
 
@@ -801,17 +801,17 @@ yefei@yefei:~$ sudo passwd yefei
 
 
 
-# 2. å­¦ä¹ æ•´ç†
+# 2. Ñ§Ï°ÕûÀí
 
 ## 2.1 SLAM
 
-### 2.1.1 åŠç¨ å¯†SLAM:EAO-SLAM
+### 2.1.1 °ë³íÃÜSLAM:EAO-SLAM
 
 https://github.com/yanmin-wu/EAO-SLAM 
 
-åŠç¨ å¯†SLAMä½†æ˜¯ä¸å®Œæ•´ï¼Œåªèƒ½ç”¨ä¸€ä¸ªtum fr3_long_office_house
+°ë³íÃÜSLAMµ«ÊÇ²»ÍêÕû£¬Ö»ÄÜÓÃÒ»¸ötum fr3_long_office_house
 
-## 2.2 ä»£ç å­¦ä¹ 
+## 2.2 ´úÂëÑ§Ï°
 
 ### 2.2.1 string::find()
 
@@ -820,17 +820,17 @@ string::find()
 std::string s("123456789abcde"); 
 std::string::size_type postion;
 //1.
-//findå‡½æ•°è¿”å›abåœ¨sä¸­çš„ä½ç½®
+//findº¯Êı·µ»ØabÔÚsÖĞµÄÎ»ÖÃ
 postion = s.find("ab");
 //2.
-//findå‡½æ•°ï¼Œä»å­—ç¬¦ä¸²sä¸‹æ ‡5å¼€å§‹ï¼ŒæŸ¥æ‰¾"ab"å¹¶è¿”å›abåœ¨sä¸­çš„ä½ç½®
-postion = s.find("ab"ï¼Œ5);
-//å¦‚æœæ²¡æœ‰æ‰¾åˆ°abï¼Œåˆ™postion==std::string::npos
+//findº¯Êı£¬´Ó×Ö·û´®sÏÂ±ê5¿ªÊ¼£¬²éÕÒ"ab"²¢·µ»ØabÔÚsÖĞµÄÎ»ÖÃ
+postion = s.find("ab"£¬5);
+//Èç¹ûÃ»ÓĞÕÒµ½ab£¬Ôòpostion==std::string::npos
 ```
 
-### 2.2.2 è¶…å‡º INT_MAX å’Œ INT_MIN
+### 2.2.2 ³¬³ö INT_MAX ºÍ INT_MIN
 
-intå‹å˜é‡çš„æœ€å¤§å€¼ã€æœ€å°å€¼åˆ†åˆ«ä¸º 
+intĞÍ±äÁ¿µÄ×î´óÖµ¡¢×îĞ¡Öµ·Ö±ğÎª 
 
 
 ``` c++
@@ -838,13 +838,13 @@ INT_MAX = 2147483647
 INT_MIN = -2147483648
 ```
 
-å¯¹äºg++-5æ¥è¯´ï¼ˆå› ä¸ºæˆ‘åœ¨Ubuntuä¸Šç”¨çš„æ˜¯è¿™ä¸ªï¼‰,å½“``int a = INT_MAX +ã€€ï¼‘``çš„æ—¶å€™, ``a``ä¼šè¢«èµ‹å€¼ä¸º``INT_MIN``, å½“``int a = INT_MAX +ã€€2``çš„æ—¶å€™, ``a``ä¼šè¢«èµ‹å€¼ä¸º``INT_MIN + 1``, ä»¥æ­¤ç±»æ¨ï¼Œå³æ„æˆä¸€ä¸ªå°é—­çš„ï¼Œç±»ä¼¼"ç¯çŠ¶çš„ç»“æ„", å½“aå°äº`INT_MIN``çš„æ—¶å€™ä¹Ÿæ˜¯å¦‚æ­¤ã€‚
+¶ÔÓÚg++-5À´Ëµ£¨ÒòÎªÎÒÔÚUbuntuÉÏÓÃµÄÊÇÕâ¸ö£©,µ±``int a = INT_MAX +¡¡£±``µÄÊ±ºò, ``a``»á±»¸³ÖµÎª``INT_MIN``, µ±``int a = INT_MAX +¡¡2``µÄÊ±ºò, ``a``»á±»¸³ÖµÎª``INT_MIN + 1``, ÒÔ´ËÀàÍÆ£¬¼´¹¹³ÉÒ»¸ö·â±ÕµÄ£¬ÀàËÆ"»·×´µÄ½á¹¹", µ±aĞ¡ÓÚ`INT_MIN``µÄÊ±ºòÒ²ÊÇÈç´Ë¡£
 
-ä½†è¦æ³¨æ„çš„ä¸€ç‚¹æ˜¯, åœ¨ä¸€äº›LeetCodeä¸Šè§„å®šintèŒƒå›´çš„é¢˜ç›®ä¸­ï¼Œè¿™æ ·çš„å–å€¼ï¼Œå¾€å¾€æ˜¯ä¼šæŠ¥é”™çš„ï¼ï¼ï¼ï¼ï¼ï¼
+µ«Òª×¢ÒâµÄÒ»µãÊÇ, ÔÚÒ»Ğ©LeetCodeÉÏ¹æ¶¨int·¶Î§µÄÌâÄ¿ÖĞ£¬ÕâÑùµÄÈ¡Öµ£¬ÍùÍùÊÇ»á±¨´íµÄ£¡£¡£¡£¡£¡£¡
 
-### 2.2.3 å‡½æ•°æ•°ç»„ä»¥ã€Œå¼•ç”¨ã€æ–¹å¼ä¼ é€’ (int &x)
+### 2.2.3 º¯ÊıÊı×éÒÔ¡¸ÒıÓÃ¡¹·½Ê½´«µİ (int &x)
 
-å¦‚æœå‡½æ•°çš„å‚æ•°å¯¹è±¡æ˜¯ä»¥â€œå¼•ç”¨â€æ–¹å¼ä¼ é€’çš„ã€‚ä¹Ÿå°±æ˜¯è¯´ï¼Œä¸å¯¹å®å‚ä½œä»»ä½•æ‹·è´ï¼Œé‚£ä¹ˆåœ¨å‡½æ•°å†…éƒ¨å¯¹äºè¯¥å‚æ•°çš„æ”¹å˜ï¼Œä¹ŸåŒæ—¶ä¼šåœ¨å‡½æ•°å¤–çš„ä¸»ç¨‹åºå†…å¼•èµ·å‡½æ•°çš„æ”¹å˜ï¼Œä¾‹å­å¦‚ä¸‹ã€‚
+Èç¹ûº¯ÊıµÄ²ÎÊı¶ÔÏóÊÇÒÔ¡°ÒıÓÃ¡±·½Ê½´«µİµÄ¡£Ò²¾ÍÊÇËµ£¬²»¶ÔÊµ²Î×÷ÈÎºÎ¿½±´£¬ÄÇÃ´ÔÚº¯ÊıÄÚ²¿¶ÔÓÚ¸Ã²ÎÊıµÄ¸Ä±ä£¬Ò²Í¬Ê±»áÔÚº¯ÊıÍâµÄÖ÷³ÌĞòÄÚÒıÆğº¯ÊıµÄ¸Ä±ä£¬Àı×ÓÈçÏÂ¡£
 ```c++
 int fun(int &x){
 	x = x * x;
@@ -855,45 +855,45 @@ int main(){
 	int n = fun(m);
 	cout << "m = " << m << endl;
 }
-//æ­¤æ—¶è¾“å‡ºçš„æ­¤æ—¶è¾“å‡ºçš„ç»“æœå°†ä¸º m = 4;
+//´ËÊ±Êä³öµÄ´ËÊ±Êä³öµÄ½á¹û½«Îª m = 4;
 ```
 
-### 2.2.4 stoi()å‡½æ•°ï¼šstring->åè¿›åˆ¶int
-stoi()å‡½æ•°ï¼šå°†n è¿›åˆ¶çš„å­—ç¬¦ä¸²è½¬åŒ–ä¸ºåè¿›åˆ¶int
+### 2.2.4 stoi()º¯Êı£ºstring->Ê®½øÖÆint
+stoi()º¯Êı£º½«n ½øÖÆµÄ×Ö·û´®×ª»¯ÎªÊ®½øÖÆint
 ```c++
 string s("123");
 int a = stoi(s);
-cout << a <<ã€€endl;
+cout << a <<¡¡endl;
 //output: 123
 ```
 
-### 2.2.5 C++ ä¼˜å…ˆçº§é˜Ÿåˆ— priority_queue(STL priority_queue)
+### 2.2.5 C++ ÓÅÏÈ¼¶¶ÓÁĞ priority_queue(STL priority_queue)
 http://c.biancheng.net/view/480.html
 
-**æœ‰å…³ä¼˜å…ˆçº§é˜Ÿåˆ—è‡ªå®šä¹‰æ’åºæ–¹å¼ï¼Œä¹Ÿè¦é‡ç‚¹çœ‹çœ‹ã€‚**
+**ÓĞ¹ØÓÅÏÈ¼¶¶ÓÁĞ×Ô¶¨ÒåÅÅĞò·½Ê½£¬Ò²ÒªÖØµã¿´¿´¡£**
 
 
-emplaceå’Œpushçš„åŒºåˆ«
+emplaceºÍpushµÄÇø±ğ
 ```c++
-//ä»¥ä¸‹ä¸¤ç§éƒ½å¯ä»¥
+//ÒÔÏÂÁ½ÖÖ¶¼¿ÉÒÔ
 pri_que.emplace(data(1, 2));
 pri_que.push(data(1, 2));
 
-//è¿˜å¯ä»¥è¿™æ ·
+//»¹¿ÉÒÔÕâÑù
 pri_que.emplace(1, 2);
 ```
-`pri_que.emplace("nine");`ä¼˜äº`pri_que.push("nine");`
+`pri_que.emplace("nine");`ÓÅÓÚ`pri_que.push("nine");`
 
 
 
-ä¼˜å…ˆçº§é˜Ÿåˆ—è‡ªå®šä¹‰æ’åºæ–¹å¼ï¼Œmapã€setä¹Ÿé€‚ç”¨
+ÓÅÏÈ¼¶¶ÓÁĞ×Ô¶¨ÒåÅÅĞò·½Ê½£¬map¡¢setÒ²ÊÊÓÃ
 
 
-å‚è€ƒçŸ¥ä¹æ–‡ç«  [ä¼˜å…ˆé˜Ÿåˆ—è‡ªå®šä¹‰æ’åºçš„ä¸‰ç§æ–¹å¼](https://zhuanlan.zhihu.com/p/344121142)
+²Î¿¼ÖªºõÎÄÕÂ [ÓÅÏÈ¶ÓÁĞ×Ô¶¨ÒåÅÅĞòµÄÈıÖÖ·½Ê½](https://zhuanlan.zhihu.com/p/344121142)
 
-é€šå¸¸éƒ½æ˜¯ç”¨ç¬¬ä¸€ç§è¶³ä»¥
+Í¨³£¶¼ÊÇÓÃµÚÒ»ÖÖ×ãÒÔ
 
-æ–¹æ³•1 é‡è½½()
+·½·¨1 ÖØÔØ()
 
 
 
@@ -903,17 +903,17 @@ pri_que.emplace(1, 2);
             return a->val > b->val;
         }
     };
-// priority_queueè‡ªå®šä¹‰å‡½æ•°çš„æ¯”è¾ƒä¸sortæ­£å¥½æ˜¯ç›¸åçš„
-// ä¹Ÿå°±æ˜¯è¯´ï¼Œå¦‚æœä½ æ˜¯æŠŠå¤§äºå·ä½œä¸ºç¬¬ä¸€å…³é”®å­—çš„æ¯”è¾ƒæ–¹å¼ï¼Œé‚£ä¹ˆå †é¡¶çš„å…ƒç´ å°±æ˜¯ç¬¬ä¸€å…³é”®å­—æœ€å°çš„
+// priority_queue×Ô¶¨Òåº¯ÊıµÄ±È½ÏÓësortÕıºÃÊÇÏà·´µÄ
+// Ò²¾ÍÊÇËµ£¬Èç¹ûÄãÊÇ°Ñ´óÓÚºÅ×÷ÎªµÚÒ»¹Ø¼ü×ÖµÄ±È½Ï·½Ê½£¬ÄÇÃ´¶Ñ¶¥µÄÔªËØ¾ÍÊÇµÚÒ»¹Ø¼ü×Ö×îĞ¡µÄ
     priority_queue<ListNode*, vector<ListNode*>, cmp> pq; 
-// æ­¤æ—¶pqå°±æŒ‰ç…§èŠ‚ç‚¹çš„å€¼å°†æœ€å°çš„æ”¾åœ¨å †é¡¶
+// ´ËÊ±pq¾Í°´ÕÕ½ÚµãµÄÖµ½«×îĞ¡µÄ·ÅÔÚ¶Ñ¶¥
 
 ```
 
 
 
 
-æ–¹æ³•2 é‡è½½<
+·½·¨2 ÖØÔØ<
 
 
 
@@ -923,8 +923,8 @@ pri_que.emplace(1, 2);
         int val;
         ListNode* node;
         bool operator < (const Status &tmp) const{ 
-        // å‡½æ•°å¿…é¡»æ˜¯é™æ€çš„ ä½¿å¾—è¯¥å‡½æ•°å¯ä»¥è¢« const å¯¹è±¡ä¹Ÿå°±æ˜¯å¸¸é‡æ‰€è°ƒç”¨
-        // å½¢å‚å¯ä»¥åŠ ä¸Šconstå…³é”®å­—å’Œ&ï¼Œä¿è¯å®‰å…¨æ€§ï¼Œæé«˜æ•ˆç‡
+        // º¯Êı±ØĞëÊÇ¾²Ì¬µÄ Ê¹µÃ¸Ãº¯Êı¿ÉÒÔ±» const ¶ÔÏóÒ²¾ÍÊÇ³£Á¿Ëùµ÷ÓÃ
+        // ĞÎ²Î¿ÉÒÔ¼ÓÉÏconst¹Ø¼ü×ÖºÍ&£¬±£Ö¤°²È«ĞÔ£¬Ìá¸ßĞ§ÂÊ
             return val > tmp.val;
         }
     };
@@ -934,14 +934,14 @@ pri_que.emplace(1, 2);
 
 
 
-æ–¹æ³•3 åˆ©ç”¨å‹å…ƒå‡½æ•°é‡è½½<
+·½·¨3 ÀûÓÃÓÑÔªº¯ÊıÖØÔØ<
 
 
 ```c++
     struct Status{
         int val;
         ListNode* node; 
-        friend bool operator<(Status a, Status b)  // å½¢å‚å¯ä»¥åŠ ä¸Šconstå…³é”®å­—å’Œ&ï¼Œä¿è¯å®‰å…¨æ€§ï¼Œæé«˜æ•ˆç‡
+        friend bool operator<(Status a, Status b)  // ĞÎ²Î¿ÉÒÔ¼ÓÉÏconst¹Ø¼ü×ÖºÍ&£¬±£Ö¤°²È«ĞÔ£¬Ìá¸ßĞ§ÂÊ
         {
             return a.val > b.val;
         }
@@ -950,7 +950,7 @@ pri_que.emplace(1, 2);
 
 ```
 
-å®ç°ä¾‹å­å¦‚ä¸‹
+ÊµÏÖÀı×ÓÈçÏÂ
 
 ```c++
 
@@ -1029,12 +1029,12 @@ void test_demo(){
 
 
 
-### 2.2.6 å¯¹äºmap[]çš„ä½¿ç”¨é—®é¢˜
+### 2.2.6 ¶ÔÓÚmap[]µÄÊ¹ÓÃÎÊÌâ
 ```c++
-// å¦‚ä¸‹ä»£ç ï¼š
+// ÈçÏÂ´úÂë£º
     unordered_map<string, int> umap;
     cout << umap["bb"] << endl;
-    printMap<unordered_map<string, int>>(umap);//è‡ªå·±å®šä¹‰çš„å‡½æ•°
+    printMap<unordered_map<string, int>>(umap);//×Ô¼º¶¨ÒåµÄº¯Êı
     cout << umap.empty() << endl;
 ```
 output:
@@ -1043,7 +1043,7 @@ key = bb value = 0
 0
 
 
-æ€»ç»“ï¼šè°ƒç”¨umap["bb"]ï¼Œä¼šè‡ªå·±åˆ›å»ºä¸€ä¸ªï¼Œvalueä¸º0ï¼›
+×Ü½á£ºµ÷ÓÃumap["bb"]£¬»á×Ô¼º´´½¨Ò»¸ö£¬valueÎª0£»
 
 
 
@@ -1051,7 +1051,7 @@ key = bb value = 0
 
 
 
-### 2.2.7 æœ‰å…³Vector<int>åˆå§‹åŒ–çš„é—®é¢˜
+### 2.2.7 ÓĞ¹ØVector<int>³õÊ¼»¯µÄÎÊÌâ
 
 ```c++
 vector<int> v(3);
@@ -1072,20 +1072,20 @@ output:
 
 
 
-### 2.2.8 å‰ç¼€å’Œ
-å…·ä½“å¯ä»¥å‚è€ƒè¿™ä¸ªé¢˜ [304. äºŒç»´åŒºåŸŸå’Œæ£€ç´¢ - çŸ©é˜µä¸å¯å˜](https://leetcode-cn.com/problems/range-sum-query-2d-immutable/)
+### 2.2.8 Ç°×ººÍ
+¾ßÌå¿ÉÒÔ²Î¿¼Õâ¸öÌâ [304. ¶şÎ¬ÇøÓòºÍ¼ìË÷ - ¾ØÕó²»¿É±ä](https://leetcode-cn.com/problems/range-sum-query-2d-immutable/)
 
-ä¹‹å‰æ²¡å­¦è¿‡è¿™ä¸ªï¼Œå¾ˆeasyï¼Œä½†æ˜¯æ²¡å¾€è¿™æ–¹é¢æƒ³ï¼Œå¯¼è‡´ä»£ç è¶…æ—¶
-
-
+Ö®Ç°Ã»Ñ§¹ıÕâ¸ö£¬ºÜeasy£¬µ«ÊÇÃ»ÍùÕâ·½ÃæÏë£¬µ¼ÖÂ´úÂë³¬Ê±
 
 
 
 
 
-### 2.2.9 èµ·æ³¡æ³•æ’åº
+
+
+### 2.2.9 ÆğÅİ·¨ÅÅĞò
 ```c++
-//èµ·æ³¡æ³•æ’åº
+//ÆğÅİ·¨ÅÅĞò
 void bubble_sort(int A[], int n){
     for(bool sorted = false; sorted = !sorted; n--)
         for(int i = 1; i < n; i++){
@@ -1098,23 +1098,23 @@ void bubble_sort(int A[], int n){
 
 ```
 
-### 2.2.10 å•è°ƒæ ˆï¼Œè¿™ä¸ªé¢˜å±å®æ˜¯æ²¡å­¦çš„è¯æƒ³ä¸åˆ°è¿™ä¹ˆåš
+### 2.2.10 µ¥µ÷Õ»£¬Õâ¸öÌâÊôÊµÊÇÃ»Ñ§µÄ»°Ïë²»µ½ÕâÃ´×ö
 
-[84. æŸ±çŠ¶å›¾ä¸­æœ€å¤§çš„çŸ©å½¢](https://leetcode-cn.com/problems/largest-rectangle-in-histogram/submissions/)
-è®²è§£æ˜¯å‚è€ƒçš„ï¼š https://leetcode-cn.com/problems/largest-rectangle-in-histogram/solution/84-by-ikaruga/
-å®˜æ–¹çš„è®²è§£é¢‡ä¸ºå¤æ‚
+[84. Öù×´Í¼ÖĞ×î´óµÄ¾ØĞÎ](https://leetcode-cn.com/problems/largest-rectangle-in-histogram/submissions/)
+½²½âÊÇ²Î¿¼µÄ£º https://leetcode-cn.com/problems/largest-rectangle-in-histogram/solution/84-by-ikaruga/
+¹Ù·½µÄ½²½âÆÄÎª¸´ÔÓ
 
-### 2.2.11 é“¾è¡¨æ’åº
-[147.å¯¹é“¾è¡¨è¿›è¡Œæ’å…¥æ’åº](https://leetcode-cn.com/problems/insertion-sort-list/) è¿™ä¸ªé¢˜çš„æ–¹æ³•æ„Ÿè§‰å¾ˆç»å…¸ï¼Œæ¯”è¾ƒé€šç”¨å¯ä»¥è¯´æ˜¯ï¼Œèµ·æ³¡æ³•é“¾è¡¨ç‰ˆï¼Ÿ
+### 2.2.11 Á´±íÅÅĞò
+[147.¶ÔÁ´±í½øĞĞ²åÈëÅÅĞò](https://leetcode-cn.com/problems/insertion-sort-list/) Õâ¸öÌâµÄ·½·¨¸Ğ¾õºÜ¾­µä£¬±È½ÏÍ¨ÓÃ¿ÉÒÔËµÊÇ£¬ÆğÅİ·¨Á´±í°æ£¿
 
 
 ### 2.2.12 low_bound()
-è¯¥å‡½æ•°çš„ä½œç”¨ä¸ºï¼šæ‰¾æœ€æ¥è¿‘çš„å¤§äºå®ƒçš„æ•°
+¸Ãº¯ÊıµÄ×÷ÓÃÎª£ºÕÒ×î½Ó½üµÄ´óÓÚËüµÄÊı
 
-ç¬¬ä¸€æ¬¡è§åˆ°è¿™ä¸ªå‡½æ•°ï¼Œæ˜¯åœ¨è¿™é‡Œï¼š
-[220. å­˜åœ¨é‡å¤å…ƒç´  III(https://leetcode-cn.com/problems/contains-duplicate-iii/submissions/)
+µÚÒ»´Î¼ûµ½Õâ¸öº¯Êı£¬ÊÇÔÚÕâÀï£º
+[220. ´æÔÚÖØ¸´ÔªËØ III(https://leetcode-cn.com/problems/contains-duplicate-iii/submissions/)
 
-è¿™é‡Œä¸»è¦æ˜¯ç”¨åœ¨äº†
+ÕâÀïÖ÷ÒªÊÇÓÃÔÚÁË
 ```c++
 set<int> st;
 st.insert(1);
@@ -1124,23 +1124,23 @@ st.insert(10);
 auto it = st.low_bound(9);
 cout << *it << endl;
 ```
-è¾“å‡ºä¸ºï¼š10
+Êä³öÎª£º10
 
-æ›´å¤šè¯¦ç»†çš„è§£æï¼Œè§ï¼šhttp://m.biancheng.net/view/7521.html
+¸ü¶àÏêÏ¸µÄ½âÎö£¬¼û£ºhttp://m.biancheng.net/view/7521.html
 
 
 
-### 2.2.13 204. è®¡æ•°è´¨æ•°
+### 2.2.13 204. ¼ÆÊıÖÊÊı
 https://leetcode-cn.com/problems/count-primes/
-ç©¶æç‰ˆç­”æ¡ˆå‚è€ƒhttps://blog.csdn.net/jay_zzs/article/details/106347717
-è¯¥ä½œè€…æ˜¯æ ¹æ®å®˜æ–¹ç­”æ¡ˆçš„ã€æ–¹æ³•äºŒï¼šåŸƒæ°ç­›ã€‘è¿›è¡Œäº†è¿›ä¸€æ­¥çš„æ”¹è‰¯
+¾¿¼«°æ´ğ°¸²Î¿¼https://blog.csdn.net/jay_zzs/article/details/106347717
+¸Ã×÷ÕßÊÇ¸ù¾İ¹Ù·½´ğ°¸µÄ¡¾·½·¨¶ş£º°£ÊÏÉ¸¡¿½øĞĞÁË½øÒ»²½µÄ¸ÄÁ¼
 
 
-### 2.2.14 vector size()å‡½æ•°è¦æ³¨æ„çš„é—®é¢˜
+### 2.2.14 vector size()º¯ÊıÒª×¢ÒâµÄÎÊÌâ
 
-è¯¥å‡½æ•°é»˜è®¤æ˜¯æ— ç¬¦å·çš„æ•´å‹å˜é‡ï¼Œ
+¸Ãº¯ÊıÄ¬ÈÏÊÇÎŞ·ûºÅµÄÕûĞÍ±äÁ¿£¬
 
-å¦‚ä¸‹ï¼š
+ÈçÏÂ£º
 ```c++
     vector<int>arr{1,2,1,2};
     cout << arr.size() << endl;
@@ -1150,12 +1150,12 @@ output:
 > 4
 > 18446744073709551615
 
-æ³¨æ„è¿™æ ·ä¸ä¼šæ˜¯-1
+×¢ÒâÕâÑù²»»áÊÇ-1
 
-åœ¨è¿™é‡Œè¦æ³¨æ„çš„æ˜¯ï¼Œåœ¨forå¾ªç¯ä¸­ï¼Œå¦‚æœç›´æ¥ç”¨size()å‡½æ•°æ¥åšåˆ¤æ–­çš„è¯ï¼Œåº”å½“æ³¨æ„ä»¥ä¸‹ä¸¤ç§å†™æ³•çš„ä¸åŒï¼Œå¦‚:
+ÔÚÕâÀïÒª×¢ÒâµÄÊÇ£¬ÔÚforÑ­»·ÖĞ£¬Èç¹ûÖ±½ÓÓÃsize()º¯ÊıÀ´×öÅĞ¶ÏµÄ»°£¬Ó¦µ±×¢ÒâÒÔÏÂÁ½ÖÖĞ´·¨µÄ²»Í¬£¬Èç:
 
 ```c++
-    //ç”±äºarr.size() - 5å¾ˆå¤§ï¼Œå¾ªç¯ä¼šæ‰§è¡Œå¾ˆå¤šæ¬¡ï¼Œä¼šå‡ºç°å„ç§å¥‡æ€ªé—®é¢˜
+    //ÓÉÓÚarr.size() - 5ºÜ´ó£¬Ñ­»·»áÖ´ĞĞºÜ¶à´Î£¬»á³öÏÖ¸÷ÖÖÆæ¹ÖÎÊÌâ
     vector<int>arr{1,2,1,2};
     for(int i = 0; i < arr.size() - 5; i++){
 
@@ -1165,7 +1165,7 @@ output:
 
 
 ```c++
-    //ä¼šç›´æ¥è·³å‡ºå¾ªç¯ä¸æ‰§è¡Œ
+    //»áÖ±½ÓÌø³öÑ­»·²»Ö´ĞĞ
     vector<int>arr{1,2,1,2};
     int n = arr.size();
     for(int i = 0; i < n - 5; i++){
@@ -1173,48 +1173,48 @@ output:
     }
 
 ```
-### 2.2.15 åˆ¤æ–­charå‹å˜é‡æ˜¯å¦ä¸ºå­—ç¬¦æ•°å­—ç­‰
+### 2.2.15 ÅĞ¶ÏcharĞÍ±äÁ¿ÊÇ·ñÎª×Ö·ûÊı×ÖµÈ
 
 1. isalpha
 
-isalpha()ç”¨æ¥åˆ¤æ–­ä¸€ä¸ªå­—ç¬¦æ˜¯å¦ä¸ºå­—æ¯ï¼Œå¦‚æœæ˜¯å­—ç¬¦åˆ™è¿”å›éé›¶ï¼Œå¦åˆ™è¿”å›é›¶ã€‚
+isalpha()ÓÃÀ´ÅĞ¶ÏÒ»¸ö×Ö·ûÊÇ·ñÎª×ÖÄ¸£¬Èç¹ûÊÇ×Ö·ûÔò·µ»Ø·ÇÁã£¬·ñÔò·µ»ØÁã¡£
 ```c++
-    cout<<isalpha('a'); //è¿”å›éé›¶
-    cout<<isalpha('2'); //è¿”å›0
+    cout<<isalpha('a'); //·µ»Ø·ÇÁã
+    cout<<isalpha('2'); //·µ»Ø0
 ```
 2.isalnum
 
-isalnum()ç”¨æ¥åˆ¤æ–­ä¸€ä¸ªå­—ç¬¦æ˜¯å¦ä¸ºæ•°å­—æˆ–è€…å­—æ¯ï¼Œä¹Ÿå°±æ˜¯è¯´åˆ¤æ–­ä¸€ä¸ªå­—ç¬¦æ˜¯å¦å±a\~z\|\|A\~Z\||0\~9
+isalnum()ÓÃÀ´ÅĞ¶ÏÒ»¸ö×Ö·ûÊÇ·ñÎªÊı×Ö»òÕß×ÖÄ¸£¬Ò²¾ÍÊÇËµÅĞ¶ÏÒ»¸ö×Ö·ûÊÇ·ñÊôa\~z\|\|A\~Z\||0\~9
 
 ```c++
-    cout<<isalnum('a'); //è¾“å‡ºéé›¶
-    cout<<isalnum('2'); // éé›¶
-    cout<<isalnum('.'); // é›¶
+    cout<<isalnum('a'); //Êä³ö·ÇÁã
+    cout<<isalnum('2'); // ·ÇÁã
+    cout<<isalnum('.'); // Áã
 ```
 
 3.islower
 
-islower()ç”¨æ¥åˆ¤æ–­ä¸€ä¸ªå­—ç¬¦æ˜¯å¦ä¸ºå°å†™å­—æ¯ï¼Œä¹Ÿå°±æ˜¯æ˜¯å¦å±äºa~zã€‚
+islower()ÓÃÀ´ÅĞ¶ÏÒ»¸ö×Ö·ûÊÇ·ñÎªĞ¡Ğ´×ÖÄ¸£¬Ò²¾ÍÊÇÊÇ·ñÊôÓÚa~z¡£
 
 ```c++
-    cout<<islower('a'ï¼‰; //éé›¶
-    cout<<islower('2'); //è¾“å‡º0
-    cout<<islower('A'); //è¾“å‡º0
+    cout<<islower('a'£©; //·ÇÁã
+    cout<<islower('2'); //Êä³ö0
+    cout<<islower('A'); //Êä³ö0
 ```
 
 4.isupper
 
-isupper()å’Œislowerç›¸åï¼Œç”¨æ¥åˆ¤æ–­ä¸€ä¸ªå­—ç¬¦æ˜¯å¦ä¸ºå¤§å†™å­—æ¯ã€‚
+isupper()ºÍislowerÏà·´£¬ÓÃÀ´ÅĞ¶ÏÒ»¸ö×Ö·ûÊÇ·ñÎª´óĞ´×ÖÄ¸¡£
 
 ```c++
-    cout<<isupper('a'); //è¿”å›0
-    cout<<isupper('2'); //è¿”å›0
-    cout<<isupper('A'); //è¿”å›éé›¶
+    cout<<isupper('a'); //·µ»Ø0
+    cout<<isupper('2'); //·µ»Ø0
+    cout<<isupper('A'); //·µ»Ø·ÇÁã
 ```
 
 5.tolower
 
-tolower()å‡½æ•°æ˜¯æŠŠå­—ç¬¦ä¸²éƒ½è½¬åŒ–ä¸ºå°å†™å­—æ¯
+tolower()º¯ÊıÊÇ°Ñ×Ö·û´®¶¼×ª»¯ÎªĞ¡Ğ´×ÖÄ¸
 
 ```c++
     string str= "THIS IS A STRING";
@@ -1224,7 +1224,7 @@ tolower()å‡½æ•°æ˜¯æŠŠå­—ç¬¦ä¸²éƒ½è½¬åŒ–ä¸ºå°å†™å­—æ¯
 
 5.toupper
 
-toupper()å‡½æ•°æ˜¯æŠŠå­—ç¬¦ä¸²éƒ½è½¬åŒ–ä¸ºå°å†™å­—æ¯
+toupper()º¯ÊıÊÇ°Ñ×Ö·û´®¶¼×ª»¯ÎªĞ¡Ğ´×ÖÄ¸
 
 ```c++
     string str= "hahahahaha";
@@ -1232,24 +1232,24 @@ toupper()å‡½æ•°æ˜¯æŠŠå­—ç¬¦ä¸²éƒ½è½¬åŒ–ä¸ºå°å†™å­—æ¯
        str[i] = toupper(str[i]);
 ```
 ```c++
-    //æ¥åˆ¤æ–­æ˜¯å¦ä¸ºæ•°å­—ï¼Œå¦‚æœæ˜¯æ•°å­—é‚£ä¹ˆä¼šè¿”å›é0
+    //À´ÅĞ¶ÏÊÇ·ñÎªÊı×Ö£¬Èç¹ûÊÇÊı×ÖÄÇÃ´»á·µ»Ø·Ç0
     isdigit(c)
 ```
 
 
-###2.2.16 287.å¯»æ‰¾é‡å¤æ•°
-[287.å¯»æ‰¾é‡å¤æ•°](https://leetcode-cn.com/problems/find-the-duplicate-number/)
-è¿™é“é¢˜ç¡®å®æ²¡æƒ³åˆ°ï¼Œç­”æ¡ˆäºŒç†è§£æœ‰ç‚¹å¤æ‚ï¼Œpassäº†
+###2.2.16 287.Ñ°ÕÒÖØ¸´Êı
+[287.Ñ°ÕÒÖØ¸´Êı](https://leetcode-cn.com/problems/find-the-duplicate-number/)
+ÕâµÀÌâÈ·ÊµÃ»Ïëµ½£¬´ğ°¸¶şÀí½âÓĞµã¸´ÔÓ£¬passÁË
 
 
-### 2.2.16 sortå‡½æ•°å°†vectoræ•°ç»„æŒ‰ç…§å…ƒç´ ç»å¯¹å€¼ä»å°åˆ°å¤§æ’åº
+### 2.2.16 sortº¯Êı½«vectorÊı×é°´ÕÕÔªËØ¾ø¶ÔÖµ´ÓĞ¡µ½´óÅÅĞò
 
-ä¸€è¡Œå†™æ³•
+Ò»ĞĞĞ´·¨
 ```c++
 sort(vals.begin(), vals.end(), [](int a, int b) { return abs(a) < abs(b); });
 ```
 
-åˆ†å¼€å†™
+·Ö¿ªĞ´
 ```c++
 class Solution {
 static bool cmp(int a, int b) {
@@ -1262,20 +1262,7 @@ static bool cmp(int a, int b) {
 
 
 2022/4/23 - 20:37 teng edit
-è¿™ä¸ªåˆ¤æ–­çš„æ¡ä»¶è¿™é‡Œè¦æ³¨æ„ï¼Œå½“`abs(a) == abs(b)`æ—¶ï¼Œåº”è¯¥æ˜¯ä¸å¯¹æ•°ç»„è¿™ä¸¤ä¸ªå€¼è¿›è¡Œæ’åºå¤„ç†çš„ï¼Œæ­¤æ—¶`return`çš„å€¼æ˜¯falseï¼Œä¹Ÿå°±å¯ä»¥ç†è§£ä¸º`return true`çš„æ—¶å€™ï¼Œè¿›è¡Œswapä¹‹ç±»çš„æ’åºå¤„ç†ï¼Œè€Œ`return false`æ—¶ï¼Œ ä¸è¿›è¡Œå¤„ç†
-
-
-
-
-
-
-
-### 2.2.17 vector::reserve()å‡½æ•°
-æˆ‘è§‰å¾—è¿™ä¸ªè®²çš„æ¯”è¾ƒä¸é”™ï¼š [C++çŸ¥è¯†ç‚¹â€”â€”vector::reserve()å‡½æ•°](https://blog.csdn.net/qq_46515446/article/details/123107800)
-æ–¹å¼1ï¼švector vec, ç„¶åè°ƒç”¨1000æ¬¡ vec.push_back(*)ï¼›
-æ–¹å¼2ï¼švector vec,ç„¶åè°ƒç”¨vec.reserve(1000)ç”³è¯·1000ä¸ªå…ƒç´ çš„å†…å­˜ï¼Œå†è°ƒç”¨1000æ¬¡ vec.push_back(*)ï¼›
-
-æ–¹å¼1è¦è¿›è¡Œè‹¥å¹²æ¬¡å†…å­˜åˆ†é…ï¼›è€Œæ–¹å¼2åªéœ€è¦è¿›è¡Œ1æ¬¡å†…å­˜åˆ†é…ã€‚å…¶æ•ˆç‡ç«‹è§é«˜ä¸‹ï¼Œæ‰€ä»¥åœ¨éœ€è¦å¯¹å¤§é‡æ•°æ®è¿›è¡Œå¤„ç†çš„æ—¶å€™ï¼Œä½¿ç”¨reserveä¸»åŠ¨åˆ†é…å†…å­˜å¯ä»¥æå‡ç¨‹åºæ‰§è¡Œæ•ˆç‡ã€‚
+Õâ¸öÅĞ¶ÏµÄÌõ¼şÕâÀïÒª×¢Òâ£¬µ±`abs(a) == abs(b)`Ê±£¬Ó¦¸ÃÊÇ²»¶ÔÊı×éÕâÁ½¸öÖµ½øĞĞÅÅĞò´¦ÀíµÄ£¬´ËÊ±`return`µÄÖµÊÇfalse£¬Ò²¾Í¿ÉÒÔÀí½âÎª`return true`µÄÊ±ºò£¬½øĞĞswapÖ®ÀàµÄÅÅĞò´¦Àí£¬¶ø`return false`Ê±£¬ ²»½øĞĞ´¦Àí
 
 
 
@@ -1284,72 +1271,86 @@ static bool cmp(int a, int b) {
 
 
 
-### 2.2.17 äºŒå‰æ ‘æœç´¢æ•´ä¸ªæ•°(è¦è¿”å›å€¼)/äºŒå‰æ ‘æœç´¢ä¸€æ¡è¾¹(ä¸è¦è¿”å›å€¼)
+### 2.2.17 vector::reserve()º¯Êı
+ÎÒ¾õµÃÕâ¸ö½²µÄ±È½Ï²»´í£º [C++ÖªÊ¶µã¡ª¡ªvector::reserve()º¯Êı](https://blog.csdn.net/qq_46515446/article/details/123107800)
+·½Ê½1£ºvector vec, È»ºóµ÷ÓÃ1000´Î vec.push_back(*)£»
+·½Ê½2£ºvector vec,È»ºóµ÷ÓÃvec.reserve(1000)ÉêÇë1000¸öÔªËØµÄÄÚ´æ£¬ÔÙµ÷ÓÃ1000´Î vec.push_back(*)£»
+
+·½Ê½1Òª½øĞĞÈô¸É´ÎÄÚ´æ·ÖÅä£»¶ø·½Ê½2Ö»ĞèÒª½øĞĞ1´ÎÄÚ´æ·ÖÅä¡£ÆäĞ§ÂÊÁ¢¼û¸ßÏÂ£¬ËùÒÔÔÚĞèÒª¶Ô´óÁ¿Êı¾İ½øĞĞ´¦ÀíµÄÊ±ºò£¬Ê¹ÓÃreserveÖ÷¶¯·ÖÅäÄÚ´æ¿ÉÒÔÌáÉı³ÌĞòÖ´ĞĞĞ§ÂÊ¡£
+
+
+
+
+
+
+
+
+### 2.2.17 ¶ş²æÊ÷ËÑË÷Õû¸öÊı(Òª·µ»ØÖµ)/¶ş²æÊ÷ËÑË÷Ò»Ìõ±ß(²»Òª·µ»ØÖµ)
 
 <img src="image/2022-04-03-14-09-22.png" style="zoom:85%;" />
 
-### 2.2.18 æœ‰å…³è‡ªå®šä¹‰é¢˜ç›®è¾“å…¥çš„å†…å®¹å¿…é¡»è¦å¥½å¥½çœ‹çœ‹ï¼Œè¿™æ˜¯LeetCodeæ‰€æ²¡æœ‰çš„
+### 2.2.18 ÓĞ¹Ø×Ô¶¨ÒåÌâÄ¿ÊäÈëµÄÄÚÈİ±ØĞëÒªºÃºÃ¿´¿´£¬ÕâÊÇLeetCodeËùÃ»ÓĞµÄ
 cin
 getline
 split
 
-### 2.2.19 äºŒå‰æ ‘æ·±åº¦ä¼˜å…ˆæœç´¢(DFS)ã€å¹¿åº¦ä¼˜å…ˆæœç´¢(BFS)
-[563. äºŒå‰æ ‘çš„å¡åº¦](https://leetcode-cn.com/problems/binary-tree-tilt/)
-å®˜æ–¹ç­”æ¡ˆçš„æ–¹æ³• åº”è¯¥è¦æŒæ¡
-æ·±åº¦ä¼˜å…ˆæœç´¢çš„æ–¹æ³•ï¼Œä¸€å®šè¦æŒæ¡
+### 2.2.19 ¶ş²æÊ÷Éî¶ÈÓÅÏÈËÑË÷(DFS)¡¢¹ã¶ÈÓÅÏÈËÑË÷(BFS)
+[563. ¶ş²æÊ÷µÄÆÂ¶È](https://leetcode-cn.com/problems/binary-tree-tilt/)
+¹Ù·½´ğ°¸µÄ·½·¨ Ó¦¸ÃÒªÕÆÎÕ
+Éî¶ÈÓÅÏÈËÑË÷µÄ·½·¨£¬Ò»¶¨ÒªÕÆÎÕ
 
-å¹¿åº¦ä¼˜å…ˆæœç´¢çš„ç»å…¸ä¾‹å­å°±æ˜¯äºŒå‰æ ‘çš„å±‚åºéå†
-å¯ä»¥å‚è€ƒè¿™ç¯‡åšå®¢[DFSå’ŒBFSç®—æ³•](https://blog.csdn.net/qq_41816189/article/details/122787939)
-
-
+¹ã¶ÈÓÅÏÈËÑË÷µÄ¾­µäÀı×Ó¾ÍÊÇ¶ş²æÊ÷µÄ²ãĞò±éÀú
+¿ÉÒÔ²Î¿¼ÕâÆª²©¿Í[DFSºÍBFSËã·¨](https://blog.csdn.net/qq_41816189/article/details/122787939)
 
 
 
 
-### 2.2.20  äºŒå‰æ ‘çš„åºåˆ—åŒ–ä¸ååºåˆ—åŒ–
-[297. äºŒå‰æ ‘çš„åºåˆ—åŒ–ä¸ååºåˆ—åŒ–](https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree/)
-[449. åºåˆ—åŒ–å’Œååºåˆ—åŒ–äºŒå‰æœç´¢æ ‘](https://leetcode-cn.com/problems/serialize-and-deserialize-bst/)
-
-è¿™ä¿©é¢˜åº”è¯¥æ˜¯ä¸€æ ·çš„ï¼Œæˆ‘çš„åšæ³•ï¼Œæ‰§è¡Œçš„æ•ˆæœä¸é”™ï¼Œä½†æ˜¯ä»£ç æ¯”è¾ƒå†—é•¿
-
-å¯ä»¥å‚è€ƒ[è¿™ä¸ªå…„å¼Ÿçš„åšæ³•](https://leetcode-cn.com/problems/serialize-and-deserialize-bst/solution/cqian-xu-bian-li-ji-zhi-you-ya-di-di-gui-shi-xian-/)
-ä»–ç”¨ä¸€ä¸ªstringstreamï¼Œè¿™ä¸ªå¾ˆå·§å¦™ï¼Œå€¼å¾—çœ‹çœ‹
 
 
-### 2.2.21 substrå‡½æ•°
+### 2.2.20  ¶ş²æÊ÷µÄĞòÁĞ»¯Óë·´ĞòÁĞ»¯
+[297. ¶ş²æÊ÷µÄĞòÁĞ»¯Óë·´ĞòÁĞ»¯](https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree/)
+[449. ĞòÁĞ»¯ºÍ·´ĞòÁĞ»¯¶ş²æËÑË÷Ê÷](https://leetcode-cn.com/problems/serialize-and-deserialize-bst/)
 
-substr æˆå‘˜å‡½æ•°å¯ä»¥ç”¨äºæ±‚å­ä¸² (n, m)ï¼ŒåŸå‹å¦‚ä¸‹ï¼š
+ÕâÁ©ÌâÓ¦¸ÃÊÇÒ»ÑùµÄ£¬ÎÒµÄ×ö·¨£¬Ö´ĞĞµÄĞ§¹û²»´í£¬µ«ÊÇ´úÂë±È½ÏÈß³¤
+
+¿ÉÒÔ²Î¿¼[Õâ¸öĞÖµÜµÄ×ö·¨](https://leetcode-cn.com/problems/serialize-and-deserialize-bst/solution/cqian-xu-bian-li-ji-zhi-you-ya-di-di-gui-shi-xian-/)
+ËûÓÃÒ»¸östringstream£¬Õâ¸öºÜÇÉÃî£¬ÖµµÃ¿´¿´
+
+
+### 2.2.21 substrº¯Êı
+
+substr ³ÉÔ±º¯Êı¿ÉÒÔÓÃÓÚÇó×Ó´® (n, m)£¬Ô­ĞÍÈçÏÂ£º
 string substr(int n = 0, int m = string::npos) const;
-è°ƒç”¨æ—¶ï¼Œå¦‚æœçœç•¥ m æˆ– m è¶…è¿‡äº†å­—ç¬¦ä¸²çš„é•¿åº¦ï¼Œåˆ™æ±‚å‡ºæ¥çš„å­ä¸²å°±æ˜¯ä»ä¸‹æ ‡ n å¼€å§‹ä¸€ç›´åˆ°å­—ç¬¦ä¸²ç»“æŸçš„éƒ¨åˆ†ã€‚ä¾‹å¦‚ï¼š
+µ÷ÓÃÊ±£¬Èç¹ûÊ¡ÂÔ m »ò m ³¬¹ıÁË×Ö·û´®µÄ³¤¶È£¬ÔòÇó³öÀ´µÄ×Ó´®¾ÍÊÇ´ÓÏÂ±ê n ¿ªÊ¼Ò»Ö±µ½×Ö·û´®½áÊøµÄ²¿·Ö¡£ÀıÈç£º
 
 ```c++
 string s1 = "this is ok";
 string s2 = s1.substr(2, 4);  // s2 = "is i"
 s2 = s1.substr(2);  // s2 = "is is ok"
 ```
-å³æˆªå–ä»nå¼€å§‹çš„mä¸ªå­—ç¬¦
+¼´½ØÈ¡´Ón¿ªÊ¼µÄm¸ö×Ö·û
 
 
-å…·ä½“å¯ä»¥å‚è€ƒä¸‹é¢çš„ç½‘ç«™è®²è§£
+¾ßÌå¿ÉÒÔ²Î¿¼ÏÂÃæµÄÍøÕ¾½²½â
 ![](image/2022-04-10-18-28-57.png)
 http://c.biancheng.net/view/400.html
 
 
-### 2.2.22 å›æº¯å»é‡
+### 2.2.22 »ØËİÈ¥ÖØ
 
-æ–¹æ³•1ï¼šåˆ©ç”¨`vector<bool> used`
-[40.ç»„åˆæ€»å’ŒII](https://programmercarl.com/0040.%E7%BB%84%E5%90%88%E6%80%BB%E5%92%8CII.html#%E5%9B%9E%E6%BA%AF%E4%B8%89%E9%83%A8%E6%9B%B2)
-[å­é›†é—®é¢˜ï¼ˆäºŒ)](https://programmercarl.com/0090.%E5%AD%90%E9%9B%86II.html#_90-%E5%AD%90%E9%9B%86ii)
+·½·¨1£ºÀûÓÃ`vector<bool> used`
+[40.×éºÏ×ÜºÍII](https://programmercarl.com/0040.%E7%BB%84%E5%90%88%E6%80%BB%E5%92%8CII.html#%E5%9B%9E%E6%BA%AF%E4%B8%89%E9%83%A8%E6%9B%B2)
+[×Ó¼¯ÎÊÌâ£¨¶ş)](https://programmercarl.com/0090.%E5%AD%90%E9%9B%86II.html#_90-%E5%AD%90%E9%9B%86ii)
 
-æ–¹æ³•2ï¼šåˆ©ç”¨`unordered_set<int> uset` 
-[491.é€’å¢å­åºåˆ—](https://programmercarl.com/0491.%E9%80%92%E5%A2%9E%E5%AD%90%E5%BA%8F%E5%88%97.html#%E6%80%9D%E8%B7%AF)
+·½·¨2£ºÀûÓÃ`unordered_set<int> uset` 
+[491.µİÔö×ÓĞòÁĞ](https://programmercarl.com/0491.%E9%80%92%E5%A2%9E%E5%AD%90%E5%BA%8F%E5%88%97.html#%E6%80%9D%E8%B7%AF)
 
-æ–¹æ³•1ï¼šåªé€‚ç”¨äºsortè¿‡çš„æ•°ç»„ï¼Œæ–¹æ³•2åˆ™æ˜¯éƒ½å¯ä»¥
+·½·¨1£ºÖ»ÊÊÓÃÓÚsort¹ıµÄÊı×é£¬·½·¨2ÔòÊÇ¶¼¿ÉÒÔ
 
-### 2.2.23 æœ‰å…³mapçš„é”®å€¼
-`std::map<Key, T>`ä¹‹ç±»çš„å®¹å™¨çš„`value_type`å…¶å®æ˜¯`std::pair<const Key, T>`
+### 2.2.23 ÓĞ¹ØmapµÄ¼üÖµ
+`std::map<Key, T>`Ö®ÀàµÄÈİÆ÷µÄ`value_type`ÆäÊµÊÇ`std::pair<const Key, T>`
 
-ä¾‹å¦‚å¦‚ä¸‹ä»£ç ï¼š
+ÀıÈçÈçÏÂ´úÂë£º
 ```c++
     map<string, int> mp;
     mp["ac"]++;
@@ -1360,30 +1361,30 @@ http://c.biancheng.net/view/400.html
         cout << m.first << " " << m.second << endl;
     }
 ```
-åœ¨foréå†çš„è¿‡ç¨‹ä¸­ï¼Œå¦‚æœæƒ³ä¼ å¼•ç”¨çš„è¯ï¼Œstringè¦ç”¨const string
+ÔÚfor±éÀúµÄ¹ı³ÌÖĞ£¬Èç¹ûÏë´«ÒıÓÃµÄ»°£¬stringÒªÓÃconst string
 
-æˆ‘é‡åˆ°è¿™ä¸ªé—®é¢˜æ˜¯åœ¨ [leetcode: 332. é‡æ–°å®‰æ’è¡Œç¨‹](https://leetcode-cn.com/problems/reconstruct-itinerary/submissions/) ï¼Œè¿™é“é¢˜ä»£ç éšæƒ³å½•ä¸­ç»™å‡ºçš„ä»£ç  [(ä»£ç éšæƒ³å½•-å›æº¯-19.é‡æ–°å®‰æ’è¡Œç¨‹)](https://programmercarl.com/0332.%E9%87%8D%E6%96%B0%E5%AE%89%E6%8E%92%E8%A1%8C%E7%A8%8B.html#%E5%9B%9E%E6%BA%AF%E6%B3%95) é‡Œä¾¿æ˜¯ç”¨åˆ°äº†è¿™ä¸ª`pair<const string, int> &`æ¥éå†ã€‚
-å¦‚æœç”¨`auto`çš„è¯ï¼Œè¿™é‡Œå°±ç›¸å½“äºæ‹·è´èµ‹å€¼ç»™äº†`pair<string, int>`ç±»å‹çš„pairå¯¹è±¡ï¼Œå¦‚æœè¦ä¼ å¼•ç”¨çš„è¯ï¼Œåº”å½“æ³¨æ„
+ÎÒÓöµ½Õâ¸öÎÊÌâÊÇÔÚ [leetcode: 332. ÖØĞÂ°²ÅÅĞĞ³Ì](https://leetcode-cn.com/problems/reconstruct-itinerary/submissions/) £¬ÕâµÀÌâ´úÂëËæÏëÂ¼ÖĞ¸ø³öµÄ´úÂë [(´úÂëËæÏëÂ¼-»ØËİ-19.ÖØĞÂ°²ÅÅĞĞ³Ì)](https://programmercarl.com/0332.%E9%87%8D%E6%96%B0%E5%AE%89%E6%8E%92%E8%A1%8C%E7%A8%8B.html#%E5%9B%9E%E6%BA%AF%E6%B3%95) Àï±ãÊÇÓÃµ½ÁËÕâ¸ö`pair<const string, int> &`À´±éÀú¡£
+Èç¹ûÓÃ`auto`µÄ»°£¬ÕâÀï¾ÍÏàµ±ÓÚ¿½±´¸³Öµ¸øÁË`pair<string, int>`ÀàĞÍµÄpair¶ÔÏó£¬Èç¹ûÒª´«ÒıÓÃµÄ»°£¬Ó¦µ±×¢Òâ
 
 
-### 2.2.24 æœ‰å…³äºlinuxå’Œwindowä¸‹get c++ä»£ç è¿è¡Œæ—¶é—´
+### 2.2.24 ÓĞ¹ØÓÚlinuxºÍwindowÏÂget c++´úÂëÔËĞĞÊ±¼ä
 
-windowsï¼š
+windows£º
 
 ```c++
-// windowsä¸‹
+// windowsÏÂ
 #include<chrono>
 int main(void)
 {
     typedef std::chrono::high_resolution_clock Clock;
-    auto t1 = Clock::now();//è®¡æ—¶å¼€å§‹   
+    auto t1 = Clock::now();//¼ÆÊ±¿ªÊ¼   
     cout << "=====test end=====" << endl;  
 
     test_demo();
     sleep(2);
 
     cout << "=====start test=====" << endl;   
-    auto t2 = Clock::now();//è®¡æ—¶ç»“æŸ
+    auto t2 = Clock::now();//¼ÆÊ±½áÊø
     //ns
     std::cout <<chrono::duration_cast<std::chrono::nanoseconds>(t2 - t1).count() << "ns" << '\n';
     //us
@@ -1396,7 +1397,7 @@ int main(void)
 }
 ```
 
->outputç¤ºä¾‹ï¼š
+>outputÊ¾Àı£º
   201297450ns
   2012973us
   2012ms
@@ -1405,7 +1406,7 @@ int main(void)
 
 
 ```c++
-linuxä¸‹ï¼ˆubuntuï¼‰
+linuxÏÂ£¨ubuntu£©
 
 #include<time.h>
 
@@ -1426,8 +1427,8 @@ int main (void){
     cout << t2.tv_nsec - t1.tv_nsec << "ns" << endl;
     cout << t2.tv_sec - t1.tv_sec << "s" << endl << endl;
     
-    //ä¸‹é¢æ˜¯æˆ‘è‡ªå·±å†™çš„
-    //é‚£ä¹ˆæ‰€èŠ±æ—¶é—´ä¸º
+    //ÏÂÃæÊÇÎÒ×Ô¼ºĞ´µÄ
+    //ÄÇÃ´Ëù»¨Ê±¼äÎª
     long deltaT_ms_integer = (t2.tv_sec - t1.tv_sec) * 1000 + (t2.tv_nsec - t1.tv_nsec) / (1000000); //ms
     long deltaT_ms_decimal = (t2.tv_nsec - t1.tv_nsec) % (1000000);
     string str_deltaT_ms_decimal = to_string(deltaT_ms_decimal);
@@ -1443,7 +1444,7 @@ int main (void){
 
 ```
 
->outputç¤ºä¾‹
+>outputÊ¾Àı
 >  138985
 >  2
 >  
@@ -1451,27 +1452,27 @@ int main (void){
 >  time : 2000138985 ns
 
 
-åœ¨linuxçš„æ–¹æ³•ä¸­t1.tv_nsecæ˜¯åªåŒ…å«sç²¾åº¦ä»¥ä¸‹çš„æ—¶é—´
-å¯¹äºä»£ç ä¸­çš„t1ï¼Œå®ƒåŒ…å«tv_nsecå’Œtv_sec
+ÔÚlinuxµÄ·½·¨ÖĞt1.tv_nsecÊÇÖ»°üº¬s¾«¶ÈÒÔÏÂµÄÊ±¼ä
+¶ÔÓÚ´úÂëÖĞµÄt1£¬Ëü°üº¬tv_nsecºÍtv_sec
 
-è€Œwindowsçš„è¿™ç§å¾—åˆ°æ—¶é—´çš„æ–¹æ³•nsçº§çš„ç²¾åº¦ä¸­å°±å·²ç»åŒ…å«äº†å…¨éƒ¨çš„å®Œæ•´æ—¶é—´
-
-
-### 2.2.25 C++ä¸­staticçš„ç”¨æ³•
+¶øwindowsµÄÕâÖÖµÃµ½Ê±¼äµÄ·½·¨ns¼¶µÄ¾«¶ÈÖĞ¾ÍÒÑ¾­°üº¬ÁËÈ«²¿µÄÍêÕûÊ±¼ä
 
 
-[C++ä¸­staticçš„ç”¨æ³•](https://blog.csdn.net/qq_43169752/article/details/108300918);
+### 2.2.25 C++ÖĞstaticµÄÓÃ·¨
+
+
+[C++ÖĞstaticµÄÓÃ·¨](https://blog.csdn.net/qq_43169752/article/details/108300918);
 
 
 
-### 2.2.26 å…³äºlistç±»
+### 2.2.26 ¹ØÓÚlistÀà
 
-å¦‚æœæƒ³è¦åœ¨listçš„ç¬¬nä¸ªä½ç½®æ’å…¥æ•°æ®ï¼Œç”¨åˆ°
+Èç¹ûÏëÒªÔÚlistµÄµÚn¸öÎ»ÖÃ²åÈëÊı¾İ£¬ÓÃµ½
 
-* `insert(pos,elem);`//åœ¨posä½ç½®æ’elemå…ƒç´ çš„æ‹·è´ï¼Œè¿”å›æ–°æ•°æ®çš„ä½ç½®ã€‚
-* `insert(pos,n,elem);`//åœ¨posä½ç½®æ’å…¥nä¸ªelemæ•°æ®ï¼Œæ— è¿”å›å€¼ã€‚
+* `insert(pos,elem);`//ÔÚposÎ»ÖÃ²åelemÔªËØµÄ¿½±´£¬·µ»ØĞÂÊı¾İµÄÎ»ÖÃ¡£
+* `insert(pos,n,elem);`//ÔÚposÎ»ÖÃ²åÈën¸öelemÊı¾İ£¬ÎŞ·µ»ØÖµ¡£
 
-posçš„å€¼åªèƒ½ç”±itè¿­ä»£å™¨ä¸€ä¸ªä¸€ä¸ªç´¯åŠ å¾—åˆ°ï¼Œè€Œä¸èƒ½ç›´æ¥ç”¨`l1.begin() + n`(è¿™æ ·æ˜¯é”™è¯¯çš„)ï¼Œå†™æ³•å¦‚ä¸‹
+posµÄÖµÖ»ÄÜÓÉitµü´úÆ÷Ò»¸öÒ»¸öÀÛ¼ÓµÃµ½£¬¶ø²»ÄÜÖ±½ÓÓÃ`l1.begin() + n`(ÕâÑùÊÇ´íÎóµÄ)£¬Ğ´·¨ÈçÏÂ
 
 
 ```c++
@@ -1482,7 +1483,7 @@ void test_demo(){
     
     list<int> l1 = {1, 2, 3};
     
-    //æƒ³åœ¨2çš„ä½ç½®æ’å…¥æ•°æ®3
+    //ÏëÔÚ2µÄÎ»ÖÃ²åÈëÊı¾İ3
     int n = 2;
     list<int>::iterator it = l1.begin();
     while(n--){
@@ -1511,71 +1512,71 @@ void test_demo(){
 
 
 
-## 2.3 åˆ·é¢˜è®°å½•
-### 2.3.1 è¿˜æ²¡åšçš„ï¼š
-[10.æ­£åˆ™è¡¨è¾¾å¼](https://leetcode-cn.com/problems/regular-expression-matching/)
-[22.æ‹¬å·çš„ç”Ÿæˆï¼ˆåŠ¨æ€è§„åˆ’ï¼Œå›æº¯ï¼‰](https://leetcode-cn.com/problems/generate-parentheses/)
-[29.ä¸¤æ•°ç›¸é™¤ï¼ˆè¯•è¯•é€’å½’,æ—©å­å“¥æåˆ°çš„ï¼‰](https://leetcode-cn.com/problems/divide-two-integers/)
-[âˆš][37.è§£æ•°ç‹¬ ï¼ˆå›æº¯ï¼Œè¿˜æ²¡å­¦ï¼‰](https://leetcode-cn.com/problems/sudoku-solver/)
-[âˆš][39.ç»„åˆæ€»å’Œ (å›æº¯)](https://leetcode-cn.com/problems/combination-sum/)
-[32.æœ€é•¿æœ‰æ•ˆæ‹¬å·(åŠ¨æ€è§„åˆ’ï¼Œè¿˜æ²¡å­¦)](https://leetcode-cn.com/problems/longest-valid-parentheses/)
-[11.ç››æœ€å¤šæ°´çš„å®¹å™¨(è´ªå¿ƒç®—æ³•ï¼Œè¿˜æ²¡å­¦)](https://leetcode-cn.com/problems/container-with-most-water/	)
-[44.é€šé…ç¬¦åŒ¹é…(è´ªå¿ƒï¼Œé€’å½’ï¼ŒåŠ¨æ€è§„åˆ’)](https://leetcode-cn.com/problems/wildcard-matching/)
-[45.è·³è·ƒæ¸¸æˆII(è´ªå¿ƒï¼ŒåŠ¨æ€è§„åˆ’)](https://leetcode-cn.com/problems/jump-game-ii/)
-[âˆš][46.å…¨æ’åˆ—(å›æº¯)](https://leetcode-cn.com/problems/permutations/)
-[329.çŸ©é˜µä¸­çš„æœ€é•¿é€’å¢è·¯å¾„ï¼ˆpassï¼Œæœâ€œçŸ©é˜µâ€å…³é”®å­—æœåˆ°çš„é¢˜ç›®ï¼‰](https://leetcode-cn.com/problems/longest-increasing-path-in-a-matrix/)
-[âˆš][å‰‘æŒ‡ Offer 12. çŸ©é˜µä¸­çš„è·¯å¾„ï¼ˆå›æº¯ï¼‰](https://leetcode-cn.com/problems/ju-zhen-zhong-de-lu-jing-lcof/)
-[221. æœ€å¤§æ­£æ–¹å½¢(åŠ¨æ€è§„åˆ’)](https://leetcode-cn.com/problems/maximal-square/)
-[85. æœ€å¤§çŸ©å½¢](https://leetcode-cn.com/problems/maximal-rectangle/)
-[âˆš][51. N çš‡å(å›æº¯)](https://leetcode-cn.com/problems/n-queens/)
-[53. æœ€å¤§å­æ•°ç»„å’Œ(åŠ¨æ€è§„åˆ’)](https://leetcode-cn.com/problems/maximum-subarray/)
-[âˆš][130.è¢«å›´ç»•çš„åŒºåŸŸï¼ˆæ·±åº¦/å¹¿åº¦ä¼˜å…ˆæœç´¢ï¼‰](https://leetcode-cn.com/problems/surrounded-regions/)
-[174. åœ°ä¸‹åŸæ¸¸æˆï¼ˆåŠ¨æ€è§„åˆ’ï¼‰](https://leetcode-cn.com/problems/dungeon-game/)
-[68. æ–‡æœ¬å·¦å³å¯¹é½(è´ªå¿ƒ)](https://leetcode-cn.com/problems/text-justification/)
-[307. åŒºåŸŸå’Œæ£€ç´¢ - æ•°ç»„å¯ä¿®æ”¹](https://leetcode-cn.com/problems/range-sum-query-mutable/)
-[310. æœ€å°é«˜åº¦æ ‘(æ‹“æ‰‘æ’åºã€æ·±åº¦/å¹¿åº¦ä¼˜å…ˆæœç´¢)](https://leetcode-cn.com/problems/minimum-height-trees/)
+## 2.3 Ë¢Ìâ¼ÇÂ¼
+### 2.3.1 »¹Ã»×öµÄ£º
+[10.ÕıÔò±í´ïÊ½](https://leetcode-cn.com/problems/regular-expression-matching/)
+[22.À¨ºÅµÄÉú³É£¨¶¯Ì¬¹æ»®£¬»ØËİ£©](https://leetcode-cn.com/problems/generate-parentheses/)
+[29.Á½ÊıÏà³ı£¨ÊÔÊÔµİ¹é,Ôç×Ó¸çÌáµ½µÄ£©](https://leetcode-cn.com/problems/divide-two-integers/)
+[¡Ì][37.½âÊı¶À £¨»ØËİ£¬»¹Ã»Ñ§£©](https://leetcode-cn.com/problems/sudoku-solver/)
+[¡Ì][39.×éºÏ×ÜºÍ (»ØËİ)](https://leetcode-cn.com/problems/combination-sum/)
+[32.×î³¤ÓĞĞ§À¨ºÅ(¶¯Ì¬¹æ»®£¬»¹Ã»Ñ§)](https://leetcode-cn.com/problems/longest-valid-parentheses/)
+[11.Ê¢×î¶àË®µÄÈİÆ÷(Ì°ĞÄËã·¨£¬»¹Ã»Ñ§)](https://leetcode-cn.com/problems/container-with-most-water/	)
+[44.Í¨Åä·ûÆ¥Åä(Ì°ĞÄ£¬µİ¹é£¬¶¯Ì¬¹æ»®)](https://leetcode-cn.com/problems/wildcard-matching/)
+[45.ÌøÔ¾ÓÎÏ·II(Ì°ĞÄ£¬¶¯Ì¬¹æ»®)](https://leetcode-cn.com/problems/jump-game-ii/)
+[¡Ì][46.È«ÅÅÁĞ(»ØËİ)](https://leetcode-cn.com/problems/permutations/)
+[329.¾ØÕóÖĞµÄ×î³¤µİÔöÂ·¾¶£¨pass£¬ËÑ¡°¾ØÕó¡±¹Ø¼ü×ÖËÑµ½µÄÌâÄ¿£©](https://leetcode-cn.com/problems/longest-increasing-path-in-a-matrix/)
+[¡Ì][½£Ö¸ Offer 12. ¾ØÕóÖĞµÄÂ·¾¶£¨»ØËİ£©](https://leetcode-cn.com/problems/ju-zhen-zhong-de-lu-jing-lcof/)
+[221. ×î´óÕı·½ĞÎ(¶¯Ì¬¹æ»®)](https://leetcode-cn.com/problems/maximal-square/)
+[85. ×î´ó¾ØĞÎ](https://leetcode-cn.com/problems/maximal-rectangle/)
+[¡Ì][51. N »Êºó(»ØËİ)](https://leetcode-cn.com/problems/n-queens/)
+[53. ×î´ó×ÓÊı×éºÍ(¶¯Ì¬¹æ»®)](https://leetcode-cn.com/problems/maximum-subarray/)
+[¡Ì][130.±»Î§ÈÆµÄÇøÓò£¨Éî¶È/¹ã¶ÈÓÅÏÈËÑË÷£©](https://leetcode-cn.com/problems/surrounded-regions/)
+[174. µØÏÂ³ÇÓÎÏ·£¨¶¯Ì¬¹æ»®£©](https://leetcode-cn.com/problems/dungeon-game/)
+[68. ÎÄ±¾×óÓÒ¶ÔÆë(Ì°ĞÄ)](https://leetcode-cn.com/problems/text-justification/)
+[307. ÇøÓòºÍ¼ìË÷ - Êı×é¿ÉĞŞ¸Ä](https://leetcode-cn.com/problems/range-sum-query-mutable/)
+[310. ×îĞ¡¸ß¶ÈÊ÷(ÍØÆËÅÅĞò¡¢Éî¶È/¹ã¶ÈÓÅÏÈËÑË÷)](https://leetcode-cn.com/problems/minimum-height-trees/)
 
 
-__ä»£ç éšæƒ³å½•ä¸­æ²¡åšçš„é¢˜ç›®__
+__´úÂëËæÏëÂ¼ÖĞÃ»×öµÄÌâÄ¿__
 
-+ æ•°ç»„ 
-  + [âˆš][76.æœ€å°è¦†ç›–å­ä¸²ï¼ˆé•¿åº¦æœ€å°çš„å­æ•°ç»„ï¼ˆç›¸å…³é¢˜ç›®æ¨èï¼‰ï¼šå“ˆå¸Œè¡¨ä¸ä¼šï¼‰](https://leetcode-cn.com/problems/minimum-window-substring/)å·²å®Œæˆï¼Œè‡ªå·±æƒ³çš„æ€è·¯ï¼Œæ¯”å®˜æ–¹ç­”æ¡ˆçš„ç”¨æ—¶æ›´å°‘
++ Êı×é 
+  + [¡Ì][76.×îĞ¡¸²¸Ç×Ó´®£¨³¤¶È×îĞ¡µÄ×ÓÊı×é£¨Ïà¹ØÌâÄ¿ÍÆ¼ö£©£º¹şÏ£±í²»»á£©](https://leetcode-cn.com/problems/minimum-window-substring/)ÒÑÍê³É£¬×Ô¼ºÏëµÄË¼Â·£¬±È¹Ù·½´ğ°¸µÄÓÃÊ±¸üÉÙ
 
-### 2.3.2 å…¶å®ƒ        
+### 2.3.2 ÆäËü        
 
-[âˆš][æ ˆä¸é˜Ÿåˆ—-7æ»‘åŠ¨çª—å£æœ€å¤§å€¼-[239æ»‘åŠ¨çª—å£æœ€å¤§å€¼](https://leetcode-cn.com/problems/sliding-window-maximum/) ï¼ˆç­”æ¡ˆç”¨åˆ°äº†åˆ©ç”¨ä¼˜å…ˆé˜Ÿåˆ—çš„æ–¹æ³•æ¥åšï¼Œä¼˜å…ˆé˜Ÿåˆ—æ˜¯ä»€ä¹ˆè¿˜æ²¡å­¦ï¼‰
-[669. ä¿®å‰ªäºŒå‰æœç´¢æ ‘](https://leetcode-cn.com/problems/trim-a-binary-search-tree/)(è¿™ä¸ªé¢˜çœ‹ä»£ç çš„è¯æ¯”è¾ƒä¸å¥½ç†è§£ï¼Œå°¤å…¶æ˜¯è¿­ä»£æ³•)
-[109. æœ‰åºé“¾è¡¨è½¬æ¢äºŒå‰æœç´¢æ ‘](https://leetcode-cn.com/problems/convert-sorted-list-to-binary-search-tree/submissions/)(è¿™ä¸ªé¢˜ç”¨çš„æ˜¯listè½¬vectoræ¥åšçš„ï¼Œè¿˜æœ‰æ›´å¥½çš„æ–¹æ³•ï¼Œåé¢è¿˜è¦å†çœ‹çœ‹)
-[124. äºŒå‰æ ‘ä¸­çš„æœ€å¤§è·¯å¾„å’Œ](https://leetcode-cn.com/problems/binary-tree-maximum-path-sum/)(å›°éš¾æï¼Œè™½ç„¶æ²¡é‡åˆ°å¤ªå¤§é—®é¢˜ï¼Œè‡ªå·±å®Œæˆçš„ï¼Œä½†æ˜¯ç”¨æ—¶è¾ƒé•¿ï¼Œè¿è¡Œæ—¶é—´ç¨³å®šå‡»è´¥5%ï¼Œåº”è¯¥è¿˜æœ‰æ›´å¥½çš„æ–¹æ³•æˆ–è€…å¯ä»¥ç®€åŒ–ï¼Œåé¢å†çœ‹çœ‹ï¼‰
-ä»£ç éšæƒ³å½•ä¸­äºŒå‰æ ‘éƒ¨åˆ†çš„æ¯å‘¨å°ç»“åŸºæœ¬ä¸Šéƒ½æ²¡æ€ä¹ˆçœ‹
-[37.è§£æ•°ç‹¬](https://leetcode-cn.com/problems/sudoku-solver/)ï¼ˆè¿™ä¸ªé¢˜å®˜æ–¹ç­”æ¡ˆè¿˜æœ‰åç»­çš„ä¸¤ä¸ªä¼˜åŒ–çš„ç­”æ¡ˆï¼Œå¯ä»¥å­¦ä¹ ä¸€ä¸‹ï¼‰
-[52. Nçš‡å II](https://leetcode-cn.com/problems/n-queens-ii/)(å®˜æ–¹ç­”æ¡ˆç»™å‡ºçš„ä¸åŒäºä»£ç éšæƒ³å½•çš„æ–¹æ³•ï¼Œä½è¿ç®—çš„æ–¹æ³•ï¼Œå¥½å¤šé¢˜éƒ½æœ‰ç”¨åˆ°è¿™ä¸ªå«åšä½è¿ç®—çš„æ–¹æ³•ï¼Œè¦çœ‹çœ‹ï¼)
-[89.æ ¼é›·ç¼–ç ](https://leetcode-cn.com/problems/gray-code/)(è¿™ä¸ªé¢˜ä¸èƒ½è¯´éš¾ï¼Œä½†æ˜¯å®˜æ–¹ç­”æ¡ˆçš„ä¸¤ç§æ–¹æ³•æˆ‘æ˜¯éƒ½æ²¡æƒ³åˆ°ï¼Œä¸å…¶è¯´æ˜¯éƒ½æ²¡æƒ³åˆ°ï¼Œæ›´åº”è¯¥è¯´æ˜¯ä¹‹å‰æ²¡æœ‰äº†è§£è¿‡æ ¼é›·ç¼–ç çš„æ¦‚å¿µ)
-[376.æ‘†åŠ¨åºåˆ—](https://leetcode-cn.com/problems/wiggle-subsequence/)ï¼ˆç¬¬ä¸€æ¬¡æ¥è§¦åŠ¨æ€è§„åˆ’è§£æ³•ï¼Œè§‰å¾—æ¯”è¾ƒéš¾ä»¥ç†è§£ï¼‰
+[¡Ì][Õ»Óë¶ÓÁĞ-7»¬¶¯´°¿Ú×î´óÖµ-[239»¬¶¯´°¿Ú×î´óÖµ](https://leetcode-cn.com/problems/sliding-window-maximum/) £¨´ğ°¸ÓÃµ½ÁËÀûÓÃÓÅÏÈ¶ÓÁĞµÄ·½·¨À´×ö£¬ÓÅÏÈ¶ÓÁĞÊÇÊ²Ã´»¹Ã»Ñ§£©
+[669. ĞŞ¼ô¶ş²æËÑË÷Ê÷](https://leetcode-cn.com/problems/trim-a-binary-search-tree/)(Õâ¸öÌâ¿´´úÂëµÄ»°±È½Ï²»ºÃÀí½â£¬ÓÈÆäÊÇµü´ú·¨)
+[109. ÓĞĞòÁ´±í×ª»»¶ş²æËÑË÷Ê÷](https://leetcode-cn.com/problems/convert-sorted-list-to-binary-search-tree/submissions/)(Õâ¸öÌâÓÃµÄÊÇlist×ªvectorÀ´×öµÄ£¬»¹ÓĞ¸üºÃµÄ·½·¨£¬ºóÃæ»¹ÒªÔÙ¿´¿´)
+[124. ¶ş²æÊ÷ÖĞµÄ×î´óÂ·¾¶ºÍ](https://leetcode-cn.com/problems/binary-tree-maximum-path-sum/)(À§ÄÑÌá£¬ËäÈ»Ã»Óöµ½Ì«´óÎÊÌâ£¬×Ô¼ºÍê³ÉµÄ£¬µ«ÊÇÓÃÊ±½Ï³¤£¬ÔËĞĞÊ±¼äÎÈ¶¨»÷°Ü5%£¬Ó¦¸Ã»¹ÓĞ¸üºÃµÄ·½·¨»òÕß¿ÉÒÔ¼ò»¯£¬ºóÃæÔÙ¿´¿´£©
+´úÂëËæÏëÂ¼ÖĞ¶ş²æÊ÷²¿·ÖµÄÃ¿ÖÜĞ¡½á»ù±¾ÉÏ¶¼Ã»ÔõÃ´¿´
+[37.½âÊı¶À](https://leetcode-cn.com/problems/sudoku-solver/)£¨Õâ¸öÌâ¹Ù·½´ğ°¸»¹ÓĞºóĞøµÄÁ½¸öÓÅ»¯µÄ´ğ°¸£¬¿ÉÒÔÑ§Ï°Ò»ÏÂ£©
+[52. N»Êºó II](https://leetcode-cn.com/problems/n-queens-ii/)(¹Ù·½´ğ°¸¸ø³öµÄ²»Í¬ÓÚ´úÂëËæÏëÂ¼µÄ·½·¨£¬Î»ÔËËãµÄ·½·¨£¬ºÃ¶àÌâ¶¼ÓĞÓÃµ½Õâ¸ö½Ğ×öÎ»ÔËËãµÄ·½·¨£¬Òª¿´¿´£¡)
+[89.¸ñÀ×±àÂë](https://leetcode-cn.com/problems/gray-code/)(Õâ¸öÌâ²»ÄÜËµÄÑ£¬µ«ÊÇ¹Ù·½´ğ°¸µÄÁ½ÖÖ·½·¨ÎÒÊÇ¶¼Ã»Ïëµ½£¬ÓëÆäËµÊÇ¶¼Ã»Ïëµ½£¬¸üÓ¦¸ÃËµÊÇÖ®Ç°Ã»ÓĞÁË½â¹ı¸ñÀ×±àÂëµÄ¸ÅÄî)
+[376.°Ú¶¯ĞòÁĞ](https://leetcode-cn.com/problems/wiggle-subsequence/)£¨µÚÒ»´Î½Ó´¥¶¯Ì¬¹æ»®½â·¨£¬¾õµÃ±È½ÏÄÑÒÔÀí½â£©
 
-[435. æ— é‡å åŒºé—´](https://leetcode-cn.com/problems/non-overlapping-intervals/submissions/)(è¿™ä¸€é¢˜æºè‡ªä»£ç éšæƒ³å½•([è´ªå¿ƒç®—æ³•-æ— é‡å åŒºé—´](https://www.programmercarl.com/0435.%E6%97%A0%E9%87%8D%E5%8F%A0%E5%8C%BA%E9%97%B4.html#%E6%80%9D%E8%B7%AF))ï¼Œè¿™é“é¢˜çš„é¢˜è§£ï¼Œæˆ‘å¯ä»¥è¯´æ˜¯æ²¡æƒ³åˆ°ï¼Œå¹¶ä¸”ä¸å¤ªèƒ½ç†è§£ä¸ºä»€ä¹ˆè¦è¿™ä¹ˆåšï¼Œä½œè€…ä¹Ÿè¯´ç¡®å®è¿™é“é¢˜éš¾åº¦ç™»è®°åº”è¯¥ä¸ºå›°éš¾)
+[435. ÎŞÖØµşÇø¼ä](https://leetcode-cn.com/problems/non-overlapping-intervals/submissions/)(ÕâÒ»ÌâÔ´×Ô´úÂëËæÏëÂ¼([Ì°ĞÄËã·¨-ÎŞÖØµşÇø¼ä](https://www.programmercarl.com/0435.%E6%97%A0%E9%87%8D%E5%8F%A0%E5%8C%BA%E9%97%B4.html#%E6%80%9D%E8%B7%AF))£¬ÕâµÀÌâµÄÌâ½â£¬ÎÒ¿ÉÒÔËµÊÇÃ»Ïëµ½£¬²¢ÇÒ²»Ì«ÄÜÀí½âÎªÊ²Ã´ÒªÕâÃ´×ö£¬×÷ÕßÒ²ËµÈ·ÊµÕâµÀÌâÄÑ¶ÈµÇ¼ÇÓ¦¸ÃÎªÀ§ÄÑ)
 
-[738.å•è°ƒé€’å¢çš„æ•°å­—](https://leetcode-cn.com/problems/monotone-increasing-digits/)(ä»£ç éšæƒ³å½•([è´ªå¿ƒç®—æ³•-22.å•è°ƒé€’å¢çš„æ•°å­—](https://www.programmercarl.com/0738.%E5%8D%95%E8%B0%83%E9%80%92%E5%A2%9E%E7%9A%84%E6%95%B0%E5%AD%97.html#%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95))ä¸­çš„æ–¹æ³•ï¼Œæˆ‘æ²¡èƒ½æƒ³åˆ°è¿™ä¹ˆå·§å¦™çš„æ–¹æ³•)
+[738.µ¥µ÷µİÔöµÄÊı×Ö](https://leetcode-cn.com/problems/monotone-increasing-digits/)(´úÂëËæÏëÂ¼([Ì°ĞÄËã·¨-22.µ¥µ÷µİÔöµÄÊı×Ö](https://www.programmercarl.com/0738.%E5%8D%95%E8%B0%83%E9%80%92%E5%A2%9E%E7%9A%84%E6%95%B0%E5%AD%97.html#%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95))ÖĞµÄ·½·¨£¬ÎÒÃ»ÄÜÏëµ½ÕâÃ´ÇÉÃîµÄ·½·¨)
 
-[ä¹°å–è‚¡ç¥¨çš„æœ€ä½³æ—¶æœºå«æ‰‹ç»­è´¹](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/)(ä»£ç å½•çš„æ–¹æ³•ï¼Œæ¯”è¾ƒå·§å¦™ï¼Œæˆ‘æ²¡æƒ³åˆ°ï¼Œæˆ‘è‡ªå·±åšçš„æ—¶å€™è€ƒè™‘çš„æƒ…å†µå¤ªå¤šï¼Œä¸€åº¦å¯¼è‡´éå¸¸æ··ä¹±)
-
-
-[968.ç›‘æ§äºŒå‰æ ‘](https://leetcode-cn.com/problems/binary-tree-cameras/submissions/)(ä»£ç éšæƒ³å½•çš„æ–¹æ³•)
+[ÂòÂô¹ÉÆ±µÄ×î¼ÑÊ±»úº¬ÊÖĞø·Ñ](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/)(´úÂëÂ¼µÄ·½·¨£¬±È½ÏÇÉÃî£¬ÎÒÃ»Ïëµ½£¬ÎÒ×Ô¼º×öµÄÊ±ºò¿¼ÂÇµÄÇé¿öÌ«¶à£¬Ò»¶Èµ¼ÖÂ·Ç³£»ìÂÒ)
 
 
+[968.¼à¿Ø¶ş²æÊ÷](https://leetcode-cn.com/problems/binary-tree-cameras/submissions/)(´úÂëËæÏëÂ¼µÄ·½·¨)
 
-# 3. å­¦ä¹ é—®é¢˜åŠè§£å†³æ–¹æ¡ˆ
 
-## 3.1 Ubuntu16.04+python27å®‰è£…jupyter notebookå,
 
-è¿è¡ŒæŠ¥é”™
+# 3. Ñ§Ï°ÎÊÌâ¼°½â¾ö·½°¸
 
-å½“ç”¨Ubuntu16.04+python27å®‰è£…jupyter notebookå,
-è¿è¡ŒæŠ¥é”™:
-UnicodeDecodeError: â€˜asciiâ€™ codec canâ€™t decode byte 0xe5 in position 4: ordinal not in range(128)
+## 3.1 Ubuntu16.04+python27°²×°jupyter notebookºó,
 
-è§£å†³åŠæ³•:
-åœ¨ç»ˆç«¯è¾“å…¥:
+ÔËĞĞ±¨´í
+
+µ±ÓÃUbuntu16.04+python27°²×°jupyter notebookºó,
+ÔËĞĞ±¨´í:
+UnicodeDecodeError: ¡®ascii¡¯ codec can¡¯t decode byte 0xe5 in position 4: ordinal not in range(128)
+
+½â¾ö°ì·¨:
+ÔÚÖÕ¶ËÊäÈë:
 
 ```shell
 LANGUAGE=en_US
@@ -1588,14 +1589,14 @@ LANGUAGE=en_US
 ## 3.2 ROS
 
 
-### 3.2.1 å®‰è£…ROS
+### 3.2.1 °²×°ROS
 
-å®‰è£…ros ï¼Œinitå’Œupdateé‚£ä¸€æ­¥å®¹æ˜“æŠ¥é”™ï¼Œç»ˆç»“è§£å†³æ–¹æ³•å¦‚ä¸‹ï¼š
+°²×°ros £¬initºÍupdateÄÇÒ»²½ÈİÒ×±¨´í£¬ÖÕ½á½â¾ö·½·¨ÈçÏÂ£º
 https://blog.csdn.net/qq_17685565/article/details/105741864
 
 ______
 
-#ä¸‹è½½rosdistroåŒ…
+#ÏÂÔØrosdistro°ü
 
 ```shell
 git clone https://github.com/ros/rosdistro.git
@@ -1604,14 +1605,14 @@ git clone https://github.com/ros/rosdistro.git
 ____________________________________________________
 
 ```shell
-sudo gedit /usr/lib/python2.7/dist-packages/rosdep2/main.py#ï¼ˆè¿™ä¸ªå¥½åƒæ²¡æœ‰ï¼Œä¸ç”¨æ”¹ï¼‰
+sudo gedit /usr/lib/python2.7/dist-packages/rosdep2/main.py#£¨Õâ¸öºÃÏñÃ»ÓĞ£¬²»ÓÃ¸Ä£©
 sudo gedit /usr/lib/python2.7/dist-packages/rosdep2/rep3.py
 sudo gedit /usr/lib/python2.7/dist-packages/rosdistro/init.py
 sudo gedit /usr/lib/python2.7/dist-packages/rosdep2/sources_list.py
 ```
 
-å°† https://raw.githubusercontent.com/ros/rosdistro/master å…¨éƒ¨æ›¿æ¢ä¸º file:///home/teng/rosdistro
-ç„¶åå°±å¯ä»¥è¿è¡Œ 
+½« https://raw.githubusercontent.com/ros/rosdistro/master È«²¿Ìæ»»Îª file:///home/teng/rosdistro
+È»ºó¾Í¿ÉÒÔÔËĞĞ 
 
 ```shell
 sudo rosdep init
@@ -1620,9 +1621,9 @@ sudo rosdep init
 ------
 
 sudo gedit /etc/ros/rosdep/sources.list.d/20-default.list
-å¹¶å…¨éƒ¨åšæ›¿æ¢
-å°† https://raw.githubusercontent.com/ros/rosdistro/master å…¨éƒ¨æ›¿æ¢ä¸º file:///home/teng//rosdistro
-ç„¶åå°±å¯ä»¥
+²¢È«²¿×öÌæ»»
+½« https://raw.githubusercontent.com/ros/rosdistro/master È«²¿Ìæ»»Îª file:///home/teng//rosdistro
+È»ºó¾Í¿ÉÒÔ
 
 ```shell
 rosdep update
@@ -1632,11 +1633,11 @@ rosdep update
 
 
 
-### 3.2.2 ä»rosbagä¸­æå–å›¾ç‰‡
-å‚è€ƒçš„æ˜¯[è¿™ç¯‡csdnåšå®¢](https://blog.csdn.net/weixin_43977894/article/details/108412661?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522164898632316781683972416%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=164898632316781683972416&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-2-108412661.142^v5^pc_search_result_control_group,157^v4^control&utm_term=rosbag+%E6%8F%90%E5%8F%96%E5%9B%BE%E7%89%87&spm=1018.2226.3001.4187)
+### 3.2.2 ´ÓrosbagÖĞÌáÈ¡Í¼Æ¬
+²Î¿¼µÄÊÇ[ÕâÆªcsdn²©¿Í](https://blog.csdn.net/weixin_43977894/article/details/108412661?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522164898632316781683972416%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=164898632316781683972416&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-2-108412661.142^v5^pc_search_result_control_group,157^v4^control&utm_term=rosbag+%E6%8F%90%E5%8F%96%E5%9B%BE%E7%89%87&spm=1018.2226.3001.4187)
 
 
-ç¬¬ä¸€æ­¥ï¼Œå…ˆcdåˆ°rosbagæ‰€åœ¨æ–‡ä»¶å¤¹,æŸ¥çœ‹topicåç§°
+µÚÒ»²½£¬ÏÈcdµ½rosbagËùÔÚÎÄ¼ş¼Ğ,²é¿´topicÃû³Æ
 
 ```shell
 rosbag info xxxx.bag
@@ -1644,8 +1645,8 @@ rosbag info xxxx.bag
 
 ![](image/2022-04-04-17-12-39.png)
 
-ç¬¬äºŒæ­¥ï¼š
-æ–°å»ºxxxx.launchæ–‡ä»¶ï¼Œæ–‡ä»¶å†…å®¹å¦‚ä¸‹
+µÚ¶ş²½£º
+ĞÂ½¨xxxx.launchÎÄ¼ş£¬ÎÄ¼şÄÚÈİÈçÏÂ
 
 ```
 <launch>
@@ -1656,116 +1657,116 @@ rosbag info xxxx.bag
  </launch>
 ```
 
-å°†ä¸Šé¢ç¬¬äºŒè¡Œçš„çš„`/media/yefei/WDC-2T/Learning/data/test_bag_to_img/rgbd_dataset_freiburg1_xyz.bag`ä¿®æ”¹ä¸ºä½ çš„bagæ–‡ä»¶çš„è·¯å¾„
+½«ÉÏÃæµÚ¶şĞĞµÄµÄ`/media/yefei/WDC-2T/Learning/data/test_bag_to_img/rgbd_dataset_freiburg1_xyz.bag`ĞŞ¸ÄÎªÄãµÄbagÎÄ¼şµÄÂ·¾¶
 
-å°†å€’æ•°ç¬¬ä¸‰è¡Œçš„`/camera/rgb/image_color`æ”¹ä¸ºç¬¬ä¸€æ­¥æŸ¥çœ‹çš„topicsä¸­çš„è·¯å¾„ã€‚
+½«µ¹ÊıµÚÈıĞĞµÄ`/camera/rgb/image_color`¸ÄÎªµÚÒ»²½²é¿´µÄtopicsÖĞµÄÂ·¾¶¡£
 
-ç¬¬ä¸‰æ­¥ï¼Œ
-è¿è¡Œ`roscore`
-åœ¨æ–°çš„ç»ˆç«¯è¿è¡Œ `roslaunch xxx.launch`
+µÚÈı²½£¬
+ÔËĞĞ`roscore`
+ÔÚĞÂµÄÖÕ¶ËÔËĞĞ `roslaunch xxx.launch`
 
-ç¬¬å››æ­¥ï¼Œå»åˆ°ä¸»ç›®å½•ä¸‹çš„.rosæ–‡ä»¶å¤¹ï¼Œæ³¨æ„.rosæ–‡ä»¶å¤¹æ˜¯éšè—æ–‡ä»¶å¤¹ï¼Œè‹¥è¦ç”¨æ–‡ä»¶ç®¡ç†å™¨æŸ¥çœ‹ï¼Œéœ€è¦åœ¨ä¸»ç›®å½•æ–‡ä»¶å¤¹ä¸‹æŒ‰`ctrl + h(åˆ‡æ¢æ˜¯å¦æ˜¾ç¤ºéšè—æ–‡ä»¶åŠæ–‡ä»¶å¤¹)`ã€‚
-æå–çš„å›¾ç‰‡ä¼šä¿å­˜åˆ°è¿™é‡Œï¼Œç„¶ååœ¨å¤åˆ¶å‡ºæ¥å°±è¡Œäº†ã€‚
+µÚËÄ²½£¬È¥µ½Ö÷Ä¿Â¼ÏÂµÄ.rosÎÄ¼ş¼Ğ£¬×¢Òâ.rosÎÄ¼ş¼ĞÊÇÒş²ØÎÄ¼ş¼Ğ£¬ÈôÒªÓÃÎÄ¼ş¹ÜÀíÆ÷²é¿´£¬ĞèÒªÔÚÖ÷Ä¿Â¼ÎÄ¼ş¼ĞÏÂ°´`ctrl + h(ÇĞ»»ÊÇ·ñÏÔÊ¾Òş²ØÎÄ¼ş¼°ÎÄ¼ş¼Ğ)`¡£
+ÌáÈ¡µÄÍ¼Æ¬»á±£´æµ½ÕâÀï£¬È»ºóÔÚ¸´ÖÆ³öÀ´¾ÍĞĞÁË¡£
 
-### 3.3.3 ORB-SLAM2 ROSç¼–è¯‘
-è¿™é‡Œè®²çš„æ˜¯ã€ŠROSæœºå™¨äººå¼€å‘å®è·µä¸­çš„æ­¥éª¤ã€‹
-é¦–å…ˆæ­£å¸¸ç¼–è¯‘é€šè¿‡build.shï¼ˆè¿™ä¸€æ­¥åº”è¯¥å¯ä»¥ä¸ç”¨ï¼Œä½†æ˜¯æˆ‘ä¸€èˆ¬éƒ½æ˜¯è¿™æ ·çš„ï¼‰
+### 3.3.3 ORB-SLAM2 ROS±àÒë
+ÕâÀï½²µÄÊÇ¡¶ROS»úÆ÷ÈË¿ª·¢Êµ¼ùÖĞµÄ²½Öè¡·
+Ê×ÏÈÕı³£±àÒëÍ¨¹ıbuild.sh£¨ÕâÒ»²½Ó¦¸Ã¿ÉÒÔ²»ÓÃ£¬µ«ÊÇÎÒÒ»°ã¶¼ÊÇÕâÑùµÄ£©
 
-åœ¨ç»ˆç«¯ä¸­è®¾ç½®ç¯å¢ƒå˜é‡
+ÔÚÖÕ¶ËÖĞÉèÖÃ»·¾³±äÁ¿
 ```shell
 export ROS_PACKAGE_PATH=${ROS_PACKAGE_PATH}:/home/xxx/xxx/ORB_SLAM2/Examples/ROS
 ```
-è¿™ä¸€æ­¥å¯ä»¥ç›´æ¥`gedit ~/.bashrc`å°†è¿™å¥è¯æ·»åŠ è¿›å»ï¼Œç„¶å`source ~/.bashrc`
+ÕâÒ»²½¿ÉÒÔÖ±½Ó`gedit ~/.bashrc`½«Õâ¾ä»°Ìí¼Ó½øÈ¥£¬È»ºó`source ~/.bashrc`
 
-ç„¶åæ‰“å¼€build_ros.sh, å°†å…¶ä¸­çš„make -j æ”¹æˆ make -j4 (è¿™é‡Œå¯ä»¥éšæ„æ”¹æˆ-j2 -j8æˆ–è€…ç›´æ¥makeï¼Œä½†æ˜¯ä¸å¯ä»¥make -j, å› ä¸ºè¿™æ ·ä¼šè‡ªåŠ¨å ç”¨æœ€å¤§æ•°é‡çš„çº¿ç¨‹ï¼Œå®¹æ˜“å¡æ­»)
+È»ºó´ò¿ªbuild_ros.sh, ½«ÆäÖĞµÄmake -j ¸Ä³É make -j4 (ÕâÀï¿ÉÒÔËæÒâ¸Ä³É-j2 -j8»òÕßÖ±½Ómake£¬µ«ÊÇ²»¿ÉÒÔmake -j, ÒòÎªÕâÑù»á×Ô¶¯Õ¼ÓÃ×î´óÊıÁ¿µÄÏß³Ì£¬ÈİÒ×¿¨ËÀ)
 
 
-ç»ˆç«¯è¾“å…¥`./build_ros.sh`
+ÖÕ¶ËÊäÈë`./build_ros.sh`
 
  
-æ­¤æ—¶å¦‚æœä»£ç æŠ¥é”™ï¼š
+´ËÊ±Èç¹û´úÂë±¨´í£º
 
 ```shell
-CMakeFiles/Stereo.dir/build.make:227:recipe for target '../Stereo' failedï¼Œ
-CMakeFiles/RGBD.dir/build.make:197: recipe for target â€˜â€¦/RGBDâ€™ failedï¼Œ
+CMakeFiles/Stereo.dir/build.make:227:recipe for target '../Stereo' failed£¬
+CMakeFiles/RGBD.dir/build.make:197: recipe for target ¡®¡­/RGBD¡¯ failed£¬
 CMakeFiles/Makefile2:67: recipe for target 'CMakeFiles/RGBD.dir/all' failed,
 CMakeFiles/Makefile2:104:recipe for target 'CMakeFiles/Stereo.dir/all' failed,
 ```
 
-è§£å†³æ–¹æ¡ˆï¼š
+½â¾ö·½°¸£º
 
-ï½/catkin_ws/src/ORB_SLAM2/Examples/ROS/ORB_SLAM2/æ–‡ä»¶å¤¹ä¸‹çš„CMakeLists.txtæ–‡ä»¶ï¼Œåœ¨setï¼ˆLIBSçš„æœ€ååŠ ä¸Š-lboost_system
+¡«/catkin_ws/src/ORB_SLAM2/Examples/ROS/ORB_SLAM2/ÎÄ¼ş¼ĞÏÂµÄCMakeLists.txtÎÄ¼ş£¬ÔÚset£¨LIBSµÄ×îºó¼ÓÉÏ-lboost_system
 
-ç¼–è¯‘æˆåŠŸåï¼Œåœ¨ ORB_SLAM2/Examples/ROS/ORB_SLAM2/ æ–‡ä»¶å¤¹ä¸‹ä¼šå‡ºç°buildæ–‡ä»¶å¤¹ï¼Œæ­¤æ—¶éœ€è¦å•ç‹¬è®¾ç½®ç¯å¢ƒå˜é‡
+±àÒë³É¹¦ºó£¬ÔÚ ORB_SLAM2/Examples/ROS/ORB_SLAM2/ ÎÄ¼ş¼ĞÏÂ»á³öÏÖbuildÎÄ¼ş¼Ğ£¬´ËÊ±ĞèÒªµ¥¶ÀÉèÖÃ»·¾³±äÁ¿
 ```shell
 source /home/xxx/xxx/ORB_SLAM2/Examples/ROS/ORB_SLAM2/build/devel/setup.bash
 ```
-åŒæ ·çš„ï¼Œè¿™ä¸€æ­¥å¯ä»¥ç›´æ¥`gedit ~/.bashrc`å°†è¿™å¥è¯æ·»åŠ è¿›å»ï¼Œç„¶å`source ~/.bashrc`
+Í¬ÑùµÄ£¬ÕâÒ»²½¿ÉÒÔÖ±½Ó`gedit ~/.bashrc`½«Õâ¾ä»°Ìí¼Ó½øÈ¥£¬È»ºó`source ~/.bashrc`
 
 over
 
 
-æµ‹è¯•ï¼šä½¿ç”¨æ•°æ®åŒ…æµ‹è¯•ï¼Œ(æ•°æ®åŒ….bagå¯ä»¥åœ¨TUMæ•°æ®é›†å®˜ç½‘ä¸‹è½½)
+²âÊÔ£ºÊ¹ÓÃÊı¾İ°ü²âÊÔ£¬(Êı¾İ°ü.bag¿ÉÒÔÔÚTUMÊı¾İ¼¯¹ÙÍøÏÂÔØ)
 
-ä¸‹è½½åœ°å€ï¼šhttp://vision.in.tum.de/data/datasets/rgbd-dataset/download
-å¾€ä¸‹ç¿»ï¼Œæ‰¾åˆ°ROS bag
+ÏÂÔØµØÖ·£ºhttp://vision.in.tum.de/data/datasets/rgbd-dataset/download
+ÍùÏÂ·­£¬ÕÒµ½ROS bag
 ![](image/2022-04-04-17-43-16.png)
 
-å³é”®å¤åˆ¶é“¾æ¥ï¼Œåˆ°ç»ˆç«¯é€šè¿‡wgetå‘½ä»¤å¯ä»¥ä¸‹è½½ï¼Œä¸è¿‡åœ¨è¿™é‡Œæˆ‘æ›´å»ºè®®ä½¿ç”¨è¿…é›·äº‘ç›˜ä¸‹è½½ï¼Œé€Ÿåº¦æ¯”è¾ƒå¿«
+ÓÒ¼ü¸´ÖÆÁ´½Ó£¬µ½ÖÕ¶ËÍ¨¹ıwgetÃüÁî¿ÉÒÔÏÂÔØ£¬²»¹ıÔÚÕâÀïÎÒ¸ü½¨ÒéÊ¹ÓÃÑ¸À×ÔÆÅÌÏÂÔØ£¬ËÙ¶È±È½Ï¿ì
 
-æˆ‘åœ¨è¿™é‡Œä½¿ç”¨çš„æ˜¯rgbd_dataset_freiburg1_xyz.bag 
+ÎÒÔÚÕâÀïÊ¹ÓÃµÄÊÇrgbd_dataset_freiburg1_xyz.bag 
 
 ```shell
-###ç»ˆç«¯1
+###ÖÕ¶Ë1
 roscore
-###ç»ˆç«¯2
+###ÖÕ¶Ë2
 cd /home/xxx/xxx/ORB_SLAM2
 rosrun ORB_SLAM2 Mono Vocabulary/ORBvoc.txt Examples/ROS/ORB_SLAM2/Asus.yaml
-###ç»ˆç«¯3
+###ÖÕ¶Ë3
 rosbag play /home/xxx/xxx/rgbd_dataset_freiburg1_xyz.bag /camera/rgb/image_color:=/camera/image_raw
 ```
-### 3.3.4 zed + ORB_SLAM2 å½•åˆ¶rosbag
+### 3.3.4 zed + ORB_SLAM2 Â¼ÖÆrosbag
 
-å‚è€ƒè¿™ç¯‡åšå®¢
-[ZED2 ROSä¸‹bagåŒ…çš„å½•åˆ¶ä¸å›æ”¾æ•°æ®](https://blog.csdn.net/qq_38766208/article/details/121318560)
+²Î¿¼ÕâÆª²©¿Í
+[ZED2 ROSÏÂbag°üµÄÂ¼ÖÆÓë»Ø·ÅÊı¾İ](https://blog.csdn.net/qq_38766208/article/details/121318560)
 
 
 
-## 3.3 Ubuntuå®‰è£…boost
+## 3.3 Ubuntu°²×°boost
 
-å¯ä»¥ä½¿ç”¨apt-getå‘½ä»¤(éœ€è¦sudo)
+¿ÉÒÔÊ¹ÓÃapt-getÃüÁî(ĞèÒªsudo)
 
 ```shell
 sudo apt-get install libboost-all-dev
 ```
 
-æˆ–è€…ä½ å¯ä»¥æŸ¥è¯¢
+»òÕßÄã¿ÉÒÔ²éÑ¯
 
 ```shell
-aptitude search boost  #######è¿™ä¸ªå‘½ä»¤å¯ä»¥å­¦å­¦
+aptitude search boost  #######Õâ¸öÃüÁî¿ÉÒÔÑ§Ñ§
 ```
 
 -----------------------------------------------------------------------------------------------------------------
 
 
 
-## 3.4 Ubuntu16.04é…ç½®ROSå·¥ä½œç©ºé—´
+## 3.4 Ubuntu16.04ÅäÖÃROS¹¤×÷¿Õ¼ä
 
 ```shell
 mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws/src
-catkin_init_workspace #ï¼ˆç”Ÿæˆcmakeæ–‡ä»¶ï¼‰
+catkin_init_workspace #£¨Éú³ÉcmakeÎÄ¼ş£©
 cd ~/catkin_ws
 catkin_make
 ```
 
-å¯ä»¥ç›´æ¥åœ¨ç»ˆç«¯ä½¿ç”¨sourceå‘½ä»¤è¿è¡Œè¿™äº›è„šæœ¬æ–‡ä»¶ï¼Œä½¿å·¥ä½œç©ºé—´ä¸­çš„ç¯å¢ƒå˜é‡ç”Ÿæ•ˆ
+¿ÉÒÔÖ±½ÓÔÚÖÕ¶ËÊ¹ÓÃsourceÃüÁîÔËĞĞÕâĞ©½Å±¾ÎÄ¼ş£¬Ê¹¹¤×÷¿Õ¼äÖĞµÄ»·¾³±äÁ¿ÉúĞ§
 
 ```shell
 source devel/setup.bash
 ```
 
-åœ¨ç»ˆç«¯ä¸­ä½¿ç”¨sourceå‘½ä»¤è®¾ç½®çš„ç¯å¢ƒå˜é‡åªèƒ½åœ¨å½“å‰ç»ˆç«¯ä¸­ç”Ÿæ•ˆï¼Œå¦‚æœå¸Œæœ›å˜é‡ç¯å¢ƒåœ¨æ‰€æœ‰ç»ˆç«¯ä¸­éƒ½ç”Ÿæ•ˆï¼Œåˆ™éœ€è¦åœ¨ç»ˆç«¯çš„é…ç½®æ–‡ä»¶ä¸­åŠ å…¥ç¯å¢ƒå˜é‡çš„è®¾ç½®ï¼š
+ÔÚÖÕ¶ËÖĞÊ¹ÓÃsourceÃüÁîÉèÖÃµÄ»·¾³±äÁ¿Ö»ÄÜÔÚµ±Ç°ÖÕ¶ËÖĞÉúĞ§£¬Èç¹ûÏ£Íû±äÁ¿»·¾³ÔÚËùÓĞÖÕ¶ËÖĞ¶¼ÉúĞ§£¬ÔòĞèÒªÔÚÖÕ¶ËµÄÅäÖÃÎÄ¼şÖĞ¼ÓÈë»·¾³±äÁ¿µÄÉèÖÃ£º
 
 ```shell
 gedit ~/.bashrc
@@ -1774,40 +1775,40 @@ source ~/.bashrc
 ```
 
 ```shell
-#æœ€å
-echo $ROS_PACKAGE_PATH #å¯ä»¥ç”¨æ¥æŸ¥çœ‹å·¥ä½œå˜é‡
+#×îºó
+echo $ROS_PACKAGE_PATH #¿ÉÒÔÓÃÀ´²é¿´¹¤×÷±äÁ¿
 /home/yefei/Atengh/Learning_SLAM/catkin_ws/src:/opt/ros/kinetic/share
 ```
 
-å³å®Œæˆå·¥ä½œç©ºé—´çš„åˆ›å»º
+¼´Íê³É¹¤×÷¿Õ¼äµÄ´´½¨
 
 ## 3.5 
 
-## 3.6 OpenCVç›¸å…³é—®é¢˜
+## 3.6 OpenCVÏà¹ØÎÊÌâ
 
-### 3.6.1 å®‰è£…OpenCV
+### 3.6.1 °²×°OpenCV
 
-3.4.1å’Œ3.4.0ä¸€æ ·ï¼š
+3.4.1ºÍ3.4.0Ò»Ñù£º
 
 ```shell
-#3.4.1å’Œ3.4.0
+#3.4.1ºÍ3.4.0
 cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D OPENCV_EXTRA_MODULES_PATH=../opencv_contrib-3.4.0/modules -D OPENCV_ENABLE_NONFREE=True ..
 
 #4.0.1
 cmake -D CMAKE_BUILD_TYPE=RELEASE -D OPENCV_GENERATE_PKGCONFIG=YES -D CMAKE_INSTALL_PREFIX=/usr/local/opencv4 -D OPENCV_EXTRA_MODULES_PATH=../opencv_contrib-4.0.1/modules -D OPENCV_ENABLE_NONFREE=True ..
 ```
 
-(-D OPENCV_GENERATE_PKGCONFIG=YESï¼šOpenCV4ä»¥ä¸Šç‰ˆæœ¬é»˜è®¤ä¸ä½¿ç”¨pkg-configï¼Œè¯¥ç¼–è¯‘é€‰é¡¹å¼€å¯ç”Ÿæˆopencv4.pcæ–‡ä»¶ï¼Œæ”¯æŒpkg-configåŠŸèƒ½ã€‚
--D CMAKE_INSTALL_PREFIX=    ï¼šæŒ‡å®šå®‰è£…ç›®å½•ã€‚)
+(-D OPENCV_GENERATE_PKGCONFIG=YES£ºOpenCV4ÒÔÉÏ°æ±¾Ä¬ÈÏ²»Ê¹ÓÃpkg-config£¬¸Ã±àÒëÑ¡Ïî¿ªÆôÉú³Éopencv4.pcÎÄ¼ş£¬Ö§³Öpkg-config¹¦ÄÜ¡£
+-D CMAKE_INSTALL_PREFIX=    £ºÖ¸¶¨°²×°Ä¿Â¼¡£)
 
-å¯¹äºopencv3.4.0ï¼š
+¶ÔÓÚopencv3.4.0£º
 
 ```shell
 sudo gedit /etc/ld.so.conf.d/opencv.conf
 ```
 
-æ·»åŠ /usr/local/lib
-è¿˜è¦æ·»åŠ /home/teng/opencv-3.4.0/build/lib
+Ìí¼Ó/usr/local/lib
+»¹ÒªÌí¼Ó/home/teng/opencv-3.4.0/build/lib
 
 ```shell
 sudo ldconfig
@@ -1815,16 +1816,16 @@ sudo ldconfig
 
 ```shell
 #opencv2.4.11:
-cmake -D Â·CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local ..
+cmake -D ¡¤CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local ..
 ```
 
-å¦‚æœå®‰è£…äº†CUDAï¼š
+Èç¹û°²×°ÁËCUDA£º
 
 ```shell
-cmake -D BUILD_opencv_cudacodec=OFF â€¦
+cmake -D BUILD_opencv_cudacodec=OFF ¡­
 ```
 
-### 3.6.2 å¸è½½OpenCV
+### 3.6.2 Ğ¶ÔØOpenCV
 
 ```shell
 sudo make uninstall
@@ -1844,16 +1845,16 @@ rm -r /home/***/opencv
 
 ### 3.6.3 libopencv_core.so.2.4: cannot open shared object file: No such file or directory
 
-é—®é¢˜ï¼š
+ÎÊÌâ£º
 ./tools/bin_vocabulary: error while loading shared libraries: libopencv_core.so.2.4: cannot open shared object file: No such file or directory
-è§£å†³æ–¹æ¡ˆï¼š
+½â¾ö·½°¸£º
 ```shell
-#æ‰¾åˆ°libopen**çš„ä½ç½®
+#ÕÒµ½libopen**µÄÎ»ÖÃ
 locate libopen**
 sudo gedit /etc/ld.so.conf.d/opencv.conf 
-#åœ¨opencv.confä¸­æ·»åŠ libopen***çš„è·¯å¾„
+#ÔÚopencv.confÖĞÌí¼Ólibopen***µÄÂ·¾¶
 ###############################
-###æœ€å
+###×îºó
 sudo ldconfig
 ```
 
@@ -1861,24 +1862,24 @@ sudo ldconfig
 
 ## 3.7 GCC/G++
 
-### 3.7.1 å¤šç‰ˆæœ¬gcc/g++ä¼˜å…ˆçº§
+### 3.7.1 ¶à°æ±¾gcc/g++ÓÅÏÈ¼¶
 
 ```shell
-#æŸ¥çœ‹ä¼˜å…ˆçº§
+#²é¿´ÓÅÏÈ¼¶
 sudo update-alternatives --config gcc
 ```
 
 
 
 ```shell
-#æŸ¥çœ‹ä¼˜å…ˆçº§
+#²é¿´ÓÅÏÈ¼¶
 sudo update-alternatives --config gcc
 ```
 
 
 
 ```shell
-#åˆ‡æ¢ä¼˜å…ˆçº§ï¼š
+#ÇĞ»»ÓÅÏÈ¼¶£º
 
 sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-7 100
 sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-9 50
@@ -1899,11 +1900,11 @@ sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.9 20
 sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-5 10
 ```
 
-### 3.7.2 Ubuntu16.04å®‰è£…gcc7/g++7
+### 3.7.2 Ubuntu16.04°²×°gcc7/g++7
 
-Ubuntu16.04 å®‰è£…gcc7ï¼Œg++7   
+Ubuntu16.04 °²×°gcc7£¬g++7   
 
-websiteï¼š https://blog.csdn.net/aa363162116/article/details/102440134
+website£º https://blog.csdn.net/aa363162116/article/details/102440134
 
 ```shell
 sudo add-apt-repository ppa:ubuntu-toolchain-r/test
@@ -1911,14 +1912,14 @@ sudo apt-get update
 sudo apt-get install gcc-7
 sudo apt-get install g++-7
 
-#é…ç½®:å°†gcc7ï¼Œg++7ä½œä¸ºé»˜è®¤é€‰é¡¹
+#ÅäÖÃ:½«gcc7£¬g++7×÷ÎªÄ¬ÈÏÑ¡Ïî
 sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-7 100
 sudo update-alternatives --config gcc
 
 sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-7 100
 sudo update-alternatives --config g++
 
-#æŸ¥çœ‹æ˜¯å¦æˆåŠŸï¼š
+#²é¿´ÊÇ·ñ³É¹¦£º
 gcc --version
 g++ --version
 ```
@@ -1927,7 +1928,7 @@ g++ --version
 
 ## 3.8 Eigen
 
-### 3.8.1 æŸ¥çœ‹Eigen3ç‰ˆæœ¬
+### 3.8.1 ²é¿´Eigen3°æ±¾
 
 cat /usr/include/eigen3/Eigen/src/Core/util/Macros.h 
 
@@ -1935,28 +1936,26 @@ cat /usr/include/eigen3/Eigen/src/Core/util/Macros.h
 
 ## 3.9 g2o
 
-### 3.9.1 å¸è½½g2o
+### 3.9.1 Ğ¶ÔØg2o
 
 ```shell
-#ï¼‘ï¼šåˆ é™¤g2oçš„å¤´æ–‡ä»¶ï¼Œä½äº/usr/local/include/g2oä¸‹
+#£±£ºÉ¾³ıg2oµÄÍ·ÎÄ¼ş£¬Î»ÓÚ/usr/local/include/g2oÏÂ
 sudo rm -r /usr/local/include/g2o
 
-#ï¼’ï¼šåˆ é™¤g2oçš„åº“æ–‡ä»¶ï¼Œä½äº/usr/local/libä¸‹
+#£²£ºÉ¾³ıg2oµÄ¿âÎÄ¼ş£¬Î»ÓÚ/usr/local/libÏÂ
 sudo rm -r /usr/local/lib/libg2o*
 
-#3ï¼šåˆ é™¤g2oçš„å¯æ‰§è¡Œæ–‡ä»¶ï¼Œä½äº/usr/local/binä¸‹
+#3£ºÉ¾³ıg2oµÄ¿ÉÖ´ĞĞÎÄ¼ş£¬Î»ÓÚ/usr/local/binÏÂ
 sudo rm -r /usr/local/bin/g2o*
 ```
 
 
-## 3.10 vimç›¸å…³
-### 3.10.1 vimï¼Œviç»å¸¸å¡æ­»ï¼ˆå…¶å®å¹¶ä¸æ˜¯å®ƒå¡äº†ï¼‰
-ä½¿ç”¨vimæ—¶ï¼Œå¦‚æœä½ ä¸å°å¿ƒæŒ‰äº† Ctrl + såï¼Œä½ ä¼šå‘ç°ä¸èƒ½è¾“å…¥ä»»ä½•ä¸œè¥¿äº†ï¼Œåƒæ­»æ‰äº†ä¸€èˆ¬ï¼Œå…¶å®vimå¹¶æ²¡æœ‰æ­»æ‰ï¼Œè¿™æ—¶vimåªæ˜¯åœæ­¢å‘ç»ˆç«¯è¾“å‡ºè€Œå·²ï¼Œè¦æƒ³é€€å‡ºè¿™ç§çŠ¶æ€ï¼Œåªéœ€æŒ‰Ctrl + q å³å¯æ¢å¤æ­£å¸¸ã€‚
+## 3.10 vimÏà¹Ø
+### 3.10.1 vim£¬vi¾­³£¿¨ËÀ£¨ÆäÊµ²¢²»ÊÇËü¿¨ÁË£©
+Ê¹ÓÃvimÊ±£¬Èç¹ûÄã²»Ğ¡ĞÄ°´ÁË Ctrl + sºó£¬Äã»á·¢ÏÖ²»ÄÜÊäÈëÈÎºÎ¶«Î÷ÁË£¬ÏñËÀµôÁËÒ»°ã£¬ÆäÊµvim²¢Ã»ÓĞËÀµô£¬ÕâÊ±vimÖ»ÊÇÍ£Ö¹ÏòÖÕ¶ËÊä³ö¶øÒÑ£¬ÒªÏëÍË³öÕâÖÖ×´Ì¬£¬Ö»Ğè°´Ctrl + q ¼´¿É»Ö¸´Õı³£¡£
 
-### 3.10.2 vimå¤åˆ¶æ–‡å­—åˆ°å¤–é¢
-vimä¸­æŒ‰ä½shiftå¯ä»¥ç”¨é¼ æ ‡ï¼Œä½†æ˜¯ä¼šé€‰ä¸­è¡Œå·ï¼Œæ‰€ä»¥å¯ä»¥ctrl+shift+é¼ æ ‡æ¥é€‰æ‹©
-
-
+### 3.10.2 vim¸´ÖÆÎÄ×Öµ½ÍâÃæ
+vimÖĞ°´×¡shift¿ÉÒÔÓÃÊó±ê£¬µ«ÊÇ»áÑ¡ÖĞĞĞºÅ£¬ËùÒÔ¿ÉÒÔctrl+shift+Êó±êÀ´Ñ¡Ôñ
 
 
 
@@ -1966,36 +1965,38 @@ vimä¸­æŒ‰ä½shiftå¯ä»¥ç”¨é¼ æ ‡ï¼Œä½†æ˜¯ä¼šé€‰ä¸­è¡Œå·ï¼Œæ‰€ä»¥å¯ä»¥ctrl+shif
 
 
 
-# 4. æ•°æ®ç»“æ„
-## æ•°ç»„
-## é“¾è¡¨
-### é“¾è¡¨åŸºæœ¬æ¦‚å¿µ
 
-å®šä¹‰é“¾è¡¨èŠ‚ç‚¹: 
+
+# 4. Êı¾İ½á¹¹
+## Êı×é
+## Á´±í
+### Á´±í»ù±¾¸ÅÄî
+
+¶¨ÒåÁ´±í½Úµã: 
 ```c++
 struct ListNode {
-    int val;  // èŠ‚ç‚¹ä¸Šå­˜å‚¨çš„å…ƒç´ 
-    ListNode *next;  // æŒ‡å‘ä¸‹ä¸€ä¸ªèŠ‚ç‚¹çš„æŒ‡é’ˆ
-    ListNode(int x) : val(x), next(NULL) {}  // èŠ‚ç‚¹çš„æ„é€ å‡½æ•°
+    int val;  // ½ÚµãÉÏ´æ´¢µÄÔªËØ
+    ListNode *next;  // Ö¸ÏòÏÂÒ»¸ö½ÚµãµÄÖ¸Õë
+    ListNode(int x) : val(x), next(NULL) {}  // ½ÚµãµÄ¹¹Ôìº¯Êı
 };
 ```
-ä¹Ÿå¯ä»¥ä¸åˆå§‹åŒ–intï¼ŒC++é»˜è®¤ç”Ÿæˆä¸€ä¸ªæ„é€ å‡½æ•°ã€‚ä½†æ˜¯è¿™ä¸ªæ„é€ å‡½æ•°ä¸ä¼šåˆå§‹åŒ–ä»»ä½•æˆå‘˜å˜é‡ï¼Œä¸‹é¢æˆ‘æ¥ä¸¾ä¸¤ä¸ªä¾‹å­ï¼š
+Ò²¿ÉÒÔ²»³õÊ¼»¯int£¬C++Ä¬ÈÏÉú³ÉÒ»¸ö¹¹Ôìº¯Êı¡£µ«ÊÇÕâ¸ö¹¹Ôìº¯Êı²»»á³õÊ¼»¯ÈÎºÎ³ÉÔ±±äÁ¿£¬ÏÂÃæÎÒÀ´¾ÙÁ½¸öÀı×Ó£º
 
-+ é€šè¿‡è‡ªå·±å®šä¹‰æ„é€ å‡½æ•°åˆå§‹åŒ–èŠ‚ç‚¹ï¼š
++ Í¨¹ı×Ô¼º¶¨Òå¹¹Ôìº¯Êı³õÊ¼»¯½Úµã£º
 	```c++
 	ListNode* head = new ListNode(5);
 	```
-+ ä½¿ç”¨é»˜è®¤æ„é€ å‡½æ•°åˆå§‹åŒ–èŠ‚ç‚¹ï¼š
++ Ê¹ÓÃÄ¬ÈÏ¹¹Ôìº¯Êı³õÊ¼»¯½Úµã£º
 	```c++
 	ListNode* head = new ListNode();
 	head->val = 5;
 	```
-æ‰€ä»¥å¦‚æœä¸å®šä¹‰æ„é€ å‡½æ•°ä½¿ç”¨é»˜è®¤æ„é€ å‡½æ•°çš„è¯ï¼Œåœ¨åˆå§‹åŒ–çš„æ—¶å€™å°±ä¸èƒ½ç›´æ¥ç»™å˜é‡èµ‹å€¼ï¼
+ËùÒÔÈç¹û²»¶¨Òå¹¹Ôìº¯ÊıÊ¹ÓÃÄ¬ÈÏ¹¹Ôìº¯ÊıµÄ»°£¬ÔÚ³õÊ¼»¯µÄÊ±ºò¾Í²»ÄÜÖ±½Ó¸ø±äÁ¿¸³Öµ£¡
 
 
-ç»è¿‡æµ‹è¯•(g++-5, c++-11), æŒ‰ç…§è‡ªå·±å®šä¹‰æ„é€ å‡½æ•°åˆå§‹åŒ–çš„æ–¹å¼æ¥å†™ï¼š
+¾­¹ı²âÊÔ(g++-5, c++-11), °´ÕÕ×Ô¼º¶¨Òå¹¹Ôìº¯Êı³õÊ¼»¯µÄ·½Ê½À´Ğ´£º
 ```c++
 ListNode* head = new ListNode();
-/// è¿™ä¸€æ­¥ï¼Œhead->val ä¸º 1
+/// ÕâÒ»²½£¬head->val Îª 1
 head->val = 5;
 ```
