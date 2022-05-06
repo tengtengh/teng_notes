@@ -294,7 +294,10 @@ vim-gitgutter https://github.com/airblade/vim-gitgutter
 
 这个插件是标记git改动信息的, 类似与vscode左边的信git息
 
-具体的使用我没太搞懂，可以看这篇文章[Vim-gitgutter：快速查看本次 commit 新增了什麼 ](https://ithelp.ithome.com.tw/articles/10238748)
+
+比如右边的加号，就是这个插件的所显示的变化
+
+可以看这篇文章[Vim-gitgutter：快速查看本次 commit 新增了什麼 ](https://ithelp.ithome.com.tw/articles/10238748)
 
 
 
