@@ -251,6 +251,13 @@ au FileType java setlocal dict+=~/.config/nvim/dictionary/java_keywords_list.txt
 
 ```
 
+
+
+
+
+
+
+
 ### 2.2.9 PowerVim插件之vim-commentary
 
 commentary https://github.com/tpope/vim-commentary
@@ -260,6 +267,7 @@ commentary https://github.com/tpope/vim-commentary
 
 
 用法可以参考这篇博客 [vim-commentary插件用法](https://blog.csdn.net/qq_31433709/article/details/105445055)
+
 
 
 ### 2.2.10 PowerVim插件之NERDTree
@@ -278,8 +286,19 @@ NERDTree是用来生成目录树的，
 
 
 
+### 2.2.11 PowerVim插件之vim-gitgutter
 
 
+vim-gitgutter https://github.com/airblade/vim-gitgutter
+
+
+这个插件是标记git改动信息的, 类似与vscode左边的信git息
+
+具体的使用我没太搞懂，可以看这篇文章[Vim-gitgutter：快速查看本次 commit 新增了什麼 ](https://ithelp.ithome.com.tw/articles/10238748)
+
+
+
+ok
 
 
 
