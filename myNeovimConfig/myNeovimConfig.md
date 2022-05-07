@@ -29,7 +29,10 @@
     * [2.12 PowerVim--vimrc/init.vim](#2.12-powervim--vimrc/init.vim)
 * [3 我的改动说明](#3-我的改动说明)
     * [3.1 vimrc/init.vim改动说明](#3.1-vimrc/init.vim改动说明)
-    * [3.2 vim颜色主题的更改](#3.2-vim颜色主题的更改)
+    * [3.2 vim-plug插件管理器](#3.2-vim-plug插件管理器)
+    * [3.3 vim颜色主题的更改--onedark](#3.3-vim颜色主题的更改--onedark)
+    * [3.4 括号自动补全插件auto-pair](#3.4-括号自动补全插件auto-pair)
+    * [3.5 markdown相关插件](#3.5-markdown相关插件)
 
 <!-- vim-markdown-toc -->
 
@@ -492,7 +495,7 @@ au FileType java setlocal dict+=~/.config/nvim/dictionary/java_keywords_list.txt
 
 
 
-```
+```vim
 "设置不同的模式光标的形状：
 "NORMAL模式下显示小方块
 "INSERT模式下显示竖线
@@ -503,13 +506,142 @@ let &t_SR.="\e[4 q" "SR = REPLACE mode
 let &t_EI.="\e[1 q" "EI = NORMAL mode (ELSE)
 ```
 
+### 3.2 vim-plug插件管理器
 
-### 3.2 vim颜色主题的更改
+管理插件的，类似的还有Vundle等，网上都说Vundle比较老了，现在都用vim-plug，于是我就用了这个。
+
+https://github.com/junegunn/vim-plug
 
 
-这里我用的是onedark，因为我之前Vscode用的是onedark pro，这个跟那个差不多，感觉很舒服
+安装vim-plug插件也是异常的简单，按照其github-README的教程就是
+
+Installation
+Download plug.vim and put it in the "autoload" directory.
 
 
+使用的话，就是在vimrc/init.vim里面，如下：
+
+
+```vim
+call plug#begin('~/.config/nvim/plugged')
+
+"安装插件(markdown图片粘贴)
+Plug 'ferrine/md-img-paste.vim' 
+
+" 生成markdown目录的插件
+Plug 'mzlogin/vim-markdown-toc'
+
+call plug#end()
+
+```
+
+把要安装的插件写在中中间，执行`:PlugInstall`
+
+注意：刚写入进vimrc和init.vim的内容，直接执行是安装不了的，得重新打开vimrc/init.vim
+
+
+
+### 3.3 vim颜色主题的更改--onedark
+
+
+这里我用的是onedark，因为我之前Vscode用的是onedark pro，这个跟那个差不多，感觉很舒服。
+
+https://github.com/joshdick/onedark.vim
+
+
+按照其github-README的教程，将它的onedark.vim/color/onedark.vim 和onedark.vim/autoload/onedark.vim 分别放置到我的nvim/color/ 和 nvim/autoload 路径下。
+
+然后在init.vim中做如下修改：
+
+```vim
+colorscheme  onedark
+" colorscheme Monokai_Gavin
+```
+
+这里我没有用插件管理器来搞，因为vim-plug插件管理器，是直接把它下载到`~/.config/nvim/plugged/onedark.vim/`, 这样的话，直接在vimrc/init.vim里面设置`colorscheme onedark`, 会提示找不到，我不知道怎么设置，就干脆直接手动下载了。
+
+### 3.4 括号自动补全插件auto-pair
+
+我把PowerVim作者的自动补全注释掉了，下载了这个，这个跟vscode的括号补全比较像，我用起来很舒服
+
+ https://github.com/jiangmiao/auto-pairs   
+
+安装方式也比较easy，就直接在vimrc/init.vim中写入
+
+```vim
+"括号匹配插件 auto-pair https://github.com/jiangmiao/auto-pairs
+Plug 'jiangmiao/auto-pairs'
+```
+
+
+### 3.5 markdown相关插件
+
+1. markdown预览插件markdown-preview.nvim
+
+https://github.com/iamcco/markdown-preview.nvim
+
+小伙伴们要注意了，这个插件只支持neovim和vim>=8.1
+
+安装方式非常简单，就是在vimrc/init.vim中写入
+
+```vim
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+
+" If you have nodejs and yarn
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+
+```
+
+再执行
+
+```vim
+:source %
+:PluginInstall
+:call mkdp#util#install()
+```
+即可
+
+
+
+2. 将剪切板中的图片插入markdown--md-img-paste.vim
+
+
+https://github.com/ferrine/md-img-paste.vim
+
+安装方式，就是在vimrc/init.vim中添加
+
+```vim
+"安装插件(markdown图片粘贴)
+Plug 'ferrine/md-img-paste.vim'
+```
+
+:PlugInstall 安装
+
+
+```vim
+"从剪切板插入markdown 图片的插件,ferrine/md-img-paste.vim 
+"命令为 :call midp#MarkdownClipboardImage()
+
+"设置默认储存文件夹。这里表示储存在当前文档所在文件夹下的'pic'文件夹下，相当于 ./pic/
+let g:mdip_imgdir = 'image' 
+"设置默认图片名称。当图片名称没有给出时，使用默认图片名称
+let g:mdip_imgname = 'image'
+
+"设置#MarkdownClipboardImage, 设置快捷键
+" autocmd FileType markdown nnoremap <silent> <C-p> :call mdip#MarkdownClipboardImage()<CR>F%i
+
+```
+
+
+3. 插入markdown目录
+
+https://github.com/mzlogin/vim-markdown-toc
+
+```
+Plug 'mzlogin/vim-markdown-toc'
+```
+
+具体插入、删除、更新目录等指令，可以在其github-README中查看，很详细
 
 
 
