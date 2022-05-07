@@ -35,6 +35,28 @@
 
 
 
+<!-- vim-markdown-toc GFM -->
+
+* [1 关于vim/neovim的基本配置的说明](#1-关于vimneovim的基本配置的说明)
+    * [1.1 vim](#11-vim)
+    * [1.2 neovim](#12-neovim)
+* [2 我最开始使用的vim配置-PowerVim](#2-我最开始使用的vim配置-powervim)
+    * [2.1 用代码随想录作者的 PowerVim](#21-用代码随想录作者的-powervim)
+    * [2.2 PowerVim/.ctags](#22-powervimctags)
+    * [2.3 PowerVim--a.vim](#23-powervim--avim)
+    * [2.4 PowerVim插件之minibufexpl.vim](#24-powervim插件之minibufexplvim)
+    * [2.5 PowerVim插件之statusline.vim](#25-powervim插件之statuslinevim)
+    * [2.6 PowerVim插件之taglist.vim](#26-powervim插件之taglistvim)
+    * [2.7 PowerVim插件之ack](#27-powervim插件之ack)
+    * [2.8 PowerVim插件之autocomplpop](#28-powervim插件之autocomplpop)
+    * [2.9 PowerVim插件之vim-commentary](#29-powervim插件之vim-commentary)
+    * [2.10 PowerVim插件之NERDTree](#210-powervim插件之nerdtree)
+    * [2.11 PowerVim插件之vim-gitgutter](#211-powervim插件之vim-gitgutter)
+    * [2.12 PowerVim--vimrc/init.vim](#212-powervim--vimrcinitvim)
+* [3 我的改动说明](#3-我的改动说明)
+    * [3.1 vimrc/init.vim改动说明](#31-vimrcinitvim改动说明)
+
+<!-- vim-markdown-toc -->
 
 
 
