@@ -1,4 +1,8 @@
+
+
+
 # Tengtengh的vim/neovim的个人配置
+
 
 这里记录一下我是怎么配置我现在用的vim的
 
@@ -39,7 +43,7 @@ The config file is located at:
       Windows                 ~/AppData/Local/nvim/init.vim   (or init.lua)   
       $XDG_CONFIG_HOME        $XDG_CONFIG_HOME/nvim/init.vim  (or init.lua)
 
-###如果你没有设置$XDG_CONFIG_HOME, 路径的话，默认就是.config,(应该是这样的)
+### 1.3 如果你没有设置$XDG_CONFIG_HOME, 路径的话，默认就是.config,(应该是这样的)
 ```
 
 
@@ -80,13 +84,13 @@ ln -s ${PowerVim}/.ctags .ctags
 
 
 
-在ubuntu的终端中，快捷键`F1`是打开帮助目录，这与PowerVim中`F1`编译c++冲突了。需要在 编辑-首选项-快捷键中修改，这里我是设置成了`Ctrl + F1`
+在ubuntu的终端中，快捷键`F1`是打开帮助目录，这与PowerVim中`F1`编译c++冲突了。需要在 编辑-首选项-快捷键中修改，这里我是设置成了`Ctrl + F1`, 或者是在键入快捷键的时候键入`<-Backspack`，这样就可以将这个快捷键禁用，我后来是直接禁用了(说起来，最开始是不知道怎么禁用才无奈设置成`Ctrl + F1`的).  后来我发现在ubuntu18.04上，这个快捷键好像本来就是禁用的。 :sweat_smile:
 
-![image_2022-05-06-12-51-55](img/image_2022-05-06-12-51-55.png)
+![image_2022-05-06-12-51-55](image/image_2022-05-06-12-51-55.png)
 
 
 
-这样，你就可以用代码随想录作者的 PowerVim 了。
+这样，你就可以用代码随想录作者的 PowerVim 了, 后面是有关PowerVim的一些说明, 主要是记录以下他是怎么配置的，PowerVim并没有使用插件管理器，并且它用到的很多插件都是非常old school的了，有的甚至十几年都没有维护了。
 
 ### 2.2 PowerVim/.ctags
 
@@ -111,10 +115,17 @@ ln -s ${PowerVim}/.ctags .ctags
 
 ```
 上面的那一段我个人认为是可以删掉（首先go语言我用不到，其次在ubuntu16.04上这段话是作为报错存在的）.
+其实也不能说是报错，不删也可以，就是打标签的时候，会报一句"ctags: Warning: Language "go" already defined",应该也没什么太大影响。。
+
 
 下面那一段，则是让你可以在编辑markdwon文件(.md)的时候, 通过组合键`<leader> + m`(PowerVim设置的是`; + m`)在右侧打开目录树, 如下图所示
 
-![image_2022-05-06-11-40-07](img/image_2022-05-06-11-40-07.png)
+<!-- ![image_2022-05-06-11-40-07](image/image_2022-05-06-11-40-07.png) -->
+
+
+<img src='image/image_2022-05-06-11-40-07.png' width=600 alt=''> </img></div>
+
+
 
 这里有一点比较搞笑的是，PowerVim的作者把目录树的Headlines写成了Headlins，这个直接在vimrc或者init.vim文件中修改即可
 
@@ -127,7 +138,7 @@ ln -s ${PowerVim}/.ctags .ctags
 我后面的一些配置记录是记录了我在PoweVim的基础上根据我自己的需求，进行了一些改动，或许有一天我会从零开始配置我自己的vim，但是至少现阶段我的vim配置都是在PowerVim的基础上改的，因为我个人觉得PowerVim的配置我用起来还是比较舒服的 :-D
 
 
-### 2.2.3 PowerVim--a.vim
+### 2.3 PowerVim--a.vim
 
 https://github.com/vim-scripts/a.vim
 
@@ -142,7 +153,7 @@ nmap <Leader>a :A<CR>
 虽然也是很老的插件，但是还可以
 
 
-### 2.2.4 PowerVim插件之minibufexpl.vim 
+### 2.4 PowerVim插件之minibufexpl.vim 
 
 
 https://github.com/fholgado/minibufexpl.vim
@@ -161,22 +172,22 @@ let g:miniBufExplMapCTabSwitchBufs=1
 
 具体效果如下图，最上方的那个就是它
 
-![image_2022-05-06-16-37-17](img/image_2022-05-06-16-37-17.png)
+![image_2022-05-06-16-37-17](image/image_2022-05-06-16-37-17.png)
 
 
-### 2.2.5 PowerVim插件之statusline.vim 
+### 2.5 PowerVim插件之statusline.vim 
 
 statusline.vim https://github.com/youngyangyang04/PowerVim/blob/master/.vim/plugin/statusline.vimrc
 
 这个其实就是下面的状态栏, 如下图
 
 
-![image_2022-05-06-16-45-31](img/image_2022-05-06-16-45-31.png)
+![image_2022-05-06-16-45-31](image/image_2022-05-06-16-45-31.png)
 
 
 
 
-### 2.2.6 PowerVim插件之taglist.vim
+### 2.6 PowerVim插件之taglist.vim
 
 
 https://github.com/vim-scripts/taglist.vim
@@ -204,7 +215,7 @@ let g:tlist_markdown_settings = 'markdown;h:Headlines'
 
 ```
 
-### 2.2.7 PowerVim插件之ack 
+### 2.7 PowerVim插件之ack 
 
 https://github.com/mileszs/ack.vim
 
@@ -220,7 +231,7 @@ https://github.com/mileszs/ack.vim
 
 
 
-### 2.2.8 PowerVim插件之autocomplpop 
+### 2.8 PowerVim插件之autocomplpop 
 
 https://github.com/vim-scripts/AutoComplPop
 
@@ -258,7 +269,7 @@ au FileType java setlocal dict+=~/.config/nvim/dictionary/java_keywords_list.txt
 
 
 
-### 2.2.9 PowerVim插件之vim-commentary
+### 2.9 PowerVim插件之vim-commentary
 
 commentary https://github.com/tpope/vim-commentary
 
@@ -270,7 +281,7 @@ commentary https://github.com/tpope/vim-commentary
 
 
 
-### 2.2.10 PowerVim插件之NERDTree
+### 2.10 PowerVim插件之NERDTree
 
 nerdtree https://github.com/scrooloose/nerdtree
 
@@ -286,7 +297,7 @@ NERDTree是用来生成目录树的，
 
 
 
-### 2.2.11 PowerVim插件之vim-gitgutter
+### 2.11 PowerVim插件之vim-gitgutter
 
 
 vim-gitgutter https://github.com/airblade/vim-gitgutter
@@ -300,12 +311,14 @@ vim-gitgutter https://github.com/airblade/vim-gitgutter
 可以看这篇文章[Vim-gitgutter：快速查看本次 commit 新增了什麼 ](https://ithelp.ithome.com.tw/articles/10238748)
 
 
+可以通过在vimrc/init.vim中添加 `set updatetime=100`,设置这个更新时间，默认是4s，设置成100就是100ms
 
 ok
 
 
 
 
+### 2.12 PowerVim--vimrc/init.vim
 
 
 
@@ -314,8 +327,11 @@ ok
 
 
 
+## 3 我的改动说明
 
-## 3 vimrc/init.vim改动说明
+### 3.1 vimrc/init.vim改动说明
+
+
 
 默认tab缩进是两空格，这里我设置成了4
 
@@ -330,10 +346,83 @@ set shiftwidth=4		"设置缩进的空格数为4
 
 ```
 
+这句我注释掉了，因为什么原因我忘记了
+```
+"set mouse=a "打开鼠标功能 tengadd
+```
+
+
+我把PowerVim作者的自动补全注释掉了，因为我觉得并不好用，我用了插件[auto-pair](https://github.com/jiangmiao/auto-pairs)去替代它，这个更加智能。
 
 ```
 
+""  Tengh注释掉了，因为安装了auto-pair插件
+""花括号自动格式化，首行一个tab
+"autocmd FileType cpp,java inoremap { {<CR>}<ESC>kA<CR>
+
+set fenc=" "
+"显示匹配
+set showmatch
+
+"
+""  Tengh注释掉了，因为安装了auto-pair插件
+"括号匹配
+"inoremap ( ()<ESC>i
+"inoremap [ []<ESC>i
+"inoremap ' ''<ESC>i
+"inoremap " ""<ESC>i
+
+
 ```
+
+
+要使用这个功能就要手动创建`~/tmp/clipboard.txt`,不过我是从来不用的，因为我有的更好的快捷键去代替它，也就是后面会提到的`<leader>y`
+
+```
+image 本身是没有这个文件和文件夹的，要手动创建它
+" 使用ctrlc, v就可以实现vim之间的复制粘贴
+vnoremap <C-c> :w! ~/tmp/clipboard.txt <CR> 
+inoremap <C-v> <Esc>:r ~/tmp/clipboard.txt <CR>
+
+```
+
+
+下面改的这个是自动补全的路径，这个改动我在[ 2.8 PowerVim插件之autocomplpop ](#28-PowerVim插件之autocomplpop) 中已经提到过了
+在init.vim中设置如下，上半部分我注释掉的是作者针对vim设置的.vim路径，我改成了~/.config/nvim/ 路径，其实是可以直接一个 ln -s 映射过去、通用，但是我直接把vim卸载了，直接就按照neovim配置来了
+
+
+```vim
+" 添加自动补全字典
+" au FileType php setlocal dict+=~/.vim/dictionary/php_keywords_list.txt 
+" au FileType cpp setlocal dict+=~/.vim/dictionary/cpp_keywords_list.txt
+" au FileType java setlocal dict+=~/.vim/dictionary/java_keywords_list.txt
+" " au FileType markdown setlocal dict+=~/.vim/dictionary/words.txt
+
+" Tengh改成neovim的路径
+au FileType php setlocal dict+=~/.config/nvim/dictionary/php_keywords_list.txt 
+au FileType cpp setlocal dict+=~/.config/nvim/dictionary/cpp_keywords_list.txt
+au FileType java setlocal dict+=~/.config/nvim/dictionary/java_keywords_list.txt
+" au FileType markdown setlocal dict+=~/.vim/dictionary/words.txt
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
