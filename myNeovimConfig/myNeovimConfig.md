@@ -6,6 +6,42 @@
 
 这里记录一下我是怎么配置我现在用的vim的
 
+
+
+
+
+<!-- vim-markdown-toc Marked -->
+
+* [1 关于vim/neovim的基本配置的说明](#1-关于vim/neovim的基本配置的说明)
+    * [1.1 vim](#1.1-vim)
+    * [1.2 neovim](#1.2-neovim)
+* [2 我最开始使用的vim配置-PowerVim](#2-我最开始使用的vim配置-powervim)
+    * [2.1 用代码随想录作者的 PowerVim](#2.1-用代码随想录作者的-powervim)
+    * [2.2 PowerVim/.ctags](#2.2-powervim/.ctags)
+    * [2.3 PowerVim--a.vim](#2.3-powervim--a.vim)
+    * [2.4 PowerVim插件之minibufexpl.vim](#2.4-powervim插件之minibufexpl.vim)
+    * [2.5 PowerVim插件之statusline.vim](#2.5-powervim插件之statusline.vim)
+    * [2.6 PowerVim插件之taglist.vim](#2.6-powervim插件之taglist.vim)
+    * [2.7 PowerVim插件之ack](#2.7-powervim插件之ack)
+    * [2.8 PowerVim插件之autocomplpop](#2.8-powervim插件之autocomplpop)
+    * [2.9 PowerVim插件之vim-commentary](#2.9-powervim插件之vim-commentary)
+    * [2.10 PowerVim插件之NERDTree](#2.10-powervim插件之nerdtree)
+    * [2.11 PowerVim插件之vim-gitgutter](#2.11-powervim插件之vim-gitgutter)
+    * [2.12 PowerVim--vimrc/init.vim](#2.12-powervim--vimrc/init.vim)
+* [3 我的改动说明](#3-我的改动说明)
+    * [3.1 vimrc/init.vim改动说明](#3.1-vimrc/init.vim改动说明)
+
+<!-- vim-markdown-toc -->
+
+
+
+
+
+
+
+
+
+
 ## 1 关于vim/neovim的基本配置的说明
 
 ### 1.1 vim
@@ -387,7 +423,7 @@ inoremap <C-v> <Esc>:r ~/tmp/clipboard.txt <CR>
 ```
 
 
-下面改的这个是自动补全的路径，这个改动我在[ 2.8 PowerVim插件之autocomplpop ](#28-PowerVim插件之autocomplpop) 中已经提到过了
+下面改的这个是自动补全的路径，这个改动我在[ 2.8 PowerVim插件之autocomplpop ](#2.8-powervim插件之autocomplpop) 中已经提到过了
 在init.vim中设置如下，上半部分我注释掉的是作者针对vim设置的.vim路径，我改成了~/.config/nvim/ 路径，其实是可以直接一个 ln -s 映射过去、通用，但是我直接把vim卸载了，直接就按照neovim配置来了
 
 
