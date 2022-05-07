@@ -1,6 +1,5 @@
 
 
-
 # Tengtengh的vim/neovim的个人配置
 
 
@@ -87,6 +86,9 @@
     系统菜单文件: "$VIMRUNTIME/menu.vim"
   $VIM 预设值: "/usr/share/vim"
 ```
+
+
+
 
 ### 1.2 neovim
 
@@ -286,9 +288,7 @@ https://github.com/mileszs/ack.vim
 
 提一嘴，ack搜索命令为 `:ACK! name 路径`
 
-
-
-
+<span id="28autocomplpop"></span>
 ### 2.8 PowerVim插件之autocomplpop 
 
 https://github.com/vim-scripts/AutoComplPop
@@ -395,7 +395,7 @@ ok
 
 
 
-```
+```vim
 "teng add 2022-3-19
 "syntax on	"设置语法高亮，一般默认有，可不用添加此句
 set tabstop=4		"设置制表符宽度为4
@@ -405,14 +405,19 @@ set shiftwidth=4		"设置缩进的空格数为4
 ```
 
 这句我注释掉了，因为什么原因我忘记了
-```
+
+
+```vim
 "set mouse=a "打开鼠标功能 tengadd
 ```
 
 
 我把PowerVim作者的自动补全注释掉了，因为我觉得并不好用，我用了插件[auto-pair](https://github.com/jiangmiao/auto-pairs)去替代它，这个更加智能。
 
-```
+
+
+
+```vim
 
 ""  Tengh注释掉了，因为安装了auto-pair插件
 ""花括号自动格式化，首行一个tab
@@ -436,7 +441,8 @@ set showmatch
 
 要使用这个功能就要手动创建`~/tmp/clipboard.txt`,不过我是从来不用的，因为我有的更好的快捷键去代替它，也就是后面会提到的`<leader>y`
 
-```
+
+```vim
 image 本身是没有这个文件和文件夹的，要手动创建它
 " 使用ctrlc, v就可以实现vim之间的复制粘贴
 vnoremap <C-c> :w! ~/tmp/clipboard.txt <CR> 
@@ -445,7 +451,13 @@ inoremap <C-v> <Esc>:r ~/tmp/clipboard.txt <CR>
 ```
 
 
-下面改的这个是自动补全的路径，这个改动我在[ 2.8 PowerVim插件之autocomplpop ](#2.8-powervim插件之autocomplpop) 中已经提到过了
+
+下面改的这个是自动补全的路径，这个改动我在[2.8 PowerVim--autocomplpop](#28autocomplpop) 中已经提到过了
+
+
+
+
+
 在init.vim中设置如下，上半部分我注释掉的是作者针对vim设置的.vim路径，我改成了~/.config/nvim/ 路径，其实是可以直接一个 ln -s 映射过去、通用，但是我直接把vim卸载了，直接就按照neovim配置来了
 
 
