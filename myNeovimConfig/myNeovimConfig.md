@@ -29,6 +29,7 @@
     * [2.12 PowerVim--vimrc/init.vim](#2.12-powervim--vimrc/init.vim)
 * [3 我的改动说明](#3-我的改动说明)
     * [3.1 vimrc/init.vim改动说明](#3.1-vimrc/init.vim改动说明)
+    * [3.2 vim颜色主题的更改](#3.2-vim颜色主题的更改)
 
 <!-- vim-markdown-toc -->
 
@@ -450,7 +451,16 @@ inoremap <C-v> <Esc>:r ~/tmp/clipboard.txt <CR>
 
 ```
 
+这里我把`<leader>p`映射成了系统剪切板的粘贴，这样可以与外部进行复制粘贴(之前只有复制没有粘贴), 然后我把`<leader>p`原本映射的快捷键改成了`<leader>p1`.
+```
+" 粘贴到系统剪切板
+" map <Leader>y "*y
+map <Leader>y "+y
+map <Leader>p "+p
 
+" open/close Syntastic checker
+nnoremap <Leader>p1 :SyntasticToggleMode<CR> :w<CR>
+```
 
 下面改的这个是自动补全的路径，这个改动我在[2.8 PowerVim--autocomplpop](#28autocomplpop) 中已经提到过了
 
@@ -482,7 +492,22 @@ au FileType java setlocal dict+=~/.config/nvim/dictionary/java_keywords_list.txt
 
 
 
+```
+"设置不同的模式光标的形状：
+"NORMAL模式下显示小方块
+"INSERT模式下显示竖线
+"REPLACE模式(类似word的ins模式)下显示为下划线
+"Mode Settings
+let &t_SI.="\e[5 q" "SI = INSERT mode
+let &t_SR.="\e[4 q" "SR = REPLACE mode
+let &t_EI.="\e[1 q" "EI = NORMAL mode (ELSE)
+```
 
+
+### 3.2 vim颜色主题的更改
+
+
+这里我用的是onedark，因为我之前Vscode用的是onedark pro，这个跟那个差不多，感觉很舒服
 
 
 
