@@ -1,35 +1,35 @@
 
 
-��Ϊ2022��4��6����19��00���Ե�һ�⣺
-��Ŀ��
-### 1�����������ȴ�
-���ϵ�����Խ��Խ�࣬ϣ�������Ž����ȴʴ��������࣬�����ȡ��Ϣ�������Ѿ���ÿƪ���Ŵ���Ϊ2���ַ�������һ�����⴮һ�����Ĵ����ַ�����ʹ��" "��Ϊ�ָ�����ķָ������зִʡ�
-Mƪ���Ű������ŷ������Ⱥ�˳�����겢���룬����ϣ�������������г��ֵĴ�����д������������Ƶ����ߵ�topN�������Ϊ�ȴʡ�
-�����г��ֵĴ���Ƶ��ϵ��Ϊ3�������г��ֵĴ���Ƶ��ϵ��Ϊ1�����ش��г��ֵ�Ƶ���ɸߵ�������
-��������ֵ�Ƶ����ͬʱ���ڱ����г��ֵ�Ƶ�ʴ����ߵ�����ǰ�棻
-�������Ȼ��ͬ�����մ����ڱ����г��ֵ��Ⱥ�˳����������ȳ��ֵ�����ǰ�棻
-�����Ȼ��ͬ�����մ����������й����ֵ��Ⱥ�˳����������ȳ��ֵ�����ǰ��
+华为2022年4月6日晚19：00机试第一题：
+题目：
+### 1、查找舆情热词
+网上的新闻越来越多，希望对新闻进行热词处理并归类，方便获取信息。现在已经将每篇新闻处理为2个字符串，即一个标题串一个正文串，字符串中使用" "作为分个词语的分隔符进行分词。
+M篇新闻按照新闻法步的先后顺序处理完并输入，现在希望对所有新闻中出现的词语进行处理，输出出现频率最高的topN个词语，作为热词。
+标题中出现的词语频率系数为3，正文中出现的词语频率系数为1；返回答案中出现的频率由高到低排序，
+当词语出现的频率相同时，在标题中出现的频率次数高的排在前面；
+如果过仍然相同，则按照词语在标题中出现的先后顺序进行排序，先出现的排在前面；
+如果仍然相同，则按照词语在正文中国出现的先后顺序进行排序，先出现的排在前面
 
-**���Ҫ��**
+**解答要求**
 
-ʱ�����ƣ�c/c++ 2000ms����������4000ms
-�ڴ����ƣ�c/c++ 256MB����������512MB
+时间限制：c/c++ 2000ms，其它语言4000ms
+内存限制：c/c++ 256MB，其它语言512MB
 
-**����**
+**输入**
 
-��һ������Ϊ������topN��������M����Ҫ����ĳ���Ƶ����ߵĴ���ĸ����ʹ��������µ�����������ÿƪ���±�����Ϊ������������У���˺�����2*
-�����ݡ�
-�ӵڶ������ǰ�˳������ÿƪ���µı��⴮�����Ĵ������ڶ����ǵ�һƪ���µı��⴮���������ǵ�һƪ���µ����Ĵ����������ǵڶ�ƪ���µı��⴮���������ǵڶ�ƪ���µ����Ĵ����Դ����ơ�
-�����������£�
+第一行输入为正整数topN和文章数M，即要输出的出现频率最高的词语的个数和处理的文章的数量，由于每篇文章被处理为标题和正文两行，因此后面有2*
+行数据。
+从第二行起是按顺序处理后每篇文章的标题串和正文串，即第二行是第一篇文章的标题串，第三行是第一篇文章的正文串，第四行是第二篇文章的标题串，地入行是第二篇文章的正文串，以此类推。
+参数限制如下：
 0 < topN < 1000
 0 < M < 100000
-0 < ÿƪ���µĴ����� < 5000
+0 < 每篇文章的词语数 < 5000
 
-**���**
+**输出**
 
-ʹ��һ���������Ƶ����ߵ�topN�����ÿ��������" "������
+使用一行输出出现频率最高的topN个词语，每个词语以" "隔开。
 
-**����1**
+**样例1**
 
 ```
 input: 
@@ -43,7 +43,7 @@ output:
 xinguan xinzeng bendi
 
 Example:
-��������ֵ�Ƶ�ʣ�
+各词语出现的频率：
 xinguan = 2 * 3 + 2 = 8
 xinzeng = 1 * 3 + 2 = 5
 bendi = 1 * 3 + 2 = 5
@@ -53,11 +53,11 @@ yimiao = 1 * 3 + 1 = 4
 feiyan = 1 * 3 + 1 = 4
 linchuang = 1 * 3 + 1 = 4
 shiyan = 1 * 3 + 1 = 4
-���س���Ƶ����ߵ�3�������4��������ֵ�Ƶ�ʶ�Ϊ5���������Ƶ�ʶ�Ϊ3������ѡ���ȳ��ֵ���������"xinzeng"��"bendi" 
+返回出现频率最高的3个词语，有4个词语出现的频率都为5，标题出现频率都为3，所以选择先出现的两个词语"xinzeng"和"bendi" 
 ```
 
 
-**��д�Ĵ��룺**(δ����汾�����ǱȽϺ����⣬���Լ򻯵ĵط���ʵ�ܶ�)
+**我写的代码：**(未精简版本，但是比较好理解，可以简化的地方其实很多)
 
 ```c++
 #include<unordered_map>
@@ -94,14 +94,14 @@ void coutTest(unordered_map<string, vector<vector<int>>> umap){
 //     }
 // }
 
-// ��allstrs�������ݷ�����
-// ����Ĺ���������umap��vector �ıȽ�
+// 对allstrs进行起泡法排序，
+// 排序的规则是依据umap的vector 的比较
 void mysorted(vector<string> &allstrs, unordered_map<string, vector<vector<int>>>& umap){
     int n = allstrs.size();
     for(bool sorted = false; sorted = !sorted; n--){
         for(int i = 1; i < n; i++){
 
-            ///////////�������,vector����������////////////
+            ///////////排序规则,vector交换的依据////////////
             if(umap[allstrs[i - 1]][0].size() * 3 + umap[allstrs[i - 1]][1].size() < umap[allstrs[i]][0].size() * 3 + umap[allstrs[i]][1].size()){
                 swap(allstrs[i - 1],allstrs[i]);
                 sorted = false;
@@ -131,14 +131,14 @@ void mysorted(vector<string> &allstrs, unordered_map<string, vector<vector<int>>
 //split;
 string killQuestion1(string title, string text, int n){
     unordered_map<string, vector<vector<int>>> umap;
-    //vector<vector<int>> [0]:��title�г��ֵ�λ�� [1]������
-    //���磬�ںϲ���ı����д���"xinguan"�����ڵ�0��6�����ʵ�λ��
-    ////   �ںϲ���������д���"xinguan"�����ڵ�4��21�����ʵ�λ��
-    // ��ô��unordered_map�ж�Ӧ�ľ��ǣ�
+    //vector<vector<int>> [0]:在title中出现的位次 [1]正文中
+    //例如，在合并后的标题中词语"xinguan"出现在第0、6个单词的位置
+    ////   在合并后的正文中词语"xinguan"出现在第4、21个单词的位置
+    // 那么在unordered_map中对应的就是：
     // it->first : "xinguan"
     // it->second : {{0, 6}, {4, 21}}
     string curstr;
-    int i_title = 0;//�����г��ֵĵ���λ��
+    int i_title = 0;//标题中出现的单词位置
     for(int i = 0; i < title.size() + 1; i++){
         if(i == title.size() || title[i] == ' '){
             umap[curstr].resize(2);
@@ -149,7 +149,7 @@ string killQuestion1(string title, string text, int n){
             curstr.push_back(title[i]);
         }
     }
-    int i_text = 0;//�����г��ֵĵ���λ��
+    int i_text = 0;//正文中出现的单词位置
     curstr.clear();
     for(int i = 0; i < text.size() + 1; i++){
         if(i == text.size() || text[i] == ' '){
@@ -179,7 +179,7 @@ string killQuestion1(string title, string text, int n){
     /////////test2
     cout << endl;
     cout << "-----test2 start----" << endl;
-    cout << "---�����������ǰ��allstrs---" << endl;
+    cout << "---测试输出排序前的allstrs---" << endl;
     for(auto str_tmp : allstrs){
         cout << str_tmp << " ";
     }
@@ -192,7 +192,7 @@ string killQuestion1(string title, string text, int n){
     /////////test3
     cout << endl;
     cout << "---test3 start----" << endl;
-    cout << "---�������������allstrs---" << endl;
+    cout << "---测试输出排序后的allstrs---" << endl;
     for(auto str_tmp : allstrs){
         cout << str_tmp << " ";
     }
@@ -205,7 +205,7 @@ string killQuestion1(string title, string text, int n){
     ///////test4
     cout << endl;
     cout << "---test4 start----" << endl;
-    cout << "---��˳����������ʳ��ֵ�Ƶ��----" << endl;
+    cout << "---按顺序输出各个词出现的频率----" << endl;
     for(auto str_tmp: allstrs){
         cout << str_tmp << " = ";
         cout << umap[str_tmp][0].size() << " * 3 + ";
@@ -218,7 +218,7 @@ string killQuestion1(string title, string text, int n){
     ///////////
 
 
-    //�����ǰn�����
+    //答案输出前n个结果
     string res;
     for(int i = 0; i < n; i++){
         res += allstrs[i] + " ";
@@ -240,7 +240,7 @@ void test_demo(){
     cin.get();
 
 
-    //�������е�title��text��title_s��text_s
+    //读入所有的title和text到title_s和text_s
     string title_s[M];
     string text_s[M];
     int i = 0;
@@ -250,9 +250,9 @@ void test_demo(){
         i++;
     }
 
-    // ��title_s��text_s�е������ַ����ֱ�ϳ�һ��title��text�ַ���
-    ////��ʵ����ط����ǿ��Ըĳ�ֱ�Ӷ���һ���ַ�����
-    //////////���߽�title_s��text_s��Ϊ����killQuestion1�����룬������û��
+    // 将title_s和text_s中的所有字符串分别合成一个title、text字符串
+    ////其实这个地方就是可以改成直接读进一个字符串，
+    //////////或者将title_s和text_s作为函数killQuestion1的输入，但是我没改
     i = 0;
     string title;
     string text;
@@ -327,19 +327,19 @@ shiyan | 9  | 26
 -----test1 endl----
 
 -----test2 start----
----�����������ǰ��allstrs---
+---测试输出排序前的allstrs---
 xiaoguo sanqi wuzhong zhengti yiqing liangli lianghao yimiao tongguo yili xinzeng ju shenzhen bendi feiyan baodao anli chengdu linchuang kongzhi quezhen xinguan shiyan 
 
 ---test2 end----
 
 ---test3 start----
----�������������allstrs---
+---测试输出排序后的allstrs---
 xinguan xinzeng bendi anli quezhen yimiao feiyan linchuang shiyan lianghao xiaoguo sanqi wuzhong zhengti yiqing liangli tongguo yili ju shenzhen baodao chengdu kongzhi 
 
 ---test3 end----
 
 ---test4 start----
----��˳����������ʳ��ֵ�Ƶ��----
+---按顺序输出各个词出现的频率----
 xinguan = 2 * 3 + 2 = 8
 xinzeng = 1 * 3 + 2 = 5
 bendi = 1 * 3 + 2 = 5

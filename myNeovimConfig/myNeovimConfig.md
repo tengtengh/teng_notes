@@ -33,6 +33,8 @@
     * [3.3 vim颜色主题的更改--onedark](#3.3-vim颜色主题的更改--onedark)
     * [3.4 括号自动补全插件auto-pair](#3.4-括号自动补全插件auto-pair)
     * [3.5 markdown相关插件](#3.5-markdown相关插件)
+* [4. vim/neovim 的一些操作等学习记录](#4.-vim/neovim-的一些操作等学习记录)
+    * [4.1 文件编码问题；](#4.1-文件编码问题；)
 
 <!-- vim-markdown-toc -->
 
@@ -642,6 +644,47 @@ Plug 'mzlogin/vim-markdown-toc'
 ```
 
 具体插入、删除、更新目录等指令，可以在其github-README中查看，很详细
+
+
+
+
+
+
+
+
+## 4. vim/neovim 的一些操作等学习记录
+
+
+### 4.1 文件编码问题；
+
+在vim中，防止中文乱码，在vimrc/init.vim中，我设置了 `set fileencodings = xxx,xxx,xxx,...`, 这让我能够在打开一个新的文件进行查看时，能够选择对应的编码。
+
+但是对于gb2312编码的文件，taglist并不能正确的显示目录。
+
+比如我之前用vscode编写的编码格式为gb2312格式的markdown文件，通过`<leader>m` 查看目录的时候，就显示为乱码，但是uft-8格式的文件确实正常的。
+
+所以我应该将文件以uft-8的编码格式保存
+
+经过研究，可以在vim中通过命令 `:set fileencoding=uft-8`,来将文件设置为uft-8编码格式，然后将文件通过`:w!`命令保存，便可以实现文件编码的转换。
+
+同样的，在vscode中也有这个功能，就是通过点击文件底部状态栏中的编码名称，然后选择通过编码保存(Save with Encoding), 选择utf-8编码即可
+
+
+额外的说明：
+
+在vim中，gb2312、gbk 格式的文件，打开之后所显示的编码格式为：euc-cn、cp936
+
+euc-cn就是gb2312
+
+
+
+
+
+
+
+
+
+
 
 
 
