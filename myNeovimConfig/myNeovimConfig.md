@@ -316,7 +316,7 @@ https://github.com/vim-scripts/AutoComplPop
 " au FileType php setlocal dict+=~/.vim/dictionary/php_keywords_list.txt 
 " au FileType cpp setlocal dict+=~/.vim/dictionary/cpp_keywords_list.txt
 " au FileType java setlocal dict+=~/.vim/dictionary/java_keywords_list.txt
-" " au FileType markdown setlocal dict+=~/.vim/dictionary/words.txt
+" au FileType markdown setlocal dict+=~/.vim/dictionary/words.txt
 
 " Tengh改成neovim的路径
 au FileType php setlocal dict+=~/.config/nvim/dictionary/php_keywords_list.txt 
@@ -349,13 +349,104 @@ commentary https://github.com/tpope/vim-commentary
 
 nerdtree https://github.com/scrooloose/nerdtree
 
-
-
-
 NERDTree是用来生成目录树的，
 
 
+
+
+它主要有几个全局命令
+
+
+
+以下为网页翻译版本，原版见[NERDtree.txt](https://github.com/preservim/nerdtree/blob/master/doc/NERDTree.txt), 或者可以通过`:h NERDTree` 来查看
+
+
+```txt
+:NERDTree [ <开始目录> | <书签> ]                            *:NERDTree*
+    打开一个新的 NERDTree。树的根取决于参数
+    给定的。有3种情况：如果没有给出参数，则当前目录
+    将会被使用。如果给定目录，则将使用该目录。如果书签
+    给定名称，将使用相应的目录。例如：>
+        :NERDTree /home/marty/vim7/src
+        :NERDTree foo（foo 是书签的名称）
+<
+:NERDTreeVCS [ <开始目录> | <书签> ]                      *:NERDTreeVCS*
+    喜欢| :NERDTree | , 但向上搜索目录树以找到
+    版本控制系统存储库，并将 NERDTree 植根在那里。它
+    适用于 Git、Subversion、Mercurial、Bazaar 和 Darcs 存储库。一种
+    几个例子：>
+        :NERDTreeVCS /home/marty/nerdtree/doc (打开 /home/marty/nerdtree)
+        :NERDTreeVCS（打开包含 CWD 的存储库的根目录）
+<
+:NERDTreeFromBookmark <书签>                          *:NERDTreeFromBookmark*
+    打开一个新的 NERDTree，根目录初始化为
+    <书签>。在 :NERDTree 上使用此命令的唯一原因是
+    完成（用于书签而不是目录）。
+
+:NERDTreeToggle [ <开始目录> | <书签> ]                *:NERDTreeToggle*
+    如果此选项卡已存在 NERDTree，则将其重新打开并呈现
+    再次。如果给出<start-directory>或<bookmark>，则 NERDTree 的根
+    设置为该路径。如果此选项卡不存在 NERDTree，则此命令
+    作用与|相同 :NERDTree | 命令。
+
+:NERDTreeToggleVCS [ <开始目录> | <书签> ]          *:NERDTreeToggleVCS*
+    喜欢| :NERDTree切换| , 但向上搜索目录树以找到
+    版本控制系统存储库，并将 NERDTree 植根在那里。它
+    适用于 Git、Subversion、Mercurial、Bazaar 和 Darcs 存储库。一种
+    几个例子：>
+        :NERDTreeToggleVCS /home/marty/nerdtree/doc (打开 /home/marty/nerdtree)
+        :NERDTreeToggleVCS（打开包含 CWD 的存储库的根目录）
+:NERDTreeFocus                                                   *:NERDTreeFocus*
+    如果当前不可见，则打开（或重新打开）NERDTree；
+    否则，光标将移动到已经打开的 NERDTree。
+
+:NERDTreeMirror                                                 *:NERDTreeMirror*
+    在当前选项卡中共享来自另一个选项卡的现有 NERDTree。
+    对一棵树所做的更改会反映在两者中，因为它们实际上是
+    相同的缓冲区。
+
+    如果仅存在一个其他 NERDTree，则该树会自动镜像。
+    如果存在多个，脚本将询问要镜像哪棵树。
+
+:NERDTreeClose                                                   *:NERDTreeClose*
+    关闭此选项卡中的 NERDTree。
+
+:NERDTreeFind [ <路径> ]                                            *:NERDTreeFind*
+    没有可选参数，找到并显示活动的文件
+    NERDTree 窗口中的缓冲区。使用<path>参数，查找和
+    显示指定路径。
+
+    焦点将转移到 NERDTree 窗口，光标将为
+    放置在确定路径的树节点上。如果 NERDTree 用于
+    当前选项卡不存在，将初始化一个新选项卡。
+
+:NERDTreeCWD                                                       *:NERDTreeCWD*
+    将 NERDTree 根更改为当前工作目录。如果不
+    此选项卡存在 NERDTree，打开一个新选项卡。
+
+:NERDTreeRefreshRoot                                       *:NERDTreeRefreshRoot*
+    刷新 NERDTree 根节点。
+
+```
+
+
 在PowerVim中通过组合键`<leader>n`，即可在窗口左侧打开目录树
+
+
+在vimrc/init.vim中的配置如下
+
+```vim
+" 使用NERDTree插件查看工程文件。设置快捷键
+" nnoremap <silent> <Leader>n  :NERDTreeToggle <CR> 
+nnoremap <Leader>n  :NERDTreeToggle <CR> 
+
+" 设置NERDTree子窗口位置
+let NERDTreeWinPos="left"
+" 设置忽略的文件
+let NERDTreeIgnore=['\.vim$', '\~$', '\.o$', '\.d$', '\.a$', '\.out$', '\.tgz$']
+```
+其中，上面的<silent>是静默执行的意思，可以参考这篇博客 [VIM学习笔记 静默执行命令(silent)](https://zhuanlan.zhihu.com/p/291583629)
+
 
 
 
