@@ -35,6 +35,7 @@
     * [3.5 markdown相关插件](#3.5-markdown相关插件)
 * [4. vim/neovim 的一些操作等学习记录](#4.-vim/neovim-的一些操作等学习记录)
     * [4.1 文件编码问题；](#4.1-文件编码问题；)
+    * [4.2 在ubuntu16.04上通过源码安装VIM8.2](#4.2-在ubuntu16.04上通过源码安装vim8.2)
 
 <!-- vim-markdown-toc -->
 
@@ -361,6 +362,8 @@ NERDTree是用来生成目录树的，
 以下为网页翻译版本，原版见[NERDtree.txt](https://github.com/preservim/nerdtree/blob/master/doc/NERDTree.txt), 或者可以通过`:h NERDTree` 来查看
 
 
+
+
 ```txt
 :NERDTree [ <开始目录> | <书签> ]                            *:NERDTree*
     打开一个新的 NERDTree。树的根取决于参数
@@ -651,7 +654,16 @@ colorscheme  onedark
 " colorscheme Monokai_Gavin
 ```
 
-这里我没有用插件管理器来搞，因为vim-plug插件管理器，是直接把它下载到`~/.config/nvim/plugged/onedark.vim/`, 这样的话，直接在vimrc/init.vim里面设置`colorscheme onedark`, 会提示找不到，我不知道怎么设置，就干脆直接手动下载了。
+或者是直接使用插件管理器，
+
+```
+Plug 'joshdick/onedark.vim'
+```
+
+
+直接把它下载到`~/.config/nvim/plugged/onedark.vim/`, 
+
+这样的话，在vimrc/init.vim里面设置`colorscheme onedark`, 要把这句放到上面那句的下面, 会提示找不到.
 
 ### 3.4 括号自动补全插件auto-pair
 
@@ -768,20 +780,74 @@ Plug 'mzlogin/vim-markdown-toc'
 euc-cn就是gb2312
 
 
+### 4.2 在ubuntu16.04上通过源码安装VIM8.2
+
+主要参考的博客[ubuntu中源码安装编译Vim](https://blog.csdn.net/s969966195/article/details/70670202?spm=1001.2014.3001.5506)
+
+还参考了[54.[ubuntu]自己编译安装vim 8.0的方法](https://blog.csdn.net/a464057216/article/details/52821171?spm=1001.2101.3001.6650.8&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-8-52821171-blog-70670202.pc_relevant_default&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-8-52821171-blog-70670202.pc_relevant_default&utm_relevant_index=13)
+
+网上有通过apt-get安装最新VIM的方法，方法如下：
+
+```bash
+sudo add-apt-repository ppa:jonathonf/vim
+sudo apt update
+sudo apt install vim
+```
+
+2022-05-13: 在ubuntu16.04上通过上面的方法安装的VIM版本为8.2，在使用`:!ls`等命令的时候，会多显示一串字符，其中还有乱码，我看着很难受。直到后来发现，经常在底部也会显示这段乱码，我不知道是不是这个ppa源的问题。
+
+而老版本的的VIM又不能支持markdown-preview的插件，我很烦，于是决定通过源码编译安装VIM8.2
+
+http://ftp.vim.org/pub/pub/vim/unix/
+
+在上面的网址中下载VIM8.2的压缩包
+
+解压 
+
+```bash
+tar -xjvf vim-8.2.tar.bz2  
+```
+
+解压至 ~/downloads/vim82/
+
+四、编译安装
+
+
+```bash
+cd ~/downloads/vim80/
+```
+
+设置Vim源码的编译属性
+
+
+```bash
+./configure --with-features=huge --enable-rubyinterp --enable-pythoninterp --with-python-config-dir=/usr/lib/python2.7/config-i386-linux-gnu/ --enable-perlinterp --enable-gui=gtk2 --enable-cscope --enable-luainterp --enable-perlinterp --enable-multibyte --prefix=/usr
+```
+
+需要重新配置可 输入 `make distclean` #清理一下上一次编译生成的所有文件
+
+其中参数说明如下：
+
+–with-features=huge：支持最大特性
+–enable-rubyinterp：启用Vim对ruby编写的插件的支持
+–enable-pythoninterp：启用Vim对python编写的插件的支持
+–enable-luainterp：启用Vim对lua编写的插件的支持
+–enable-perlinterp：启用Vim对perl编写的插件的支持
+–enable-multibyte：多字节支持 可以在Vim中输入中文
+–enable-cscope：Vim对cscope支持
+–enable-gui=gtk2：gtk2支持,也可以使用gnome，表示生成gvim
+–with-python-config-dir=/usr/lib/python2.7/config-i386-linux-gnu/ 指定 python 路径
+–prefix=/usr：编译安装路径
+
+```
+sudo make VIMRUNTIMEDIR=/usr/share/vim/vim82
+sudo make install
+```
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+重新安装好之后删除掉原来的`~/.viminfo`
+(否则“重新打开文件回到上一次光标编辑位置”不生效)
 
 
 
