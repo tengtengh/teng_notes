@@ -71,7 +71,7 @@
         * [2.2.25 C++中static的用法](#2225-c中static的用法)
         * [2.2.26 关于list类](#2226-关于list类)
         * [2.2.17 shared_ptr智能指针](#2217-shared_ptr智能指针)
-        * [](#)
+        * [2.2.18 运算符优先级](#2218-运算符优先级)
     * [2.3 刷题记录](#23-刷题记录)
         * [2.3.1 还没做的：](#231-还没做的)
         * [2.3.2 其它](#232-其它)
@@ -323,7 +323,7 @@ Editor: Format on type
 	<img src = "image/2022-03-06-21-13-47.png" style = "zoom: 70%">
 	<img src = "image/2022-03-06-21-14-46.png" style = "zoom: 70%">
 		
-	```shell
+	```bash
 	#安装xclip, 以便能粘贴Ubuntu自带剪切软件screen截图的剪切板内容	
 	sudo apt-get install xclip 
 	```
@@ -456,7 +456,7 @@ over!
 新建gitee仓库，这个不过多描述了
 
 在终端运行新建仓库中复制过来的如下代码：
-```shell
+```bash
 git config --global user.name "xxxxxx"
 git config --global user.email "xxxxxxxxxxx@user.noreply.gitee.com"
 ```
@@ -515,7 +515,7 @@ git config --global user.email "xxxxxxxxxxx@user.noreply.gitee.com"
 在插件中搜索gitee，会出现几个选项，我下载的是gitee-uploader-1.1.2，建议你和我下载同一个版本，否则可能后续一些配置上不一样。
 在这里它会提示你安装nodejs
 这里我直接在终端通过sudo apt-get install notejs是不行的，可执行如下代码，然后重启picgo即可：
-```shell
+```bash
 cd ~
 curl -sL https://deb.nodesource.com/setup_14.x -o nodesource_setup.sh
 sudo bash nodesource_setup.sh
@@ -571,13 +571,13 @@ Categories=Browser;
 方式2：
 终端输入：
 
-```shell
+```bash
 dpkg --get-selections |grep firefox
 ```
 
 显示以下四个
 
-```shell
+```bash
 firefox						install
 firefox-locale-en				install
 firefox-locale-zh-hans				install
@@ -586,7 +586,7 @@ unity-scope-firefoxbookmarks			install
 
 然后安装这四个：
 
-```shell
+```bash
 sudo apt-get install firefox firefox-locale-en firefox-locale-zh-hans unity-scope-firefoxbookmarks
 ```
 
@@ -630,37 +630,37 @@ options nouveau modeset=0
 
 
 
-```shell
+```bash
 sudo update-initramfs -u
 ```
 
-```shell
+```bash
 reboot
 ```
 
 重启之后运行以下命令查看，如果没有输出则说明禁用成功
-```shell
+```bash
 lsmod | grep nouveau
 ```
 
 
 2、apt-get安装显卡驱动
 
-```shell
+```bash
 sudo add-apt-repository ppa:graphics-drivers/ppa
 sudo apt-get update
 ```
 
 
 输入以下指令查看建议的版本（应该是跟软件和更新-附加驱动里面的一样）
-```shell
+```bash
 ubuntu-drivers devices
 ```
 
 安装建议的版本, 例如：
 （其实应该在软件和更新-附加驱动 中安装应该是一样的）
 
-```shell
+```bash
 sudo apt-get install nvidia-driver-470
 ```
 
@@ -668,12 +668,12 @@ sudo apt-get install nvidia-driver-470
 
 
 重启之后终端输入
-```shell
+```bash
 nvidia-smi
 ```
 
 或者(每隔2s刷新一次)
-```shell
+```bash
 watch -n 2 nvidia-smi
 ```
 安装完成
@@ -722,7 +722,7 @@ GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nomodeset"
 方法5（指标不治本，删除驱动）：
 同方法2 进入root：
 
-```shell
+```bash
 sudo apt-get remove --purge nvidia*
 ```
 
@@ -735,7 +735,7 @@ sudo apt-get remove --purge nvidia*
 
 
 查看本机内核
-```shell 
+```bash 
 uname -r
 ```
 是5.4.0
@@ -756,7 +756,7 @@ uname -r
 
 以从5.4.0 - 5.11.0为例
 查看本机内核
-```shell 
+```bash 
 uname -r
 ```
 是5.4.0
@@ -768,7 +768,7 @@ uname -r
 
 下载第1、3、4、6个(右键复制链接 wget下载)
 
-```shell
+```bash
 ##1个all和3个generic
 wget https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.11/amd64/linux-headers-5.11.0-051100_5.11.0-051100.202102142330_all.deb
 wget https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.11/amd64/linux-headers-5.11.0-051100-generic_5.11.0-051100.202102142330_amd64.deb
@@ -791,7 +791,7 @@ sudo dpkg -i *.deb
 **针对的是上一步通过`dpkg`命令安装的内核**
 以删除5.13.0为例
 
-```shell
+```bash
 #查看已经安装的内核
 dpkg --get-selections | grep linux
 ```
@@ -799,7 +799,7 @@ dpkg --get-selections | grep linux
 <img src="image/2022-03-18-20-27-51.png" style="zoom:60%;" />
 
 要删除以下几个
-```shell
+```bash
 linux-headers-5.13.0-051300			install
 linux-headers-5.13.0-051300-generic		install
 linux-image-unsigned-5.13.0-051300-generic	install
@@ -851,12 +851,12 @@ linux-modules-5.13.0-051300-generic		install
 ### 1.12.1 更改密码
 
 更改账户密码，这样更改可以更改为任意密码
-```shell
+```bash
 sudo passwd 用户名
 ```
 
 
-```shell
+```bash
 # 设置root用户密码
 sudo passwd root
 ```
@@ -865,14 +865,14 @@ sudo passwd root
 ### 1.12.2 切换用户
 
 切换root用户
-``` shell
+``` bash
 sudo su root
 # 或者
 sudo su
 ```
 
 切换回来
-```shell
+```bash
 sudo su 用户名
 # 例如
 sudo su teng
@@ -885,7 +885,7 @@ sudo su teng
 
 但是！！！删除之后，仅仅是开机登录页不用输入密码
 在终端执行命令的时候依然要输入密码，例如
-```shell
+```bash
 sudo apt-get update
 [sudo] yefei 的密码：
 ```
@@ -898,7 +898,7 @@ sudo apt-get update
 
 然后输入`sudo passwd 用户名`, 输入两遍新密码即可，例如
 
-```shell
+```bash
 yefei@yefei:~$ sudo passwd yefei
 ◆ ◆ ◆ UNIX :
 ◆ ◆ ◆ ◆ ◆ UNIX ◆ ◆ ◆ :
@@ -1004,6 +1004,8 @@ pri_que.push(data(1, 2));
 pri_que.emplace(1, 2);
 ```
 `pri_que.emplace("nine");`优于`pri_que.push("nine");`
+
+对于emplace_back和push_back同理，可以参考 [关于emplace_back()的理解](https://blog.csdn.net/mmm123213/article/details/119282296)
 
 
 
@@ -1636,7 +1638,9 @@ void test_demo(){
 
 
 
-### 
+### 2.2.18 运算符优先级
+
+ `>>`位运算，优先级是要比`+ -`低的
 
 
 
@@ -1693,6 +1697,13 @@ __代码随想录中没做的题目__
 
 [968.监控二叉树](https://leetcode-cn.com/problems/binary-tree-cameras/submissions/)(代码随想录的方法)
 
+[136. 只出现一次的数字](https://leetcode.cn/problems/single-number/)(这道题是简单题，AC也比较容易，但是答案的位运算的方法，我是没想到的)
+
+
+
+
+
+
 
 
 # 3. 学习问题及解决方案
@@ -1708,7 +1719,7 @@ UnicodeDecodeError: ‘ascii’ codec can’t decode byte 0xe5 in position 4: or
 解决办法:
 在终端输入:
 
-```shell
+```bash
 LANGUAGE=en_US
 ```
 
@@ -1728,13 +1739,13 @@ ______
 
 #下载rosdistro包
 
-```shell
+```bash
 git clone https://github.com/ros/rosdistro.git
 ```
 
 ____________________________________________________
 
-```shell
+```bash
 sudo gedit /usr/lib/python2.7/dist-packages/rosdep2/main.py#（这个好像没有，不用改）
 sudo gedit /usr/lib/python2.7/dist-packages/rosdep2/rep3.py
 sudo gedit /usr/lib/python2.7/dist-packages/rosdistro/init.py
@@ -1744,7 +1755,7 @@ sudo gedit /usr/lib/python2.7/dist-packages/rosdep2/sources_list.py
 将 https://raw.githubusercontent.com/ros/rosdistro/master 全部替换为 file:///home/teng/rosdistro
 然后就可以运行 
 
-```shell
+```bash
 sudo rosdep init
 ```
 
@@ -1755,7 +1766,7 @@ sudo gedit /etc/ros/rosdep/sources.list.d/20-default.list
 将 https://raw.githubusercontent.com/ros/rosdistro/master 全部替换为 file:///home/teng//rosdistro
 然后就可以
 
-```shell
+```bash
 rosdep update
 ```
 
@@ -1769,7 +1780,7 @@ rosdep update
 
 第一步，先cd到rosbag所在文件夹,查看topic名称
 
-```shell
+```bash
 rosbag info xxxx.bag
 ```
 
@@ -1803,7 +1814,7 @@ rosbag info xxxx.bag
 首先正常编译通过build.sh（这一步应该可以不用，但是我一般都是这样的）
 
 在终端中设置环境变量
-```shell
+```bash
 export ROS_PACKAGE_PATH=${ROS_PACKAGE_PATH}:/home/xxx/xxx/ORB_SLAM2/Examples/ROS
 ```
 这一步可以直接`gedit ~/.bashrc`将这句话添加进去，然后`source ~/.bashrc`
@@ -1816,7 +1827,7 @@ export ROS_PACKAGE_PATH=${ROS_PACKAGE_PATH}:/home/xxx/xxx/ORB_SLAM2/Examples/ROS
  
 此时如果代码报错：
 
-```shell
+```bash
 CMakeFiles/Stereo.dir/build.make:227:recipe for target '../Stereo' failed，
 CMakeFiles/RGBD.dir/build.make:197: recipe for target ‘…/RGBD’ failed，
 CMakeFiles/Makefile2:67: recipe for target 'CMakeFiles/RGBD.dir/all' failed,
@@ -1828,7 +1839,7 @@ CMakeFiles/Makefile2:104:recipe for target 'CMakeFiles/Stereo.dir/all' failed,
 ～/catkin_ws/src/ORB_SLAM2/Examples/ROS/ORB_SLAM2/文件夹下的CMakeLists.txt文件，在set（LIBS的最后加上-lboost_system
 
 编译成功后，在 ORB_SLAM2/Examples/ROS/ORB_SLAM2/ 文件夹下会出现build文件夹，此时需要单独设置环境变量
-```shell
+```bash
 source /home/xxx/xxx/ORB_SLAM2/Examples/ROS/ORB_SLAM2/build/devel/setup.bash
 ```
 同样的，这一步可以直接`gedit ~/.bashrc`将这句话添加进去，然后`source ~/.bashrc`
@@ -1846,7 +1857,7 @@ over
 
 我在这里使用的是rgbd_dataset_freiburg1_xyz.bag 
 
-```shell
+```bash
 ###终端1
 roscore
 ###终端2
@@ -1866,13 +1877,13 @@ rosbag play /home/xxx/xxx/rgbd_dataset_freiburg1_xyz.bag /camera/rgb/image_color
 
 可以使用apt-get命令(需要sudo)
 
-```shell
+```bash
 sudo apt-get install libboost-all-dev
 ```
 
 或者你可以查询
 
-```shell
+```bash
 aptitude search boost  #######这个命令可以学学
 ```
 
@@ -1882,7 +1893,7 @@ aptitude search boost  #######这个命令可以学学
 
 ## 3.4 Ubuntu16.04配置ROS工作空间
 
-```shell
+```bash
 mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws/src
 catkin_init_workspace #（生成cmake文件）
@@ -1892,19 +1903,19 @@ catkin_make
 
 可以直接在终端使用source命令运行这些脚本文件，使工作空间中的环境变量生效
 
-```shell
+```bash
 source devel/setup.bash
 ```
 
 在终端中使用source命令设置的环境变量只能在当前终端中生效，如果希望变量环境在所有终端中都生效，则需要在终端的配置文件中加入环境变量的设置：
 
-```shell
+```bash
 gedit ~/.bashrc
 echo "source ~/Atengh/Learning_SLAM/catkin_ws/devel/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 ```
 
-```shell
+```bash
 #最后
 echo $ROS_PACKAGE_PATH #可以用来查看工作变量
 /home/yefei/Atengh/Learning_SLAM/catkin_ws/src:/opt/ros/kinetic/share
@@ -1920,7 +1931,7 @@ echo $ROS_PACKAGE_PATH #可以用来查看工作变量
 
 3.4.1和3.4.0一样：
 
-```shell
+```bash
 #3.4.1和3.4.0
 cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D OPENCV_EXTRA_MODULES_PATH=../opencv_contrib-3.4.0/modules -D OPENCV_ENABLE_NONFREE=True ..
 
@@ -1933,31 +1944,31 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE -D OPENCV_GENERATE_PKGCONFIG=YES -D CMAKE_INST
 
 对于opencv3.4.0：
 
-```shell
+```bash
 sudo gedit /etc/ld.so.conf.d/opencv.conf
 ```
 
 添加/usr/local/lib
 还要添加/home/teng/opencv-3.4.0/build/lib
 
-```shell
+```bash
 sudo ldconfig
 ```
 
-```shell
+```bash
 #opencv2.4.11:
 cmake -D ·CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local ..
 ```
 
 如果安装了CUDA：
 
-```shell
+```bash
 cmake -D BUILD_opencv_cudacodec=OFF …
 ```
 
 ### 3.6.2 卸载OpenCV
 
-```shell
+```bash
 sudo make uninstall
 #cd  ..
 #sudo rm -r build
@@ -1978,7 +1989,7 @@ rm -r /home/***/opencv
 问题：
 ./tools/bin_vocabulary: error while loading shared libraries: libopencv_core.so.2.4: cannot open shared object file: No such file or directory
 解决方案：
-```shell
+```bash
 #找到libopen**的位置
 locate libopen**
 sudo gedit /etc/ld.so.conf.d/opencv.conf 
@@ -1994,21 +2005,21 @@ sudo ldconfig
 
 ### 3.7.1 多版本gcc/g++优先级
 
-```shell
+```bash
 #查看优先级
 sudo update-alternatives --config gcc
 ```
 
 
 
-```shell
+```bash
 #查看优先级
 sudo update-alternatives --config gcc
 ```
 
 
 
-```shell
+```bash
 #切换优先级：
 
 sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-7 100
@@ -2036,7 +2047,7 @@ Ubuntu16.04 安装gcc7，g++7
 
 website： https://blog.csdn.net/aa363162116/article/details/102440134
 
-```shell
+```bash
 sudo add-apt-repository ppa:ubuntu-toolchain-r/test
 sudo apt-get update 
 sudo apt-get install gcc-7
@@ -2068,7 +2079,7 @@ cat /usr/include/eigen3/Eigen/src/Core/util/Macros.h
 
 ### 3.9.1 卸载g2o
 
-```shell
+```bash
 #１：删除g2o的头文件，位于/usr/local/include/g2o下
 sudo rm -r /usr/local/include/g2o
 
