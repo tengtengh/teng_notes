@@ -1835,6 +1835,7 @@ __代码随想录中没做的题目__
 
 + [292. Nim 游戏](https://leetcode.cn/problems/nim-game/)(脑筋急转弯简单题？这道题的题解就一句`return n%4;`, 我是没想到的) :sweat:
 
++ [668.乘法表中第k小的数](https://leetcode.cn/problems/kth-smallest-number-in-multiplication-table/) 2022-05-18的每日一题，头皮发麻
 
 
 
