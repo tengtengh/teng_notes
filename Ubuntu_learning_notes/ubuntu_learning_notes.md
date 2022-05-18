@@ -72,6 +72,8 @@
         * [2.2.26 关于list类](#2226-关于list类)
         * [2.2.17 shared_ptr智能指针](#2217-shared_ptr智能指针)
         * [2.2.18 运算符优先级](#2218-运算符优先级)
+        * [2.2.19 设计哈希映射](#2219-设计哈希映射)
+        * [2.2.20 关于c++中::的疑惑](#2220-关于c中的疑惑)
     * [2.3 刷题记录](#23-刷题记录)
         * [2.3.1 还没做的：](#231-还没做的)
         * [2.3.2 其它](#232-其它)
@@ -308,30 +310,48 @@ Editor: Format on type
 	右键-Markdown TOC: Insert/update 即可插入目录 (Markdown Sections: Insert/update 是自动编号)
 
 + Vscode 安装插件 Markown All in One (necessary)
+
 + Vscode 安装插件 Markown Preview Enhanced 
+
 	安装之后预览窗口变成白底
+
 	Ctrl + k 松开后再按v，即可在侧边打开预览窗后。或者直接Ctrl + shift + v 在当前位置打开预览窗口。 或者鼠标点击右上角的打开侧边栏小按钮。
+
   + Vscode更改 Markown Preview Enhanced中的字体大小等：
+
 	`Ctrl + shift + p` - 输入 `Customize Css`
+
 	<img src = "image/2022-03-26-20-14-47.png" style = "zoom: 60%">
+
 	打开，在style.less中修改`font-size: 14px`的数值即可调节（没有这句话，就添加上）
+
 	<img src = "image/2022-03-26-20-15-36.png" style = "zoom: 60%">
+
 + Vscode 安装插件 Markdown Preview Github Styling
+
 + Vscode安装插件Paste Image （用于粘贴剪贴板中的图片）
+
 	安装完成后右键扩展-扩展设置
 	更改以下两个设置
 	<img src = "image/2022-03-06-21-13-47.png" style = "zoom: 70%">
 	<img src = "image/2022-03-06-21-14-46.png" style = "zoom: 70%">
 		
+
 	```bash
 	#安装xclip, 以便能粘贴Ubuntu自带剪切软件screen截图的剪切板内容	
 	sudo apt-get install xclip 
 	```
 	截图到剪切板后按```Ctrl + alt + v``` 粘贴
 
+<br>
 
+markdown中插入表情：
 
+https://www.webfx.com/tools/emoji-cheat-sheet/
 
+可以在上面的网站中查看想要的表情对应的编码，比如  :smile: 对应的就是` :smile:`
+
+<br>
 
 
 ### 1.4.4 Vscode g++ c++-11编译cpp文件
@@ -540,6 +560,38 @@ branch就填写master即可，
 ## 1.5 Ubuntu下安装微信
 
 https://www.linuxprobe.com/how-Ubuntu-wechat.html
+
+方法1: 从ubuntu的snap中下载安装wechat
+
+```bash
+# 首先确保你的pc中安装了snapd和snapd-xdg-open 
+# 如果你已经有了的话，可以跳过这部
+sudo apt install snapd snapd-xdg-open 
+
+# 开始安装wechat
+sudo snap install electronic-chat
+
+# 终端运行命令
+electronic-chat
+```
+
+方法2: 直接在ubuntu18.04的ubuntu软件商店搜索`electronic-chat`anzhuang
+
+方法1和方法2其实是一样的，但是我更推荐方法1，会快一些
+
+
+方法3:利用GitHub在安装Linux微信客户端
+
+从GitHub网站上下载electronic-wechat文件进行安装是第二种方案。在下载前，你需要选择适合自己的版本。
+例如我使用的是64位ubuntu系统，下载了linux-x64.tar.gz.。
+
+```bash
+# 打开终端并输入以下命令解压文件：
+tar xvf linux-x64.tar.gz
+
+# 文件释出之后，运行下面命令：
+./electronic-chat
+```
 
 ## 1.6 Ubuntu下安装Firefox
 
@@ -978,6 +1030,7 @@ int main(){
 
 ### 2.2.4 stoi()函数：string->十进制int
 stoi()函数：将n 进制的字符串转化为十进制int
+
 ```c++
 string s("123");
 int a = stoi(s);
@@ -995,6 +1048,7 @@ emplace和push的区别
 
 https://blog.csdn.net/weixin_43892298/article/details/105733034
 
+
 ```c++
 //以下两种都可以
 pri_que.emplace(data(1, 2));
@@ -1003,6 +1057,7 @@ pri_que.push(data(1, 2));
 //还可以这样
 pri_que.emplace(1, 2);
 ```
+
 `pri_que.emplace("nine");`优于`pri_que.push("nine");`
 
 对于emplace_back和push_back同理，可以参考 [关于emplace_back()的理解](https://blog.csdn.net/mmm123213/article/details/119282296)
@@ -1644,31 +1699,110 @@ void test_demo(){
 
 
 
+### 2.2.19 设计哈希映射
+
+ 题目链接：
+
+ [705. 设计哈希集合](https://leetcode.cn/problems/design-hashset/)
+
+ [706. 设计哈希映射](https://leetcode.cn/problems/design-hashmap/)
+
+
+ 这两个题都是简单题，但是我第一次做的时候确实是没有想到该怎么去做的， 所以我觉得有必要单独记录一下：
+
+ 官方的题解见 https://leetcode.cn/problems/design-hashset/solution/she-ji-ha-xi-ji-he-by-leetcode-solution-xp4t/
+
+ 不难理解它的做法
+
+ 为什么一定要用质数呢？
+
+ 参考了下面的一个评论：
+
+>精选评论(5)
+>chshp果然翁
+>（编辑过）2021-03-13
+>
+>查了下质数取模，其实是利用了同余的概念：当元素是个有规律的等差数列时，并且和基数（数组大小）最大公约数不为1时，就会造成哈希映射时冲突变高（数组某些位置永远不会有值）。比如数列0,6,12,18,24,30...，
+>
+>    base为10，取模(0,6,2,8,4,0...)后，放入哈希表中位置将只能在0,2,4,6,8这几个数组位置上；
+>    但我们如果把base取7（数组大小甚至比10小），同样数列取模后(0,6,5,4,3,2,1,0,...)，可以分布在哈希表中的0,1,2,3,4,5,6所有位置上；
+>
+>后续：若x和y的最大公约为z，x和y的最小公倍数就为(x*y)/z，很明显，若z为1，也就是俩数的最大公约数为1的时候，那么俩数的最小公倍数就为x*y。
+>
+>那么当一个数为质数时，除了其自身的倍数外，其余数和其的最大公约数都将是1，这时，步长选任何数（除了倍数）都可以满足桶的均匀分布。
+>
+>所以，以取模计算哈希值在桶中的位置是，用一个质数当作基数时可以使得哈希表中每个位置都“有用武之地”。
+
+
+
+
+
+
+
+
+### 2.2.20 关于c++中::的疑惑
+
+在下面这道题的解答中
+
+
+[包含min函数的栈--方法一：辅助栈](https://leetcode.cn/problems/bao-han-minhan-shu-de-zhan-lcof/solution/bao-han-minhan-shu-de-zhan-by-leetcode-s-i2fk/)
+
+
+有这样一句：
+
+```
+min_stack.push(::min(min_stack.top(), x));
+```
+
+注意这里用的是`::min`而不是`min`，经过查阅，因为在该类中已经存在了新定义的`min`函数，如果我们直接使用`min`的话，默认是调用类中的`min`函数。
+
+所以只好写成`::min`这种形式，表示我们调用的是全局的成员函数`min`(即c++内部的min函数)。
+
+参考： [C++笔记—— “::“双冒号的一种用法](https://blog.csdn.net/weixin_43864155/article/details/108270568)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## 2.3 刷题记录
 ### 2.3.1 还没做的：
-[10.正则表达式](https://leetcode-cn.com/problems/regular-expression-matching/)
-[22.括号的生成（动态规划，回溯）](https://leetcode-cn.com/problems/generate-parentheses/)
-[29.两数相除（试试递归,早子哥提到的）](https://leetcode-cn.com/problems/divide-two-integers/)
-[√][37.解数独 （回溯，还没学）](https://leetcode-cn.com/problems/sudoku-solver/)
-[√][39.组合总和 (回溯)](https://leetcode-cn.com/problems/combination-sum/)
-[32.最长有效括号(动态规划，还没学)](https://leetcode-cn.com/problems/longest-valid-parentheses/)
-[11.盛最多水的容器(贪心算法，还没学)](https://leetcode-cn.com/problems/container-with-most-water/	)
-[44.通配符匹配(贪心，递归，动态规划)](https://leetcode-cn.com/problems/wildcard-matching/)
-[45.跳跃游戏II(贪心，动态规划)](https://leetcode-cn.com/problems/jump-game-ii/)
-[√][46.全排列(回溯)](https://leetcode-cn.com/problems/permutations/)
-[329.矩阵中的最长递增路径（pass，搜“矩阵”关键字搜到的题目）](https://leetcode-cn.com/problems/longest-increasing-path-in-a-matrix/)
-[√][剑指 Offer 12. 矩阵中的路径（回溯）](https://leetcode-cn.com/problems/ju-zhen-zhong-de-lu-jing-lcof/)
-[221. 最大正方形(动态规划)](https://leetcode-cn.com/problems/maximal-square/)
-[85. 最大矩形](https://leetcode-cn.com/problems/maximal-rectangle/)
-[√][51. N 皇后(回溯)](https://leetcode-cn.com/problems/n-queens/)
-[53. 最大子数组和(动态规划)](https://leetcode-cn.com/problems/maximum-subarray/)
-[√][130.被围绕的区域（深度/广度优先搜索）](https://leetcode-cn.com/problems/surrounded-regions/)
-[174. 地下城游戏（动态规划）](https://leetcode-cn.com/problems/dungeon-game/)
-[68. 文本左右对齐(贪心)](https://leetcode-cn.com/problems/text-justification/)
-[307. 区域和检索 - 数组可修改](https://leetcode-cn.com/problems/range-sum-query-mutable/)
-[310. 最小高度树(拓扑排序、深度/广度优先搜索)](https://leetcode-cn.com/problems/minimum-height-trees/)
++ [10.正则表达式](https://leetcode-cn.com/problems/regular-expression-matching/)
++ [22.括号的生成（动态规划，回溯）](https://leetcode-cn.com/problems/generate-parentheses/)
++ [29.两数相除（试试递归,早子哥提到的）](https://leetcode-cn.com/problems/divide-two-integers/)
++ [√][37.解数独 （回溯，还没学）](https://leetcode-cn.com/problems/sudoku-solver/)
++ [√][39.组合总和 (回溯)](https://leetcode-cn.com/problems/combination-sum/)
++ [32.最长有效括号(动态规划，还没学)](https://leetcode-cn.com/problems/longest-valid-parentheses/)
++ [11.盛最多水的容器(贪心算法，还没学)](https://leetcode-cn.com/problems/container-with-most-water/	)
++ [44.通配符匹配(贪心，递归，动态规划)](https://leetcode-cn.com/problems/wildcard-matching/)
++ [45.跳跃游戏II(贪心，动态规划)](https://leetcode-cn.com/problems/jump-game-ii/)
++ [√][46.全排列(回溯)](https://leetcode-cn.com/problems/permutations/)
++ [329.矩阵中的最长递增路径（pass，搜“矩阵”关键字搜到的题目）](https://leetcode-cn.com/problems/longest-increasing-path-in-a-matrix/)
++ [√][剑指 Offer 12. 矩阵中的路径（回溯）](https://leetcode-cn.com/problems/ju-zhen-zhong-de-lu-jing-lcof/)
++ [221. 最大正方形(动态规划)](https://leetcode-cn.com/problems/maximal-square/)
++ [85. 最大矩形](https://leetcode-cn.com/problems/maximal-rectangle/)
++ [√][51. N 皇后(回溯)](https://leetcode-cn.com/problems/n-queens/)
++ [53. 最大子数组和(动态规划)](https://leetcode-cn.com/problems/maximum-subarray/)
++ [√][130.被围绕的区域（深度/广度优先搜索）](https://leetcode-cn.com/problems/surrounded-regions/)
++ [174. 地下城游戏（动态规划）](https://leetcode-cn.com/problems/dungeon-game/)
++ [68. 文本左右对齐(贪心)](https://leetcode-cn.com/problems/text-justification/)
++ [307. 区域和检索 - 数组可修改](https://leetcode-cn.com/problems/range-sum-query-mutable/)
++ [310. 最小高度树(拓扑排序、深度/广度优先搜索)](https://leetcode-cn.com/problems/minimum-height-trees/)
 
 
 __代码随想录中没做的题目__
@@ -1678,28 +1812,28 @@ __代码随想录中没做的题目__
 
 ### 2.3.2 其它        
 
-[√][栈与队列-7滑动窗口最大值-[239滑动窗口最大值](https://leetcode-cn.com/problems/sliding-window-maximum/) （答案用到了利用优先队列的方法来做，优先队列是什么还没学）
-[669. 修剪二叉搜索树](https://leetcode-cn.com/problems/trim-a-binary-search-tree/)(这个题看代码的话比较不好理解，尤其是迭代法)
-[109. 有序链表转换二叉搜索树](https://leetcode-cn.com/problems/convert-sorted-list-to-binary-search-tree/submissions/)(这个题用的是list转vector来做的，还有更好的方法，后面还要再看看)
-[124. 二叉树中的最大路径和](https://leetcode-cn.com/problems/binary-tree-maximum-path-sum/)(困难提，虽然没遇到太大问题，自己完成的，但是用时较长，运行时间稳定击败5%，应该还有更好的方法或者可以简化，后面再看看）
-代码随想录中二叉树部分的每周小结基本上都没怎么看
-[37.解数独](https://leetcode-cn.com/problems/sudoku-solver/)（这个题官方答案还有后续的两个优化的答案，可以学习一下）
-[52. N皇后 II](https://leetcode-cn.com/problems/n-queens-ii/)(官方答案给出的不同于代码随想录的方法，位运算的方法，好多题都有用到这个叫做位运算的方法，要看看！)
-[89.格雷编码](https://leetcode-cn.com/problems/gray-code/)(这个题不能说难，但是官方答案的两种方法我是都没想到，与其说是都没想到，更应该说是之前没有了解过格雷编码的概念)
-[376.摆动序列](https://leetcode-cn.com/problems/wiggle-subsequence/)（第一次接触动态规划解法，觉得比较难以理解）
++ [√][栈与队列-7滑动窗口最大值-[239滑动窗口最大值](https://leetcode-cn.com/problems/sliding-window-maximum/) （答案用到了利用优先队列的方法来做，优先队列是什么还没学）
++ [669. 修剪二叉搜索树](https://leetcode-cn.com/problems/trim-a-binary-search-tree/)(这个题看代码的话比较不好理解，尤其是迭代法)
++ [109. 有序链表转换二叉搜索树](https://leetcode-cn.com/problems/convert-sorted-list-to-binary-search-tree/submissions/)(这个题用的是list转vector来做的，还有更好的方法，后面还要再看看)
++ [124. 二叉树中的最大路径和](https://leetcode-cn.com/problems/binary-tree-maximum-path-sum/)(困难提，虽然没遇到太大问题，自己完成的，但是用时较长，运行时间稳定击败5%，应该还有更好的方法或者可以简化，后面再看看）
++ 代码随想录中二叉树部分的每周小结基本上都没怎么看
++ [37.解数独](https://leetcode-cn.com/problems/sudoku-solver/)（这个题官方答案还有后续的两个优化的答案，可以学习一下）
++ [52. N皇后 II](https://leetcode-cn.com/problems/n-queens-ii/)(官方答案给出的不同于代码随想录的方法，位运算的方法，好多题都有用到这个叫做位运算的方法，要看看！)
++ [89.格雷编码](https://leetcode-cn.com/problems/gray-code/)(这个题不能说难，但是官方答案的两种方法我是都没想到，与其说是都没想到，更应该说是之前没有了解过格雷编码的概念)
++ [376.摆动序列](https://leetcode-cn.com/problems/wiggle-subsequence/)（第一次接触动态规划解法，觉得比较难以理解）
 
-[435. 无重叠区间](https://leetcode-cn.com/problems/non-overlapping-intervals/submissions/)(这一题源自代码随想录([贪心算法-无重叠区间](https://www.programmercarl.com/0435.%E6%97%A0%E9%87%8D%E5%8F%A0%E5%8C%BA%E9%97%B4.html#%E6%80%9D%E8%B7%AF))，这道题的题解，我可以说是没想到，并且不太能理解为什么要这么做，作者也说确实这道题难度登记应该为困难)
++ [435. 无重叠区间](https://leetcode-cn.com/problems/non-overlapping-intervals/submissions/)(这一题源自代码随想录([贪心算法-无重叠区间](https://www.programmercarl.com/0435.%E6%97%A0%E9%87%8D%E5%8F%A0%E5%8C%BA%E9%97%B4.html#%E6%80%9D%E8%B7%AF))，这道题的题解，我可以说是没想到，并且不太能理解为什么要这么做，作者也说确实这道题难度登记应该为困难)
 
-[738.单调递增的数字](https://leetcode-cn.com/problems/monotone-increasing-digits/)(代码随想录([贪心算法-22.单调递增的数字](https://www.programmercarl.com/0738.%E5%8D%95%E8%B0%83%E9%80%92%E5%A2%9E%E7%9A%84%E6%95%B0%E5%AD%97.html#%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95))中的方法，我没能想到这么巧妙的方法)
++ [738.单调递增的数字](https://leetcode-cn.com/problems/monotone-increasing-digits/)(代码随想录([贪心算法-22.单调递增的数字](https://www.programmercarl.com/0738.%E5%8D%95%E8%B0%83%E9%80%92%E5%A2%9E%E7%9A%84%E6%95%B0%E5%AD%97.html#%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95))中的方法，我没能想到这么巧妙的方法)
 
-[买卖股票的最佳时机含手续费](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/)(代码录的方法，比较巧妙，我没想到，我自己做的时候考虑的情况太多，一度导致非常混乱)
-
-
-[968.监控二叉树](https://leetcode-cn.com/problems/binary-tree-cameras/submissions/)(代码随想录的方法)
-
-[136. 只出现一次的数字](https://leetcode.cn/problems/single-number/)(这道题是简单题，AC也比较容易，但是答案的位运算的方法，我是没想到的)
++ [买卖股票的最佳时机含手续费](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/)(代码录的方法，比较巧妙，我没想到，我自己做的时候考虑的情况太多，一度导致非常混乱)
 
 
++ [968.监控二叉树](https://leetcode-cn.com/problems/binary-tree-cameras/submissions/)(代码随想录的方法)
+
++ [136. 只出现一次的数字](https://leetcode.cn/problems/single-number/)(这道题是简单题，AC也比较容易，但是答案的位运算的方法，我是没想到的)
+
++ [292. Nim 游戏](https://leetcode.cn/problems/nim-game/)(脑筋急转弯简单题？这道题的题解就一句`return n%4;`, 我是没想到的) :sweat:
 
 
 
