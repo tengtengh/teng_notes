@@ -1762,17 +1762,29 @@ min_stack.push(::min(min_stack.top(), x));
 
 
 
+### 2.2.20 LeetCode Vim模式下，怎么复制文本到系统剪切板
+
+How to copy text to the system clipboard in vim mode in leetcode
+
+参考博客: [问题解决：LeetCode代码编辑器vim模式无法复制文本到系统剪贴板](https://copyfuture.com/blogs-details/202112210245317845)
+
+**问题描述**
+
+Windows上的LeetCode代码编辑器的vim模式无法用ctrl c复制文本
+
+**原因**
+
+原因在于vim模式下 ctrl+c 被映射成了 esc
+
+--> 另外不要使用esc键，因为它会使编辑框失去聚焦 (这句我不是很理解什么意思)
 
 
+**解决方案**
+Windows还有一套复制粘贴键(Ubuntu也适用)
+`Ctrl+C` 和 `Ctrl+V` (为左手设计)
+`Ctrl + Insert` 复制 和 `Shift ＋Insert` 粘贴 (为右手设计)
 
-
-
-
-
-
-
-
-
+这里我们直接用`Ctrl + Insert`即可
 
 
 
@@ -1837,9 +1849,12 @@ __代码随想录中没做的题目__
 
 + [668.乘法表中第k小的数](https://leetcode.cn/problems/kth-smallest-number-in-multiplication-table/) 2022-05-18的每日一题，头皮发麻
 
++ [441.排列硬币](https://leetcode.cn/problems/arranging-coins/) ！！！这个题要重新看一下!!!!!
 
 
++ [464.我能赢吗](https://leetcode.cn/problems/can-i-win/) 2022-05-22每日一题(简单题), 想不到怎么去做，答案看的也有点头痛
 
++ [675.为高尔夫比赛砍树](https://leetcode.cn/problems/cut-off-trees-for-golf-event/) 2022-05-23的每日一题，这道题我感觉自己写出来了，但是超时了，答案有三种方法，看看
 
 # 3. 学习问题及解决方案
 
@@ -1910,6 +1925,7 @@ rosdep update
 
 
 ### 3.2.2 从rosbag中提取图片
+
 参考的是[这篇csdn博客](https://blog.csdn.net/weixin_43977894/article/details/108412661?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522164898632316781683972416%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=164898632316781683972416&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-2-108412661.142^v5^pc_search_result_control_group,157^v4^control&utm_term=rosbag+%E6%8F%90%E5%8F%96%E5%9B%BE%E7%89%87&spm=1018.2226.3001.4187)
 
 

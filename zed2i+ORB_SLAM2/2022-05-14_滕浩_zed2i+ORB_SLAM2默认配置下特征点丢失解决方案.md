@@ -1,3 +1,20 @@
+
+
+
+<!-- vim-markdown-toc GFM -->
+
+* [zed2i相机ORB_SLAM2容易丢点问题相关说明](#zed2i相机orb_slam2容易丢点问题相关说明)
+    * [1 容易丢点的原因：](#1-容易丢点的原因)
+    * [2 zed_wrapper默认参数设置](#2-zed_wrapper默认参数设置)
+        * [2.1 获取图像的频率](#21-获取图像的频率)
+        * [2.2 发布图像的频率](#22-发布图像的频率)
+        * [2.3 图像的分辨率](#23-图像的分辨率)
+        * [2.4 其它](#24-其它)
+
+<!-- vim-markdown-toc -->
+
+
+
 # zed2i相机ORB_SLAM2容易丢点问题相关说明
 
 ## 1 容易丢点的原因：
@@ -93,7 +110,6 @@ zed2i官网的用户手册中是由对于这些的参数的描述的，具体可
 |White Balance|	Controls camera white balance.                                                              |	[2800 - 6500]                        |
 |Exposure     |Controls shutter speed.<br>Setting a long exposure time leads to an increase in motion blur. |	[0 - 100]<br>(% of camera frame rate)|
 |Gain         |	Controls digital amplification of the signal from the camera sensors.                       |	[0 - 100]                            |
-
 
 
 
