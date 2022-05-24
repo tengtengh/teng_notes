@@ -3,11 +3,6 @@
   <strong><font size = 10>Ubuntu学习笔记</font></strong>
   <br /><br /><br /><br />
 </div>
-
-
-
-
-
 <!-- vim-markdown-toc GFM -->
 
 * [1. Ubuntu相关问题及解决方案](#1-ubuntu相关问题及解决方案)
@@ -47,7 +42,7 @@
         * [2.2.3 函数数组以「引用」方式传递 (int &x)](#223-函数数组以引用方式传递-int-x)
         * [2.2.4 stoi()函数：string->十进制int](#224-stoi函数string-十进制int)
         * [2.2.5 C++ 优先级队列 priority_queue(STL priority_queue)](#225-c-优先级队列-priority_queuestl-priority_queue)
-        * [2.2.6 对于map[]的使用问题](#226-对于map的使用问题)
+        * [2.2.6 对于map\[\]的使用问题](#226-对于map的使用问题)
         * [2.2.7 有关Vector<int>初始化的问题](#227-有关vectorint初始化的问题)
         * [2.2.8 前缀和](#228-前缀和)
         * [2.2.9 起泡法排序](#229-起泡法排序)
@@ -74,6 +69,7 @@
         * [2.2.18 运算符优先级](#2218-运算符优先级)
         * [2.2.19 设计哈希映射](#2219-设计哈希映射)
         * [2.2.20 关于c++中::的疑惑](#2220-关于c中的疑惑)
+        * [2.2.20 LeetCode Vim模式下，怎么复制文本到系统剪切板](#2220-leetcode-vim模式下怎么复制文本到系统剪切板)
     * [2.3 刷题记录](#23-刷题记录)
         * [2.3.1 还没做的：](#231-还没做的)
         * [2.3.2 其它](#232-其它)
@@ -81,7 +77,6 @@
     * [3.1 Ubuntu16.04+python27安装jupyter notebook后,](#31-ubuntu1604python27安装jupyter-notebook后)
     * [3.2 ROS](#32-ros)
         * [3.2.1 安装ROS](#321-安装ros)
-* [下载rosdistro包](#下载rosdistro包)
         * [3.2.2 从rosbag中提取图片](#322-从rosbag中提取图片)
         * [3.3.3 ORB-SLAM2 ROS编译](#333-orb-slam2-ros编译)
         * [3.3.4 zed + ORB_SLAM2 录制rosbag](#334-zed--orb_slam2-录制rosbag)
@@ -108,113 +103,6 @@
         * [4.2.2 链表基本概念](#422-链表基本概念)
 
 <!-- vim-markdown-toc -->
-
-
-
-Content for Markdown-Preview.nvim
-
-<!-- vim-markdown-toc Marked -->
-
-* [1. Ubuntu相关问题及解决方案](#1.-ubuntu相关问题及解决方案)
-    * [1.1 Ubuntu联网问题](#1.1-ubuntu联网问题)
-        * [1.1.1 Ubuntu(16.04)显示已经连接有线网络但是不能上网](#1.1.1-ubuntu(16.04)显示已经连接有线网络但是不能上网)
-        * [1.1.2 Ubuntu连接家里的网](#1.1.2-ubuntu连接家里的网)
-    * [1.2 搜狗输入法繁体字](#1.2-搜狗输入法繁体字)
-    * [1.3 Ubuntu和win10时间不同步](#1.3-ubuntu和win10时间不同步)
-    * [1.4 Vscode相关设置问题](#1.4-vscode相关设置问题)
-        * [1.4.1 Vscode自己定义带时间的自定义快捷注释](#1.4.1-vscode自己定义带时间的自定义快捷注释)
-        * [1.4.2 Vscode关闭源代码管理](#1.4.2-vscode关闭源代码管理)
-        * [1.4.2 Vscode自动格式化](#1.4.2-vscode自动格式化)
-        * [1.4.3 Vscode配置Markdown](#1.4.3-vscode配置markdown)
-        * [1.4.4 Vscode g++ c++-11编译cpp文件](#1.4.4-vscode-g++-c++-11编译cpp文件)
-        * [1.4.5 Vscode配置git同步gitee](#1.4.5-vscode配置git同步gitee)
-        * [1.4.6　Ubuntu + picgo 配置gitee图床](#1.4.6　ubuntu-+-picgo-配置gitee图床)
-    * [1.5 Ubuntu下安装微信](#1.5-ubuntu下安装微信)
-    * [1.6 Ubuntu下安装Firefox](#1.6-ubuntu下安装firefox)
-    * [1.7 Ubuntu下安装Typora](#1.7-ubuntu下安装typora)
-    * [1.8 Ubuntu18.04安装独显驱动](#1.8-ubuntu18.04安装独显驱动)
-    * [1.9 记录ROG 幻16 装Ubuntu18.04](#1.9-记录rog-幻16-装ubuntu18.04)
-    * [1.10 Ubuntu18.04更新内核(手动安装)/卸载清除旧版本内核](#1.10-ubuntu18.04更新内核(手动安装)/卸载清除旧版本内核)
-        * [1.10.1 更新内核(手动安装)](#1.10.1-更新内核(手动安装))
-        * [1.10.2 清除卸载旧版本内核](#1.10.2-清除卸载旧版本内核)
-    * [1.11 ubuntu18.04安装](#1.11-ubuntu18.04安装)
-        * [1.11.1 Ubuntu分区方案](#1.11.1-ubuntu分区方案)
-    * [1.12 ubuntu密码问题](#1.12-ubuntu密码问题)
-        * [1.12.1 更改密码](#1.12.1-更改密码)
-        * [1.12.2 切换用户](#1.12.2-切换用户)
-        * [1.12.3 删除用户密码，以及删除之后怎么恢复](#1.12.3-删除用户密码，以及删除之后怎么恢复)
-* [2. 学习整理](#2.-学习整理)
-    * [2.1 SLAM](#2.1-slam)
-        * [2.1.1 半稠密SLAM:EAO-SLAM](#2.1.1-半稠密slam:eao-slam)
-    * [2.2 代码学习](#2.2-代码学习)
-        * [2.2.1 string::find()](#2.2.1-string::find())
-        * [2.2.2 超出 INT_MAX 和 INT_MIN](#2.2.2-超出-int_max-和-int_min)
-        * [2.2.3 函数数组以「引用」方式传递 (int &x)](#2.2.3-函数数组以「引用」方式传递-(int-&x))
-        * [2.2.4 stoi()函数：string->十进制int](#2.2.4-stoi()函数：string->十进制int)
-        * [2.2.5 C++ 优先级队列 priority_queue(STL priority_queue)](#2.2.5-c++-优先级队列-priority_queue(stl-priority_queue))
-        * [2.2.6 对于map[]的使用问题](#2.2.6-对于map[]的使用问题)
-        * [2.2.7 有关Vector<int>初始化的问题](#2.2.7-有关vector<int>初始化的问题)
-        * [2.2.8 前缀和](#2.2.8-前缀和)
-        * [2.2.9 起泡法排序](#2.2.9-起泡法排序)
-        * [2.2.10 单调栈，这个题属实是没学的话想不到这么做](#2.2.10-单调栈，这个题属实是没学的话想不到这么做)
-        * [2.2.11 链表排序](#2.2.11-链表排序)
-        * [2.2.12 low_bound()](#2.2.12-low_bound())
-        * [2.2.13 204. 计数质数](#2.2.13-204.-计数质数)
-        * [2.2.14 vector size()函数要注意的问题](#2.2.14-vector-size()函数要注意的问题)
-        * [2.2.15 判断char型变量是否为字符数字等](#2.2.15-判断char型变量是否为字符数字等)
-        * [2.2.16 287.寻找重复数](#2.2.16-287.寻找重复数)
-        * [2.2.16 sort函数将vector数组按照元素绝对值从小到大排序](#2.2.16-sort函数将vector数组按照元素绝对值从小到大排序)
-        * [2.2.17 vector::reserve()函数](#2.2.17-vector::reserve()函数)
-        * [2.2.17 二叉树搜索整个数(要返回值)/二叉树搜索一条边(不要返回值)](#2.2.17-二叉树搜索整个数(要返回值)/二叉树搜索一条边(不要返回值))
-        * [2.2.18 有关自定义题目输入的内容必须要好好看看，这是LeetCode所没有的](#2.2.18-有关自定义题目输入的内容必须要好好看看，这是leetcode所没有的)
-        * [2.2.19 二叉树深度优先搜索(DFS)、广度优先搜索(BFS)](#2.2.19-二叉树深度优先搜索(dfs)、广度优先搜索(bfs))
-        * [2.2.20  二叉树的序列化与反序列化](#2.2.20-二叉树的序列化与反序列化)
-        * [2.2.21 substr函数](#2.2.21-substr函数)
-        * [2.2.22 回溯去重](#2.2.22-回溯去重)
-        * [2.2.23 有关map的键值](#2.2.23-有关map的键值)
-        * [2.2.24 有关于linux和window下get c++代码运行时间](#2.2.24-有关于linux和window下get-c++代码运行时间)
-        * [2.2.25 C++中static的用法](#2.2.25-c++中static的用法)
-        * [2.2.26 关于list类](#2.2.26-关于list类)
-    * [2.3 刷题记录](#2.3-刷题记录)
-        * [2.3.1 还没做的：](#2.3.1-还没做的：)
-        * [2.3.2 其它](#2.3.2-其它)
-* [3. 学习问题及解决方案](#3.-学习问题及解决方案)
-    * [3.1 Ubuntu16.04+python27安装jupyter notebook后,](#3.1-ubuntu16.04+python27安装jupyter-notebook后,)
-    * [3.2 ROS](#3.2-ros)
-        * [3.2.1 安装ROS](#3.2.1-安装ros)
-* [下载rosdistro包](#下载rosdistro包)
-        * [3.2.2 从rosbag中提取图片](#3.2.2-从rosbag中提取图片)
-        * [3.3.3 ORB-SLAM2 ROS编译](#3.3.3-orb-slam2-ros编译)
-        * [3.3.4 zed + ORB_SLAM2 录制rosbag](#3.3.4-zed-+-orb_slam2-录制rosbag)
-    * [3.3 Ubuntu安装boost](#3.3-ubuntu安装boost)
-    * [3.4 Ubuntu16.04配置ROS工作空间](#3.4-ubuntu16.04配置ros工作空间)
-    * [3.5](#3.5)
-    * [3.6 OpenCV相关问题](#3.6-opencv相关问题)
-        * [3.6.1 安装OpenCV](#3.6.1-安装opencv)
-        * [3.6.2 卸载OpenCV](#3.6.2-卸载opencv)
-        * [3.6.3 libopencv_core.so.2.4: cannot open shared object file: No such file or directory](#3.6.3-libopencv_core.so.2.4:-cannot-open-shared-object-file:-no-such-file-or-directory)
-    * [3.7 GCC/G++](#3.7-gcc/g++)
-        * [3.7.1 多版本gcc/g++优先级](#3.7.1-多版本gcc/g++优先级)
-        * [3.7.2 Ubuntu16.04安装gcc7/g++7](#3.7.2-ubuntu16.04安装gcc7/g++7)
-    * [3.8 Eigen](#3.8-eigen)
-        * [3.8.1 查看Eigen3版本](#3.8.1-查看eigen3版本)
-    * [3.9 g2o](#3.9-g2o)
-        * [3.9.1 卸载g2o](#3.9.1-卸载g2o)
-    * [3.10 vim相关](#3.10-vim相关)
-        * [3.10.1 vim，vi经常卡死（其实并不是它卡了）](#3.10.1-vim，vi经常卡死（其实并不是它卡了）)
-        * [3.10.2 vim复制文字到外面](#3.10.2-vim复制文字到外面)
-* [4. 数据结构](#4.-数据结构)
-    * [4.1 数组](#4.1-数组)
-    * [4.2 链表](#4.2-链表)
-        * [4.2.2 链表基本概念](#4.2.2-链表基本概念)
-
-<!-- vim-markdown-toc -->
-
-
-
-
-
-
 
 
 
@@ -1207,7 +1095,7 @@ void test_demo(){
 
 
 
-### 2.2.6 对于map[]的使用问题
+### 2.2.6 对于map\[\]的使用问题
 ```c++
 // 如下代码：
     unordered_map<string, int> umap;
@@ -1887,7 +1775,7 @@ https://blog.csdn.net/qq_17685565/article/details/105741864
 
 ______
 
-#下载rosdistro包
++ 下载rosdistro包
 
 ```bash
 git clone https://github.com/ros/rosdistro.git
