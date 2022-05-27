@@ -33,6 +33,9 @@
         * [1.12.1 更改密码](#1121-更改密码)
         * [1.12.2 切换用户](#1122-切换用户)
         * [1.12.3 删除用户密码，以及删除之后怎么恢复](#1123-删除用户密码以及删除之后怎么恢复)
+    * [1.13 ubuntu20.04(.4) 安装](#113-ubuntu20044-安装)
+        * [1.13.1 Ubuntu20.04.4安装ROS Noetic](#1131-ubuntu20044安装ros-noetic)
+        * [language error (不能安装完整的语言支持)](#language-error-不能安装完整的语言支持)
 * [2. 学习整理](#2-学习整理)
     * [2.1 SLAM](#21-slam)
         * [2.1.1 半稠密SLAM:EAO-SLAM](#211-半稠密slameao-slam)
@@ -87,6 +90,7 @@
         * [3.6.1 安装OpenCV](#361-安装opencv)
         * [3.6.2 卸载OpenCV](#362-卸载opencv)
         * [3.6.3 libopencv_core.so.2.4: cannot open shared object file: No such file or directory](#363-libopencv_coreso24-cannot-open-shared-object-file-no-such-file-or-directory)
+        * [3.6.4 ubuntu20.04 -make -- opencv3.4.0](#364-ubuntu2004--make----opencv340)
     * [3.7 GCC/G++](#37-gccg)
         * [3.7.1 多版本gcc/g++优先级](#371-多版本gccg优先级)
         * [3.7.2 Ubuntu16.04安装gcc7/g++7](#372-ubuntu1604安装gcc7g7)
@@ -845,8 +849,15 @@ yefei@yefei:~$ sudo passwd yefei
 ```
 
 
+## 1.13 ubuntu20.04(.4) 安装
+
+### 1.13.1 Ubuntu20.04.4安装ROS Noetic
 
 
+参考 [Ubuntu20.04.4安装ROS Noetic详细教程](https://zhuanlan.zhihu.com/p/515361781)
+
+
+### language error (不能安装完整的语言支持)
 
 
 
@@ -2038,6 +2049,32 @@ sudo gedit /etc/ld.so.conf.d/opencv.conf
 sudo ldconfig
 ```
 
+
+
+### 3.6.4 ubuntu20.04 -make -- opencv3.4.0
+
+
+make 到 98%时，opencv报错/opencv_python3.dir/__/src2/cv2.cpp.o] Error 1
+
+
+参考[树莓派3b+安装opencv报错/opencv_python3.dir/__/src2/cv2.cpp.o] Error 1](https://blog.csdn.net/zhongqli/article/details/112219329?spm=1001.2014.3001.5506)
+
+
+```bash
+nvim opecv-3.4.0/modules/python/src2
+```
+在第885行添加`(char *)`, 如下：
+
+
+```c++
+    if(!obj || obj == Py_None)
+        return true;
+    char* str = (char *)PyString_AsString(obj); // this line
+    if(!str)
+        return false;
+    value = String(str);
+    return true;
+```
 
 
 ## 3.7 GCC/G++
