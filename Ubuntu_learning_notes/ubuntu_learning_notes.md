@@ -1755,6 +1755,13 @@ __代码随想录中没做的题目__
 
 + [675.为高尔夫比赛砍树](https://leetcode.cn/problems/cut-off-trees-for-golf-event/) 2022-05-23的每日一题，这道题我感觉自己写出来了，但是超时了，答案有三种方法，看看
 
+
++ [32.最长有效括号](https://leetcode.cn/problems/longest-valid-parentheses/submissions/) Leecode第一页的困难困难难题，答案有三种方法，我只看了【方法2: 栈】
+
+
+
+
+
 # 3. 学习问题及解决方案
 
 ## 3.1 Ubuntu16.04+python27安装jupyter notebook后,
