@@ -1031,6 +1031,7 @@ pri_que.emplace(1, 2);
 
 ```c++
 
+// 在Leecode中提示这里要写成 static bool
 bool cmp(int a, int b){
     return abs(a) > abs(b);
 }
