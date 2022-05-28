@@ -1759,6 +1759,7 @@ __代码随想录中没做的题目__
 
 + [32.最长有效括号](https://leetcode.cn/problems/longest-valid-parentheses/submissions/) Leecode第一页的困难困难难题，答案有三种方法，我只看了【方法2: 栈】
 
++ [699.掉落的方块](https://leetcode.cn/problems/falling-squares/) 困难题，我写的方法超时，答案有两种方法，我抄了更优化的方法2，还没看，里面用到了一些比较少用到的函数，抽空记得看看
 
 
 
