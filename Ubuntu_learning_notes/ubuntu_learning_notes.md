@@ -2061,6 +2061,7 @@ sudo ldconfig
 
 
 
+
 ### 3.6.4 ubuntu20.04 -make -- opencv3.4.0
 
 
@@ -2102,6 +2103,7 @@ sudo update-alternatives --config gcc
 #查看优先级
 sudo update-alternatives --config gcc
 ```
+
 
 
 
