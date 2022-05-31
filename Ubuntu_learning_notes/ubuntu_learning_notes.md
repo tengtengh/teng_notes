@@ -73,6 +73,7 @@
         * [2.2.19 设计哈希映射](#2219-设计哈希映射)
         * [2.2.20 关于c++中::的疑惑](#2220-关于c中的疑惑)
         * [2.2.20 LeetCode Vim模式下，怎么复制文本到系统剪切板](#2220-leetcode-vim模式下怎么复制文本到系统剪切板)
+        * [2.2.21 拓扑排序](#2221-拓扑排序)
     * [2.3 刷题记录](#23-刷题记录)
         * [2.3.1 还没做的：](#231-还没做的)
         * [2.3.2 其它](#232-其它)
@@ -1686,8 +1687,16 @@ Windows还有一套复制粘贴键(Ubuntu也适用)
 
 这里我们直接用`Ctrl + Insert`即可
 
+### 2.2.21 拓扑排序
+
+这一部分我觉得有必要单独列出一节, 在Leecode中拓扑排序也是一大类。
+
+2022-05-31 Leetcode每日一题，[剑指 Offer II 114.外星文字典](https://leetcode.cn/problems/Jf1JuT/), 拓扑排序，我不会
+
+[LeetCode拓扑排序](https://leetcode.cn/tag/topological-sort/problemset/)
 
 
+上面列出来的问题，后面都应该专门抽时间来训练一下
 
 
 
@@ -1760,6 +1769,7 @@ __代码随想录中没做的题目__
 + [32.最长有效括号](https://leetcode.cn/problems/longest-valid-parentheses/submissions/) Leecode第一页的困难困难难题，答案有三种方法，我只看了【方法2: 栈】
 
 + [699.掉落的方块](https://leetcode.cn/problems/falling-squares/) 困难题，我写的方法超时，答案有两种方法，我抄了更优化的方法2，还没看，里面用到了一些比较少用到的函数，抽空记得看看
+
 
 
 
