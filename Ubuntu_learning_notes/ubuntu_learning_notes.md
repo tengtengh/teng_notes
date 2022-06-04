@@ -1770,6 +1770,7 @@ __代码随想录中没做的题目__
 
 + [699.掉落的方块](https://leetcode.cn/problems/falling-squares/) 困难题，我写的方法超时，答案有两种方法，我抄了更优化的方法2，还没看，里面用到了一些比较少用到的函数，抽空记得看看
 
++ [829.连续整数求和](https://leetcode.cn/problems/consecutive-numbers-sum/submissions/) 可以说是个数学问题，代码炒鸡简单，答案解析可以参考[连续整数求和【数学】](https://leetcode.cn/problems/consecutive-numbers-sum/solution/lian-xu-zheng-shu-qiu-he-by-jiang-hui-4-miqf/)
 
 
 
