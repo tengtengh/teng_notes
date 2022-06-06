@@ -1844,6 +1844,7 @@ __代码随想录中没做的题目__
 
 + [478. 在圆内随机生成点](https://leetcode.cn/problems/generate-random-point-in-a-circle/) 2022-06-05每日一题，生成随机数，不会，后面可以看看
 
++ [剑指 Offer 56 - I. 数组中数字出现的次数](https://leetcode.cn/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-lcof/submissions/) 中等题，暴力法可以过(kill 66% in time), 答案的方法是位运算，我根本想不到
 
 
 
