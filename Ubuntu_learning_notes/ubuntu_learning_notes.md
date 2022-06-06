@@ -74,6 +74,7 @@
         * [2.2.20 关于c++中::的疑惑](#2220-关于c中的疑惑)
         * [2.2.20 LeetCode Vim模式下，怎么复制文本到系统剪切板](#2220-leetcode-vim模式下怎么复制文本到系统剪切板)
         * [2.2.21 拓扑排序](#2221-拓扑排序)
+        * [2.2.22 prev()函数](#2222-prev函数)
     * [2.3 刷题记录](#23-刷题记录)
         * [2.3.1 还没做的：](#231-还没做的)
         * [2.3.2 其它](#232-其它)
@@ -1749,7 +1750,24 @@ Windows还有一套复制粘贴键(Ubuntu也适用)
 
 上面列出来的问题，后面都应该专门抽时间来训练一下
 
+### 2.2.22 prev()函数
 
+```c++
+    vector<int> vec = {1, 2, 3, 4, 5};
+
+    auto it = vec.begin() + 4;
+    cout << *it << " ";
+
+    auto it1 = prev(it);
+    cout << *it1 << " ";
+
+    auto it2 = prev(it, 3);
+    cout << *it2 << " ";
+
+    auto it3 = prev(vec.begin(), -2);
+    cout << *it3 << endl;
+```
+output: 5 4 2 
 
 
 ## 2.3 刷题记录
@@ -1819,7 +1837,8 @@ __代码随想录中没做的题目__
 
 + [32.最长有效括号](https://leetcode.cn/problems/longest-valid-parentheses/submissions/) Leecode第一页的困难困难难题，答案有三种方法，我只看了【方法2: 栈】
 
-+ [699.掉落的方块](https://leetcode.cn/problems/falling-squares/) 困难题，我写的方法超时，答案有两种方法，我抄了更优化的方法2，还没看，里面用到了一些比较少用到的函数，抽空记得看看
++ [√][699.掉落的方块](https://leetcode.cn/problems/falling-squares/) 困难题，我写的方法超时，答案有两种方法，我抄了更优化的方法2，还没看，里面用到了一些比较少用到的函数，抽空记得看看
+    + 已经看了，这个题和[732.我的日程安排表III](https://leetcode.cn/problems/my-calendar-iii/), 是一个类型，这道题我按照699的类似方法，手撕出来了
 
 + [829.连续整数求和](https://leetcode.cn/problems/consecutive-numbers-sum/submissions/) 可以说是个数学问题，代码炒鸡简单，答案解析可以参考[连续整数求和【数学】](https://leetcode.cn/problems/consecutive-numbers-sum/solution/lian-xu-zheng-shu-qiu-he-by-jiang-hui-4-miqf/)
 
