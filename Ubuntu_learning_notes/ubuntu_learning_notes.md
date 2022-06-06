@@ -51,7 +51,7 @@
         * [2.2.9 起泡法排序](#229-起泡法排序)
         * [2.2.10 单调栈，这个题属实是没学的话想不到这么做](#2210-单调栈这个题属实是没学的话想不到这么做)
         * [2.2.11 链表排序](#2211-链表排序)
-        * [2.2.12 low_bound()](#2212-low_bound)
+        * [2.2.12 low_bound() 和 upper_bound()](#2212-low_bound-和-upper_bound)
         * [2.2.13 204. 计数质数](#2213-204-计数质数)
         * [2.2.14 vector size()函数要注意的问题](#2214-vector-size函数要注意的问题)
         * [2.2.15 判断char型变量是否为字符数字等](#2215-判断char型变量是否为字符数字等)
@@ -1187,25 +1187,76 @@ void bubble_sort(int A[], int n){
 [147.对链表进行插入排序](https://leetcode-cn.com/problems/insertion-sort-list/) 这个题的方法感觉很经典，比较通用可以说是，起泡法链表版？
 
 
-### 2.2.12 low_bound()
-该函数的作用为：找最接近的大于它的数
+### 2.2.12 low_bound() 和 upper_bound()
+
+**low_bound** :
+
+该函数的作用为：用于在指定区域内查找不小于目标值的第一个元素
 
 第一次见到这个函数，是在这里：
+
 [220. 存在重复元素 III(https://leetcode-cn.com/problems/contains-duplicate-iii/submissions/)
 
 这里主要是用在了
 ```c++
-set<int> st;
-st.insert(1);
-st.insert(2);
-st.insert(8);
-st.insert(10);
-auto it = st.low_bound(9);
-cout << *it << endl;
+    set<int> st;
+    st.insert(1);
+    st.insert(2);
+    st.insert(8);
+    st.insert(10);
+    auto it = st.low_bound(9);
+    cout << *it << endl;
 ```
 输出为：10
 
-更多详细的解析，见：http://m.biancheng.net/view/7521.html
+**upper_bound**
+
+该函数的作用为：找到最接近的大于目标值的元素
+
+
+```c++
+    // map<int, int>
+    // 同set的用法
+    map<int, int> a = {{1, 1}, {2, 2}, {3, 3}, {4, 4}, {5, 5}};
+
+    auto b = a.upper_bound(3);
+    cout << b->first << " ";
+    
+    b = a.lower_bound(3);
+    cout << b->first << endl;
+```
+输出为：4 3
+
+```c++
+    // vector中的用法
+
+    vector<int> vec = {1, 2, 3, 4, 5};
+    auto a = upper_bound(vec.begin(), vec.begin() + 4, 3);
+    cout << *a << endl;
+```
+输出为：4 
+
+
+
+```c++
+
+    //数组中的使用方法
+    
+    int a[5] = {1, 2, 3, 4, 5};
+
+    auto b = upper_bound(a, a + 4, 3);
+    cout << *b << endl;
+
+```
+输出为：4 
+
+
+
+更多详细的解析，见：
+
+[low_bound](http://m.biancheng.net/view/7521.html)  
+
+[upper](http://m.biancheng.net/view/7527.html)  
 
 
 
@@ -1259,66 +1310,66 @@ output:
 ### 2.2.15 判断char型变量是否为字符数字等
 
 1. isalpha
+    
+    isalpha()用来判断一个字符是否为字母，如果是字符则返回非零，否则返回零。
+    ```c++
+        cout<<isalpha('a'); //返回非零
+        cout<<isalpha('2'); //返回0
+    ```
+2. isalnum
+    
+    isalnum()用来判断一个字符是否为数字或者字母，也就是说判断一个字符是否属a\~z\|\|A\~Z\||0\~9
+    
+    ```c++
+        cout<<isalnum('a'); //输出非零
+        cout<<isalnum('2'); // 非零
+        cout<<isalnum('.'); // 零
+    ```
+    
+3. islower
+    
+    islower()用来判断一个字符是否为小写字母，也就是是否属于a~z。
+    
+    ```c++
+        cout<<islower('a'）; //非零
+        cout<<islower('2'); //输出0
+        cout<<islower('A'); //输出0
+    ```
+    
+4. isupper
+    
+    isupper()和islower相反，用来判断一个字符是否为大写字母。
+    
+    ```c++
+        cout<<isupper('a'); //返回0
+        cout<<isupper('2'); //返回0
+        cout<<isupper('A'); //返回非零
+    ```
+    
+5. tolower
 
-isalpha()用来判断一个字符是否为字母，如果是字符则返回非零，否则返回零。
-```c++
-    cout<<isalpha('a'); //返回非零
-    cout<<isalpha('2'); //返回0
-```
-2.isalnum
-
-isalnum()用来判断一个字符是否为数字或者字母，也就是说判断一个字符是否属a\~z\|\|A\~Z\||0\~9
-
-```c++
-    cout<<isalnum('a'); //输出非零
-    cout<<isalnum('2'); // 非零
-    cout<<isalnum('.'); // 零
-```
-
-3.islower
-
-islower()用来判断一个字符是否为小写字母，也就是是否属于a~z。
-
-```c++
-    cout<<islower('a'）; //非零
-    cout<<islower('2'); //输出0
-    cout<<islower('A'); //输出0
-```
-
-4.isupper
-
-isupper()和islower相反，用来判断一个字符是否为大写字母。
-
-```c++
-    cout<<isupper('a'); //返回0
-    cout<<isupper('2'); //返回0
-    cout<<isupper('A'); //返回非零
-```
-
-5.tolower
-
-tolower()函数是把字符串都转化为小写字母
-
-```c++
-    string str= "THIS IS A STRING";
-    for (int i=0; i <str.size(); i++)
-       str[i] = tolower(str[i]);
-```
-
-5.toupper
-
-toupper()函数是把字符串都转化为小写字母
-
-```c++
-    string str= "hahahahaha";
-    for (int i=0; i <str.size(); i++)
-       str[i] = toupper(str[i]);
-```
-```c++
-    //来判断是否为数字，如果是数字那么会返回非0
-    isdigit(c)
-```
-
+    tolower()函数是把字符串都转化为小写字母
+    
+    ```c++
+        string str= "THIS IS A STRING";
+        for (int i=0; i <str.size(); i++)
+           str[i] = tolower(str[i]);
+    ```
+    
+6. toupper
+    
+    toupper()函数是把字符串都转化为小写字母
+    
+    ```c++
+        string str= "hahahahaha";
+        for (int i=0; i <str.size(); i++)
+           str[i] = toupper(str[i]);
+    ```
+    ```c++
+        //来判断是否为数字，如果是数字那么会返回非0
+        isdigit(c)
+    ```
+    
 
 ###2.2.16 287.寻找重复数
 [287.寻找重复数](https://leetcode-cn.com/problems/find-the-duplicate-number/)
@@ -1771,6 +1822,13 @@ __代码随想录中没做的题目__
 + [699.掉落的方块](https://leetcode.cn/problems/falling-squares/) 困难题，我写的方法超时，答案有两种方法，我抄了更优化的方法2，还没看，里面用到了一些比较少用到的函数，抽空记得看看
 
 + [829.连续整数求和](https://leetcode.cn/problems/consecutive-numbers-sum/submissions/) 可以说是个数学问题，代码炒鸡简单，答案解析可以参考[连续整数求和【数学】](https://leetcode.cn/problems/consecutive-numbers-sum/solution/lian-xu-zheng-shu-qiu-he-by-jiang-hui-4-miqf/)
+
++ [478. 在圆内随机生成点](https://leetcode.cn/problems/generate-random-point-in-a-circle/) 2022-06-05每日一题，生成随机数，不会，后面可以看看
+
+
+
+
+
 
 
 
