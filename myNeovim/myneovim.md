@@ -2,6 +2,19 @@
 
 # 关于我基于lua配置neovim的说明
 
+## nerd font
+
+首先需要将终端字体改成nerd font字体(我在ubuntu终端之前使用的字体是ubuntu Mono，所以对应安装的字体也是ubuntu nerd font)
+
+安装nerdfont之后才能正常显示例如nvim-tree、bufferline上的图标
+
+github下载地址: 
+https://github.com/ryanoasis/nerd-fonts/releases/tag/v2.1.0
+
+unicode emoji table: 
+https://www.nerdfonts.com/cheat-sheet
+
+
 
 ## 有关nvim-lspconfig
 

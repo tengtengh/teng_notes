@@ -75,6 +75,8 @@
         * [2.2.20 LeetCode Vim模式下，怎么复制文本到系统剪切板](#2220-leetcode-vim模式下怎么复制文本到系统剪切板)
         * [2.2.21 拓扑排序](#2221-拓扑排序)
         * [2.2.22 prev()函数](#2222-prev函数)
+        * [2.2.23 位运算相关的题目](#2223-位运算相关的题目)
+        * [2.2.24 分治算法](#2224-分治算法)
     * [2.3 刷题记录](#23-刷题记录)
         * [2.3.1 还没做的：](#231-还没做的)
         * [2.3.2 其它](#232-其它)
@@ -1769,6 +1771,24 @@ Windows还有一套复制粘贴键(Ubuntu也适用)
 ```
 output: 5 4 2 
 
+### 2.2.23 位运算相关的题目
+
+异或：
+ [剑指 Offer 56 - I. 数组中数字出现的次数](https://leetcode.cn/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-lcof/submissions/)
+ [剑指 Offer 56 - II. 数组中数字出现的次数 II](https://leetcode.cn/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-ii-lcof/) -- 头皮发麻
+
+[剑指 Offer 15. 二进制中1的个数](https://leetcode.cn/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/) --  参考答案的[方法二：位运算优化](https://leetcode.cn/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/solution/er-jin-zhi-zhong-1de-ge-shu-by-leetcode-50bb1/), 我是完全不可能想得到
+
+### 2.2.24 分治算法
+
++ [剑指 Offer 39. 数组中出现次数超过一半的数字](https://leetcode.cn/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/) -- 这是一个简答题，但是答案给了好多方法，核心的还是分治算法 (用到了递归).
+
+ : 答案还给了一个[方法五：Boyer-Moore 投票算法](https://leetcode.cn/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/solution/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-pvh8/), 没有证明（说是不好证明）, 但是非常巧妙高效，可以说是一种基于分治的贪心算法了
+
+
+
+
+
 
 ## 2.3 刷题记录
 ### 2.3.1 还没做的：
@@ -1845,7 +1865,6 @@ __代码随想录中没做的题目__
 + [478. 在圆内随机生成点](https://leetcode.cn/problems/generate-random-point-in-a-circle/) 2022-06-05每日一题，生成随机数，不会，后面可以看看
 
 + [剑指 Offer 56 - I. 数组中数字出现的次数](https://leetcode.cn/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-lcof/submissions/) 中等题，暴力法可以过(kill 66% in time), 答案的方法是位运算，我根本想不到
-
 
 
 
