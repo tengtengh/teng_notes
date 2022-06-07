@@ -77,6 +77,7 @@
         * [2.2.22 prev()函数](#2222-prev函数)
         * [2.2.23 位运算相关的题目](#2223-位运算相关的题目)
         * [2.2.24 分治算法](#2224-分治算法)
+        * [2.2.25 数学](#2225-数学)
     * [2.3 刷题记录](#23-刷题记录)
         * [2.3.1 还没做的：](#231-还没做的)
         * [2.3.2 其它](#232-其它)
@@ -1775,45 +1776,75 @@ output: 5 4 2
 
 异或：
  [剑指 Offer 56 - I. 数组中数字出现的次数](https://leetcode.cn/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-lcof/submissions/)
+
  [剑指 Offer 56 - II. 数组中数字出现的次数 II](https://leetcode.cn/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-ii-lcof/) -- 头皮发麻
 
 [剑指 Offer 15. 二进制中1的个数](https://leetcode.cn/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/) --  参考答案的[方法二：位运算优化](https://leetcode.cn/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/solution/er-jin-zhi-zhong-1de-ge-shu-by-leetcode-50bb1/), 我是完全不可能想得到
 
+[剑指 Offer 65. 不用加减乘除做加法](https://leetcode.cn/problems/bu-yong-jia-jian-cheng-chu-zuo-jia-fa-lcof/)
+
+
+
 ### 2.2.24 分治算法
 
 + [剑指 Offer 39. 数组中出现次数超过一半的数字](https://leetcode.cn/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/) -- 这是一个简答题，但是答案给了好多方法，核心的还是分治算法 (用到了递归).
+.. 答案还给了一个[方法五：Boyer-Moore 投票算法](https://leetcode.cn/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/solution/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-pvh8/), 没有证明（说是不好证明）, 但是非常巧妙高效，可以说是一种基于分治的贪心算法了
 
- : 答案还给了一个[方法五：Boyer-Moore 投票算法](https://leetcode.cn/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/solution/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-pvh8/), 没有证明（说是不好证明）, 但是非常巧妙高效，可以说是一种基于分治的贪心算法了
 
+### 2.2.25 数学
 
++ [剑指 Offer 62. 圆圈中最后剩下的数字](https://leetcode.cn/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/), 这个题参考[约瑟夫环问题（递归+数学+迭代优化空间）](https://leetcode.cn/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/solution/yue-se-fu-huan-wen-ti-di-gui-shu-xue-die-nxdx/), 这个答案简单易懂，官方的答案没有说清楚
 
 
 
 
 ## 2.3 刷题记录
+
 ### 2.3.1 还没做的：
+
 + [10.正则表达式](https://leetcode-cn.com/problems/regular-expression-matching/)
+
 + [22.括号的生成（动态规划，回溯）](https://leetcode-cn.com/problems/generate-parentheses/)
+
 + [29.两数相除（试试递归,早子哥提到的）](https://leetcode-cn.com/problems/divide-two-integers/)
+
 + [√][37.解数独 （回溯，还没学）](https://leetcode-cn.com/problems/sudoku-solver/)
+
 + [√][39.组合总和 (回溯)](https://leetcode-cn.com/problems/combination-sum/)
+
 + [32.最长有效括号(动态规划，还没学)](https://leetcode-cn.com/problems/longest-valid-parentheses/)
+
 + [11.盛最多水的容器(贪心算法，还没学)](https://leetcode-cn.com/problems/container-with-most-water/	)
+
 + [44.通配符匹配(贪心，递归，动态规划)](https://leetcode-cn.com/problems/wildcard-matching/)
+
 + [45.跳跃游戏II(贪心，动态规划)](https://leetcode-cn.com/problems/jump-game-ii/)
+
 + [√][46.全排列(回溯)](https://leetcode-cn.com/problems/permutations/)
+
 + [329.矩阵中的最长递增路径（pass，搜“矩阵”关键字搜到的题目）](https://leetcode-cn.com/problems/longest-increasing-path-in-a-matrix/)
+
 + [√][剑指 Offer 12. 矩阵中的路径（回溯）](https://leetcode-cn.com/problems/ju-zhen-zhong-de-lu-jing-lcof/)
+
 + [221. 最大正方形(动态规划)](https://leetcode-cn.com/problems/maximal-square/)
+
 + [85. 最大矩形](https://leetcode-cn.com/problems/maximal-rectangle/)
+
 + [√][51. N 皇后(回溯)](https://leetcode-cn.com/problems/n-queens/)
+
 + [53. 最大子数组和(动态规划)](https://leetcode-cn.com/problems/maximum-subarray/)
+
 + [√][130.被围绕的区域（深度/广度优先搜索）](https://leetcode-cn.com/problems/surrounded-regions/)
+
 + [174. 地下城游戏（动态规划）](https://leetcode-cn.com/problems/dungeon-game/)
+
 + [68. 文本左右对齐(贪心)](https://leetcode-cn.com/problems/text-justification/)
+
 + [307. 区域和检索 - 数组可修改](https://leetcode-cn.com/problems/range-sum-query-mutable/)
+
 + [310. 最小高度树(拓扑排序、深度/广度优先搜索)](https://leetcode-cn.com/problems/minimum-height-trees/)
 
++ [478. 在圆内随机生成点](https://leetcode.cn/problems/generate-random-point-in-a-circle/) 2022-06-05每日一题，生成随机数，不会，后面可以看看
 
 __代码随想录中没做的题目__
 
@@ -1823,13 +1854,21 @@ __代码随想录中没做的题目__
 ### 2.3.2 其它        
 
 + [√][栈与队列-7滑动窗口最大值-[239滑动窗口最大值](https://leetcode-cn.com/problems/sliding-window-maximum/) （答案用到了利用优先队列的方法来做，优先队列是什么还没学）
+
 + [669. 修剪二叉搜索树](https://leetcode-cn.com/problems/trim-a-binary-search-tree/)(这个题看代码的话比较不好理解，尤其是迭代法)
+
 + [109. 有序链表转换二叉搜索树](https://leetcode-cn.com/problems/convert-sorted-list-to-binary-search-tree/submissions/)(这个题用的是list转vector来做的，还有更好的方法，后面还要再看看)
+
 + [124. 二叉树中的最大路径和](https://leetcode-cn.com/problems/binary-tree-maximum-path-sum/)(困难提，虽然没遇到太大问题，自己完成的，但是用时较长，运行时间稳定击败5%，应该还有更好的方法或者可以简化，后面再看看）
+
 + 代码随想录中二叉树部分的每周小结基本上都没怎么看
+
 + [37.解数独](https://leetcode-cn.com/problems/sudoku-solver/)（这个题官方答案还有后续的两个优化的答案，可以学习一下）
+
 + [52. N皇后 II](https://leetcode-cn.com/problems/n-queens-ii/)(官方答案给出的不同于代码随想录的方法，位运算的方法，好多题都有用到这个叫做位运算的方法，要看看！)
+
 + [89.格雷编码](https://leetcode-cn.com/problems/gray-code/)(这个题不能说难，但是官方答案的两种方法我是都没想到，与其说是都没想到，更应该说是之前没有了解过格雷编码的概念)
+
 + [376.摆动序列](https://leetcode-cn.com/problems/wiggle-subsequence/)（第一次接触动态规划解法，觉得比较难以理解）
 
 + [435. 无重叠区间](https://leetcode-cn.com/problems/non-overlapping-intervals/submissions/)(这一题源自代码随想录([贪心算法-无重叠区间](https://www.programmercarl.com/0435.%E6%97%A0%E9%87%8D%E5%8F%A0%E5%8C%BA%E9%97%B4.html#%E6%80%9D%E8%B7%AF))，这道题的题解，我可以说是没想到，并且不太能理解为什么要这么做，作者也说确实这道题难度登记应该为困难)
@@ -1849,7 +1888,6 @@ __代码随想录中没做的题目__
 
 + [441.排列硬币](https://leetcode.cn/problems/arranging-coins/) ！！！这个题要重新看一下!!!!!
 
-
 + [464.我能赢吗](https://leetcode.cn/problems/can-i-win/) 2022-05-22每日一题(简单题), 想不到怎么去做，答案看的也有点头痛
 
 + [675.为高尔夫比赛砍树](https://leetcode.cn/problems/cut-off-trees-for-golf-event/) 2022-05-23的每日一题，这道题我感觉自己写出来了，但是超时了，答案有三种方法，看看
@@ -1862,11 +1900,9 @@ __代码随想录中没做的题目__
 
 + [829.连续整数求和](https://leetcode.cn/problems/consecutive-numbers-sum/submissions/) 可以说是个数学问题，代码炒鸡简单，答案解析可以参考[连续整数求和【数学】](https://leetcode.cn/problems/consecutive-numbers-sum/solution/lian-xu-zheng-shu-qiu-he-by-jiang-hui-4-miqf/)
 
-+ [478. 在圆内随机生成点](https://leetcode.cn/problems/generate-random-point-in-a-circle/) 2022-06-05每日一题，生成随机数，不会，后面可以看看
-
 + [剑指 Offer 56 - I. 数组中数字出现的次数](https://leetcode.cn/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-lcof/submissions/) 中等题，暴力法可以过(kill 66% in time), 答案的方法是位运算，我根本想不到
 
-
++ [189.转轮数组](https://leetcode.cn/problems/rotate-array/),答案的方法3是翻转，跟之前做过的一道矩阵题有点像，我也是没想到。 答案方法2我还没看
 
 
 
