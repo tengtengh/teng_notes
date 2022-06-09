@@ -78,6 +78,8 @@
         * [2.2.23 位运算相关的题目](#2223-位运算相关的题目)
         * [2.2.24 分治算法](#2224-分治算法)
         * [2.2.25 数学](#2225-数学)
+        * [2.2.26 随机化](#2226-随机化)
+        * [2.2.27 memset](#2227-memset)
     * [2.3 刷题记录](#23-刷题记录)
         * [2.3.1 还没做的：](#231-还没做的)
         * [2.3.2 其它](#232-其它)
@@ -1796,6 +1798,17 @@ output: 5 4 2
 + [剑指 Offer 62. 圆圈中最后剩下的数字](https://leetcode.cn/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/), 这个题参考[约瑟夫环问题（递归+数学+迭代优化空间）](https://leetcode.cn/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/solution/yue-se-fu-huan-wen-ti-di-gui-shu-xue-die-nxdx/), 这个答案简单易懂，官方的答案没有说清楚
 
 
+### 2.2.26 随机化
+
+
++ [478. 在圆内随机生成点](https://leetcode.cn/problems/generate-random-point-in-a-circle/) 2022-06-05每日一题，生成随机数，不会，后面可以看看
+
++ [497. 非重叠矩形中的随机点](https://leetcode.cn/problems/random-point-in-non-overlapping-rectangles/)2022-06-09每日一题
+
+### 2.2.27 memset
+
+[c++：用memset初始化数组](https://blog.csdn.net/dashumak/article/details/89517073)
+
 
 
 ## 2.3 刷题记录
@@ -1844,7 +1857,6 @@ output: 5 4 2
 
 + [310. 最小高度树(拓扑排序、深度/广度优先搜索)](https://leetcode-cn.com/problems/minimum-height-trees/)
 
-+ [478. 在圆内随机生成点](https://leetcode.cn/problems/generate-random-point-in-a-circle/) 2022-06-05每日一题，生成随机数，不会，后面可以看看
 
 __代码随想录中没做的题目__
 
